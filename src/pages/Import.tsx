@@ -390,7 +390,7 @@ export function Import() {
       <Card>
         <div className="text-xs text-atisa-grayDark space-y-1">
           <div>Generado: {new Date(meta.generatedAt).toLocaleString("es-MX")}</div>
-          <div>Base total: {meta.totalValid} respondientes válidos.</div>
+          <div>Base total: {meta.totalValid} colaboradores válidos.</div>
           <div>Correos en el Excel original no encontrados en roster: {meta.excludedNotInRoster.length}</div>
           {meta.duplicatesInRoster.length > 0 && (
             <div>Duplicados detectados en roster CSV: {meta.duplicatesInRoster.join(", ")}</div>

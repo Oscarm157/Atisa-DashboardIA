@@ -28,7 +28,7 @@ export function ByQuestion() {
     <div>
       <h1 className="text-2xl font-bold text-atisa-black mb-1">Por Pregunta</h1>
       <p className="text-sm text-atisa-grayDark mb-5">
-        Vista detallada de cada una de las 10 preguntas de la encuesta sobre los {responses.length} respondientes filtrados.
+        Vista detallada de cada una de las 10 preguntas de la encuesta sobre los {responses.length} colaboradores filtrados.
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

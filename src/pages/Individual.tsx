@@ -40,7 +40,7 @@ export function Individual() {
         <div>
           <h1 className="text-2xl font-bold text-atisa-black">Respuestas Individuales</h1>
           <p className="text-sm text-atisa-grayDark">
-            {sorted.length} respondientes. Haz clic en cualquiera para ver sus 10 respuestas completas.
+            {sorted.length} colaboradores. Haz clic en cualquiera para ver sus 10 respuestas completas.
           </p>
         </div>
         <div className="relative">

@@ -42,7 +42,7 @@ export function Overview() {
         <div>
           <h1 className="text-2xl font-bold text-atisa-black">Resumen Ejecutivo</h1>
           <p className="text-sm text-atisa-grayDark">
-            Diagnóstico basado en {k.n} respondientes · {meta.directionCounts ? Object.keys(meta.directionCounts).length : 13} direcciones
+            Diagnóstico basado en {k.n} colaboradores · {meta.directionCounts ? Object.keys(meta.directionCounts).length : 13} direcciones
           </p>
         </div>
         <div className="text-right text-[10px] text-atisa-grayDark">
@@ -51,7 +51,7 @@ export function Overview() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
-        <KpiCard label="Respondientes" value={k.n} accent="red" icon={<Users className="w-4 h-4" />} />
+        <KpiCard label="Colaboradores" value={k.n} accent="red" icon={<Users className="w-4 h-4" />} />
         <KpiCard label="Frecuencia prom." value={k.frecuencia} unit="/ 5" icon={<Activity className="w-4 h-4" />} />
         <KpiCard label="Habilidad prom." value={k.habilidad} unit="/ 5" icon={<Sparkles className="w-4 h-4" />} />
         <KpiCard label="Apertura prom." value={k.apertura} unit="/ 5" icon={<Unlock className="w-4 h-4" />} />
@@ -59,23 +59,28 @@ export function Overview() {
         <KpiCard label="% campeones" value={`${k.pctCampeones}%`} accent="black" icon={<Trophy className="w-4 h-4" />} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <Card className="lg:col-span-1">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+        <Card className="lg:col-span-2">
           <CardTitle subtitle="Participación por dirección">Distribución</CardTitle>
           <DonutChart
             data={dirData}
             legendFormatter={shortDirection}
+            height={320}
+            innerRadius={70}
+            outerRadius={115}
           />
         </Card>
 
-        <Card className="lg:col-span-1">
+        <Card className="lg:col-span-3">
           <CardTitle subtitle="Plataformas más utilizadas">Top herramientas</CardTitle>
-          <HorizontalBar data={topTools} />
+          <HorizontalBar data={topTools} labelWidth={140} height={320} />
         </Card>
 
-        <Card className="lg:col-span-1">
-          <CardTitle subtitle="Factores que frenan la adopción">Top barreras</CardTitle>
-          <HorizontalBar data={topBarriers} />
+        <Card className="lg:col-span-5">
+          <CardTitle subtitle="Factores que frenan la adopción — pasa el cursor para ver la descripción completa">
+            Top barreras
+          </CardTitle>
+          <HorizontalBar data={topBarriers} labelWidth={220} />
         </Card>
       </div>
 

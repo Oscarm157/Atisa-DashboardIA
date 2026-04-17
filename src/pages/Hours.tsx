@@ -42,7 +42,7 @@ export function Hours() {
           icon={<TrendingUp className="w-4 h-4" />}
         />
         <KpiCard label="Promedio / persona" value={avgPer.toFixed(1)} unit="h/sem" icon={<Users2 className="w-4 h-4" />} />
-        <KpiCard label="Respondientes" value={responses.length} icon={<BarChart3 className="w-4 h-4" />} />
+        <KpiCard label="Colaboradores" value={responses.length} icon={<BarChart3 className="w-4 h-4" />} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -71,7 +71,7 @@ export function Hours() {
       <Card>
         <div className="text-sm text-atisa-black space-y-2">
           <p>
-            Cada respondiente escogió un rango en Q9. Para estimar horas totales asignamos la mediana de cada rango:
+            Cada colaborador escogió un rango en Q9. Para estimar horas totales asignamos la mediana de cada rango:
           </p>
           <ul className="text-xs text-atisa-grayDark list-disc ml-5 space-y-0.5">
             <li>Menos de 2 horas → 1 h</li>

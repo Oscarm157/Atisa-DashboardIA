@@ -22,3 +22,15 @@ export function initials(nombre: string): string {
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
   return (parts[0][0] + parts[1][0]).toUpperCase();
 }
+
+/**
+ * Acorta etiquetas verbosas de MS Forms.
+ * "Carga Operativa: El ritmo de trabajo actual..." -> "Carga Operativa"
+ */
+export function shortLabel(label: string, max = 30): string {
+  if (!label) return "";
+  const colonIdx = label.indexOf(":");
+  if (colonIdx > 0 && colonIdx <= 40) return label.slice(0, colonIdx).trim();
+  if (label.length > max) return label.slice(0, max - 1).trim() + "…";
+  return label;
+}
