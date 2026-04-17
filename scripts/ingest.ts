@@ -77,14 +77,20 @@ function loadRoster(): { map: Map<string, RosterEntry>; duplicates: string[] } {
 
   const map = new Map<string, RosterEntry>();
   const duplicates: string[] = [];
+  const skippedNoDireccion: string[] = [];
   for (let r = 1; r < rows.length; r++) {
     const row = rows[r];
     const email = (row[idxCorreo] || "").trim().toLowerCase();
     if (!email) continue;
+    const direccion = (row[idxDir] || "").trim();
+    if (!direccion) {
+      skippedNoDireccion.push(email);
+      continue;
+    }
     const entry: RosterEntry = {
       nEmpleado: Number(row[idxEmp]) || 0,
       nombreOficial: (row[idxNombre] || "").trim(),
-      direccion: (row[idxDir] || "").trim(),
+      direccion,
       departamento: (row[idxDep] || "").trim(),
       email,
     };
@@ -94,7 +100,7 @@ function loadRoster(): { map: Map<string, RosterEntry>; duplicates: string[] } {
       map.set(email, entry);
     }
   }
-  return { map, duplicates };
+  return { map, duplicates, skippedNoDireccion };
 }
 
 const LIKERT_TEXT_MAP: Record<string, Likert1to5> = {
@@ -147,10 +153,13 @@ function isTestResponse(r: { ejemploExito: string; herramientasArea: string; pro
 
 function main() {
   console.log("→ Leyendo roster:", CSV_PATH);
-  const { map: rosterMap, duplicates } = loadRoster();
-  console.log(`  Roster: ${rosterMap.size} empleados (${duplicates.length} duplicados ignorados)`);
+  const { map: rosterMap, duplicates, skippedNoDireccion } = loadRoster();
+  console.log(`  Roster: ${rosterMap.size} empleados (${duplicates.length} duplicados ignorados, ${skippedNoDireccion.length} sin dirección omitidos)`);
   if (duplicates.length > 0) {
     console.log(`  ⚠ Correos duplicados en CSV: ${duplicates.join(", ")}`);
+  }
+  if (skippedNoDireccion.length > 0) {
+    console.log(`  ⚠ Sin dirección (omitidos): ${skippedNoDireccion.join(", ")}`);
   }
 
   console.log("→ Leyendo encuesta:", XLSX_PATH);
