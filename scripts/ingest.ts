@@ -25,6 +25,15 @@ const CSV_PATH = path.join(ROOT, "data", "roster.csv");
 const OUT_RESPONSES = path.join(ROOT, "src", "data", "responses.json");
 const OUT_META = path.join(ROOT, "src", "data", "meta.json");
 
+// Overrides manuales: correos que no están en el roster CSV pero cuya dirección
+// se conoce por info directa de Oscar. Se aplican después de cargar el roster.
+const MANUAL_OVERRIDES: Record<string, { direccion: string; departamento?: string }> = {
+  "vigonzalez@atisa.com": { direccion: "MARKETING" },
+  "ehorta@atisa.com": { direccion: "MARKETING" },
+  "rramirez@atisa.com": { direccion: "MARKETING" },
+  "mname@atisa.com": { direccion: "FINANZAS" },
+};
+
 function parseCSV(text: string): string[][] {
   const rows: string[][] = [];
   let row: string[] = [];
@@ -155,6 +164,24 @@ function main() {
   console.log("→ Leyendo roster:", CSV_PATH);
   const { map: rosterMap, duplicates, skippedNoDireccion } = loadRoster();
   console.log(`  Roster: ${rosterMap.size} empleados (${duplicates.length} duplicados ignorados, ${skippedNoDireccion.length} sin dirección omitidos)`);
+
+  // Aplicar overrides manuales (solo si no están ya en el roster)
+  let overridesApplied = 0;
+  for (const [email, info] of Object.entries(MANUAL_OVERRIDES)) {
+    if (!rosterMap.has(email)) {
+      rosterMap.set(email, {
+        nEmpleado: 0,
+        nombreOficial: "",
+        direccion: info.direccion,
+        departamento: info.departamento || info.direccion,
+        email,
+      });
+      overridesApplied++;
+    }
+  }
+  if (overridesApplied > 0) {
+    console.log(`  ℹ ${overridesApplied} overrides manuales aplicados (correos no en CSV pero con dirección conocida).`);
+  }
   if (duplicates.length > 0) {
     console.log(`  ⚠ Correos duplicados en CSV: ${duplicates.join(", ")}`);
   }
