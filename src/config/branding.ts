@@ -52,6 +52,7 @@ export const DIRECTION_LABELS: Record<string, string> = {
   "MOVIMIENTO DE TIERRA": "Mov. de Tierra",
   MAQUINARIA: "Maquinaria",
   "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS": "Nuevos Negocios",
+  "SIN ASIGNAR": "Sin asignar",
 };
 
 export function shortDirection(d: string): string {

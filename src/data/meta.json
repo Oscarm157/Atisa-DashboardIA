@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-17T23:49:51.308Z",
-  "totalValid": 61,
+  "generatedAt": "2026-04-17T23:51:21.352Z",
+  "totalValid": 82,
   "excludedNotInRoster": [
     "vigonzalez@atisa.com",
     "osanchez@atisa.com",
@@ -32,6 +32,7 @@
   ],
   "directionCounts": {
     "MARKETING": 3,
+    "SIN ASIGNAR": 21,
     "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS": 3,
     "TECNOLOGIA IT": 5,
     "INMOBILIARIA": 2,

@@ -225,8 +225,12 @@ function main() {
     const roster = rosterMap.get(email);
     if (!roster) {
       excludedNotInRoster.push(email || nombre);
-      continue;
+      // Include anyway with "Sin asignar" direccion so the colaborador shows up in all views
     }
+    const effectiveDireccion = roster?.direccion || "SIN ASIGNAR";
+    const effectiveDepartamento = roster?.departamento || "";
+    const effectiveNombreOficial = roster?.nombreOficial || nombre;
+    const effectiveNEmpleado = roster?.nEmpleado ?? null;
 
     const aperturaScore =
       (parsed.likert.indispensable +
@@ -240,10 +244,10 @@ function main() {
       id: Number(row[cols.id]) || valid.length + 1,
       email,
       nombre,
-      nombreOficial: roster.nombreOficial,
-      nEmpleado: roster.nEmpleado,
-      direccion: roster.direccion,
-      departamento: roster.departamento,
+      nombreOficial: effectiveNombreOficial,
+      nEmpleado: effectiveNEmpleado,
+      direccion: effectiveDireccion,
+      departamento: effectiveDepartamento,
       fechaInicio: normalizeDateString(row[cols.inicio]),
       fechaFin: normalizeDateString(row[cols.fin]),
       ...parsed,
@@ -258,7 +262,7 @@ function main() {
     };
 
     valid.push(response);
-    directionCounts[roster.direccion] = (directionCounts[roster.direccion] || 0) + 1;
+    directionCounts[effectiveDireccion] = (directionCounts[effectiveDireccion] || 0) + 1;
   }
 
   const meta: IngestMeta = {
