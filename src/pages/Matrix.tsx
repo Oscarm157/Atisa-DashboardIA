@@ -1,12 +1,13 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useFilteredResponses } from "../lib/filters";
 import { Card, CardTitle } from "../components/ui/Card";
 import { ScatterQuadrants } from "../components/charts/ScatterQuadrants";
 import { shortDirection } from "../config/branding";
-import { Lightbulb, Trophy, AlertTriangle, MoonStar } from "lucide-react";
+import { Lightbulb, Trophy, AlertTriangle, MoonStar, Users, Building2 } from "lucide-react";
 
 export function Matrix() {
   const responses = useFilteredResponses();
+  const [mode, setMode] = useState<"individual" | "direccion">("individual");
 
   const points = useMemo(
     () =>
@@ -18,6 +19,23 @@ export function Matrix() {
       })),
     [responses]
   );
+
+  const dirPoints = useMemo(() => {
+    const map = new Map<string, { apertura: number[]; habilidad: number[] }>();
+    responses.forEach((r) => {
+      if (!map.has(r.direccion)) map.set(r.direccion, { apertura: [], habilidad: [] });
+      const g = map.get(r.direccion)!;
+      g.apertura.push(r.aperturaScore);
+      g.habilidad.push(r.habilidad);
+    });
+    return Array.from(map.entries()).map(([direccion, v]) => ({
+      nombre: shortDirection(direccion),
+      direccion,
+      x: v.apertura.reduce((a, b) => a + b, 0) / v.apertura.length,
+      y: v.habilidad.reduce((a, b) => a + b, 0) / v.habilidad.length,
+      n: v.apertura.length,
+    }));
+  }, [responses]);
 
   const quadrants = useMemo(() => {
     const q = { champ: 0, latent: 0, skeptic: 0, rezagado: 0 };
@@ -43,8 +61,37 @@ export function Matrix() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Card className="lg:col-span-2">
-          <CardTitle>Dispersión individual</CardTitle>
-          <ScatterQuadrants data={points} />
+          <div className="flex items-start justify-between gap-3 mb-3">
+            <div>
+              <h3 className="text-sm font-semibold text-atisa-black tracking-tight">
+                {mode === "individual" ? "Dispersión individual" : "Promedio por dirección"}
+              </h3>
+              <p className="text-xs text-atisa-grayDark mt-0.5">
+                {mode === "individual"
+                  ? "Cada punto es un colaborador."
+                  : "Cada burbuja es una dirección. El tamaño refleja cuántos colaboradores respondieron."}
+              </p>
+            </div>
+            <div className="flex bg-atisa-gray rounded-md p-0.5 text-xs shrink-0">
+              <button
+                onClick={() => setMode("individual")}
+                className={`flex items-center gap-1 px-2 py-1 rounded transition-colors ${
+                  mode === "individual" ? "bg-white text-atisa-red shadow-sm" : "text-atisa-grayDark"
+                }`}
+              >
+                <Users className="w-3 h-3" /> Por colaborador
+              </button>
+              <button
+                onClick={() => setMode("direccion")}
+                className={`flex items-center gap-1 px-2 py-1 rounded transition-colors ${
+                  mode === "direccion" ? "bg-white text-atisa-red shadow-sm" : "text-atisa-grayDark"
+                }`}
+              >
+                <Building2 className="w-3 h-3" /> Por dirección
+              </button>
+            </div>
+          </div>
+          <ScatterQuadrants data={mode === "individual" ? points : dirPoints} mode={mode} />
         </Card>
 
         <div className="space-y-3">

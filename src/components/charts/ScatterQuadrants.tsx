@@ -9,8 +9,9 @@ import {
   ReferenceLine,
   ReferenceArea,
   ZAxis,
+  LabelList,
 } from "recharts";
-import { BRAND, DIRECTION_COLORS } from "../../config/branding";
+import { BRAND, DIRECTION_COLORS, shortDirection } from "../../config/branding";
 import { useMemo } from "react";
 
 type Point = {
@@ -18,10 +19,17 @@ type Point = {
   y: number;
   nombre: string;
   direccion: string;
+  n?: number;
   tooltip?: string;
 };
 
-export function ScatterQuadrants({ data }: { data: Point[] }) {
+export function ScatterQuadrants({
+  data,
+  mode = "individual",
+}: {
+  data: Point[];
+  mode?: "individual" | "direccion";
+}) {
   const direcciones = useMemo(() => {
     const set = new Set<string>();
     data.forEach((d) => set.add(d.direccion));
@@ -36,6 +44,8 @@ export function ScatterQuadrants({ data }: { data: Point[] }) {
     });
     return Array.from(map.entries());
   }, [data]);
+
+  const zRange: [number, number] = mode === "direccion" ? [100, 900] : [60, 60];
 
   return (
     <ResponsiveContainer width="100%" height={500}>
@@ -59,7 +69,7 @@ export function ScatterQuadrants({ data }: { data: Point[] }) {
           tick={{ fontSize: 11 }}
           label={{ value: "Habilidad →", angle: -90, position: "insideLeft", fontSize: 12, fill: BRAND.grayDark }}
         />
-        <ZAxis range={[60, 60]} />
+        <ZAxis type="number" dataKey="n" range={zRange} />
         {/* Campeones: alta apertura + alta habilidad (top-right) */}
         <ReferenceArea x1={3} x2={5.5} y1={3} y2={5.5} fill={BRAND.primary} fillOpacity={0.05} />
         {/* Aliados Latentes: alta apertura + baja habilidad (bottom-right) */}
@@ -80,8 +90,15 @@ export function ScatterQuadrants({ data }: { data: Point[] }) {
             return (
               <div className="bg-white p-2 rounded-md shadow-card text-xs">
                 <div className="font-semibold">{p.nombre}</div>
-                <div className="text-atisa-grayDark">{p.direccion}</div>
-                <div>Apertura: {p.x.toFixed(1)} · Habilidad: {p.y.toFixed(0)}</div>
+                {mode === "individual" && (
+                  <div className="text-atisa-grayDark">{shortDirection(p.direccion)}</div>
+                )}
+                <div>
+                  Apertura: {p.x.toFixed(1)} · Habilidad: {p.y.toFixed(mode === "direccion" ? 1 : 0)}
+                </div>
+                {mode === "direccion" && p.n != null && (
+                  <div className="text-atisa-grayDark">{p.n} colaborador{p.n === 1 ? "" : "es"}</div>
+                )}
               </div>
             );
           }}
@@ -92,8 +109,19 @@ export function ScatterQuadrants({ data }: { data: Point[] }) {
             name={dir}
             data={pts}
             fill={DIRECTION_COLORS[direcciones.indexOf(dir) % DIRECTION_COLORS.length]}
-            fillOpacity={0.8}
-          />
+            fillOpacity={mode === "direccion" ? 0.6 : 0.8}
+            stroke={mode === "direccion" ? "#1A1A1A" : undefined}
+            strokeWidth={mode === "direccion" ? 1 : 0}
+          >
+            {mode === "direccion" && (
+              <LabelList
+                dataKey="nombre"
+                position="top"
+                offset={8}
+                style={{ fontSize: 10, fill: "#1A1A1A", fontWeight: 600 }}
+              />
+            )}
+          </Scatter>
         ))}
       </ScatterChart>
     </ResponsiveContainer>
