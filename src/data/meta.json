@@ -1,28 +1,12 @@
 {
-  "generatedAt": "2026-04-17T23:51:21.352Z",
+  "generatedAt": "2026-04-17T23:57:10.996Z",
   "totalValid": 82,
   "excludedNotInRoster": [
     "vigonzalez@atisa.com",
     "osanchez@atisa.com",
     "ehorta@atisa.com",
-    "gluna@atisa.com",
-    "agutierrez@atisa.com",
-    "asaldana@atisa.com",
     "rramirez@atisa.com",
-    "kruiz@atisa.com",
-    "dpanecatl@atisa.com",
-    "lcarretero@atisa.com",
-    "abautista@atisa.com",
-    "mname@atisa.com",
-    "mgarcia@atisa.com",
-    "mcazarez@atisa.com",
-    "kpacheco@atisa.com",
-    "surista@atisa.com",
-    "dgalvez@atisa.com",
-    "iwalker@atisa.com",
-    "khernandez@atisa.com",
-    "vferro@atisa.com",
-    "fdamas@atisa.com"
+    "mname@atisa.com"
   ],
   "excludedTest": [
     "oarredondo@atisa.com"
@@ -31,19 +15,19 @@
     "dmendez@atisa.com"
   ],
   "directionCounts": {
-    "MARKETING": 3,
-    "SIN ASIGNAR": 21,
+    "MARKETING": 4,
+    "SIN ASIGNAR": 5,
     "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS": 3,
-    "TECNOLOGIA IT": 5,
+    "TECNOLOGIA IT": 7,
     "INMOBILIARIA": 2,
-    "DIRECCION DE COSTOS Y PROYECTOS": 9,
+    "DIRECCION DE COSTOS Y PROYECTOS": 10,
     "MOVIMIENTO DE TIERRA": 4,
     "MAQUINARIA": 2,
-    "CAPITAL HUMANO": 7,
+    "CAPITAL HUMANO": 10,
     "CONSTRUCTORA": 14,
-    "CADENA DE SUMINISTROS": 2,
+    "CADENA DE SUMINISTROS": 5,
     "ASISTENCIA DIRECCION": 3,
-    "FINANZAS": 5,
+    "FINANZAS": 11,
     "ADMINISTRACION": 2
   }
 }
