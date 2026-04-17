@@ -1,0 +1,3194 @@
+[
+  {
+    "id": 2,
+    "email": "jlerma@atisa.com",
+    "nombre": "Jose Ivan Lerma Garcia",
+    "nombreOficial": "LERMA GARCIA, JOSE IVAN",
+    "nEmpleado": 759,
+    "direccion": "MARKETING",
+    "departamento": "MKT SERVICIOS",
+    "fechaInicio": "2026-04-14T18:27:35.000Z",
+    "fechaFin": "2026-04-14T18:33:09.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Weavy.AI"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Generación/lluvia de ideas",
+      "Resumen y síntesis de contenido",
+      "Organización y planificación",
+      "Soporte en toma de decisiones",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "Para los tutoriales de construcción de naves industriales existe mucho video donde personas no tienen EPP, a tra ves de IA le estamos agregando esos detalles como cascos, botas y guantes.",
+    "herramientasArea": "Solamente para desarrollo visual, generacion y edicion de videos e imagenes, audio y musica.",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "La eliminacion de elementos no desados en imagenes",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "visual",
+        "planos"
+      ],
+      "q6": [
+        "visual"
+      ],
+      "q8": [
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "email": "pvargas@atisa.com",
+    "nombre": "Pedro Vargas Cid",
+    "nombreOficial": "VARGAS CID, PEDRO",
+    "nEmpleado": 855,
+    "direccion": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
+    "departamento": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
+    "fechaInicio": "2026-04-14T18:40:07.999Z",
+    "fechaFin": "2026-04-14T18:43:28.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Perplexity"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Traducción",
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción",
+      "Organización y planificación",
+      "Generación/lluvia de ideas",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "Me ayudo a realizar un resumen que eran 120 slides",
+    "herramientasArea": "no",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Encontrar los provedores adecuados de un proyecto nuevo",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "minutas",
+        "presentaciones"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "email": "lsandoval@atisa.com",
+    "nombre": "Leobardo Sandoval Moreno",
+    "nombreOficial": "SANDOVAL MORENO, LEOBARDO",
+    "nEmpleado": 731,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "SISTEMAS",
+    "fechaInicio": "2026-04-14T18:38:46.000Z",
+    "fechaFin": "2026-04-14T18:45:38.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot",
+      "deepseek"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Análisis Financiero y de Datos",
+      "Automatización de tareas rutinarias",
+      "Codificación"
+    ],
+    "ejemploExito": "Utilicé IA para ejecutar un proceso de analisis a un proyecto existente, con el proposito de proponer un plan de trabajo dividido en sprints, incluso iniciar la reingenieria para migrar la aplicacion a una nueva version web.",
+    "herramientasArea": "si, especificamente para el área de desarrollo y automatizacion hay una gran variedad de aplicaciones que apoyan durante el proceso de construccion de código",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "En el área de desarrollo y automatización, la creacion de prototipos e interfaces de usuario ya que eso es lo que requiere más tiempo durante el analisis",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 12,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "analisis",
+        "codigo"
+      ],
+      "q6": [
+        "cad",
+        "dev"
+      ],
+      "q8": [
+        "reportes",
+        "diseno",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "email": "mgallardo@atisa.com",
+    "nombre": "Mauricio Alfonso Gallardo Guerrero",
+    "nombreOficial": "GALLARDO GUERRERO, MAURICIO ALFONSO",
+    "nEmpleado": 10220,
+    "direccion": "INMOBILIARIA",
+    "departamento": "DIRECCION INMOBILIARIA",
+    "fechaInicio": "2026-04-14T18:40:13.999Z",
+    "fechaFin": "2026-04-14T18:46:38.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 5,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Generación y edición de contenido visual",
+      "Análisis Financiero y de Datos",
+      "Automatización de tareas rutinarias",
+      "Organización y planificación",
+      "Comunicación y Redacción",
+      "Resumen y síntesis de contenido",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "las minutas son resumidas mediante IA, también se utilizo para elaborar los tableros de presentación de datos en Excel para que la alimentación de las mismas se reduzcan a minutos en vez de horas de retrabajo",
+    "herramientasArea": "Actualmente hay muchas empresas dedicadas a eso, por ejemplo Revit 2027 ya viene integrado con IA como asistente mas no ha funcionado correctamente del todo segun una encuesta de usuarios de autodesk, hay una carrera global para generar la IA mas adaptada a esta area, actualmente te puede funcionar para revision, pero al final debes de darle una revisada tecnica tu o un profesional certificado",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "todo trabajo manual repetitivo, lo ideal primeramente es estandarizar todos los procesos que se hacen en cada area de trabajo, verificar las cuestiones de operacion donde el proceso es repetitivo ahi es donde la IA puede entrar a mejorar los tiempos",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "minutas",
+        "analisis",
+        "excel",
+        "presentaciones"
+      ],
+      "q6": [
+        "cad"
+      ],
+      "q8": [
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "email": "dromero@atisa.com",
+    "nombre": "Daniel Romero Cadena",
+    "nombreOficial": "ROMERO CADENA, DANIEL",
+    "nEmpleado": 9844,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-14T18:32:05.999Z",
+    "fechaFin": "2026-04-14T18:48:04.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Generación y edición de contenido visual",
+      "Revision de calculos matematicos para propuestas de proyectos",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Utilizo el chat gpt como herramienta para mejora de correos electrónicos de forma que sean mas claros para todas las partes involucradas",
+    "herramientasArea": "no",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "Presentaciones , se solicitan renderizaciones para multiples proyectos los cuales si no se usa herramienta especializada toman mucho tiempo para generar",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 2,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.3333333333333335,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "redaccion"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "email": "acenteno@atisa.com",
+    "nombre": "Arisbeth Centeno Tellez",
+    "nombreOficial": "CENTENO TELLEZ, ARISBETH",
+    "nEmpleado": 774,
+    "direccion": "INMOBILIARIA",
+    "departamento": "TRAMITES",
+    "fechaInicio": "2026-04-14T18:46:40.999Z",
+    "fechaFin": "2026-04-14T18:52:03.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Generación/lluvia de ideas",
+      "Organización y planificación"
+    ],
+    "ejemploExito": "Generación de formulas para automatizar mis archivos",
+    "herramientasArea": ".",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": ".",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 3,
+      "repetitivo": 3,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.3333333333333335,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "email": "dmontiel@atisa.com",
+    "nombre": "Demetrio Montiel Garcia",
+    "nombreOficial": "MONTIEL GARCIA, DEMETRIO",
+    "nEmpleado": 10389,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-14T18:40:40.000Z",
+    "fechaFin": "2026-04-14T18:54:57.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot",
+      "WHATSAPP"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Traducción",
+      "Resumen y síntesis de contenido",
+      "Generación/lluvia de ideas",
+      "Generación y edición de contenido visual",
+      "Organización y planificación",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "al desarrollar presentaciones de reportes con redacción, fotos y presentaciones, también hace sugerencias y recomendaciones.",
+    "herramientasArea": "La IA en el software de Desk, estado viendo tutoriales está muy completa la cual podemos usar y adaptar al departamento de ingeniería y costos, Tenemos acceso de acuerdo a las licencias que tenemos, solo requerimos una capacitación como Departamento, (si pretenden hacerlo solo para unos usuarios estarías limitando su utilidad y potencial de la IA",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Los procesos administrativos son los que siguen frenando el desarrollo del departamento, de nada sirve si existe procesos automatizados si al final llegan a un punto donde todo se frena por indecisiones, yo trabaje con el SAP, al instante que realizaba una requisición o el personal a mi cargo, la REQUISICION, ORDEN DE COMPRA, llegaba en automático a todas las instancias de autorización, solo teníamos que estar dando seguimiento que la autorización de acuerdo a la cadena de mando se diera. desde el de paquetería hasta el director se enteraban \n\nY eso que no estoy en realidad involucrado en muchos procesos y pequeñas cosas las complican demasiado.\n(es mi humilde punto de vista).",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 3
+    },
+    "aperturaScore": 3.6666666666666665,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "analisis",
+        "presentaciones",
+        "visual"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "admin",
+        "procurement",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "email": "hjuarez@atisa.com",
+    "nombre": "Horacio Lopez Juarez",
+    "nombreOficial": "LOPEZ JUAREZ, HORACIO",
+    "nEmpleado": 872,
+    "direccion": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
+    "departamento": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
+    "fechaInicio": "2026-04-14T18:57:16.000Z",
+    "fechaFin": "2026-04-14T19:02:58.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Generación y edición de contenido visual",
+      "Creatividad y Estrategia",
+      "Soporte en toma de decisiones",
+      "Resumen y síntesis de contenido"
+    ],
+    "ejemploExito": "para minuta de juntas es muy valioso ya que aporta todas las notas importantes",
+    "herramientasArea": "aun no",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": "reportes y automatizacion de tareas",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "minutas"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "reportes",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "email": "ksamaniego@atisa.com",
+    "nombre": "Kevin Antonio Samaniego Rivera",
+    "nombreOficial": "SAMANIEGO RIVERA, KEVIN ANTONIO",
+    "nEmpleado": 10836,
+    "direccion": "MOVIMIENTO DE TIERRA",
+    "departamento": "MOVIMIENTO DE TIERRAS ADMINISTRATIVOS",
+    "fechaInicio": "2026-04-14T18:53:21.999Z",
+    "fechaFin": "2026-04-14T19:03:15.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Comunicación y Redacción",
+      "Codificación",
+      "Análisis Financiero y de Datos",
+      "Creatividad y Estrategia",
+      "Generación/lluvia de ideas",
+      "Automatización de tareas rutinarias"
+    ],
+    "ejemploExito": "La utilizo para codificar tareas con lenguaje de programación y base de datos, para ver si hay forma de automatizar procesos rutinarios, además de darle ideas que tengo y me da orientación para saber cómo expresarlas con la información que genero a diario.",
+    "herramientasArea": "No he escuchado de una IA que haga exactamente los procesos técnicos que realizo, que es el procesamiento fotogramétrico y cálculos de volumen, pero si para el análisis de datos.",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Llenado de base de datos y tablas con información recibida desde campo con los avances diarios, entre otras cosas que se llenan a mano en formatos impresos y hay que capturar esa información para realizar gráficas y análisis de los datos.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel",
+        "codigo"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "email": "razamora@atisa.com",
+    "nombre": "Rocio Angelica Zamora Pedrin",
+    "nombreOficial": "ZAMORA PEDRIN, ROCIO ANGELICA",
+    "nEmpleado": 10602,
+    "direccion": "MOVIMIENTO DE TIERRA",
+    "departamento": "MOVIMIENTO DE TIERRAS ADMINISTRATIVOS",
+    "fechaInicio": "2026-04-14T19:01:57.000Z",
+    "fechaFin": "2026-04-14T19:04:27.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción",
+      "Codificación"
+    ],
+    "ejemploExito": "PARA REDACCION DE PARRAFOS, CODIGOS DE PROGRAMACION",
+    "herramientasArea": "NO",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "CODIFICACION",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "codigo"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "email": "larias@atisa.com",
+    "nombre": "Luis Armando Arias Mojica",
+    "nombreOficial": "ARIAS MOJICA, LUIS ARMANDO",
+    "nEmpleado": 862,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "SISTEMAS",
+    "fechaInicio": "2026-04-14T18:57:46.999Z",
+    "fechaFin": "2026-04-14T19:08:00.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Codificación",
+      "Resumen y síntesis de contenido",
+      "Soporte en toma de decisiones",
+      "Generación/lluvia de ideas",
+      "Automatización de tareas rutinarias",
+      "Organización y planificación",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "Generar propuestas de Aplicaciones y Automatizar procesos de Negocio",
+    "herramientasArea": "Claude Code, Codex",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Automatizar procesos Operativos",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "email": "jmedina@atisa.com",
+    "nombre": "Jose Manuel Medina Xolot",
+    "nombreOficial": "MEDINA XOLOT, JOSE MANUEL",
+    "nEmpleado": 10776,
+    "direccion": "MAQUINARIA",
+    "departamento": "MAQUINARIA ADMINISTRATIVO",
+    "fechaInicio": "2026-04-14T19:00:51.000Z",
+    "fechaFin": "2026-04-14T19:08:27.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Creatividad y Estrategia",
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual",
+      "Generación/lluvia de ideas"
+    ],
+    "ejemploExito": "la Utilice para Generar un formato de Inspección Unico que abarcara todos los componentes básicos y sistemas que comprende toda la maquinaria pesada.",
+    "herramientasArea": "No conozco ninguna que hable específicamente o se enfoque en procesos del area.",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Clasificación de fallos para plan de acción y atacar causa raíz.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "email": "ddelgado@atisa.com",
+    "nombre": "David Isai Delgado Moreno",
+    "nombreOficial": "DELGADO MORENO, DAVID ISAI",
+    "nEmpleado": 863,
+    "direccion": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
+    "departamento": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
+    "fechaInicio": "2026-04-14T19:14:22.999Z",
+    "fechaFin": "2026-04-14T19:19:19.999Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Microsoft Copilot",
+      "Google Gemini"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Generación/lluvia de ideas",
+      "Análisis Financiero y de Datos",
+      "Traducción",
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción",
+      "Codificación"
+    ],
+    "ejemploExito": "Cree un agente en Copilot, entrenado para que me ayude a generar cotizaciones de materiales, ajuste sus parametros de busqueda de costos en paginas confiables y describi como requeria que me entregara la infirmacion",
+    "herramientasArea": "Solo agentes que se pueden crear para tareas especificas",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "la fiabilidad de la informacion en algunos casos"
+    ],
+    "procesoPrioritario": "simulacion de cotizaciones, calculos y codigo",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "codigo"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "procurement"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "email": "eunzueta@atisa.com",
+    "nombre": "Emma Unzueta Alvarez",
+    "nombreOficial": "UNZUETA ALVAREZ, EMMA",
+    "nEmpleado": 738,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-14T18:46:20.999Z",
+    "fechaFin": "2026-04-14T19:20:39.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Organización y planificación",
+      "Codificación",
+      "Generación y edición de contenido visual",
+      "Comunicación y Redacción",
+      "Soporte en toma de decisiones",
+      "Análisis Financiero y de Datos",
+      "Creatividad y Estrategia",
+      "Traducción",
+      "Automatización de tareas rutinarias",
+      "Generación/lluvia de ideas",
+      "Resumen y síntesis de contenido",
+      "\"Modelado y documentación de arquitectura empresarial, generación de matrices RACI, BPMN y procedimientos normativos",
+      "análisis de cumplimiento regulatorio (REPSE, fiscal, laboral)\""
+    ],
+    "ejemploExito": "Análisis de proveedores (proceso de gobernanza):\nUsé IA para generar un análisis comparativo de riesgo entre tres proveedores de servicios del PAC de facturación, estructurando criterios de continuidad, experiencia técnica, soporte y costo. El entregable habría requerido investigación manual extensa; con IA obtuve un marco estructurado en horas que sirvió de base para la recomendación formal a dirección.",
+    "herramientasArea": "SAP Signavio Process Manager\nOracle Process Cloud Service / Oracle Integration Cloud (OIC) — Process Automation",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": "Gestión de control de documentos (vencimientos/próximos a vencer) para actualizar\nseguimiento con usuarios\ncocreación de flujos, mapeos, levantamiento y entendimiento de procesos\ndetección y análisis de riesgos, determinación de acciones de mitigación/control\nAnálisis comparativo de propuestas de proveedores\nSeguimiento de entregables del programa de transformación digital",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "procurement"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "email": "ealonso@atisa.com",
+    "nombre": "Edgar Alonso Salas",
+    "nombreOficial": "ALONSO SALAS, EDGAR",
+    "nEmpleado": 664,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "SISTEMAS",
+    "fechaInicio": "2026-04-14T19:22:47.999Z",
+    "fechaFin": "2026-04-14T19:28:25.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Soporte en toma de decisiones",
+      "Resumen y síntesis de contenido",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "Consultas en bases de datos en sybase\nvalidaciones de facturas vs OC para generar contrarecibos automatizado",
+    "herramientasArea": "Openclaw",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Generacion CR\nvalidaciones de polizas\nautorizacion de facturas",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 12,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "admin"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "email": "equiroz@atisa.com",
+    "nombre": "Estefania Quiroz Herrera",
+    "nombreOficial": "QUIROZ HERRERA, ESTEFANIA",
+    "nEmpleado": 10670,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "CONTROL OBRA",
+    "fechaInicio": "2026-04-14T18:30:55.999Z",
+    "fechaFin": "2026-04-14T19:37:35.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "utilice IA para programar en Power BI",
+    "herramientasArea": "no",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "Revisión de información,  generación de formatos para presentación de información",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "email": "dmendez@atisa.com",
+    "nombre": "Denis Yaneth Mendez Flores",
+    "nombreOficial": "MENDEZ FLORES, DENIS YANETH",
+    "nEmpleado": 10733,
+    "direccion": "CADENA DE SUMINISTROS",
+    "departamento": "CONTROL DE SUBCONTRATOS",
+    "fechaInicio": "2026-04-14T19:39:38.999Z",
+    "fechaFin": "2026-04-14T19:43:33.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Traducción",
+      "Resumen y síntesis de contenido",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "Para realizar el análisis de las comparativas entre varios presupuesto",
+    "herramientasArea": "no hasta el momento",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "análisis de información",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "email": "dmerlin@atisa.com",
+    "nombre": "Daniel Merlin Ochoa",
+    "nombreOficial": "MERLIN OCHOA, DANIEL",
+    "nEmpleado": 411,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "CONTROL OBRA",
+    "fechaInicio": "2026-04-14T19:32:37.000Z",
+    "fechaFin": "2026-04-14T19:52:39.000Z",
+    "frecuencia": 1,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Generación y edición de contenido visual",
+      "Automatización de tareas rutinarias",
+      "Organización y planificación",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "Instrucciones para generar reportaría (power BI)",
+    "herramientasArea": "cloud, grok",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "Reportes financieros / análisis de información de construcción",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "email": "bdrivera@atisa.com",
+    "nombre": "Braulio Damian Rivera Cisneros",
+    "nombreOficial": "RIVERA CISNEROS, BRAULIO DAMIAN",
+    "nEmpleado": 866,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "SISTEMAS",
+    "fechaInicio": "2026-04-14T20:20:43.999Z",
+    "fechaFin": "2026-04-14T20:26:42.999Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Codificación",
+      "Organización y planificación",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "En ideas de diseño de páginas web y generación de código",
+    "herramientasArea": "Antigravity",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Creación de querys para diseño de bases de datos",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 2,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.3333333333333335,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "visual",
+        "codigo"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "email": "dbibiano@atisa.com",
+    "nombre": "Diana Laura Bibiano Aguirre",
+    "nombreOficial": "BIBIANO AGUIRRE, DIANA LAURA",
+    "nEmpleado": 10947,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-14T21:04:17.000Z",
+    "fechaFin": "2026-04-14T21:17:06.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "He utilizado IA para mejorar la Redacción de un correo.",
+    "herramientasArea": "No conozco ninguna herramienta específica para los procesos técnicos de mi área.",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "La revisión constante de bitácoras.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "email": "lramirez@atisa.com",
+    "nombre": "Lizeth Acalli Ramirez Twiss",
+    "nombreOficial": "RAMIREZ TWISS, LIZETH ACALLI",
+    "nEmpleado": 704,
+    "direccion": "MARKETING",
+    "departamento": "MKT SERVICIOS",
+    "fechaInicio": "2026-04-14T20:14:33.999Z",
+    "fechaFin": "2026-04-14T21:17:54.000Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Weavy"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Generación/lluvia de ideas",
+      "Resumen y síntesis de contenido",
+      "Organización y planificación"
+    ],
+    "ejemploExito": "Utilice la IA para que me explicara como utilizar ciertas herramientas de un software de 3D",
+    "herramientasArea": "Si, weavy, genera videos e imagenes por medio de prompts",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Generacion de ideas para futuras campañas de publicidad",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 2,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.3333333333333335,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "visual"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "email": "larellano@atisa.com",
+    "nombre": "Luis Carlos Arellano Sanchez",
+    "nombreOficial": "ARELLANO SANCHEZ, LUIS CARLOS",
+    "nEmpleado": 9883,
+    "direccion": "ASISTENCIA DIRECCION",
+    "departamento": "DIRECCION GENERAL",
+    "fechaInicio": "2026-04-14T22:31:47.999Z",
+    "fechaFin": "2026-04-14T22:40:58.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Codificación",
+      "Resumen y síntesis de contenido",
+      "Automatización de tareas rutinarias",
+      "Creatividad y Estrategia",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "La usé para redactar guiones para videos constructivos.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Redacción de guiones\nElaboración de KPIs",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "visual"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "comunicacion"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "email": "jluquin@atisa.com",
+    "nombre": "Jesus Alonso Floriano Luquin",
+    "nombreOficial": "FLORIANO LUQUIN, JESUS ALONSO",
+    "nEmpleado": 10588,
+    "direccion": "MAQUINARIA",
+    "departamento": "MAQUINARIA ADMINISTRATIVO",
+    "fechaInicio": "2026-04-14T22:14:59.000Z",
+    "fechaFin": "2026-04-14T22:49:51.999Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "habilidad": 5,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Análisis Financiero y de Datos",
+      "Comunicación y Redacción",
+      "Generación/lluvia de ideas",
+      "Creatividad y Estrategia",
+      "Resumen y síntesis de contenido",
+      "Organización y planificación",
+      "Soporte en toma de decisiones"
+    ],
+    "ejemploExito": "Para solucionar y lógica de fórmulas",
+    "herramientasArea": "Aún no",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "Kpis del área",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 12,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "email": "vrios@atisa.com",
+    "nombre": "Victor Manuel Rios Tovar",
+    "nombreOficial": "RIOS TOVAR, VICTOR MANUEL",
+    "nEmpleado": 10399,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "IND CAMPO OBRA - APTS02 NOM",
+    "fechaInicio": "2026-04-14T22:50:25.000Z",
+    "fechaFin": "2026-04-14T22:53:42.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Soporte en toma de decisiones"
+    ],
+    "ejemploExito": "búsqueda rapita en normativas mexicanas",
+    "herramientasArea": "No",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Búsqueda de info y respuesta casi inmediata a dudas sin explorar  muchas fuentes de informacion",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "email": "vherrera@atisa.com",
+    "nombre": "Victor Jesus Herrera Fernandez",
+    "nombreOficial": "HERRERA FERNANDEZ, VICTOR JESUS",
+    "nEmpleado": 10426,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "IND CAMPO OBRA - APTS02 NOM",
+    "fechaInicio": "2026-04-14T22:52:11.999Z",
+    "fechaFin": "2026-04-14T22:55:35.999Z",
+    "frecuencia": 1,
+    "plataformas": [
+      "Google Gemini"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "No la he utilizado en el trabajo.",
+    "herramientasArea": "no.",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "CONTROL DE EXISTENCIAS DE MATERIALES",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 2,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.3333333333333335,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "email": "drodriguez@atisa.com",
+    "nombre": "Diana Lizeth Rodriguez Hidalgo",
+    "nombreOficial": "RODRIGUEZ HIDALGO, DIANA LIZETH",
+    "nEmpleado": 769,
+    "direccion": "FINANZAS",
+    "departamento": "CONTABILIDAD",
+    "fechaInicio": "2026-04-14T22:47:16.000Z",
+    "fechaFin": "2026-04-14T22:58:00.999Z",
+    "frecuencia": 1,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 1,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Automatización de tareas rutinarias",
+      "Creatividad y Estrategia",
+      "Generación/lluvia de ideas",
+      "Organización y planificación",
+      "Comunicación y Redacción",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "ninguno hasta el momento.",
+    "herramientasArea": "IA para automatizar procesos de validación en pólizas.",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Validación de Pólizas ingresos / egresos.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "email": "pmuruato@atisa.com",
+    "nombre": "Pedro Muruato Ontiveros",
+    "nombreOficial": "MURUATO ONTIVEROS, PEDRO",
+    "nEmpleado": 10381,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "ADMON PROYECTO INDUSTRIAL",
+    "fechaInicio": "2026-04-14T22:49:47.000Z",
+    "fechaFin": "2026-04-14T23:03:13.000Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "Google Gemini"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Organización y planificación",
+      "Resumen y síntesis de contenido",
+      "Generación y edición de contenido visual",
+      "Traducción"
+    ],
+    "ejemploExito": "-Utilice IA para validar redacciones contractuales y técnicas, reduciendo riesgos de interpretación y omisiones.",
+    "herramientasArea": "ALICE Technologies",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "Automatización de reporte de avance, minutas y control de estimaciones, ya que son tareas recurrentes , manuales y consumen tiempo.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "minutas",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "email": "jespinosa@atisa.com",
+    "nombre": "Javier Alonso Espinosa Camarena",
+    "nombreOficial": "ESPINOSA CAMARENA, JAVIER ALONSO",
+    "nEmpleado": 8262,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "IND CAMPO OBRA - TI'S NAVE APTS-01",
+    "fechaInicio": "2026-04-14T22:58:55.999Z",
+    "fechaFin": "2026-04-14T23:05:47.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Creatividad y Estrategia",
+      "Análisis Financiero y de Datos",
+      "Traducción",
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual"
+    ],
+    "ejemploExito": "Utilice la IA fuera del area la boral, para organizar mi dia con las actividades que dejaba sin hacer.",
+    "herramientasArea": "Ninguno",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Manejar los materiales requisitados, podría generar una tabla o una base de datos automática donde me indique que materiales están cargados, que se requisito y dar aviso por material a próximo a agotarse. Esto ahorraría horas de trabajo buscando insumo por insumo en enkontrol por un material o materiales",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 3,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.6666666666666665,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "email": "nmendoza@atisa.com",
+    "nombre": "Nickole Alexandra Mendoza Perez",
+    "nombreOficial": "MENDOZA PEREZ, NICKOLE ALEXANDRA",
+    "nEmpleado": 10219,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "DIRECCION CONSTRUCTORA",
+    "fechaInicio": "2026-04-14T23:10:21.999Z",
+    "fechaFin": "2026-04-14T23:14:31.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Claude",
+      "ChatGPT",
+      "Gamma"
+    ],
+    "habilidad": 5,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción",
+      "Organización y planificación"
+    ],
+    "ejemploExito": "La usé para programar mis KPIS en PowerBI, la usé también para generar reportes de avances y documentos entregables.",
+    "herramientasArea": "Aún no",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "Revisión de entregas documentales, revisión de avances de creditos y certificaciones LEED, inspección de equipos y materiales",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "email": "ovelazquez@atisa.com",
+    "nombre": "Omar Velazquez Velazquez",
+    "nombreOficial": "VELAZQUEZ VELAZQUEZ, OMAR",
+    "nEmpleado": 408,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-14T23:31:19.000Z",
+    "fechaFin": "2026-04-14T23:35:49.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Generación y edición de contenido visual",
+      "Generación/lluvia de ideas",
+      "Análisis Financiero y de Datos",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Utilice la IA para realizar políticas y procedimientos de mi área",
+    "herramientasArea": "He escuchado muchas acerca de reclutamiento de personal",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "Elaboración de contratos, políticas y resúmenes de bases de datos",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 1,
+      "repetitivo": 3,
+      "modificarFlujos": 1
+    },
+    "aperturaScore": 1.6666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "email": "sgonzalez@atisa.com",
+    "nombre": "Salvador Gonzalez Rios",
+    "nombreOficial": "GONZALEZ RIOS, SALVADOR",
+    "nEmpleado": 6479,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-14T23:33:57.000Z",
+    "fechaFin": "2026-04-14T23:42:41.000Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Resumen y síntesis de contenido",
+      "Generación/lluvia de ideas",
+      "Organización y planificación",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "En la búsqueda de planiaciones de proyectos y análisis en resultados",
+    "herramientasArea": "No he escuchado ninguna",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "La revisión rápida de clausulas en todo tipo de trámite los cuales me toca generar constantemente en mi area",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "email": "adionicio@atisa.com",
+    "nombre": "Andrea Dionicio Torres",
+    "nombreOficial": "DIONICIO TORRES, ANDREA",
+    "nEmpleado": 681,
+    "direccion": "FINANZAS",
+    "departamento": "CONTABILIDAD",
+    "fechaInicio": "2026-04-14T22:54:05.000Z",
+    "fechaFin": "2026-04-15T00:09:41.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Traducción",
+      "Organización y planificación",
+      "Análisis Financiero y de Datos",
+      "Automatización de tareas rutinarias",
+      "Resumen y síntesis de contenido",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "Gemeni: del archivo crea una minuta con los 5 proveedores de acuerdo al monto pago en el mes.",
+    "herramientasArea": "no",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "la revision de polizas contables",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "minutas"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "email": "mvalderrama@atisa.com",
+    "nombre": "Miguel Angel Valderrama Sanchez",
+    "nombreOficial": "VALDERRAMA SANCHEZ, MIGUEL ANGEL",
+    "nEmpleado": 10303,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "DIRECCION CONSTRUCTORA",
+    "fechaInicio": "2026-04-15T00:33:49.999Z",
+    "fechaFin": "2026-04-15T00:37:34.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Traducción",
+      "Análisis Financiero y de Datos",
+      "Organización y planificación",
+      "Generación/lluvia de ideas",
+      "Comunicación y Redacción",
+      "Resumen y síntesis de contenido"
+    ],
+    "ejemploExito": "Dentro de las aplicaciones se creo un proyecto el cual se le dio el contexto de redacción y nivel técnico de construcción mediante norma y literatura, esto nos permite agilizar los reportes y poner la redacción mas técnica y puntual",
+    "herramientasArea": "no, las app que utilizamos ya traen IA por ejemplo microsoft, procore y autodesk",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Redacción, resumen de juntas a nivel ejecutivo, visualización de resultados gráficos",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "analisis",
+        "planos"
+      ],
+      "q6": [
+        "cad"
+      ],
+      "q8": [
+        "minutas",
+        "diseno",
+        "comunicacion"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "email": "lperez@atisa.com",
+    "nombre": "Limbano Marlon Perez Velazquez",
+    "nombreOficial": "PEREZ VELAZQUEZ, LIMBANO MARLON",
+    "nEmpleado": 531,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-14T18:27:35.999Z",
+    "fechaFin": "2026-04-15T00:48:54.999Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Organización y planificación",
+      "Automatización de tareas rutinarias",
+      "Codificación"
+    ],
+    "ejemploExito": "Con la ayuda de la IA pude usar Power BI para poder limpiar archivos para cargar presupuestos a Enkontrol; estoy en el proceso para ya dejarlo establecido, mientras estoy corrigiendo algunos errores.",
+    "herramientasArea": "no",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "La carga de los presupuestos base al sistema Enkontrol.",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "email": "jibarra@atisa.com",
+    "nombre": "Jaqueline Ibarra Alamillo",
+    "nombreOficial": "IBARRA ALAMILLO, JACQUELINE",
+    "nEmpleado": 10504,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "CONTROL OBRA",
+    "fechaInicio": "2026-04-15T02:48:26.999Z",
+    "fechaFin": "2026-04-15T02:58:31.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Generación/lluvia de ideas",
+      "Traducción"
+    ],
+    "ejemploExito": "La utilicé para generar los \"DAX\" que me ayudaron a generar un dashboard en Power BI",
+    "herramientasArea": "No",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "KPI´s, Cash flow",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "email": "chernandez@atisa.com",
+    "nombre": "Cesar Hernandez Garzon",
+    "nombreOficial": "HERNANDEZ GARZON, CESAR",
+    "nEmpleado": 10014,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-15T03:22:37.000Z",
+    "fechaFin": "2026-04-15T03:28:20.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Creatividad y Estrategia",
+      "Codificación",
+      "Generación y edición de contenido visual",
+      "Generación/lluvia de ideas"
+    ],
+    "ejemploExito": "utilizo la IA para generar imagenes  como para corregir correos",
+    "herramientasArea": "no",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "ayuda a presentar mi trabajo mas limpio y estructurado",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "visual"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "email": "lmjimenez@atisa.com",
+    "nombre": "Luis Miguel Jimenez Castillo",
+    "nombreOficial": "JIMENEZ CASTILLO, LUIS MIGUEL",
+    "nEmpleado": 10320,
+    "direccion": "MOVIMIENTO DE TIERRA",
+    "departamento": "MOVIMIENTO DE TIERRAS ADMINISTRATIVOS",
+    "fechaInicio": "2026-04-15T03:21:16.000Z",
+    "fechaFin": "2026-04-15T03:29:19.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Grok"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual",
+      "Organización y planificación",
+      "Codificación"
+    ],
+    "ejemploExito": "Utilizando para resumen de libros y realizar esquemas, también interpretando y organizando datos",
+    "herramientasArea": "No",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Generación de volúmenes de trabajo en función de planos, también codificar datos de uso de maquinaria pesada",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "minutas",
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "email": "ysanchez@atisa.com",
+    "nombre": "Yulissa Guizelle Sanchez Chavez",
+    "nombreOficial": "SANCHEZ CHAVEZ, YULISSA GUIZELLE",
+    "nEmpleado": 634,
+    "direccion": "FINANZAS",
+    "departamento": "DIRECCION DE FINANZAS",
+    "fechaInicio": "2026-04-15T16:51:23.000Z",
+    "fechaFin": "2026-04-15T17:00:00.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Análisis Financiero y de Datos",
+      "Automatización de tareas rutinarias"
+    ],
+    "ejemploExito": "Me ha ayudado con formulas en excel o con formas de utilizarlo mas eficientemente.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Elaboración de reportes de flujo de efectivo, movimiento de tierras, entre otros. En estos reportes se debe asignar manualmente diferentes clasificaciones, tipo de cambio, dolarizarlo, entre otras cosas.",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "email": "despinosa@atisa.com",
+    "nombre": "Diego Alfredo Espinosa Zamora",
+    "nombreOficial": "ESPINOSA ZAMORA, DIEGO ALFREDO",
+    "nEmpleado": 9408,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-15T15:35:17.999Z",
+    "fechaFin": "2026-04-15T17:54:58.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Comunicación y Redacción",
+      "Traducción",
+      "Resumen y síntesis de contenido"
+    ],
+    "ejemploExito": "Utilicé la IA para consultar foros y experiencias de revisores del Green Building Certification Inc. (GBCI) disponibles en internet sobre un tema específico, me ayudó a reunir y elaborar un resumen de puntos clave para encaminar mi problemática hacia una solución exitosa sin tener que contactar directamente a un revisor del GBCI y plantear la problemática.",
+    "herramientasArea": "No, aún no conozco ninguna herramienta.",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Una herramienta que permita generar propuestas en software de dibujo (CAD) sobre ideas conceptuales para edificios industriales cumpliendo con criterios establecidos por la autoridad y sus reglamentos, así como los estándares internos de ATISA.",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "minutas"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "email": "ypena@atisa.com",
+    "nombre": "Yuritzy Guadalupe Peña Moreno",
+    "nombreOficial": "PEÑA MORENO, YURITZY GUADALUPE",
+    "nEmpleado": 10244,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "DIRECCION CONSTRUCTORA",
+    "fechaInicio": "2026-04-15T18:09:17.000Z",
+    "fechaFin": "2026-04-15T18:24:16.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Automatización de tareas rutinarias",
+      "Creatividad y Estrategia",
+      "Análisis Financiero y de Datos",
+      "Codificación",
+      "Comunicación y Redacción",
+      "Generación/lluvia de ideas"
+    ],
+    "ejemploExito": "Utilice IA para generar un Dax complicado para hacer un reporte que me permitiera automatizar información",
+    "herramientasArea": "No",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": "Nómina: revisión de incidencias, retardos",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "email": "eluna@atisa.com",
+    "nombre": "Esteban Luna Auza",
+    "nombreOficial": "LUNA AUZA, ESTEBAN",
+    "nEmpleado": 7846,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "IND CAMPO OBRA - APTS02 NOM",
+    "fechaInicio": "2026-04-15T19:01:57.000Z",
+    "fechaFin": "2026-04-15T19:24:11.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual",
+      "Organización y planificación",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "Fundamental en tiempo proceso práctico y rápido con detalles en tiempo presencial.\nejemplo en pre proyectos para presentar algún tema con imagenes o dibujos rápidos.",
+    "herramientasArea": "Por el momento, no",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Planos construcción, arquitectónicos y estructurales.",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "visual"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "email": "jtrujillo@atisa.com",
+    "nombre": "Jose Luis Trujillo Perez",
+    "nombreOficial": "TRUJILLO PEREZ, JOSE LUIS",
+    "nEmpleado": 8310,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "OBRA INDUSTRIAL INDIRECTO",
+    "fechaInicio": "2026-04-15T19:59:45.000Z",
+    "fechaFin": "2026-04-15T20:03:54.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Generación y edición de contenido visual",
+      "Resumen y síntesis de contenido",
+      "Automatización de tareas rutinarias",
+      "Codificación",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "nos ayudo para generar una presentacion mas completa y clara sobre los avances de obra",
+    "herramientasArea": "planner, monday",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": "presentacion de avances, administracion de la obra",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "presentaciones",
+        "planos"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "email": "oamartinez@atisa.com",
+    "nombre": "Oscar Arnoldo Martinez Ruiz",
+    "nombreOficial": "MARTINEZ RUIZ, OSCAR ARNOLDO",
+    "nEmpleado": 888,
+    "direccion": "MARKETING",
+    "departamento": "MKT SERVICIOS",
+    "fechaInicio": "2026-04-15T20:20:23.999Z",
+    "fechaFin": "2026-04-15T20:28:57.999Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Perplexity"
+    ],
+    "habilidad": 5,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Creatividad y Estrategia",
+      "Automatización de tareas rutinarias",
+      "Resumen y síntesis de contenido",
+      "Análisis Financiero y de Datos",
+      "Traducción",
+      "Comunicación y Redacción",
+      "Organización y planificación",
+      "Soporte en toma de decisiones",
+      "Codificación"
+    ],
+    "ejemploExito": "Utilizo Claude (IA de Anthropic) como asistente de investigación para mi rol de Market Research en ATISA. Un caso concreto: al preparar estudios de mercado de bienes raíces industriales en Baja California, usé IA para estructurar el análisis, sintetizar información de reportes de firmas como JLL, CBRE y Newmark, y generar borradores de presentaciones. Lo que antes me tomaba 2–3 días de organización y redacción, ahora lo resuelvo en horas. Esto me ha permitido entregar estudios más completos y con mejor presentación visual, sin aumentar costos.",
+    "herramientasArea": "Sí. Algunas herramientas relevantes para market research en real estate:\n\nPerplexity AI — búsqueda y síntesis de información de mercado en tiempo real\nNotebookLM (Google) — para analizar y consultar reportes de firmas como JLL, CBRE o Newmark\nChatGPT / Claude — redacción de análisis, estructuración de estudios y procesamiento de datos\n\nAunque no existe aún una herramienta de IA 100% especializada en real estate industrial en México, estas permiten cubrir gran parte del flujo de trabajo de investigación de mercado.",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "En ocasiones la mejor opcion es la version pagada"
+    ],
+    "procesoPrioritario": "El proceso prioritario sería la recopilación y síntesis de información de mercado. Actualmente implica revisar manualmente reportes de consultoras (JLL, CBRE, Newmark), noticias del sector, datos de portales inmobiliarios y fuentes gubernamentales (INEGI, SEDECO) para construir análisis de vacancia, precios de renta, absorción y pipeline de construcción en Tijuana y Mexicali.\nAutomatizar este flujo con IA permitiría: reducir el tiempo de investigación semanal, mantener los datos más actualizados y elevar la calidad de los entregables para dirección. Actualmente este proceso puede tomar 1–2 días por ciclo de reporte; con automatización podría reducirse a horas.",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "analisis",
+        "presentaciones",
+        "planos"
+      ],
+      "q6": [
+        "cad"
+      ],
+      "q8": [
+        "reportes",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "email": "egaribay@atisa.com",
+    "nombre": "Edgar David Garibay Cobos",
+    "nombreOficial": "GARIBAY COBOS, EDGAR DAVID",
+    "nEmpleado": 701,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "IND CAMPO OBRA - MMTO CUBIERTA OMEGA 2C-3",
+    "fechaInicio": "2026-04-15T22:08:18.000Z",
+    "fechaFin": "2026-04-15T22:11:28.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Generación y edición de contenido visual",
+      "Creatividad y Estrategia",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Renderizado de proyectos",
+    "herramientasArea": "RenderIA",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "Gestionar materiales recibidos consumidos y por requisitar",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "visual"
+      ],
+      "q6": [
+        "visual"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "email": "obalderrama@atisa.com",
+    "nombre": "Obed Balderrama",
+    "nombreOficial": "BALDERRAMA VILLA, OBED FEDERICO",
+    "nEmpleado": 10558,
+    "direccion": "CONSTRUCTORA",
+    "departamento": "DIRECCION CONSTRUCTORA",
+    "fechaInicio": "2026-04-16T01:15:49.000Z",
+    "fechaFin": "2026-04-16T01:19:50.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Análisis Financiero y de Datos",
+      "Generación y edición de contenido visual",
+      "Traducción",
+      "Generación/lluvia de ideas",
+      "Creatividad y Estrategia",
+      "Automatización de tareas rutinarias"
+    ],
+    "ejemploExito": "para reporteo en Power BI, fue de mucha utilidad la generación de formulación para generar tablas de presentación",
+    "herramientasArea": "no conozco",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "eleboración de reportes de Kpi o avance de obra mediante tablas comparativas",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 3,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.6666666666666665,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel",
+        "presentaciones"
+      ],
+      "q6": [
+        "no_conoce"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "email": "jcontreras@atisa.com",
+    "nombre": "Jose Alberto Contreras Rodriguez",
+    "nombreOficial": "CONTRERAS RODRIGUEZ, JOSE ALBERTO",
+    "nEmpleado": 9960,
+    "direccion": "FINANZAS",
+    "departamento": "AUDITORIA DE CONSTRUCCION",
+    "fechaInicio": "2026-04-16T19:24:30.000Z",
+    "fechaFin": "2026-04-16T19:27:55.000Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Análisis Financiero y de Datos",
+      "Generación/lluvia de ideas"
+    ],
+    "ejemploExito": "Explicación y soporte para crear fórmula para análisis completo de datos.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "Análisis completo de información para obtención de datos en ERP",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 2,
+      "modificarFlujos": 3
+    },
+    "aperturaScore": 3,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "email": "fgurrola@atisa.com",
+    "nombre": "Felipe Antonio Gurrola Salcedo",
+    "nombreOficial": "GURROLA SALCEDO, FELIPE ANTONIO",
+    "nEmpleado": 9922,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-16T19:25:17.999Z",
+    "fechaFin": "2026-04-16T19:28:54.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias"
+    ],
+    "ejemploExito": "la uso para formulas de excel complejas",
+    "herramientasArea": "no",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "ninguno",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 2,
+      "repetitivo": 3,
+      "modificarFlujos": 3
+    },
+    "aperturaScore": 2.6666666666666665,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "email": "amontes@atisa.com",
+    "nombre": "Anahi Montes Maldonado",
+    "nombreOficial": "MONTES MALDONADO, ANAHI",
+    "nEmpleado": 660,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-16T19:26:02.000Z",
+    "fechaFin": "2026-04-16T19:32:41.999Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 1,
+    "funcionesValor": [
+      "Comunicación y Redacción",
+      "Generación y edición de contenido visual",
+      "Generación/lluvia de ideas"
+    ],
+    "ejemploExito": "Lo utilicé para simplificar redacciones y mejorar transmisión de ideas.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Mejora en redacción de políticas",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "comunicacion"
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "email": "mrivera@atisa.com",
+    "nombre": "Marcelina Rivera Blanco",
+    "nombreOficial": "RIVERA BLANCO, MARCELINA",
+    "nEmpleado": 644,
+    "direccion": "ADMINISTRACION",
+    "departamento": "COBRANZA",
+    "fechaInicio": "2026-04-16T19:23:56.000Z",
+    "fechaFin": "2026-04-16T19:32:52.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Generalmente la utilizo para mejorar redacciones de comunicados.",
+    "herramientasArea": "no",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "la captura de facturas y pagos a los mismos es manual. esta podria generarse en automatico por medio de la IA",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "email": "aladron@atisa.com",
+    "nombre": "Alejandro Ladron De Guevara Medina",
+    "nombreOficial": "LADRON DE GUEVARA MEDINA, ALEJANDRO",
+    "nEmpleado": 9881,
+    "direccion": "FINANZAS",
+    "departamento": "AUDITORIA DE MAQUINARIA",
+    "fechaInicio": "2026-04-16T19:25:22.999Z",
+    "fechaFin": "2026-04-16T19:36:17.999Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "DeepSeek"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Comunicación y Redacción",
+      "Creatividad y Estrategia",
+      "Resumen y síntesis de contenido",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "para mejorar archivos de Excel y hacer más eficientes algunos procesos.",
+    "herramientasArea": "claude",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual."
+    ],
+    "procesoPrioritario": "reportes operativos en Excel, especialmente aquellos relacionados con control de horas de maquinaria, seguimiento por GPS y control de diesel.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "email": "mrobles@atisa.com",
+    "nombre": "Minerva Karina Robles Gomez",
+    "nombreOficial": "ROBLES GOMEZ, MINERVA KARINA",
+    "nEmpleado": 10453,
+    "direccion": "MOVIMIENTO DE TIERRA",
+    "departamento": "MOVIMIENTO DE TIERRAS ADMINISTRATIVOS",
+    "fechaInicio": "2026-04-16T19:26:11.999Z",
+    "fechaFin": "2026-04-16T19:44:41.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Resumen y síntesis de contenido",
+      "Creatividad y Estrategia",
+      "Organización y planificación",
+      "Análisis Financiero y de Datos",
+      "Automatización de tareas rutinarias",
+      "Traducción",
+      "Generación y edición de contenido visual",
+      "Soporte en toma de decisiones",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Utilicé IA para kpis, fórmulas y organización de información en Excel.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Captura de datos de reportes de obra que son llenados a mano.",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.666666666666667,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "email": "lmartinez@atisa.com",
+    "nombre": "Luis Alfonso Martinez Ames",
+    "nombreOficial": "MARTINEZ AMES, LUIS ALFONSO",
+    "nEmpleado": 22,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-16T19:42:28.999Z",
+    "fechaFin": "2026-04-16T19:44:58.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "ChatGPT"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción",
+      "Traducción"
+    ],
+    "ejemploExito": "Traducir catalogos de conceptos de español a inglés con lenguaje técnico",
+    "herramientasArea": "IA Agents, utulización de Claude",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Para implementar y crear agentes especializados que puedan realizar layouts de naves, catalogos de conceptos, licitación de compra de insumos y/o subcontratos",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "traduccion"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "procurement"
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "email": "vfsanchez@atisa.com",
+    "nombre": "Victor Francisco Sanchez Rodriguez",
+    "nombreOficial": "SANCHEZ RODRIGUEZ, VICTOR FRANCISCO",
+    "nEmpleado": 870,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "SISTEMAS",
+    "fechaInicio": "2026-04-16T19:35:29.000Z",
+    "fechaFin": "2026-04-16T19:53:07.000Z",
+    "frecuencia": 2,
+    "plataformas": [
+      "Claude",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Traducción",
+      "Comunicación y Redacción",
+      "Organización y planificación",
+      "Generación y edición de contenido visual"
+    ],
+    "ejemploExito": "Con claude creamos un dashboard para llevar nuestros SLA´s y mostrar graficas que genera automáticamente.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "dashboard",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "email": "caguilar@atisa.com",
+    "nombre": "Claudia Michelle Aguilar Mancilla",
+    "nombreOficial": "AGUILAR MANCILLA, CLAUDIA MICHELLE",
+    "nEmpleado": 620,
+    "direccion": "ADMINISTRACION",
+    "departamento": "GERENCIA ADMINISTRATIVA",
+    "fechaInicio": "2026-04-16T20:10:02.999Z",
+    "fechaFin": "2026-04-16T20:13:49.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Organización y planificación",
+      "Creatividad y Estrategia",
+      "Comunicación y Redacción",
+      "Generación/lluvia de ideas",
+      "Resumen y síntesis de contenido",
+      "Traducción"
+    ],
+    "ejemploExito": "Redacción estructurada de escritos (con lenguaje técnico-fiscal adecuado).\nEstandarización de respuestas conforme a normativa (CFF, LISR, LFPIORPI).\nGeneración de formatos base reutilizables (ANEXOS, narrativas, controles internos).\nSíntesis de información compleja en lenguaje claro y consistente.",
+    "herramientasArea": "Tesio, Copilot Gestoría, Zanus AI",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías."
+    ],
+    "procesoPrioritario": "Conciliación automática de pagos vs facturación\nCruce de estados de cuenta vs cartera (detección de diferencias en tiempo real)\nGeneración automática de complementos de pago\nA partir de depósitos identificados\nAlertas inteligentes\nClientes con atraso\nRentas variables no reportadas conforme contrato\nInconsistencias contractuales vs facturación\nComunicación automatizada\nCorreos de cobranza personalizados con base en estatus real\nDashboard en tiempo real",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "minutas",
+        "redaccion"
+      ],
+      "q6": [
+        "dev"
+      ],
+      "q8": [
+        "reportes",
+        "admin",
+        "repetitivo",
+        "comunicacion"
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "email": "yvalenzuela@atisa.com",
+    "nombre": "Yerania Valenzuela Ruiz",
+    "nombreOficial": "VALENZUELA RUIZ, YERANIA",
+    "nEmpleado": 623,
+    "direccion": "CADENA DE SUMINISTROS",
+    "departamento": "COMPRAS",
+    "fechaInicio": "2026-04-16T20:06:54.999Z",
+    "fechaFin": "2026-04-16T20:32:12.000Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "ChatGPT",
+      "Google Gemini",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Organización y planificación",
+      "Generación/lluvia de ideas",
+      "Creatividad y Estrategia",
+      "Comunicación y Redacción",
+      "Generación y edición de contenido visual",
+      "Automatización de tareas rutinarias"
+    ],
+    "ejemploExito": "¨He utilizado IA para  para clasificar puntos relevantes y sintetizar/resumir información para presentaciones ejecutivas, lo cual me ayuda a ejecutar varias tareas al mismo tiempo y garantizar que desde un punto de vista exterior se coincida con las ideas que quiero trasmitir sin perder el enfoque y optimizo tiempo¨",
+    "herramientasArea": "Utilizo varias aplicaciones para planificar actividades ¨To do list¨ y ¨To do ist¨para presentaciones ¨Gamma¨ y¨Chatgpt¨ , \nHe investigado de Copilot para planificar y automatizar y aumentar la productividad tanto en mi vida profesional y personal, y estoy por iniciar a utilizarla pero me gustaría recibir más conocimiento de las app de IA para decidir mejor.",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Ejecutar el inicio de Tablas comparativas, automatizar y actualizar constantemente los reportes de seguimiento de ordenes de compra dese el requerimiento hasta el pago.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "minutas",
+        "presentaciones"
+      ],
+      "q6": [
+        "dev"
+      ],
+      "q8": [
+        "reportes",
+        "procurement",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "email": "rpoblete@atisa.com",
+    "nombre": "Ronald Poblete Landero",
+    "nombreOficial": "POBLETE LANDERO, RONALD",
+    "nEmpleado": 10247,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-16T20:43:39.999Z",
+    "fechaFin": "2026-04-16T20:47:00.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Comunicación y Redacción",
+      "Organización y planificación",
+      "Traducción",
+      "Automatización de tareas rutinarias",
+      "Resumen y síntesis de contenido",
+      "Soporte en toma de decisiones",
+      "Generación y edición de contenido visual",
+      "Creatividad y Estrategia",
+      "Codificación",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "Generación de renders para revisiones internas y presentaciones inmediatas.",
+    "herramientasArea": "IA para análisis de planos arquitectonicos, información, etc.",
+    "barreras": [
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Revision de criterios de ingenierías, creacion de imagenes para presentaciónes, sintesis de información, investigación de un tema en concreto, etc...",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 1,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "presentaciones",
+        "visual"
+      ],
+      "q6": [
+        "cad"
+      ],
+      "q8": [
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "email": "ivillarruel@atisa.com",
+    "nombre": "Ixon Ivan Villarruel Castañeda",
+    "nombreOficial": "VILLARRUEL CASTAÑEDA, IXON IVAN",
+    "nEmpleado": 9949,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-16T22:13:05.999Z",
+    "fechaFin": "2026-04-16T22:17:04.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 2,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Creatividad y Estrategia",
+      "Automatización de tareas rutinarias",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "En los resumenes de informes tecnicos, resaltando aquellos puntos reelevantes con los imput que me interesa conocer.",
+    "herramientasArea": "No",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Para la investigacion de normativas y especificacion de materiales, brindando fuentes y publicaciones del tema tecnico a consultar.",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "minutas"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "email": "svillanueva@atisa.com",
+    "nombre": "Sarahy Lizbeth Villanueva Ramirez",
+    "nombreOficial": "VILLANUEVA RAMIREZ, SARAHY LIZBETH",
+    "nEmpleado": 663,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-16T19:23:29.000Z",
+    "fechaFin": "2026-04-16T22:41:38.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Creatividad y Estrategia",
+      "Comunicación y Redacción",
+      "Generación/lluvia de ideas",
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual",
+      "Resumen y síntesis de contenido"
+    ],
+    "ejemploExito": "Lo he utilizado en estas opciones: Para la estructuración del lanzamiento de una nueva política, para guiones de videos, para consultas de FAQ,",
+    "herramientasArea": "Si, Lapzo con Copilot,  Rankmi IA",
+    "barreras": [
+      "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Presentaciones de proyectos, comunicados, comparativa de costos para la toma de una mejor decisión.",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "visual"
+      ],
+      "q6": [
+        "dev"
+      ],
+      "q8": [
+        "diseno",
+        "comunicacion"
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "email": "abeltran@atisa.com",
+    "nombre": "Alondra Karina Beltran Barragan",
+    "nombreOficial": "BELTRAN BARRAGAN, ALONDRA KARINA",
+    "nEmpleado": 674,
+    "direccion": "ASISTENCIA DIRECCION",
+    "departamento": "DIRECCION GENERAL",
+    "fechaInicio": "2026-04-17T00:26:55.999Z",
+    "fechaFin": "2026-04-17T00:32:16.999Z",
+    "frecuencia": 3,
+    "plataformas": [
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "habilidad": 1,
+    "funcionesValor": [
+      "Traducción",
+      "Generación/lluvia de ideas",
+      "Soporte en toma de decisiones",
+      "Automatización de tareas rutinarias"
+    ],
+    "ejemploExito": "La utilice para separar 30 polizas de seguros que estaba en un solo pdf, para tenerlas por individual y las nombro con el modelo y año de cada vehiculo",
+    "herramientasArea": "Desconozco",
+    "barreras": [
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "A filtrar informacion, en los procesos de tramites de documentos del personal para pasarla a excel sin que sea de una por una",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 4,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 4,
+    "horasAhorradasNum": 1,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "otros"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "email": "jherrera@atisa.com",
+    "nombre": "Jose Eduardo Herrera Samaniego",
+    "nombreOficial": "HERRERA SAMANIEGO, JOSE EDUARDO",
+    "nEmpleado": 9606,
+    "direccion": "ASISTENCIA DIRECCION",
+    "departamento": "DIRECCION GENERAL",
+    "fechaInicio": "2026-04-17T00:25:53.999Z",
+    "fechaFin": "2026-04-17T00:34:23.999Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "OpenClaw, ElevenLabs"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Automatización de tareas rutinarias",
+      "Análisis Financiero y de Datos",
+      "Comunicación y Redacción",
+      "Generación y edición de contenido visual",
+      "Traducción",
+      "Resumen y síntesis de contenido",
+      "Soporte en toma de decisiones"
+    ],
+    "ejemploExito": "Lo usé para la detección de errores de EPP en los tutoriales de contrucción y generaba exceles con el timestamp, el error y un screenshot del error.",
+    "herramientasArea": "OutlineAI, sirve para la generación de layouts de naves industriales",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto."
+    ],
+    "procesoPrioritario": "Seguimiento a pendientes",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "email": "pgarcia@atisa.com",
+    "nombre": "Pedro Elias Garcia Romero",
+    "nombreOficial": "GARCIA ROMERO, PEDRO ELIAS",
+    "nEmpleado": 772,
+    "direccion": "CAPITAL HUMANO",
+    "departamento": "RECURSOS HUMANOS",
+    "fechaInicio": "2026-04-17T00:30:31.000Z",
+    "fechaFin": "2026-04-17T00:39:57.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 5,
+    "funcionesValor": [
+      "Creatividad y Estrategia",
+      "Análisis Financiero y de Datos",
+      "Comunicación y Redacción",
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual"
+    ],
+    "ejemploExito": "Utilice IA para generar formulas DAX para crear cálculos para plasmar graficas (KPIs) en Excel y Power BI. Generación de imágenes para prototipos de proyectos específicos de mejora. Creación de cursos (estructura y redacción) de programas de capacitación interna.",
+    "herramientasArea": "Claude",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": "",
+    "horasAhorrables": "Menos de 2 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 3,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 1,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "redaccion",
+        "excel",
+        "visual"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "otros"
+      ]
+    }
+  }
+]

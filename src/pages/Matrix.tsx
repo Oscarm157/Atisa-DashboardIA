@@ -1,0 +1,152 @@
+import { useMemo } from "react";
+import { useFilteredResponses } from "../lib/filters";
+import { Card, CardTitle } from "../components/ui/Card";
+import { ScatterQuadrants } from "../components/charts/ScatterQuadrants";
+import { shortDirection } from "../config/branding";
+import { Lightbulb, Trophy, AlertTriangle, MoonStar } from "lucide-react";
+
+export function Matrix() {
+  const responses = useFilteredResponses();
+
+  const points = useMemo(
+    () =>
+      responses.map((r) => ({
+        x: r.habilidad + (Math.random() - 0.5) * 0.25,
+        y: r.aperturaScore + (Math.random() - 0.5) * 0.15,
+        nombre: r.nombre,
+        direccion: r.direccion,
+      })),
+    [responses]
+  );
+
+  const quadrants = useMemo(() => {
+    const q = { champ: 0, latent: 0, skeptic: 0, rezagado: 0 };
+    responses.forEach((r) => {
+      if (r.habilidad >= 3 && r.aperturaScore >= 3) q.champ++;
+      else if (r.habilidad < 3 && r.aperturaScore >= 3) q.latent++;
+      else if (r.habilidad >= 3 && r.aperturaScore < 3) q.skeptic++;
+      else q.rezagado++;
+    });
+    return q;
+  }, [responses]);
+
+  const total = responses.length || 1;
+  const pct = (n: number) => Math.round((n / total) * 100);
+
+  return (
+    <div>
+      <h1 className="text-2xl font-bold text-atisa-black mb-1">Matriz Apertura × Habilidad</h1>
+      <p className="text-sm text-atisa-grayDark mb-5">
+        Cada punto es un colaborador. El eje X mide su habilidad con IA (Q3) y el Y la apertura promedio a la adopción (promedio Q10).
+        Los cuadrantes identifican dónde enfocar esfuerzos.
+      </p>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Card className="lg:col-span-2">
+          <CardTitle>Dispersión individual</CardTitle>
+          <ScatterQuadrants data={points} />
+        </Card>
+
+        <div className="space-y-3">
+          <QuadrantCard
+            icon={<Trophy className="w-5 h-5" />}
+            color="bg-atisa-red"
+            title="Campeones"
+            count={quadrants.champ}
+            pct={pct(quadrants.champ)}
+            hint="Habilidad ≥ 3 y apertura ≥ 3. Activarlos como embajadores."
+          />
+          <QuadrantCard
+            icon={<Lightbulb className="w-5 h-5" />}
+            color="bg-amber-500"
+            title="Aliados Latentes"
+            count={quadrants.latent}
+            pct={pct(quadrants.latent)}
+            hint="Baja habilidad + alta apertura. Foco prioritario de capacitación."
+          />
+          <QuadrantCard
+            icon={<AlertTriangle className="w-5 h-5" />}
+            color="bg-atisa-grayDark"
+            title="Escépticos Capaces"
+            count={quadrants.skeptic}
+            pct={pct(quadrants.skeptic)}
+            hint="Alta habilidad + baja apertura. Convencer con casos de uso concretos."
+          />
+          <QuadrantCard
+            icon={<MoonStar className="w-5 h-5" />}
+            color="bg-atisa-black"
+            title="Rezagados"
+            count={quadrants.rezagado}
+            pct={pct(quadrants.rezagado)}
+            hint="Baja habilidad + baja apertura. Estrategia de largo plazo."
+          />
+        </div>
+      </div>
+
+      <Card className="mt-4">
+        <CardTitle>Tabla por dirección</CardTitle>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-left text-atisa-grayDark border-b border-atisa-grayMid">
+                <th className="py-2 pr-3">Dirección</th>
+                <th className="py-2 pr-3 text-right">Campeones</th>
+                <th className="py-2 pr-3 text-right">Aliados Latentes</th>
+                <th className="py-2 pr-3 text-right">Escépticos</th>
+                <th className="py-2 pr-3 text-right">Rezagados</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Array.from(new Set(responses.map((r) => r.direccion))).sort().map((d) => {
+                const group = responses.filter((r) => r.direccion === d);
+                const c = group.filter((r) => r.habilidad >= 3 && r.aperturaScore >= 3).length;
+                const l = group.filter((r) => r.habilidad < 3 && r.aperturaScore >= 3).length;
+                const s = group.filter((r) => r.habilidad >= 3 && r.aperturaScore < 3).length;
+                const rz = group.filter((r) => r.habilidad < 3 && r.aperturaScore < 3).length;
+                return (
+                  <tr key={d} className="border-b border-atisa-grayMid/30">
+                    <td className="py-2 pr-3 font-medium">{shortDirection(d)}</td>
+                    <td className="py-2 pr-3 text-right text-atisa-red font-semibold">{c}</td>
+                    <td className="py-2 pr-3 text-right text-amber-600 font-semibold">{l}</td>
+                    <td className="py-2 pr-3 text-right">{s}</td>
+                    <td className="py-2 pr-3 text-right text-atisa-grayDark">{rz}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+function QuadrantCard({
+  icon,
+  color,
+  title,
+  count,
+  pct,
+  hint,
+}: {
+  icon: React.ReactNode;
+  color: string;
+  title: string;
+  count: number;
+  pct: number;
+  hint: string;
+}) {
+  return (
+    <div className="bg-white rounded-xl shadow-card p-4 border border-atisa-grayMid/40">
+      <div className="flex items-center gap-2 mb-1">
+        <div className={`${color} text-white rounded-md w-8 h-8 flex items-center justify-center`}>{icon}</div>
+        <div className="font-semibold text-sm text-atisa-black">{title}</div>
+      </div>
+      <div className="flex items-baseline gap-2">
+        <div className="text-2xl font-bold text-atisa-black">{count}</div>
+        <div className="text-xs text-atisa-grayDark">{pct}%</div>
+      </div>
+      <div className="text-[11px] text-atisa-grayDark mt-1">{hint}</div>
+    </div>
+  );
+}
