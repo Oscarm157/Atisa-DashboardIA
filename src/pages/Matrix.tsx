@@ -11,8 +11,8 @@ export function Matrix() {
   const points = useMemo(
     () =>
       responses.map((r) => ({
-        x: r.habilidad + (Math.random() - 0.5) * 0.25,
-        y: r.aperturaScore + (Math.random() - 0.5) * 0.15,
+        x: r.aperturaScore + (Math.random() - 0.5) * 0.15,
+        y: r.habilidad + (Math.random() - 0.5) * 0.25,
         nombre: r.nombre,
         direccion: r.direccion,
       })),
@@ -37,7 +37,7 @@ export function Matrix() {
     <div>
       <h1 className="text-2xl font-bold text-atisa-black mb-1">Matriz Apertura × Habilidad</h1>
       <p className="text-sm text-atisa-grayDark mb-5">
-        Cada punto es un colaborador. El eje X mide su habilidad con IA (Q3) y el Y la apertura promedio a la adopción (promedio Q10).
+        Cada punto es un colaborador. El eje X mide su apertura promedio a la adopción (promedio Q10) y el Y su habilidad con IA (Q3).
         Los cuadrantes identifican dónde enfocar esfuerzos.
       </p>
 

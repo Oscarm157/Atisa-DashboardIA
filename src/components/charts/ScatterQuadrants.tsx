@@ -44,25 +44,29 @@ export function ScatterQuadrants({ data }: { data: Point[] }) {
         <XAxis
           type="number"
           dataKey="x"
-          name="Habilidad"
-          domain={[0.5, 5.5]}
-          ticks={[1, 2, 3, 4, 5]}
-          tick={{ fontSize: 11 }}
-          label={{ value: "Habilidad →", position: "insideBottom", offset: -10, fontSize: 12, fill: BRAND.grayDark }}
-        />
-        <YAxis
-          type="number"
-          dataKey="y"
           name="Apertura"
           domain={[0.5, 5.5]}
           ticks={[1, 2, 3, 4, 5]}
           tick={{ fontSize: 11 }}
-          label={{ value: "Apertura →", angle: -90, position: "insideLeft", fontSize: 12, fill: BRAND.grayDark }}
+          label={{ value: "Apertura →", position: "insideBottom", offset: -10, fontSize: 12, fill: BRAND.grayDark }}
+        />
+        <YAxis
+          type="number"
+          dataKey="y"
+          name="Habilidad"
+          domain={[0.5, 5.5]}
+          ticks={[1, 2, 3, 4, 5]}
+          tick={{ fontSize: 11 }}
+          label={{ value: "Habilidad →", angle: -90, position: "insideLeft", fontSize: 12, fill: BRAND.grayDark }}
         />
         <ZAxis range={[60, 60]} />
+        {/* Campeones: alta apertura + alta habilidad (top-right) */}
         <ReferenceArea x1={3} x2={5.5} y1={3} y2={5.5} fill={BRAND.primary} fillOpacity={0.05} />
-        <ReferenceArea x1={0.5} x2={3} y1={3} y2={5.5} fill="#F59E0B" fillOpacity={0.05} />
-        <ReferenceArea x1={3} x2={5.5} y1={0.5} y2={3} fill="#6B7280" fillOpacity={0.05} />
+        {/* Aliados Latentes: alta apertura + baja habilidad (bottom-right) */}
+        <ReferenceArea x1={3} x2={5.5} y1={0.5} y2={3} fill="#F59E0B" fillOpacity={0.05} />
+        {/* Escépticos Capaces: baja apertura + alta habilidad (top-left) */}
+        <ReferenceArea x1={0.5} x2={3} y1={3} y2={5.5} fill="#6B7280" fillOpacity={0.05} />
+        {/* Rezagados: baja-baja (bottom-left) */}
         <ReferenceArea x1={0.5} x2={3} y1={0.5} y2={3} fill="#1A1A1A" fillOpacity={0.03} />
         <ReferenceLine x={3} stroke={BRAND.grayDark} strokeDasharray="3 3" />
         <ReferenceLine y={3} stroke={BRAND.grayDark} strokeDasharray="3 3" />
@@ -77,7 +81,7 @@ export function ScatterQuadrants({ data }: { data: Point[] }) {
               <div className="bg-white p-2 rounded-md shadow-card text-xs">
                 <div className="font-semibold">{p.nombre}</div>
                 <div className="text-atisa-grayDark">{p.direccion}</div>
-                <div>Habilidad: {p.x} · Apertura: {p.y.toFixed(1)}</div>
+                <div>Apertura: {p.x.toFixed(1)} · Habilidad: {p.y.toFixed(0)}</div>
               </div>
             );
           }}
