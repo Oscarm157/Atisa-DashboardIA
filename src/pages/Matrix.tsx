@@ -3,18 +3,11 @@ import { useFilteredResponses } from "../lib/filters";
 import { Card, CardTitle } from "../components/ui/Card";
 import { ScatterQuadrants } from "../components/charts/ScatterQuadrants";
 import { shortDirection } from "../config/branding";
-import { Lightbulb, Trophy, AlertTriangle, MoonStar, Users, Building2, ZoomIn, ZoomOut, Maximize2 } from "lucide-react";
-
-const ZOOM_PRESETS: Array<{ label: string; x: [number, number]; y: [number, number] }> = [
-  { label: "Completo", x: [0.5, 5.5], y: [0.5, 5.5] },
-  { label: "2 - 5", x: [1.5, 5.5], y: [1.5, 5.5] },
-  { label: "3 - 5 (Campeones)", x: [2.5, 5.3], y: [2.5, 5.3] },
-];
+import { Lightbulb, Trophy, AlertTriangle, MoonStar, Users, Building2 } from "lucide-react";
 
 export function Matrix() {
   const responses = useFilteredResponses();
-  const [mode, setMode] = useState<"individual" | "direccion">("individual");
-  const [zoom, setZoom] = useState(0);
+  const [mode, setMode] = useState<"individual" | "direccion">("direccion");
 
   const points = useMemo(
     () =>
@@ -79,63 +72,26 @@ export function Matrix() {
                   : "Cada burbuja es una dirección. El tamaño refleja cuántos colaboradores respondieron."}
               </p>
             </div>
-            <div className="flex items-center gap-2 shrink-0">
-              <div className="flex bg-atisa-gray rounded-md p-0.5 text-xs">
-                <button
-                  onClick={() => setMode("individual")}
-                  className={`flex items-center gap-1 px-2 py-1 rounded transition-colors ${
-                    mode === "individual" ? "bg-white text-atisa-red shadow-sm" : "text-atisa-grayDark"
-                  }`}
-                >
-                  <Users className="w-3 h-3" /> Por colaborador
-                </button>
-                <button
-                  onClick={() => setMode("direccion")}
-                  className={`flex items-center gap-1 px-2 py-1 rounded transition-colors ${
-                    mode === "direccion" ? "bg-white text-atisa-red shadow-sm" : "text-atisa-grayDark"
-                  }`}
-                >
-                  <Building2 className="w-3 h-3" /> Por dirección
-                </button>
-              </div>
-              <div className="flex items-center gap-0.5 bg-atisa-gray rounded-md p-0.5">
-                <button
-                  onClick={() => setZoom((z) => Math.max(0, z - 1))}
-                  disabled={zoom === 0}
-                  title="Alejar"
-                  className="p-1 rounded text-atisa-grayDark hover:bg-white hover:text-atisa-red transition-colors disabled:opacity-40 disabled:hover:bg-transparent"
-                >
-                  <ZoomOut className="w-3.5 h-3.5" />
-                </button>
-                <span className="text-[10px] text-atisa-grayDark font-medium px-1 min-w-[60px] text-center">
-                  {ZOOM_PRESETS[zoom].label}
-                </span>
-                <button
-                  onClick={() => setZoom((z) => Math.min(ZOOM_PRESETS.length - 1, z + 1))}
-                  disabled={zoom === ZOOM_PRESETS.length - 1}
-                  title="Acercar"
-                  className="p-1 rounded text-atisa-grayDark hover:bg-white hover:text-atisa-red transition-colors disabled:opacity-40 disabled:hover:bg-transparent"
-                >
-                  <ZoomIn className="w-3.5 h-3.5" />
-                </button>
-                {zoom !== 0 && (
-                  <button
-                    onClick={() => setZoom(0)}
-                    title="Restablecer zoom"
-                    className="p-1 rounded text-atisa-grayDark hover:bg-white hover:text-atisa-red transition-colors"
-                  >
-                    <Maximize2 className="w-3.5 h-3.5" />
-                  </button>
-                )}
-              </div>
+            <div className="flex bg-atisa-gray rounded-md p-0.5 text-xs shrink-0">
+              <button
+                onClick={() => setMode("individual")}
+                className={`flex items-center gap-1 px-2 py-1 rounded transition-colors ${
+                  mode === "individual" ? "bg-white text-atisa-red shadow-sm" : "text-atisa-grayDark"
+                }`}
+              >
+                <Users className="w-3 h-3" /> Por colaborador
+              </button>
+              <button
+                onClick={() => setMode("direccion")}
+                className={`flex items-center gap-1 px-2 py-1 rounded transition-colors ${
+                  mode === "direccion" ? "bg-white text-atisa-red shadow-sm" : "text-atisa-grayDark"
+                }`}
+              >
+                <Building2 className="w-3 h-3" /> Por dirección
+              </button>
             </div>
           </div>
-          <ScatterQuadrants
-            data={mode === "individual" ? points : dirPoints}
-            mode={mode}
-            xDomain={ZOOM_PRESETS[zoom].x}
-            yDomain={ZOOM_PRESETS[zoom].y}
-          />
+          <ScatterQuadrants data={mode === "individual" ? points : dirPoints} mode={mode} />
         </Card>
 
         <div className="space-y-3">

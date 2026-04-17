@@ -32,7 +32,13 @@ export function RadarCompare({
       <RadarChart data={data}>
         <PolarGrid stroke="#E5E5E5" />
         <PolarAngleAxis dataKey="axis" tick={{ fontSize: 11 }} />
-        <PolarRadiusAxis angle={30} domain={[0, "auto"]} tick={{ fontSize: 10 }} />
+        <PolarRadiusAxis
+          angle={30}
+          domain={[0, 5]}
+          ticks={[1, 2, 3, 4, 5]}
+          tickCount={6}
+          tick={{ fontSize: 10 }}
+        />
         <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} />
         <Legend wrapperStyle={{ fontSize: 11 }} formatter={(v) => shortDirection(v)} />
         {series.map((s, i) => (
