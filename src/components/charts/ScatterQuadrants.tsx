@@ -26,9 +26,13 @@ type Point = {
 export function ScatterQuadrants({
   data,
   mode = "individual",
+  xDomain = [0.5, 5.5],
+  yDomain = [0.5, 5.5],
 }: {
   data: Point[];
   mode?: "individual" | "direccion";
+  xDomain?: [number, number];
+  yDomain?: [number, number];
 }) {
   const direcciones = useMemo(() => {
     const set = new Set<string>();
@@ -55,18 +59,20 @@ export function ScatterQuadrants({
           type="number"
           dataKey="x"
           name="Apertura"
-          domain={[0.5, 5.5]}
+          domain={xDomain}
           ticks={[1, 2, 3, 4, 5]}
           tick={{ fontSize: 11 }}
+          allowDataOverflow
           label={{ value: "Apertura →", position: "insideBottom", offset: -10, fontSize: 12, fill: BRAND.grayDark }}
         />
         <YAxis
           type="number"
           dataKey="y"
           name="Habilidad"
-          domain={[0.5, 5.5]}
+          domain={yDomain}
           ticks={[1, 2, 3, 4, 5]}
           tick={{ fontSize: 11 }}
+          allowDataOverflow
           label={{ value: "Habilidad →", angle: -90, position: "insideLeft", fontSize: 12, fill: BRAND.grayDark }}
         />
         <ZAxis type="number" dataKey="n" range={zRange} />

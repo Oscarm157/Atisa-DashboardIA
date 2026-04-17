@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T23:47:00.537Z",
+  "generatedAt": "2026-04-17T23:49:51.308Z",
   "totalValid": 61,
   "excludedNotInRoster": [
     "vigonzalez@atisa.com",
@@ -14,7 +14,15 @@
     "lcarretero@atisa.com",
     "abautista@atisa.com",
     "mname@atisa.com",
-    "mgarcia@atisa.com"
+    "mgarcia@atisa.com",
+    "mcazarez@atisa.com",
+    "kpacheco@atisa.com",
+    "surista@atisa.com",
+    "dgalvez@atisa.com",
+    "iwalker@atisa.com",
+    "khernandez@atisa.com",
+    "vferro@atisa.com",
+    "fdamas@atisa.com"
   ],
   "excludedTest": [
     "oarredondo@atisa.com"
