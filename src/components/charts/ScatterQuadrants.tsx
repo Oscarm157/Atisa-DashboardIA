@@ -21,6 +21,7 @@ type Point = {
   nombre: string;
   direccion: string;
   n?: number;
+  idx?: number;
   tooltip?: string;
 };
 
@@ -264,10 +265,9 @@ export function ScatterQuadrants({
               >
                 {mode === "direccion" && (
                   <LabelList
-                    dataKey="nombre"
-                    position="top"
-                    offset={8}
-                    style={{ fontSize: 10, fill: "#1A1A1A", fontWeight: 600 }}
+                    dataKey="idx"
+                    position="center"
+                    style={{ fontSize: 11, fill: "#FFFFFF", fontWeight: 700, pointerEvents: "none" }}
                   />
                 )}
               </Scatter>

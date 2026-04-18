@@ -4,6 +4,7 @@ import { Card, CardTitle } from "../components/ui/Card";
 import { ScatterQuadrants } from "../components/charts/ScatterQuadrants";
 import { shortDirection } from "../config/branding";
 import { Lightbulb, Trophy, AlertTriangle, MoonStar, Users, Building2 } from "lucide-react";
+import { DIRECTION_COLORS } from "../config/branding";
 
 export function Matrix() {
   const responses = useFilteredResponses();
@@ -28,13 +29,16 @@ export function Matrix() {
       g.apertura.push(r.aperturaScore);
       g.habilidad.push(r.habilidad);
     });
-    return Array.from(map.entries()).map(([direccion, v]) => ({
-      nombre: shortDirection(direccion),
-      direccion,
-      x: v.apertura.reduce((a, b) => a + b, 0) / v.apertura.length,
-      y: v.habilidad.reduce((a, b) => a + b, 0) / v.habilidad.length,
-      n: v.apertura.length,
-    }));
+    return Array.from(map.entries())
+      .map(([direccion, v]) => ({
+        nombre: shortDirection(direccion),
+        direccion,
+        x: v.apertura.reduce((a, b) => a + b, 0) / v.apertura.length,
+        y: v.habilidad.reduce((a, b) => a + b, 0) / v.habilidad.length,
+        n: v.apertura.length,
+      }))
+      .sort((a, b) => b.n - a.n)
+      .map((p, i) => ({ ...p, idx: i + 1 }));
   }, [responses]);
 
   const quadrants = useMemo(() => {
@@ -92,6 +96,26 @@ export function Matrix() {
             </div>
           </div>
           <ScatterQuadrants data={mode === "individual" ? points : dirPoints} mode={mode} />
+          {mode === "direccion" && (
+            <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-1.5 text-xs border-t border-atisa-grayMid/30 pt-3">
+              {dirPoints.map((p) => (
+                <div key={p.direccion} className="flex items-center gap-2">
+                  <span
+                    className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold text-white shrink-0"
+                    style={{ backgroundColor: DIRECTION_COLORS[(p.idx! - 1) % DIRECTION_COLORS.length] }}
+                  >
+                    {p.idx}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium text-atisa-black truncate">{p.nombre}</div>
+                    <div className="text-[10px] text-atisa-grayDark">
+                      Ap {p.x.toFixed(1)} · Ha {p.y.toFixed(1)} · {p.n} colab.
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </Card>
 
         <div className="space-y-3">
