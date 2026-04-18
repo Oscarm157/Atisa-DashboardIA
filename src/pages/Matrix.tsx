@@ -96,18 +96,27 @@ export function Matrix() {
             </div>
           </div>
           <ScatterQuadrants data={mode === "individual" ? points : dirPoints} mode={mode} />
-          {mode === "direccion" && (
-            <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-1.5 text-xs border-t border-atisa-grayMid/30 pt-3">
+        </Card>
+
+        {mode === "direccion" ? (
+          <Card>
+            <CardTitle subtitle="Promedios por área · ordenadas por número de colaboradores.">
+              Direcciones
+            </CardTitle>
+            <div className="space-y-2 text-xs max-h-[560px] overflow-y-auto pr-1">
               {dirPoints.map((p) => (
-                <div key={p.direccion} className="flex items-center gap-2">
+                <div
+                  key={p.direccion}
+                  className="flex items-center gap-2 p-1.5 rounded-md hover:bg-atisa-gray/60 transition-colors"
+                >
                   <span
-                    className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold text-white shrink-0"
+                    className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold text-white shrink-0"
                     style={{ backgroundColor: DIRECTION_COLORS[(p.idx! - 1) % DIRECTION_COLORS.length] }}
                   >
                     {p.idx}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <div className="font-medium text-atisa-black truncate">{p.nombre}</div>
+                    <div className="font-semibold text-atisa-black truncate leading-tight">{p.nombre}</div>
                     <div className="text-[10px] text-atisa-grayDark">
                       Ap {p.x.toFixed(1)} · Ha {p.y.toFixed(1)} · {p.n} colab.
                     </div>
@@ -115,17 +124,54 @@ export function Matrix() {
                 </div>
               ))}
             </div>
-          )}
-        </Card>
+          </Card>
+        ) : (
+          <div className="space-y-3">
+            <QuadrantCard
+              icon={<Trophy className="w-5 h-5" />}
+              color="bg-atisa-red"
+              title="Campeones"
+              count={quadrants.champ}
+              pct={pct(quadrants.champ)}
+              hint="Habilidad ≥ 3 y apertura ≥ 3. Activarlos como embajadores."
+            />
+            <QuadrantCard
+              icon={<Lightbulb className="w-5 h-5" />}
+              color="bg-amber-500"
+              title="Aliados Latentes"
+              count={quadrants.latent}
+              pct={pct(quadrants.latent)}
+              hint="Baja habilidad + alta apertura. Foco prioritario de capacitación."
+            />
+            <QuadrantCard
+              icon={<AlertTriangle className="w-5 h-5" />}
+              color="bg-atisa-grayDark"
+              title="Escépticos Capaces"
+              count={quadrants.skeptic}
+              pct={pct(quadrants.skeptic)}
+              hint="Alta habilidad + baja apertura. Convencer con casos de uso concretos."
+            />
+            <QuadrantCard
+              icon={<MoonStar className="w-5 h-5" />}
+              color="bg-atisa-black"
+              title="Rezagados"
+              count={quadrants.rezagado}
+              pct={pct(quadrants.rezagado)}
+              hint="Baja habilidad + baja apertura. Estrategia de largo plazo."
+            />
+          </div>
+        )}
+      </div>
 
-        <div className="space-y-3">
+      {mode === "direccion" && (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
           <QuadrantCard
             icon={<Trophy className="w-5 h-5" />}
             color="bg-atisa-red"
             title="Campeones"
             count={quadrants.champ}
             pct={pct(quadrants.champ)}
-            hint="Habilidad ≥ 3 y apertura ≥ 3. Activarlos como embajadores."
+            hint="Hab ≥ 3 y ap ≥ 3. Activar como embajadores."
           />
           <QuadrantCard
             icon={<Lightbulb className="w-5 h-5" />}
@@ -133,7 +179,7 @@ export function Matrix() {
             title="Aliados Latentes"
             count={quadrants.latent}
             pct={pct(quadrants.latent)}
-            hint="Baja habilidad + alta apertura. Foco prioritario de capacitación."
+            hint="Baja habilidad + alta apertura. Capacitación."
           />
           <QuadrantCard
             icon={<AlertTriangle className="w-5 h-5" />}
@@ -141,7 +187,7 @@ export function Matrix() {
             title="Escépticos Capaces"
             count={quadrants.skeptic}
             pct={pct(quadrants.skeptic)}
-            hint="Alta habilidad + baja apertura. Convencer con casos de uso concretos."
+            hint="Alta hab + baja ap. Casos de uso concretos."
           />
           <QuadrantCard
             icon={<MoonStar className="w-5 h-5" />}
@@ -149,10 +195,10 @@ export function Matrix() {
             title="Rezagados"
             count={quadrants.rezagado}
             pct={pct(quadrants.rezagado)}
-            hint="Baja habilidad + baja apertura. Estrategia de largo plazo."
+            hint="Baja-baja. Estrategia de largo plazo."
           />
         </div>
-      </div>
+      )}
 
       <Card className="mt-4">
         <CardTitle>Tabla por dirección</CardTitle>
