@@ -8,6 +8,7 @@ import { HOURS_BUCKETS } from "../data/questions";
 import { shortDirection } from "../config/branding";
 import { Clock, TrendingUp, BarChart3, Users2 } from "lucide-react";
 import { KpiCard } from "../components/KpiCard";
+import { EmptyState } from "../components/EmptyState";
 
 export function Hours() {
   const responses = useFilteredResponses();
@@ -32,6 +33,10 @@ export function Hours() {
         Estimación de horas que el personal cree que podría ahorrarse semanalmente si contara con las herramientas de IA adecuadas.
       </p>
 
+      {responses.length === 0 ? (
+        <Card><EmptyState /></Card>
+      ) : (
+      <>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         <KpiCard label="Horas / semana" value={Math.round(total)} unit="h" accent="red" icon={<Clock className="w-4 h-4" />} />
         <KpiCard
@@ -86,6 +91,8 @@ export function Hours() {
           </p>
         </div>
       </Card>
+      </>
+      )}
     </div>
   );
 }

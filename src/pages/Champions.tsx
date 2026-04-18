@@ -3,6 +3,7 @@ import { useFilteredResponses } from "../lib/filters";
 import { Card, CardTitle } from "../components/ui/Card";
 import { shortDirection } from "../config/branding";
 import { Sparkles, Activity, X } from "lucide-react";
+import { EmptyState } from "../components/EmptyState";
 import type { SurveyResponse } from "../lib/types";
 import { initials } from "../lib/utils";
 
@@ -39,9 +40,10 @@ export function Champions() {
 
       {byDir.length === 0 && (
         <Card>
-          <div className="text-center text-sm text-atisa-grayDark py-8">
-            No hay campeones con los filtros actuales.
-          </div>
+          <EmptyState
+            title="Sin campeones"
+            message="No hay colaboradores con habilidad ≥ 4 y frecuencia ≥ 4 bajo los filtros actuales."
+          />
         </Card>
       )}
 

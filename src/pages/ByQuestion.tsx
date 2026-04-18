@@ -20,6 +20,7 @@ import {
 } from "../data/categorization";
 import { shortDirection } from "../config/branding";
 import { Search } from "lucide-react";
+import { EmptyState } from "../components/EmptyState";
 
 export function ByQuestion() {
   const responses = useFilteredResponses();
@@ -31,6 +32,9 @@ export function ByQuestion() {
         Vista detallada de cada una de las 10 preguntas de la encuesta sobre los {responses.length} colaboradores filtrados.
       </p>
 
+      {responses.length === 0 ? (
+        <Card><EmptyState /></Card>
+      ) : (
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {QUESTIONS.map((q) => (
           <Card key={q.id}>
@@ -78,6 +82,7 @@ export function ByQuestion() {
           </Card>
         ))}
       </div>
+      )}
     </div>
   );
 }

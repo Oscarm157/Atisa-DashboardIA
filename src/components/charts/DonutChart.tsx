@@ -8,6 +8,7 @@ export function DonutChart({
   outerRadius = 90,
   palette = DIRECTION_COLORS,
   legendFormatter,
+  onSliceClick,
 }: {
   data: { name: string; value: number }[];
   height?: number;
@@ -15,6 +16,7 @@ export function DonutChart({
   outerRadius?: number;
   palette?: string[];
   legendFormatter?: (name: string) => string;
+  onSliceClick?: (name: string) => void;
 }) {
   return (
     <ResponsiveContainer width="100%" height={height}>
@@ -26,6 +28,8 @@ export function DonutChart({
           innerRadius={innerRadius}
           outerRadius={outerRadius}
           paddingAngle={2}
+          onClick={(d) => onSliceClick && d && onSliceClick((d as any).name)}
+          cursor={onSliceClick ? "pointer" : undefined}
         >
           {data.map((_, i) => (
             <Cell key={i} fill={palette[i % palette.length]} />

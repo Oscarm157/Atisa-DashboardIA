@@ -32,9 +32,11 @@ const MAX_RANGE = 5;   // tope al alejar
 export function ScatterQuadrants({
   data,
   mode = "individual",
+  onItemClick,
 }: {
   data: Point[];
   mode?: "individual" | "direccion";
+  onItemClick?: (direccion: string) => void;
 }) {
   const [xDomain, setXDomain] = useState<[number, number]>(FULL);
   const [yDomain, setYDomain] = useState<[number, number]>(FULL);
@@ -262,6 +264,8 @@ export function ScatterQuadrants({
                 stroke={mode === "direccion" ? "#1A1A1A" : undefined}
                 strokeWidth={mode === "direccion" ? 1 : 0}
                 isAnimationActive={false}
+                onClick={(d: any) => onItemClick && d && onItemClick(d.direccion)}
+                cursor={onItemClick ? "pointer" : undefined}
               >
                 {mode === "direccion" && (
                   <LabelList

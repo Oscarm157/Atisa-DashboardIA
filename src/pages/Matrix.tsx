@@ -5,10 +5,15 @@ import { ScatterQuadrants } from "../components/charts/ScatterQuadrants";
 import { shortDirection } from "../config/branding";
 import { Lightbulb, Trophy, AlertTriangle, MoonStar, Users, Building2 } from "lucide-react";
 import { DIRECTION_COLORS } from "../config/branding";
+import { useFilters } from "../lib/filters";
+import { useNavigate } from "react-router-dom";
+import { EmptyState } from "../components/EmptyState";
 
 export function Matrix() {
   const responses = useFilteredResponses();
   const [mode, setMode] = useState<"individual" | "direccion">("direccion");
+  const setDirecciones = useFilters((s) => s.setDirecciones);
+  const navigate = useNavigate();
 
   const points = useMemo(
     () =>
@@ -63,6 +68,10 @@ export function Matrix() {
         Los cuadrantes identifican dónde enfocar esfuerzos.
       </p>
 
+      {responses.length === 0 ? (
+        <Card><EmptyState /></Card>
+      ) : (
+      <>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Card className="lg:col-span-2">
           <div className="flex items-start justify-between gap-3 mb-3">
@@ -95,7 +104,18 @@ export function Matrix() {
               </button>
             </div>
           </div>
-          <ScatterQuadrants data={mode === "individual" ? points : dirPoints} mode={mode} />
+          <ScatterQuadrants
+            data={mode === "individual" ? points : dirPoints}
+            mode={mode}
+            onItemClick={
+              mode === "direccion"
+                ? (direccion) => {
+                    setDirecciones([direccion]);
+                    navigate("/individuales");
+                  }
+                : undefined
+            }
+          />
         </Card>
 
         {mode === "direccion" ? (
@@ -234,6 +254,8 @@ export function Matrix() {
           </table>
         </div>
       </Card>
+      </>
+      )}
     </div>
   );
 }

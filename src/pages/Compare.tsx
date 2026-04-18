@@ -5,6 +5,7 @@ import { Card, CardTitle } from "../components/ui/Card";
 import { RadarCompare } from "../components/charts/RadarCompare";
 import { Heatmap } from "../components/charts/Heatmap";
 import { shortDirection } from "../config/branding";
+import { EmptyState } from "../components/EmptyState";
 
 const AXES = [
   { key: "frecuencia", label: "Frecuencia", max: 5 },
@@ -53,6 +54,10 @@ export function Compare() {
         Compara métricas entre direcciones. Selecciona hasta 6 para el radar; el mapa de calor muestra todas.
       </p>
 
+      {responses.length === 0 ? (
+        <Card><EmptyState /></Card>
+      ) : (
+      <>
       <Card className="mb-4">
         <CardTitle>Seleccionar direcciones para radar</CardTitle>
         <div className="flex flex-wrap gap-1">
@@ -131,6 +136,8 @@ export function Compare() {
           </div>
         </Card>
       </div>
+      </>
+      )}
     </div>
   );
 }

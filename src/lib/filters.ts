@@ -12,7 +12,11 @@ export type FilterState = {
   frecuenciaMax: number;
   aperturaMin: number;
   plataformas: string[]; // empty = all
+  barreras: string[]; // empty = all
   search: string;
+
+  // presentation mode (hides nav + filters, bigger typography)
+  presentationMode: boolean;
 
   // data overlay (after import)
   imported: SurveyResponse[] | null;
@@ -31,8 +35,10 @@ export type FilterState = {
   setFrecuenciaMax: (n: number) => void;
   setAperturaMin: (n: number) => void;
   setPlataformas: (p: string[]) => void;
+  setBarreras: (b: string[]) => void;
   setSearch: (s: string) => void;
   reset: () => void;
+  setPresentationMode: (v: boolean) => void;
   setImported: (data: SurveyResponse[] | null, meta: FilterState["importedMeta"]) => void;
 };
 
@@ -44,6 +50,7 @@ const DEFAULTS = {
   frecuenciaMax: 5,
   aperturaMin: 1,
   plataformas: [] as string[],
+  barreras: [] as string[],
   search: "",
 };
 
@@ -51,6 +58,7 @@ export const useFilters = create<FilterState>()(
   persist(
     (set) => ({
       ...DEFAULTS,
+      presentationMode: false,
       imported: null,
       importedMeta: null,
       setDirecciones: (direcciones) => set({ direcciones }),
@@ -60,8 +68,10 @@ export const useFilters = create<FilterState>()(
       setFrecuenciaMax: (frecuenciaMax) => set({ frecuenciaMax }),
       setAperturaMin: (aperturaMin) => set({ aperturaMin }),
       setPlataformas: (plataformas) => set({ plataformas }),
+      setBarreras: (barreras) => set({ barreras }),
       setSearch: (search) => set({ search }),
       reset: () => set({ ...DEFAULTS }),
+      setPresentationMode: (presentationMode) => set({ presentationMode }),
       setImported: (imported, importedMeta) => set({ imported, importedMeta }),
     }),
     {
@@ -106,6 +116,9 @@ export function useFilteredResponses(): SurveyResponse[] {
     if (r.aperturaScore < f.aperturaMin) return false;
     if (f.plataformas.length > 0) {
       if (!f.plataformas.some((p) => r.plataformas.includes(p))) return false;
+    }
+    if (f.barreras.length > 0) {
+      if (!f.barreras.some((b) => r.barreras.some((rb) => rb.startsWith(b) || rb === b))) return false;
     }
     if (f.search) {
       const s = f.search.toLowerCase();

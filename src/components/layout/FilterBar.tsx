@@ -16,7 +16,8 @@ export function FilterBar() {
     (f.habilidadMin > 1 || f.habilidadMax < 5 ? 1 : 0) +
     (f.frecuenciaMin > 1 || f.frecuenciaMax < 5 ? 1 : 0) +
     (f.aperturaMin > 1 ? 1 : 0) +
-    (f.plataformas.length > 0 ? 1 : 0);
+    (f.plataformas.length > 0 ? 1 : 0) +
+    (f.barreras.length > 0 ? 1 : 0);
 
   return (
     <div className="bg-white border-b border-atisa-grayMid/40 sticky top-[56px] z-20">
@@ -44,6 +45,11 @@ export function FilterBar() {
             {f.plataformas.map((p) => (
               <Chip key={p} onClick={() => f.setPlataformas(f.plataformas.filter((x) => x !== p))}>
                 {p} ×
+              </Chip>
+            ))}
+            {f.barreras.map((b) => (
+              <Chip key={b} onClick={() => f.setBarreras(f.barreras.filter((x) => x !== b))}>
+                {b} ×
               </Chip>
             ))}
             {(f.habilidadMin > 1 || f.habilidadMax < 5) && (

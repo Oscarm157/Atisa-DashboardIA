@@ -10,12 +10,14 @@ export function HorizontalBar({
   palette,
   labelWidth = 180,
   showValueLabels = true,
+  onItemClick,
 }: {
   data: Point[];
   height?: number;
   palette?: string[];
   labelWidth?: number;
   showValueLabels?: boolean;
+  onItemClick?: (label: string) => void;
 }) {
   const h = height || Math.max(200, 32 * data.length + 40);
   return (
@@ -44,7 +46,13 @@ export function HorizontalBar({
             "Respuestas",
           ]}
         />
-        <Bar dataKey="count" radius={[0, 6, 6, 0]} barSize={20}>
+        <Bar
+          dataKey="count"
+          radius={[0, 6, 6, 0]}
+          barSize={20}
+          onClick={(d: any) => onItemClick && d && onItemClick(d.label)}
+          cursor={onItemClick ? "pointer" : undefined}
+        >
           {data.map((_, i) => (
             <Cell key={i} fill={palette ? palette[i % palette.length] : BRAND.primary} />
           ))}

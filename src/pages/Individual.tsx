@@ -5,6 +5,7 @@ import { shortDirection } from "../config/branding";
 import type { SurveyResponse } from "../lib/types";
 import { initials } from "../lib/utils";
 import { Search, X, Trophy } from "lucide-react";
+import { EmptyState } from "../components/EmptyState";
 
 type SortKey = "nombre" | "direccion" | "frecuencia" | "habilidad" | "aperturaScore";
 
@@ -96,7 +97,9 @@ export function Individual() {
               ))}
               {sorted.length === 0 && (
                 <tr>
-                  <td colSpan={6} className="text-center text-atisa-grayDark py-6">Sin resultados</td>
+                  <td colSpan={6}>
+                    <EmptyState showResetFilters={true} />
+                  </td>
                 </tr>
               )}
             </tbody>
