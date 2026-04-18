@@ -1,9 +1,7 @@
 {
-  "generatedAt": "2026-04-17T23:59:20.932Z",
+  "generatedAt": "2026-04-18T00:08:00.843Z",
   "totalValid": 82,
-  "excludedNotInRoster": [
-    "osanchez@atisa.com"
-  ],
+  "excludedNotInRoster": [],
   "excludedTest": [
     "oarredondo@atisa.com"
   ],
@@ -18,10 +16,9 @@
     "DIRECCION DE COSTOS Y PROYECTOS": 10,
     "MOVIMIENTO DE TIERRA": 4,
     "MAQUINARIA": 2,
-    "CAPITAL HUMANO": 10,
+    "CAPITAL HUMANO": 11,
     "CONSTRUCTORA": 14,
     "CADENA DE SUMINISTROS": 5,
-    "SIN ASIGNAR": 1,
     "ASISTENCIA DIRECCION": 3,
     "FINANZAS": 12,
     "ADMINISTRACION": 2
