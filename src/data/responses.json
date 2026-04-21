@@ -1,5 +1,66 @@
 [
   {
+    "id": 1,
+    "email": "oarredondo@atisa.com",
+    "nombre": "Oscar Arredondo Mayoral",
+    "nombreOficial": "Oscar Arredondo Mayoral",
+    "nEmpleado": 0,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "TECNOLOGIA IT",
+    "fechaInicio": "2026-04-14T17:48:39.000Z",
+    "fechaFin": "2026-04-14T17:49:02.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Grok",
+      "Kimi, Qwen, GLM 5.1, Minimax"
+    ],
+    "habilidad": 5,
+    "funcionesValor": [
+      "Resumen y síntesis de contenido",
+      "Análisis Financiero y de Datos",
+      "Creatividad y Estrategia",
+      "Codificación",
+      "Soporte en toma de decisiones",
+      "Generación/lluvia de ideas",
+      "Automatización de tareas rutinarias",
+      "Generación y edición de contenido visual",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Principalmente para creación de dashboards para la revisión y procesamiento de registros de CRM, hemos podido concentrar en un dashboard data de hasta 1,000 registros, procesados, limpiados y transformados en data clara y precisa.\n\nTambién se utilizó para una mejor gestión en Alfresco, seguimiento de sprints, horas, tickets, etc.\n\nAutomatización de procesos con Openclaw\n\nDe manera propia he desarrollado algunas plataformas tipo Saas con IA, y he probado utilizar agentes autonomos para desarrollo de producto.",
+    "herramientasArea": "Zoho apenas ha comenzado a desplegar mas funciones con IA, agentes y MCP para automatización de tareas.\nY bots con IA para whatsapp y seguimiento de clientes.",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "Automatización de tareas repetitivas del CRM, automatización del primer contacto al lead, automatización de seguimientos, automatización de llenado de datos de brokers.\nDonde creo el futuro es que el broker ya no es quien da un seguimiento y analisis inicial al lead, es la IA quien lo hace y el broker pasa a una etapa posterior de cierre y documentación",
+    "horasAhorrables": "Más de 10 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 12,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel",
+        "codigo"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "repetitivo"
+      ]
+    }
+  },
+  {
     "id": 2,
     "email": "jlerma@atisa.com",
     "nombre": "Jose Ivan Lerma Garcia",
@@ -7,7 +68,7 @@
     "nEmpleado": 759,
     "direccion": "MARKETING",
     "departamento": "MKT SERVICIOS",
-    "fechaInicio": "2026-04-14T18:27:35.000Z",
+    "fechaInicio": "2026-04-14T18:27:34.999Z",
     "fechaFin": "2026-04-14T18:33:09.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -61,7 +122,7 @@
     "nEmpleado": 0,
     "direccion": "MARKETING",
     "departamento": "MARKETING",
-    "fechaInicio": "2026-04-14T18:27:35.000Z",
+    "fechaInicio": "2026-04-14T18:27:34.999Z",
     "fechaFin": "2026-04-14T18:33:10.000Z",
     "frecuencia": 5,
     "plataformas": [
@@ -285,7 +346,7 @@
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
     "fechaInicio": "2026-04-14T18:32:05.999Z",
-    "fechaFin": "2026-04-14T18:48:04.000Z",
+    "fechaFin": "2026-04-14T18:48:03.999Z",
     "frecuencia": 4,
     "plataformas": [
       "Google Gemini",
@@ -335,7 +396,7 @@
     "direccion": "INMOBILIARIA",
     "departamento": "TRAMITES",
     "fechaInicio": "2026-04-14T18:46:40.999Z",
-    "fechaFin": "2026-04-14T18:52:03.999Z",
+    "fechaFin": "2026-04-14T18:52:04.000Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT"
@@ -382,7 +443,7 @@
     "nEmpleado": 10389,
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
-    "fechaInicio": "2026-04-14T18:40:40.000Z",
+    "fechaInicio": "2026-04-14T18:40:39.999Z",
     "fechaFin": "2026-04-14T18:54:57.000Z",
     "frecuencia": 3,
     "plataformas": [
@@ -493,7 +554,7 @@
     "direccion": "MOVIMIENTO DE TIERRA",
     "departamento": "MOVIMIENTO DE TIERRAS ADMINISTRATIVOS",
     "fechaInicio": "2026-04-14T18:53:21.999Z",
-    "fechaFin": "2026-04-14T19:03:15.999Z",
+    "fechaFin": "2026-04-14T19:03:16.000Z",
     "frecuencia": 3,
     "plataformas": [
       "Google Gemini",
@@ -547,7 +608,7 @@
     "nEmpleado": 10602,
     "direccion": "MOVIMIENTO DE TIERRA",
     "departamento": "MOVIMIENTO DE TIERRAS ADMINISTRATIVOS",
-    "fechaInicio": "2026-04-14T19:01:57.000Z",
+    "fechaInicio": "2026-04-14T19:01:56.999Z",
     "fechaFin": "2026-04-14T19:04:27.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -700,8 +761,8 @@
     "nEmpleado": 863,
     "direccion": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
     "departamento": "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS",
-    "fechaInicio": "2026-04-14T19:14:22.999Z",
-    "fechaFin": "2026-04-14T19:19:19.999Z",
+    "fechaInicio": "2026-04-14T19:14:23.000Z",
+    "fechaFin": "2026-04-14T19:19:20.000Z",
     "frecuencia": 4,
     "plataformas": [
       "ChatGPT",
@@ -815,7 +876,7 @@
     "nEmpleado": 664,
     "direccion": "TECNOLOGIA IT",
     "departamento": "SISTEMAS",
-    "fechaInicio": "2026-04-14T19:22:47.999Z",
+    "fechaInicio": "2026-04-14T19:22:48.000Z",
     "fechaFin": "2026-04-14T19:28:25.000Z",
     "frecuencia": 5,
     "plataformas": [
@@ -867,8 +928,8 @@
     "nEmpleado": 10670,
     "direccion": "CONSTRUCTORA",
     "departamento": "CONTROL OBRA",
-    "fechaInicio": "2026-04-14T18:30:55.999Z",
-    "fechaFin": "2026-04-14T19:37:35.999Z",
+    "fechaInicio": "2026-04-14T18:30:56.000Z",
+    "fechaFin": "2026-04-14T19:37:36.000Z",
     "frecuencia": 3,
     "plataformas": [
       "Google Gemini",
@@ -917,7 +978,7 @@
     "direccion": "CADENA DE SUMINISTROS",
     "departamento": "CONTROL DE SUBCONTRATOS",
     "fechaInicio": "2026-04-14T19:39:38.999Z",
-    "fechaFin": "2026-04-14T19:43:33.999Z",
+    "fechaFin": "2026-04-14T19:43:34.000Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT"
@@ -1016,8 +1077,8 @@
     "nEmpleado": 866,
     "direccion": "TECNOLOGIA IT",
     "departamento": "SISTEMAS",
-    "fechaInicio": "2026-04-14T20:20:43.999Z",
-    "fechaFin": "2026-04-14T20:26:42.999Z",
+    "fechaInicio": "2026-04-14T20:20:44.000Z",
+    "fechaFin": "2026-04-14T20:26:43.000Z",
     "frecuencia": 5,
     "plataformas": [
       "Google Gemini",
@@ -1069,7 +1130,7 @@
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
     "fechaInicio": "2026-04-14T21:04:17.000Z",
-    "fechaFin": "2026-04-14T21:17:06.999Z",
+    "fechaFin": "2026-04-14T21:17:07.000Z",
     "frecuencia": 2,
     "plataformas": [
       "Google Gemini",
@@ -1167,7 +1228,7 @@
     "direccion": "CAPITAL HUMANO",
     "departamento": "CAPITAL HUMANO",
     "fechaInicio": "2026-04-14T22:18:18.999Z",
-    "fechaFin": "2026-04-14T22:22:08.999Z",
+    "fechaFin": "2026-04-14T22:22:09.000Z",
     "frecuencia": 3,
     "plataformas": [
       "Google Gemini",
@@ -1217,8 +1278,8 @@
     "nEmpleado": 9883,
     "direccion": "ASISTENCIA DIRECCION",
     "departamento": "DIRECCION GENERAL",
-    "fechaInicio": "2026-04-14T22:31:47.999Z",
-    "fechaFin": "2026-04-14T22:40:58.000Z",
+    "fechaInicio": "2026-04-14T22:31:48.000Z",
+    "fechaFin": "2026-04-14T22:40:57.999Z",
     "frecuencia": 4,
     "plataformas": [
       "Claude",
@@ -1271,7 +1332,7 @@
     "nEmpleado": 10588,
     "direccion": "MAQUINARIA",
     "departamento": "MAQUINARIA ADMINISTRATIVO",
-    "fechaInicio": "2026-04-14T22:14:59.000Z",
+    "fechaInicio": "2026-04-14T22:14:58.999Z",
     "fechaFin": "2026-04-14T22:49:51.999Z",
     "frecuencia": 4,
     "plataformas": [
@@ -1420,7 +1481,7 @@
     "direccion": "FINANZAS",
     "departamento": "CONTABILIDAD",
     "fechaInicio": "2026-04-14T22:47:16.000Z",
-    "fechaFin": "2026-04-14T22:58:00.999Z",
+    "fechaFin": "2026-04-14T22:58:01.000Z",
     "frecuencia": 1,
     "plataformas": [
       "ChatGPT"
@@ -1577,7 +1638,7 @@
     "nEmpleado": 10219,
     "direccion": "CONSTRUCTORA",
     "departamento": "DIRECCION CONSTRUCTORA",
-    "fechaInicio": "2026-04-14T23:10:21.999Z",
+    "fechaInicio": "2026-04-14T23:10:22.000Z",
     "fechaFin": "2026-04-14T23:14:31.000Z",
     "frecuencia": 5,
     "plataformas": [
@@ -1679,7 +1740,7 @@
     "direccion": "CAPITAL HUMANO",
     "departamento": "RECURSOS HUMANOS",
     "fechaInicio": "2026-04-14T23:33:57.000Z",
-    "fechaFin": "2026-04-14T23:42:41.000Z",
+    "fechaFin": "2026-04-14T23:42:40.999Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT"
@@ -1728,7 +1789,7 @@
     "nEmpleado": 681,
     "direccion": "FINANZAS",
     "departamento": "CONTABILIDAD",
-    "fechaInicio": "2026-04-14T22:54:05.000Z",
+    "fechaInicio": "2026-04-14T22:54:04.999Z",
     "fechaFin": "2026-04-15T00:09:41.999Z",
     "frecuencia": 2,
     "plataformas": [
@@ -1781,7 +1842,7 @@
     "nEmpleado": 10303,
     "direccion": "CONSTRUCTORA",
     "departamento": "DIRECCION CONSTRUCTORA",
-    "fechaInicio": "2026-04-15T00:33:49.999Z",
+    "fechaInicio": "2026-04-15T00:33:50.000Z",
     "fechaFin": "2026-04-15T00:37:34.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -1937,7 +1998,7 @@
     "nEmpleado": 10014,
     "direccion": "CAPITAL HUMANO",
     "departamento": "RECURSOS HUMANOS",
-    "fechaInicio": "2026-04-15T03:22:37.000Z",
+    "fechaInicio": "2026-04-15T03:22:36.999Z",
     "fechaFin": "2026-04-15T03:28:20.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -2093,7 +2154,7 @@
     "nEmpleado": 9408,
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
-    "fechaInicio": "2026-04-15T15:35:17.999Z",
+    "fechaInicio": "2026-04-15T15:35:18.000Z",
     "fechaFin": "2026-04-15T17:54:58.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -2198,8 +2259,8 @@
     "nEmpleado": 7846,
     "direccion": "CONSTRUCTORA",
     "departamento": "IND CAMPO OBRA - APTS02 NOM",
-    "fechaInicio": "2026-04-15T19:01:57.000Z",
-    "fechaFin": "2026-04-15T19:24:11.000Z",
+    "fechaInicio": "2026-04-15T19:01:56.999Z",
+    "fechaFin": "2026-04-15T19:24:10.999Z",
     "frecuencia": 5,
     "plataformas": [
       "Google Gemini",
@@ -2302,7 +2363,7 @@
     "direccion": "MARKETING",
     "departamento": "MKT SERVICIOS",
     "fechaInicio": "2026-04-15T20:20:23.999Z",
-    "fechaFin": "2026-04-15T20:28:57.999Z",
+    "fechaFin": "2026-04-15T20:28:58.000Z",
     "frecuencia": 5,
     "plataformas": [
       "Google Gemini",
@@ -2415,7 +2476,7 @@
     "direccion": "CONSTRUCTORA",
     "departamento": "DIRECCION CONSTRUCTORA",
     "fechaInicio": "2026-04-16T01:15:49.000Z",
-    "fechaFin": "2026-04-16T01:19:50.999Z",
+    "fechaFin": "2026-04-16T01:19:51.000Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT"
@@ -2517,8 +2578,8 @@
     "nEmpleado": 9922,
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
-    "fechaInicio": "2026-04-16T19:25:17.999Z",
-    "fechaFin": "2026-04-16T19:28:54.999Z",
+    "fechaInicio": "2026-04-16T19:25:18.000Z",
+    "fechaFin": "2026-04-16T19:28:55.000Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT"
@@ -2610,7 +2671,7 @@
     "nEmpleado": 644,
     "direccion": "ADMINISTRACION",
     "departamento": "COBRANZA",
-    "fechaInicio": "2026-04-16T19:23:56.000Z",
+    "fechaInicio": "2026-04-16T19:23:55.999Z",
     "fechaFin": "2026-04-16T19:32:52.000Z",
     "frecuencia": 3,
     "plataformas": [
@@ -2658,8 +2719,8 @@
     "nEmpleado": 9881,
     "direccion": "FINANZAS",
     "departamento": "AUDITORIA DE MAQUINARIA",
-    "fechaInicio": "2026-04-16T19:25:22.999Z",
-    "fechaFin": "2026-04-16T19:36:17.999Z",
+    "fechaInicio": "2026-04-16T19:25:23.000Z",
+    "fechaFin": "2026-04-16T19:36:18.000Z",
     "frecuencia": 4,
     "plataformas": [
       "ChatGPT",
@@ -2816,7 +2877,7 @@
     "direccion": "TECNOLOGIA IT",
     "departamento": "SISTEMAS",
     "fechaInicio": "2026-04-16T19:35:29.000Z",
-    "fechaFin": "2026-04-16T19:53:07.000Z",
+    "fechaFin": "2026-04-16T19:53:06.999Z",
     "frecuencia": 2,
     "plataformas": [
       "Claude",
@@ -2866,7 +2927,7 @@
     "nEmpleado": 620,
     "direccion": "ADMINISTRACION",
     "departamento": "GERENCIA ADMINISTRATIVA",
-    "fechaInicio": "2026-04-16T20:10:02.999Z",
+    "fechaInicio": "2026-04-16T20:10:03.000Z",
     "fechaFin": "2026-04-16T20:13:49.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -2923,7 +2984,7 @@
     "nEmpleado": 0,
     "direccion": "MARKETING",
     "departamento": "MARKETING",
-    "fechaInicio": "2026-04-16T20:05:24.999Z",
+    "fechaInicio": "2026-04-16T20:05:25.000Z",
     "fechaFin": "2026-04-16T20:25:46.000Z",
     "frecuencia": 4,
     "plataformas": [
@@ -2975,8 +3036,8 @@
     "nEmpleado": 623,
     "direccion": "CADENA DE SUMINISTROS",
     "departamento": "COMPRAS",
-    "fechaInicio": "2026-04-16T20:06:54.999Z",
-    "fechaFin": "2026-04-16T20:32:12.000Z",
+    "fechaInicio": "2026-04-16T20:06:55.000Z",
+    "fechaFin": "2026-04-16T20:32:11.999Z",
     "frecuencia": 3,
     "plataformas": [
       "ChatGPT",
@@ -3033,7 +3094,7 @@
     "nEmpleado": 10247,
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
-    "fechaInicio": "2026-04-16T20:43:39.999Z",
+    "fechaInicio": "2026-04-16T20:43:40.000Z",
     "fechaFin": "2026-04-16T20:47:00.000Z",
     "frecuencia": 5,
     "plataformas": [
@@ -3093,7 +3154,7 @@
     "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
     "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
     "fechaInicio": "2026-04-16T22:13:05.999Z",
-    "fechaFin": "2026-04-16T22:17:04.999Z",
+    "fechaFin": "2026-04-16T22:17:05.000Z",
     "frecuencia": 3,
     "plataformas": [
       "Google Gemini",
@@ -3144,7 +3205,7 @@
     "direccion": "CAPITAL HUMANO",
     "departamento": "RECURSOS HUMANOS",
     "fechaInicio": "2026-04-16T19:23:29.000Z",
-    "fechaFin": "2026-04-16T22:41:38.999Z",
+    "fechaFin": "2026-04-16T22:41:39.000Z",
     "frecuencia": 3,
     "plataformas": [
       "Google Gemini",
@@ -3196,7 +3257,7 @@
     "nEmpleado": 674,
     "direccion": "ASISTENCIA DIRECCION",
     "departamento": "DIRECCION GENERAL",
-    "fechaInicio": "2026-04-17T00:26:55.999Z",
+    "fechaInicio": "2026-04-17T00:26:56.000Z",
     "fechaFin": "2026-04-17T00:32:16.999Z",
     "frecuencia": 3,
     "plataformas": [
@@ -3245,7 +3306,7 @@
     "nEmpleado": 9606,
     "direccion": "ASISTENCIA DIRECCION",
     "departamento": "DIRECCION GENERAL",
-    "fechaInicio": "2026-04-17T00:25:53.999Z",
+    "fechaInicio": "2026-04-17T00:25:54.000Z",
     "fechaFin": "2026-04-17T00:34:23.999Z",
     "frecuencia": 5,
     "plataformas": [
@@ -3301,8 +3362,8 @@
     "nEmpleado": 772,
     "direccion": "CAPITAL HUMANO",
     "departamento": "RECURSOS HUMANOS",
-    "fechaInicio": "2026-04-17T00:30:31.000Z",
-    "fechaFin": "2026-04-17T00:39:57.000Z",
+    "fechaInicio": "2026-04-17T00:30:30.999Z",
+    "fechaFin": "2026-04-17T00:39:56.999Z",
     "frecuencia": 4,
     "plataformas": [
       "Google Gemini",
@@ -3406,8 +3467,8 @@
     "nEmpleado": 712,
     "direccion": "MARKETING",
     "departamento": "MKT SERVICIOS",
-    "fechaInicio": "2026-04-17T17:09:09.999Z",
-    "fechaFin": "2026-04-17T17:12:37.999Z",
+    "fechaInicio": "2026-04-17T17:09:10.000Z",
+    "fechaFin": "2026-04-17T17:12:38.000Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT",
@@ -3453,8 +3514,8 @@
     "nEmpleado": 808,
     "direccion": "CADENA DE SUMINISTROS",
     "departamento": "COMPRAS",
-    "fechaInicio": "2026-04-17T17:30:25.000Z",
-    "fechaFin": "2026-04-17T17:33:18.000Z",
+    "fechaInicio": "2026-04-17T17:30:24.999Z",
+    "fechaFin": "2026-04-17T17:33:17.999Z",
     "frecuencia": 4,
     "plataformas": [
       "ChatGPT",
@@ -3609,8 +3670,8 @@
     "nEmpleado": 898,
     "direccion": "TECNOLOGIA IT",
     "departamento": "SISTEMAS",
-    "fechaInicio": "2026-04-17T17:32:55.000Z",
-    "fechaFin": "2026-04-17T17:47:50.000Z",
+    "fechaInicio": "2026-04-17T17:32:54.999Z",
+    "fechaFin": "2026-04-17T17:47:49.999Z",
     "frecuencia": 4,
     "plataformas": [
       "Google Gemini",
@@ -3662,8 +3723,8 @@
     "nEmpleado": 10217,
     "direccion": "CADENA DE SUMINISTROS",
     "departamento": "CONTROL DE SUBCONTRATOS",
-    "fechaInicio": "2026-04-17T18:06:09.999Z",
-    "fechaFin": "2026-04-17T18:26:43.999Z",
+    "fechaInicio": "2026-04-17T18:06:10.000Z",
+    "fechaFin": "2026-04-17T18:26:44.000Z",
     "frecuencia": 4,
     "plataformas": [
       "ChatGPT"
@@ -3756,68 +3817,6 @@
     }
   },
   {
-    "id": 74,
-    "email": "mname@atisa.com",
-    "nombre": "Marco Antonio Rodriguez Name",
-    "nombreOficial": "Marco Antonio Rodriguez Name",
-    "nEmpleado": 0,
-    "direccion": "FINANZAS",
-    "departamento": "FINANZAS",
-    "fechaInicio": "2026-04-17T20:30:06.999Z",
-    "fechaFin": "2026-04-17T20:34:39.000Z",
-    "frecuencia": 5,
-    "plataformas": [
-      "Google Gemini",
-      "ChatGPT",
-      "Microsoft Copilot",
-      "Grok"
-    ],
-    "habilidad": 5,
-    "funcionesValor": [
-      "Traducción",
-      "Generación y edición de contenido visual",
-      "Generación/lluvia de ideas",
-      "Comunicación y Redacción",
-      "Análisis Financiero y de Datos",
-      "Resumen y síntesis de contenido",
-      "Organización y planificación",
-      "Creatividad y Estrategia",
-      "Soporte en toma de decisiones",
-      "Automatización de tareas rutinarias",
-      "búsqueda de leyes y contratos"
-    ],
-    "ejemploExito": "elaboración de presentaciones, creacion de hojas de excel apoyo en jalar información de sistema, creacion de bases de datos, etc. noticias fiscales, consulta de tipos de cambio y mucho mas",
-    "herramientasArea": "open Clow, chat gpt, bots. power automate",
-    "barreras": [
-      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.",
-      "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.",
-      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
-    ],
-    "procesoPrioritario": "todas las áreas de finanzas, legal y administración",
-    "horasAhorrables": "Entre 2 - 5 horas",
-    "likert": {
-      "indispensable": 5,
-      "repetitivo": 4,
-      "modificarFlujos": 5
-    },
-    "aperturaScore": 4.666666666666667,
-    "horasAhorradasNum": 3.5,
-    "esCampeon": true,
-    "cat": {
-      "q5": [
-        "analisis",
-        "excel",
-        "presentaciones"
-      ],
-      "q6": [
-        "otros"
-      ],
-      "q8": [
-        "otros"
-      ]
-    }
-  },
-  {
     "id": 75,
     "email": "mgarcia@atisa.com",
     "nombre": "Melissa Garcia Gutierrez",
@@ -3826,7 +3825,7 @@
     "direccion": "CAPITAL HUMANO",
     "departamento": "RECURSOS HUMANOS",
     "fechaInicio": "2026-04-17T20:46:09.000Z",
-    "fechaFin": "2026-04-17T20:51:00.999Z",
+    "fechaFin": "2026-04-17T20:51:01.000Z",
     "frecuencia": 2,
     "plataformas": [
       "ChatGPT"
@@ -4035,7 +4034,7 @@
     "nEmpleado": 10248,
     "direccion": "FINANZAS",
     "departamento": "AUDITORIA DE CONSTRUCCION",
-    "fechaInicio": "2026-04-17T22:05:22.999Z",
+    "fechaInicio": "2026-04-17T22:05:23.000Z",
     "fechaFin": "2026-04-17T22:17:30.000Z",
     "frecuencia": 3,
     "plataformas": [
@@ -4136,7 +4135,7 @@
     "nEmpleado": 748,
     "direccion": "FINANZAS",
     "departamento": "DIRECCION DE FINANZAS",
-    "fechaInicio": "2026-04-17T22:14:10.999Z",
+    "fechaInicio": "2026-04-17T22:14:11.000Z",
     "fechaFin": "2026-04-17T22:21:35.999Z",
     "frecuencia": 3,
     "plataformas": [
@@ -4187,8 +4186,8 @@
     "nEmpleado": 873,
     "direccion": "FINANZAS",
     "departamento": "CONTABILIDAD",
-    "fechaInicio": "2026-04-17T22:15:23.999Z",
-    "fechaFin": "2026-04-17T22:28:03.999Z",
+    "fechaInicio": "2026-04-17T22:15:24.000Z",
+    "fechaFin": "2026-04-17T22:28:04.000Z",
     "frecuencia": 3,
     "plataformas": [
       "ChatGPT",
@@ -4238,7 +4237,7 @@
     "direccion": "CAPITAL HUMANO",
     "departamento": "RECURSOS HUMANOS",
     "fechaInicio": "2026-04-17T22:38:32.000Z",
-    "fechaFin": "2026-04-17T22:50:22.999Z",
+    "fechaFin": "2026-04-17T22:50:23.000Z",
     "frecuencia": 1,
     "plataformas": [
       "ChatGPT"
@@ -4273,6 +4272,275 @@
       ],
       "q8": [
         "otros"
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "email": "afernandez@atisa.com",
+    "nombre": "Alberto Fernandez Carmona",
+    "nombreOficial": "Alberto Fernandez Carmona",
+    "nEmpleado": 0,
+    "direccion": "TECNOLOGIA IT",
+    "departamento": "TECNOLOGIA IT",
+    "fechaInicio": "2026-04-18T00:13:53.999Z",
+    "fechaFin": "2026-04-18T00:29:18.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "Claude",
+      "ChatGPT",
+      "Microsoft Copilot",
+      "Antigravity"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Codificación",
+      "Creatividad y Estrategia",
+      "Organización y planificación",
+      "Soporte en toma de decisiones",
+      "Automatización de tareas rutinarias",
+      "Análisis Financiero y de Datos",
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción"
+    ],
+    "ejemploExito": "Integración de Claude Code con MCP para conectar a bases de datos (SQL, Sybabe), que se integran con mockups funcionales para propuestas de aplicaciones que permitan la automatización de procesos internos.",
+    "herramientasArea": "Claude Code, Claude Design, Gemini,",
+    "barreras": [
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Análisis de información de las diferentes herramientas tecnológicas usadas por la empresa, integración y cruce de información entre plataformas, Administración de proyectos (Seguimientos, documentación, avances), Presentaciones de reportes (KPIS),",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 5,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 5,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "analisis",
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "diseno"
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "email": "jogarcia@atisa.com",
+    "nombre": "Jonathan Garcia Sandoval",
+    "nombreOficial": "Jonathan Garcia Sandoval",
+    "nEmpleado": 0,
+    "direccion": "CADENA DE SUMINISTROS",
+    "departamento": "CADENA DE SUMINISTROS",
+    "fechaInicio": "2026-04-18T18:02:38.999Z",
+    "fechaFin": "2026-04-18T18:06:20.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Organización y planificación"
+    ],
+    "ejemploExito": "Utilicé la IA para que me apoyara con un forecast de consumo energético en los 50 años de vida útil de una nave.",
+    "herramientasArea": "No.",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.",
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar."
+    ],
+    "procesoPrioritario": "KPIs. Generación automatizada de reportes para poder generar los KPI y migrarlos a BI.",
+    "horasAhorrables": "Entre 5 - 10 horas",
+    "likert": {
+      "indispensable": 1,
+      "repetitivo": 1,
+      "modificarFlujos": 1
+    },
+    "aperturaScore": 1,
+    "horasAhorradasNum": 7.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "planos"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes",
+        "repetitivo"
+      ]
+    }
+  },
+  {
+    "id": 86,
+    "email": "jraggio@atisa.com",
+    "nombre": "Jorge Alberto Raggio Gonzalez",
+    "nombreOficial": "Jorge Alberto Raggio Gonzalez",
+    "nEmpleado": 0,
+    "direccion": "DIRECCION DE COSTOS Y PROYECTOS",
+    "departamento": "DIRECCION DE COSTOS Y PROYECTOS",
+    "fechaInicio": "2026-04-20T18:00:14.999Z",
+    "fechaFin": "2026-04-20T18:08:00.999Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "Google Gemini",
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 3,
+    "funcionesValor": [
+      "Comunicación y Redacción",
+      "Organización y planificación",
+      "Automatización de tareas rutinarias",
+      "Traducción",
+      "Resumen y síntesis de contenido",
+      "Generación/lluvia de ideas",
+      "Análisis Financiero y de Datos"
+    ],
+    "ejemploExito": "- Calculo del factor de inclinación en taludes. \n- Calculo de volumetrías facilitando las secciones. \n- Redacción de correos profesionales.",
+    "herramientasArea": "Si, para facilitar el tema de cotizaciones.",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Proceso de cotizaciones y seguimiento de las mismas.",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 3,
+      "repetitivo": 5,
+      "modificarFlujos": 5
+    },
+    "aperturaScore": 4.333333333333333,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": false,
+    "cat": {
+      "q5": [
+        "redaccion"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "procurement"
+      ]
+    }
+  },
+  {
+    "id": 87,
+    "email": "emendez@atisa.com",
+    "nombre": "Eva Susana Mendez Gudiño",
+    "nombreOficial": "Eva Susana Mendez Gudiño",
+    "nEmpleado": 0,
+    "direccion": "LEGAL",
+    "departamento": "LEGAL",
+    "fechaInicio": "2026-04-20T18:14:30.000Z",
+    "fechaFin": "2026-04-20T18:20:45.000Z",
+    "frecuencia": 4,
+    "plataformas": [
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Generación/lluvia de ideas",
+      "Resumen y síntesis de contenido",
+      "Comunicación y Redacción",
+      "Automatización de tareas rutinarias",
+      "Traducción"
+    ],
+    "ejemploExito": "Utilicé la IA para el desarrollo natural de una presentación en power point, en donde me permitió estructurar adecuadamente.",
+    "herramientasArea": "Webdox, el análisis legal de los documentos.",
+    "barreras": [
+      "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.",
+      "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas."
+    ],
+    "procesoPrioritario": "Reporteo de Contratos, pago a proveedores, comprobaciones de pago, estatus de inmuebles",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 3,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.6666666666666665,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "presentaciones"
+      ],
+      "q6": [
+        "legal"
+      ],
+      "q8": [
+        "reportes",
+        "procurement"
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "email": "kmadrid@atisa.com",
+    "nombre": "Kevin Madrid Avila",
+    "nombreOficial": "Kevin Madrid Avila",
+    "nEmpleado": 0,
+    "direccion": "INMOBILIARIA",
+    "departamento": "INMOBILIARIA",
+    "fechaInicio": "2026-04-20T22:49:03.000Z",
+    "fechaFin": "2026-04-20T22:59:14.000Z",
+    "frecuencia": 5,
+    "plataformas": [
+      "ChatGPT",
+      "Microsoft Copilot"
+    ],
+    "habilidad": 4,
+    "funcionesValor": [
+      "Generación y edición de contenido visual",
+      "Comunicación y Redacción",
+      "Soporte en toma de decisiones",
+      "Organización y planificación",
+      "Resumen y síntesis de contenido",
+      "Generación/lluvia de ideas",
+      "Análisis Financiero y de Datos",
+      "Traducción",
+      "Creatividad y Estrategia"
+    ],
+    "ejemploExito": "Utilicé IA para generar y optimizar formulas complejas en Excel, reduciendo el tiempo de desarrollo y minimizando errores en cálculos.",
+    "herramientasArea": "IA para generar graficos y dashboards en Excel de forma automática, estandarizando reportes y reduciendo tiempos de análisis.",
+    "barreras": [
+      "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.",
+      "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs."
+    ],
+    "procesoPrioritario": "Actualización automática de KPIs en Excel",
+    "horasAhorrables": "Entre 2 - 5 horas",
+    "likert": {
+      "indispensable": 4,
+      "repetitivo": 3,
+      "modificarFlujos": 4
+    },
+    "aperturaScore": 3.6666666666666665,
+    "horasAhorradasNum": 3.5,
+    "esCampeon": true,
+    "cat": {
+      "q5": [
+        "excel"
+      ],
+      "q6": [
+        "otros"
+      ],
+      "q8": [
+        "reportes"
       ]
     }
   }

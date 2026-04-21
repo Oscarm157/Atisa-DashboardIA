@@ -31,8 +31,13 @@ const MANUAL_OVERRIDES: Record<string, { direccion: string; departamento?: strin
   "vigonzalez@atisa.com": { direccion: "MARKETING" },
   "ehorta@atisa.com": { direccion: "MARKETING" },
   "rramirez@atisa.com": { direccion: "MARKETING" },
-  "mname@atisa.com": { direccion: "FINANZAS" },
   "osanchez@atisa.com": { direccion: "CAPITAL HUMANO" },
+  "oarredondo@atisa.com": { direccion: "TECNOLOGIA IT" },
+  "afernandez@atisa.com": { direccion: "TECNOLOGIA IT" },
+  "jogarcia@atisa.com": { direccion: "CADENA DE SUMINISTROS" },
+  "jraggio@atisa.com": { direccion: "DIRECCION DE COSTOS Y PROYECTOS" },
+  "emendez@atisa.com": { direccion: "LEGAL" },
+  "kmadrid@atisa.com": { direccion: "INMOBILIARIA" },
 };
 
 function parseCSV(text: string): string[][] {
