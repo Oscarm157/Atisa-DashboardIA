@@ -203,25 +203,41 @@ function main() {
   console.log(`  Excel: ${rows.length} filas totales`);
 
   const firstHeader = Object.keys(rows[0] || {});
-  // Identify columns by position
+  // Identify columns by keyword match on the header text. Microsoft Forms
+  // exports may include extra columns (e.g. "Hora de la última modificación"),
+  // so a positional mapping is fragile.
+  // Normaliza whitespace unicode (NBSP, etc.) a espacio simple antes de comparar.
+  const normalize = (s: string) => s.toLowerCase().replace(/\s+/g, " ");
+  const findCol = (...needles: string[]): string => {
+    const match = firstHeader.find((h) => {
+      const low = normalize(h);
+      return needles.every((n) => low.includes(normalize(n)));
+    });
+    if (!match) {
+      throw new Error(
+        `Columna no encontrada en encuesta.xlsx (keywords: ${needles.join(" + ")}). Headers: ${JSON.stringify(firstHeader)}`,
+      );
+    }
+    return match;
+  };
   const cols = {
-    id: firstHeader[0],
-    inicio: firstHeader[1],
-    fin: firstHeader[2],
-    email: firstHeader[3],
-    nombre: firstHeader[4],
-    frecuencia: firstHeader[5],
-    plataformas: firstHeader[6],
-    habilidad: firstHeader[7],
-    funcionesValor: firstHeader[8],
-    ejemploExito: firstHeader[9],
-    herramientasArea: firstHeader[10],
-    barreras: firstHeader[11],
-    procesoPrioritario: firstHeader[12],
-    horasAhorrables: firstHeader[13],
-    likert1: firstHeader[14],
-    likert2: firstHeader[15],
-    likert3: firstHeader[16],
+    id: findCol("id"),
+    inicio: findCol("hora de inicio"),
+    fin: findCol("hora de finalización"),
+    email: findCol("correo"),
+    nombre: findCol("nombre"),
+    frecuencia: findCol("con qué frecuencia"),
+    plataformas: findCol("plataformas"),
+    habilidad: findCol("habilidad actual"),
+    funcionesValor: findCol("mayor valor"),
+    ejemploExito: findCol("ejemplo concreto"),
+    herramientasArea: findCol("procesos técnicos"),
+    barreras: findCol("barrera"),
+    procesoPrioritario: findCol("prioritario"),
+    horasAhorrables: findCol("cuántas horas"),
+    likert1: findCol("competencia indispensable"),
+    likert2: findCol("repetitivas"),
+    likert3: findCol("dispuesto a modificar"),
   };
 
   const valid: SurveyResponse[] = [];
