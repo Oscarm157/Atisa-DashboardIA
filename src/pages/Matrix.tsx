@@ -17,12 +17,21 @@ export function Matrix() {
 
   const points = useMemo(
     () =>
-      responses.map((r) => ({
-        x: r.aperturaScore + (Math.random() - 0.5) * 0.15,
-        y: r.habilidad + (Math.random() - 0.5) * 0.25,
-        nombre: r.nombre,
-        direccion: r.direccion,
-      })),
+      responses.map((r) => {
+        // Jitter determinista por id para evitar que los puntos salten entre recargas
+        // y para no empujar valores fuera del rango 1-5 Likert.
+        const seed = r.id || 0;
+        const h1 = Math.sin(seed * 12.9898) * 43758.5453;
+        const h2 = Math.sin(seed * 78.233) * 43758.5453;
+        const jx = (h1 - Math.floor(h1)) - 0.5;
+        const jy = (h2 - Math.floor(h2)) - 0.5;
+        return {
+          x: r.aperturaScore + jx * 0.12,
+          y: r.habilidad + jy * 0.2,
+          nombre: r.nombre,
+          direccion: r.direccion,
+        };
+      }),
     [responses]
   );
 
@@ -49,9 +58,9 @@ export function Matrix() {
   const quadrants = useMemo(() => {
     const q = { champ: 0, latent: 0, skeptic: 0, rezagado: 0 };
     responses.forEach((r) => {
-      if (r.habilidad >= 3 && r.aperturaScore >= 3) q.champ++;
-      else if (r.habilidad < 3 && r.aperturaScore >= 3) q.latent++;
-      else if (r.habilidad >= 3 && r.aperturaScore < 3) q.skeptic++;
+      if (r.habilidad >= 4 && r.aperturaScore >= 4) q.champ++;
+      else if (r.habilidad < 4 && r.aperturaScore >= 4) q.latent++;
+      else if (r.habilidad >= 4 && r.aperturaScore < 4) q.skeptic++;
       else q.rezagado++;
     });
     return q;
@@ -153,7 +162,7 @@ export function Matrix() {
               title="Campeones"
               count={quadrants.champ}
               pct={pct(quadrants.champ)}
-              hint="Habilidad ≥ 3 y apertura ≥ 3. Activarlos como embajadores."
+              hint="Habilidad ≥ 4 y apertura ≥ 4. Activarlos como embajadores."
             />
             <QuadrantCard
               icon={<Lightbulb className="w-5 h-5" />}
@@ -191,7 +200,7 @@ export function Matrix() {
             title="Campeones"
             count={quadrants.champ}
             pct={pct(quadrants.champ)}
-            hint="Hab ≥ 3 y ap ≥ 3. Activar como embajadores."
+            hint="Hab ≥ 4 y ap ≥ 4. Activar como embajadores."
           />
           <QuadrantCard
             icon={<Lightbulb className="w-5 h-5" />}
@@ -236,10 +245,10 @@ export function Matrix() {
             <tbody>
               {Array.from(new Set(responses.map((r) => r.direccion))).sort().map((d) => {
                 const group = responses.filter((r) => r.direccion === d);
-                const c = group.filter((r) => r.habilidad >= 3 && r.aperturaScore >= 3).length;
-                const l = group.filter((r) => r.habilidad < 3 && r.aperturaScore >= 3).length;
-                const s = group.filter((r) => r.habilidad >= 3 && r.aperturaScore < 3).length;
-                const rz = group.filter((r) => r.habilidad < 3 && r.aperturaScore < 3).length;
+                const c = group.filter((r) => r.habilidad >= 4 && r.aperturaScore >= 4).length;
+                const l = group.filter((r) => r.habilidad < 4 && r.aperturaScore >= 4).length;
+                const s = group.filter((r) => r.habilidad >= 4 && r.aperturaScore < 4).length;
+                const rz = group.filter((r) => r.habilidad < 4 && r.aperturaScore < 4).length;
                 return (
                   <tr key={d} className="border-b border-atisa-grayMid/30">
                     <td className="py-2 pr-3 font-medium">{shortDirection(d)}</td>

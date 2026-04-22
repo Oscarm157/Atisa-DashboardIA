@@ -222,12 +222,12 @@ export function ScatterQuadrants({
               }}
             />
             <ZAxis type="number" dataKey="n" range={zRange} />
-            <ReferenceArea x1={3} x2={5.5} y1={3} y2={5.5} fill={BRAND.primary} fillOpacity={0.05} />
-            <ReferenceArea x1={3} x2={5.5} y1={0.5} y2={3} fill="#F59E0B" fillOpacity={0.05} />
-            <ReferenceArea x1={0.5} x2={3} y1={3} y2={5.5} fill="#6B7280" fillOpacity={0.05} />
-            <ReferenceArea x1={0.5} x2={3} y1={0.5} y2={3} fill="#1A1A1A" fillOpacity={0.03} />
-            <ReferenceLine x={3} stroke={BRAND.grayDark} strokeDasharray="3 3" />
-            <ReferenceLine y={3} stroke={BRAND.grayDark} strokeDasharray="3 3" />
+            <ReferenceArea x1={4} x2={5.5} y1={4} y2={5.5} fill={BRAND.primary} fillOpacity={0.05} />
+            <ReferenceArea x1={4} x2={5.5} y1={0.5} y2={4} fill="#F59E0B" fillOpacity={0.05} />
+            <ReferenceArea x1={0.5} x2={4} y1={4} y2={5.5} fill="#6B7280" fillOpacity={0.05} />
+            <ReferenceArea x1={0.5} x2={4} y1={0.5} y2={4} fill="#1A1A1A" fillOpacity={0.03} />
+            <ReferenceLine x={4} stroke={BRAND.grayDark} strokeDasharray="3 3" />
+            <ReferenceLine y={4} stroke={BRAND.grayDark} strokeDasharray="3 3" />
 
             <Tooltip
               cursor={isDragging ? false : { strokeDasharray: "3 3" }}
