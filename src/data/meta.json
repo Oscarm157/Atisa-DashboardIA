@@ -1,25 +1,31 @@
 {
-  "generatedAt": "2026-04-21T23:53:34.368Z",
-  "totalValid": 87,
-  "excludedNotInRoster": [],
+  "generatedAt": "2026-04-22T21:01:31.471Z",
+  "totalValid": 119,
+  "excludedNotInRoster": [
+    "mname@atisa.com",
+    "bhernandez@atisa.com"
+  ],
   "excludedTest": [],
   "duplicatesInRoster": [
     "dmendez@atisa.com"
   ],
   "directionCounts": {
     "TECNOLOGIA IT": 9,
-    "MARKETING": 7,
-    "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS": 3,
-    "INMOBILIARIA": 3,
+    "MARKETING": 8,
+    "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS": 4,
+    "INMOBILIARIA": 4,
     "DIRECCION DE COSTOS Y PROYECTOS": 11,
-    "MOVIMIENTO DE TIERRA": 4,
-    "MAQUINARIA": 2,
-    "CAPITAL HUMANO": 11,
-    "CONSTRUCTORA": 14,
-    "CADENA DE SUMINISTROS": 6,
-    "ASISTENCIA DIRECCION": 3,
+    "MOVIMIENTO DE TIERRA": 7,
+    "MAQUINARIA": 9,
+    "CAPITAL HUMANO": 12,
+    "CONSTRUCTORA": 16,
+    "CADENA DE SUMINISTROS": 9,
+    "ASISTENCIA DIRECCION": 4,
     "FINANZAS": 11,
-    "ADMINISTRACION": 2,
-    "LEGAL": 1
+    "ADMINISTRACION": 6,
+    "SIN ASIGNAR": 2,
+    "LEGAL": 5,
+    "COMERCIAL": 1,
+    "SEGURIDAD": 1
   }
 }
