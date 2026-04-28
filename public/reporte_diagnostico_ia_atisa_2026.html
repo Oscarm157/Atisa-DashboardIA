@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programa de Adopción de IA · ATISA 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-soft: #F7F7F5;
+  --line: #E4E4E0;
+  --line-soft: #EFEFEC;
+  --ink: #0A0A0A;
+  --ink-2: #2A2A2A;
+  --ink-3: #525252;
+  --ink-4: #8A8A8A;
+  --navy: #1B3A5C;
+  --navy-deep: #0F2842;
+  --accent: #D7261C;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 15.5px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-3);
+}
+
+.serif {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+@media (max-width: 768px) {
+  .page { padding: 0 24px; }
+}
+
+/* ---------- TOP BAR ---------- */
+.topbar {
+  background: #0A0A0A;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.topbar-inner {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  color: #FFFFFF;
+}
+.topbar-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ---------- PHASE NAV ---------- */
+.phase-nav {
+  background: var(--accent);
+  position: sticky;
+  top: 56px;
+  z-index: 49;
+}
+.phase-nav-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.phase-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.15s;
+  position: relative;
+}
+.phase-link:last-child { border-right: none; }
+.phase-link:hover { color: #FFFFFF; background: rgba(0, 0, 0, 0.12); }
+.phase-link.active {
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.18);
+}
+.phase-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: #FFFFFF;
+}
+.phase-link .phase-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+.phase-link.active .phase-tag { color: rgba(255, 255, 255, 0.85); }
+.phase-link .phase-name {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 13.5px;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 700px) {
+  .phase-link { padding: 9px 12px; flex-direction: column; gap: 2px; align-items: flex-start; }
+  .phase-link .phase-name { font-size: 12px; }
+  .phase-link .phase-tag { font-size: 9px; }
+}
+
+/* ---------- HERO ---------- */
+.hero-section {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+.hero {
+  padding: 80px 0 64px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 64px;
+  align-items: end;
+}
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.hero .label {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--accent);
+}
+.hero h1 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(44px, 5.6vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  max-width: 760px;
+}
+.hero h1 strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+.hero-meta-block {
+  border-left: 2px solid var(--accent);
+  padding: 0 0 0 22px;
+}
+.hero-meta-block .row {
+  display: flex; justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13.5px;
+}
+.hero-meta-block .row:last-child { border-bottom: none; }
+.hero-meta-block .row span:first-child {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero-meta-block .row span:last-child { color: #FFFFFF; font-weight: 500; }
+
+/* ---------- KPI STRIP ---------- */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--line);
+}
+@media (max-width: 800px) {
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+}
+.kpi {
+  padding: 36px 32px;
+  border-right: 1px solid var(--line);
+}
+.kpi:last-child { border-right: none; }
+.kpi .label { display: block; margin-bottom: 10px; }
+.kpi .num {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(40px, 4.8vw, 56px);
+  line-height: 1;
+  color: var(--navy-deep);
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.kpi .num small {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ink-3);
+  margin-left: 2px;
+}
+.kpi .desc { font-size: 13px; color: var(--ink-3); line-height: 1.5; }
+
+/* ---------- MONEY KPI ---------- */
+.money-kpi {
+  background: var(--bg-soft);
+  border-top: 3px solid var(--accent);
+  border-bottom: 1px solid var(--line);
+}
+.money-kpi-inner {
+  padding: 48px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 56px;
+  align-items: center;
+}
+.money-label .mono {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-weight: 600;
+}
+.money-desc {
+  font-size: 15.5px;
+  color: var(--ink-2);
+  line-height: 1.6;
+  max-width: 640px;
+  letter-spacing: -0.005em;
+}
+.money-desc strong { color: var(--ink); font-weight: 600; }
+.money-amount {
+  text-align: right;
+  border-left: 2px solid var(--accent);
+  padding-left: 48px;
+}
+.money-amount .amount {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(64px, 7.5vw, 96px);
+  line-height: 1;
+  color: var(--navy-deep);
+  letter-spacing: -0.035em;
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+.money-amount .amount small {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: var(--ink-3);
+  letter-spacing: -0.02em;
+}
+.money-amount .amount-note {
+  display: block;
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+}
+@media (max-width: 900px) {
+  .money-kpi-inner { grid-template-columns: 1fr; padding: 36px 24px; gap: 32px; }
+  .money-amount { text-align: left; border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 28px; }
+}
+
+/* ---------- SECTION ---------- */
+section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 40px; gap: 32px; flex-wrap: wrap; }
+.section-head .left { max-width: 720px; }
+.section-head .label { display: block; margin-bottom: 12px; }
+.section-head h2 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.section-head h2 strong { color: var(--navy-deep); font-weight: 500; }
+.section-head .right { font-size: 12px; color: var(--ink-4); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* ---------- PHASE DIVIDER ---------- */
+.phase-divider {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  padding: 56px 0;
+  position: relative;
+}
+.phase-divider::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+.phase-divider .pdv-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.phase-divider .pdv-num {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 0.9;
+  color: var(--accent);
+  letter-spacing: -0.04em;
+}
+.phase-divider .mono { color: rgba(255, 255, 255, 0.55); margin-bottom: 8px; display: block; }
+.phase-divider h2 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.phase-divider h2 strong { color: var(--accent); font-weight: 500; }
+.phase-divider .pdv-lead {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 720px;
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .phase-divider .pdv-grid { grid-template-columns: 1fr; gap: 16px; }
+  .phase-divider .pdv-num { font-size: 64px; }
+}
+
+/* ---------- LEAD BODY ---------- */
+.lead-body {
+  max-width: 920px;
+  margin-bottom: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+.lead-body p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  margin-bottom: 24px;
+  letter-spacing: -0.005em;
+}
+.lead-body p:last-child { margin-bottom: 0; }
+.lead-body p strong { color: var(--ink); font-weight: 600; }
+.lead-body .lead-close {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--navy-deep);
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-soft);
+  letter-spacing: -0.01em;
+}
+
+/* ---------- FINDINGS GRID ---------- */
+.findings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+@media (max-width: 1000px) { .findings { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .findings { grid-template-columns: 1fr; } }
+.finding {
+  padding: 32px 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.finding .num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: block;
+  font-weight: 500;
+}
+.finding h3 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+.finding h3 strong { color: var(--navy-deep); font-weight: 500; }
+.finding p { font-size: 14.5px; color: var(--ink-3); line-height: 1.55; }
+
+/* ---------- DATA BLOCK ---------- */
+.data-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  margin-top: 8px;
+}
+@media (max-width: 900px) { .data-block { grid-template-columns: 1fr; gap: 40px; } }
+.data-block h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-2);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 1fr 90px 40px;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.bar-row .name { font-size: 13.5px; color: var(--ink-2); }
+.bar-row .bar-track {
+  height: 6px;
+  background: var(--bg-soft);
+  position: relative;
+  overflow: hidden;
+}
+.bar-row .bar-fill {
+  height: 100%;
+  background: var(--navy);
+  transform-origin: left;
+  animation: grow 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  transform: scaleX(0);
+}
+.bar-row .bar-fill.accent { background: var(--accent); }
+.bar-row .bar-fill.soft { background: var(--ink-4); }
+.bar-row .val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--ink);
+  text-align: right;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+@keyframes grow { to { transform: scaleX(1); } }
+
+/* ---------- TIERS (2 niveles) ---------- */
+.tiers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  margin-top: 8px;
+}
+@media (max-width: 800px) { .tiers { grid-template-columns: 1fr; } }
+.tier {
+  padding: 36px 32px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.tier .label-tier {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tier.accent .label-tier { color: var(--accent); }
+.tier-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.tier .pct {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--navy-deep);
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+}
+.tier.accent .pct { color: var(--accent); }
+.tier .count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.tier .name {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+.tier .body { font-size: 14px; color: var(--ink-3); line-height: 1.55; margin-bottom: 16px; }
+.tier .body:last-child { margin-bottom: 0; }
+.tier .body strong { color: var(--ink); font-weight: 600; }
+
+/* ---------- MECHANISMS ---------- */
+.mechanisms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  margin-top: 8px;
+}
+@media (max-width: 800px) { .mechanisms { grid-template-columns: 1fr; } }
+.mech {
+  padding: 32px 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.mech .icon-num {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  display: block;
+  margin-bottom: 18px;
+  font-variant-numeric: tabular-nums;
+}
+.mech h3 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.mech p { font-size: 14px; color: var(--ink-3); line-height: 1.55; }
+
+/* ---------- GANTT ---------- */
+.gantt-wrap {
+  margin-top: 8px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  overflow-x: auto;
+}
+.gantt {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-width: 880px;
+}
+.gantt-header {
+  display: contents;
+}
+.gantt-header .gh-label {
+  padding: 10px 16px 10px 0;
+  border-bottom: 2px solid var(--ink);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
+.gantt-header .gh-weeks {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 6px;
+}
+.gantt-header .gh-week {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  color: var(--ink-4);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.gantt-row { display: contents; }
+.gantt-row .gr-label {
+  padding: 14px 16px 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 13px;
+  color: var(--ink-2);
+  display: flex;
+  align-items: center;
+}
+.gantt-row .gr-label strong { color: var(--ink); font-weight: 600; margin-right: 8px; }
+.gantt-row .gr-label .gr-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.gantt-row .gr-bar-wrap {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  border-bottom: 1px solid var(--line-soft);
+  padding: 10px 0;
+  position: relative;
+}
+.gr-bar {
+  height: 22px;
+  background: var(--navy);
+  border-radius: 1px;
+  align-self: center;
+  position: relative;
+}
+.gr-bar.accent { background: var(--accent); }
+.gr-bar.soft { background: var(--ink-3); }
+.gr-bar.outline {
+  background: transparent;
+  border: 1.5px dashed var(--ink-4);
+  height: 22px;
+}
+.gr-checkpoint {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -6px;
+  z-index: 2;
+  border: 2px solid #FFFFFF;
+}
+
+.gantt-legend {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.gantt-legend .lg-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.lg-swatch {
+  width: 18px; height: 10px;
+  background: var(--navy);
+}
+.lg-swatch.accent { background: var(--accent); }
+.lg-swatch.soft { background: var(--ink-3); }
+.lg-swatch.outline { background: transparent; border: 1.5px dashed var(--ink-4); }
+.lg-swatch.diamond {
+  width: 12px; height: 12px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  border: 2px solid #FFFFFF;
+  outline: 1px solid var(--accent);
+}
+
+/* ---------- BLOCK DETAIL ---------- */
+.block-detail {
+  margin-top: 56px;
+  border-top: 2px solid var(--ink);
+}
+.block-row {
+  display: grid;
+  grid-template-columns: 80px 200px 130px 1fr 200px;
+  padding: 22px 16px 22px 0;
+  border-bottom: 1px solid var(--line);
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .block-row { grid-template-columns: 1fr; gap: 8px; padding: 18px 16px 18px 0; }
+}
+.block-row .b-num {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--navy-deep);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.block-row .b-name {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+.block-row .b-time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  padding-top: 4px;
+}
+.block-row .b-desc {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.block-row .b-out {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ---------- PRIZE BOX ---------- */
+.prize-box {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  padding: 40px 36px;
+  margin-top: 40px;
+  position: relative;
+  border-left: 4px solid var(--accent);
+}
+.prize-box .mono { color: var(--accent); display: block; margin-bottom: 14px; }
+.prize-box h3 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(24px, 2.6vw, 30px);
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+  letter-spacing: -0.015em;
+}
+.prize-box p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14.5px;
+  line-height: 1.6;
+  max-width: 720px;
+}
+.prize-box p strong { color: #FFFFFF; font-weight: 500; }
+
+/* ---------- CONCLUSION ---------- */
+.conclusion {
+  background: var(--navy-deep);
+  color: #FFFFFF;
+  padding: 64px 0;
+  border-bottom: 0;
+}
+.conclusion .label { color: rgba(255,255,255,0.55); }
+.conclusion h2 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  max-width: 880px;
+  margin-top: 16px;
+}
+.conclusion h2 strong { color: #E2C29A; font-weight: 500; }
+
+/* ---------- FOOTER ---------- */
+footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.footer-inner {
+  display: flex; justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+}
+
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="page topbar-inner">
+    <div class="logo">ATISA</div>
+    <div class="topbar-meta">Documento Interno · Abril 2026</div>
+  </div>
+</div>
+
+<!-- PHASE NAV -->
+<nav class="phase-nav">
+  <div class="page" style="padding-left: 0; padding-right: 0;">
+    <div class="phase-nav-inner">
+      <a href="#fase-1" class="phase-link active" data-phase="1">
+        <span class="phase-tag">01</span>
+        <span class="phase-name">Diagnóstico</span>
+      </a>
+      <a href="#fase-2" class="phase-link" data-phase="2">
+        <span class="phase-tag">02</span>
+        <span class="phase-name">Planeación</span>
+      </a>
+      <a href="#fase-3" class="phase-link" data-phase="3">
+        <span class="phase-tag">03</span>
+        <span class="phase-name">Ejecución</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================================================== -->
+<!-- FASE 01 · DIAGNÓSTICO -->
+<!-- ===================================================== -->
+<div id="fase-1"></div>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="page">
+    <div class="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="mono label">Programa Adopción IA 2026 · Fase 01</span>
+          <h1 class="serif">Diagnóstico de Adopción de <strong>Inteligencia Artificial</strong> en Atisa.</h1>
+        </div>
+        <div class="hero-meta-block">
+          <div class="row"><span>Universo</span><span>121 colaboradores</span></div>
+          <div class="row"><span>Plantilla total</span><span>~200 administrativos</span></div>
+          <div class="row"><span>Cobertura</span><span>60.5%</span></div>
+          <div class="row"><span>Periodo</span><span>10 días naturales</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KPIs -->
+<div class="page" style="padding: 0;">
+  <div class="kpis">
+    <div class="kpi">
+      <span class="mono label">Penetración</span>
+      <span class="num">94<small>%</small></span>
+      <p class="desc">Del personal ya ha utilizado IA al menos una vez.</p>
+    </div>
+    <div class="kpi">
+      <span class="mono label">Disposición al cambio</span>
+      <span class="num">92<small>%</small></span>
+      <p class="desc">Dispuesto a modificar flujos para integrar IA.</p>
+    </div>
+    <div class="kpi">
+      <span class="mono label">Ahorro semanal estimado</span>
+      <span class="num">4.5<small> hrs</small></span>
+      <p class="desc">Promedio autoreportado por persona.</p>
+    </div>
+    <div class="kpi">
+      <span class="mono label">Capacidad anual liberable</span>
+      <span class="num">~45K<small> hrs</small></span>
+      <p class="desc">Extrapolado a plantilla administrativa de 200.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MONEY KPI -->
+<div class="page" style="padding: 0;">
+  <div class="money-kpi">
+    <div class="money-kpi-inner">
+      <div class="money-label">
+        <span class="mono">Ahorro económico anual estimado</span>
+        <p class="money-desc">Con un salario promedio mensual de <strong>$20,000 MXN</strong> y una jornada estándar de <strong>40 hrs/semana</strong>, cada hora de trabajo equivale aproximadamente a <strong>$115 MXN</strong>. Las ~45,000 horas anuales liberables a nivel plantilla equivalen a:</p>
+      </div>
+      <div class="money-amount">
+        <span class="amount">$5.2<small>M</small></span>
+        <span class="amount-note">MXN por año · Plantilla de 200 colaboradores</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HALLAZGOS CLAVE -->
+<section>
+  <div class="page">
+    <div class="section-head">
+      <div class="left">
+        <span class="mono label">01 · Hallazgos clave</span>
+        <h2 class="serif">La adopción <strong>ya ocurrió</strong>. Falta darle dirección.</h2>
+      </div>
+      <div class="right">04 ideas · 60 segundos de lectura</div>
+    </div>
+
+    <div class="lead-body">
+      <p>La encuesta obtuvo <strong>121 respuestas válidas</strong> de una plantilla administrativa estimada en 200 colaboradores, lo que equivale a una cobertura del <strong>60.5%</strong>. Más que un censo tecnológico, el instrumento operó como auditoría operativa: mide lo que el personal hace con IA, no lo que cree hacer.</p>
+
+      <p>El ejercicio reveló un ecosistema de uso orgánico sin gobernanza. <strong>111 de 121 encuestados utilizan ChatGPT</strong>, con un promedio de <strong>2.04 plataformas activas</strong> por persona, <strong>todas con cuentas personales</strong> y ninguna bajo acuerdo institucional de manejo de datos.</p>
+
+      <p>El gap estructural más relevante aparece al cruzar frecuencia de uso (<strong>3.33 / 5</strong>) contra habilidad percibida (<strong>3.02 / 5</strong>): el personal usa la herramienta a un ritmo que rebasa su dominio real, lo que explica la queja recurrente sobre "respuestas imprecisas".</p>
+
+      <p>Al mismo tiempo, el <strong>92% se declara dispuesto</strong> a modificar sus flujos, pero solo el <strong>63% identifica con claridad</strong> qué tareas son optimizables. Este espacio de <strong>29 puntos porcentuales</strong> es, precisamente, donde el Programa 2026 concentra su mayor palanca.</p>
+
+      <p>Las barreras reportadas son mayoritariamente resolubles con políticas y capacitación. La <strong>seguridad de información es el freno principal para el 53%</strong> del personal, lo que obliga a iniciar el programa con un protocolo institucional anterior a cualquier taller.</p>
+
+      <p>Finalmente, las funciones que el personal identifica como valiosas reflejan <strong>usos superficiales</strong> de la tecnología (resumir, redactar, traducir) y no su capacidad real, que evoluciona semana con semana y permanece, por ahora, fuera del horizonte operativo de la organización.</p>
+
+      <p class="lead-close">Los cuatro hallazgos que siguen condensan la lectura estratégica del diagnóstico.</p>
+    </div>
+
+    <div class="findings">
+      <div class="finding">
+        <span class="num">01</span>
+        <h3>Usamos más de lo que <strong>dominamos</strong>.</h3>
+        <p>Frecuencia promedio 3.33/5, habilidad promedio 3.02/5. El gap explica la queja sobre "respuestas imprecisas".</p>
+      </div>
+      <div class="finding">
+        <span class="num">02</span>
+        <h3>92% listo para <strong>cambiar</strong>; 60% sabe <strong>qué</strong> cambiar.</h3>
+        <p>Disposición sobra, identificación de oportunidades falta. Justifica el ejercicio de mapeo de procesos.</p>
+      </div>
+      <div class="finding">
+        <span class="num">03</span>
+        <h3>La barrera #1 es <strong>la confianza</strong>, no la técnica.</h3>
+        <p>53% reporta seguridad de información como freno principal. Sin protocolo institucional, ninguna capacitación basta.</p>
+      </div>
+      <div class="finding">
+        <span class="num">04</span>
+        <h3>Estamos arañando <strong>la superficie</strong>.</h3>
+        <p>Las funciones reportadas como valiosas son las que ya conocen: resumir, redactar, traducir. La capacidad real de la IA es órdenes de magnitud mayor y evoluciona cada semana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATOS DEL DIAGNÓSTICO -->
+<section>
+  <div class="page">
+    <div class="section-head">
+      <div class="left">
+        <span class="mono label">02 · Datos del diagnóstico</span>
+        <h2 class="serif">Dónde está el <strong>freno</strong>, qué están <strong>usando</strong>.</h2>
+      </div>
+      <div class="right">N = 121 · Multi-respuesta</div>
+    </div>
+
+    <div class="data-block">
+      <div>
+        <h4>Barreras reportadas</h4>
+        <div class="bar-row">
+          <span class="name">Seguridad de información</span>
+          <div class="bar-track"><div class="bar-fill accent" style="width: 100%"></div></div>
+          <span class="val">64</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Brecha de conocimiento</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 73%"></div></div>
+          <span class="val">47</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Calidad del resultado</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 70%"></div></div>
+          <span class="val">45</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Acceso tecnológico</span>
+          <div class="bar-track"><div class="bar-fill soft" style="width: 59%"></div></div>
+          <span class="val">38</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Naturaleza del puesto</span>
+          <div class="bar-track"><div class="bar-fill soft" style="width: 55%"></div></div>
+          <span class="val">35</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Carga operativa</span>
+          <div class="bar-track"><div class="bar-fill soft" style="width: 44%"></div></div>
+          <span class="val">28</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Plataformas en uso</h4>
+        <div class="bar-row">
+          <span class="name">ChatGPT</span>
+          <div class="bar-track"><div class="bar-fill accent" style="width: 100%"></div></div>
+          <span class="val">111</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Google Gemini</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 55%"></div></div>
+          <span class="val">61</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Microsoft Copilot</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 25%"></div></div>
+          <span class="val">28</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Claude</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 23%"></div></div>
+          <span class="val">26</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Otras (Perplexity, DeepSeek, Weavy, Gamma…)</span>
+          <div class="bar-track"><div class="bar-fill soft" style="width: 15%"></div></div>
+          <span class="val">17</span>
+        </div>
+        <div class="bar-row">
+          <span class="name">Grok</span>
+          <div class="bar-track"><div class="bar-fill soft" style="width: 4%"></div></div>
+          <span class="val">4</span>
+        </div>
+        <p style="font-size: 11px; color: var(--ink-4); margin-top: 16px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">Promedio 2.04 plataformas por usuario · Todas con cuentas personales</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- FASE 02 · PLANEACIÓN -->
+<!-- ===================================================== -->
+<div id="fase-2"></div>
+
+<section class="phase-divider">
+  <div class="page">
+    <div class="pdv-grid">
+      <div class="pdv-num">02</div>
+      <div>
+        <span class="mono">Fase 02</span>
+        <h2 class="serif">Planeación del <strong>programa</strong>.</h2>
+        <p class="pdv-lead">Cómo se traduce el diagnóstico en un programa ejecutable. Define la segmentación del personal, los mecanismos que aseguran que el programa se complete, y la decisión de orden que estructura el cronograma de la siguiente fase.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTACIÓN EN 2 NIVELES -->
+<section>
+  <div class="page">
+    <div class="section-head">
+      <div class="left">
+        <span class="mono label">03 · Segmentación interna</span>
+        <h2 class="serif">Dos niveles, una <strong>red de mentores</strong>.</h2>
+      </div>
+      <div class="right">Estimado sobre 200 colaboradores</div>
+    </div>
+
+    <p style="font-size: 15.5px; color: var(--ink-2); line-height: 1.65; max-width: 820px; margin-bottom: 32px;">El diagnóstico identificó tres niveles de dominio, pero la realidad operativa los reduce a dos. Nadie en la plantilla actual califica como usuario verdaderamente <em>avanzado</em>: quienes se autoreportaron en nivel 5 raramente han desarrollado agentes, automatizaciones complejas o flujos avanzados con APIs. Tratarlos como tales sería sobreestimar la capacidad interna. La estructura real es <strong>Básico</strong> e <strong>Intermedio</strong>, donde los segundos apoyan a los primeros como mentores informales.</p>
+
+    <div class="tiers">
+      <div class="tier">
+        <span class="label-tier">Nivel 01</span>
+        <div class="tier-head">
+          <span class="pct">~70%</span>
+          <span class="count">≈ 140 personas</span>
+        </div>
+        <p class="name serif">Básico</p>
+        <p class="body">Habilidad autoreportada ≤3. Han tenido contacto con la herramienta pero la usan de forma intuitiva, sin método. <strong>Necesitan onboarding estructurado</strong> y casos concretos de su área.</p>
+        <p class="body">Su salida del programa se mide por: completar la capacitación, presentar al menos un proceso optimizado en el challenge, y entregar reportes en cada checkpoint mensual.</p>
+      </div>
+      <div class="tier accent">
+        <span class="label-tier">Nivel 02</span>
+        <div class="tier-head">
+          <span class="pct">~30%</span>
+          <span class="count">≈ 60 personas</span>
+        </div>
+        <p class="name serif">Intermedio</p>
+        <p class="body">Habilidad ≥4. Usan IA con regularidad y obtienen resultados consistentes, aunque sin desarrollar aún integraciones avanzadas. <strong>Actúan como mentores informales</strong> dentro de su dirección.</p>
+        <p class="body">Su rol en el programa: resolver dudas de los Básicos, validar entregables iniciales del challenge, y participar en la mesa de jueces para los proyectos finales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MECANISMOS DEL PROGRAMA -->
+<section>
+  <div class="page">
+    <div class="section-head">
+      <div class="left">
+        <span class="mono label">04 · Mecanismos del programa</span>
+        <h2 class="serif">Tres reglas que aseguran que el programa <strong>se complete</strong>.</h2>
+      </div>
+      <div class="right">Diseño anti-abandono</div>
+    </div>
+
+    <p style="font-size: 15.5px; color: var(--ink-2); line-height: 1.65; max-width: 820px; margin-bottom: 32px;">El reto principal de cualquier programa interno de adopción tecnológica no es el contenido: es la disciplina de ejecución. La gente cambia hábitos cuando hay <strong>consecuencias claras</strong>, <strong>visibilidad colectiva</strong> y <strong>recompensa tangible</strong>. El programa se sostiene sobre estos tres mecanismos.</p>
+
+    <div class="mechanisms">
+      <div class="mech">
+        <span class="icon-num">01</span>
+        <h3>Checkpoints mensuales con corte real.</h3>
+        <p>Cada participante entrega un reporte de avance en cada checkpoint. Quien no entrega, queda fuera del ranking y del premio final. La consecuencia debe ser pública para que tenga peso. Sin esto, el programa se vuelve voluntarismo y muere a las 4 semanas.</p>
+      </div>
+      <div class="mech">
+        <span class="icon-num">02</span>
+        <h3>Métricas individuales + ranking por dirección.</h3>
+        <p>Cada proceso optimizado se mide en Tiempo, Calidad o Costo. Los resultados se acumulan a nivel persona y se promedian a nivel área. La presión grupal moviliza más que la individual: ningún director quiere ver su área en el último lugar del tablero mensual.</p>
+      </div>
+      <div class="mech">
+        <span class="icon-num">03</span>
+        <h3>Premio tangible al final.</h3>
+        <p>Reconocimiento público + recompensa material. La dimensión y formato del premio se define con Dirección General, pero debe ser percibido como valioso por el ganador. Si el premio no importa, el esfuerzo tampoco.</p>
+      </div>
+    </div>
+
+    <div class="prize-box">
+      <span class="mono">Pendiente · A definir con Dirección General</span>
+      <h3 class="serif">Naturaleza y dimensión del <strong style="color: var(--accent)">premio final</strong>.</h3>
+      <p>Se evalúa una combinación de <strong>bono económico, días libres adicionales y/o experiencia (viaje, evento, equipo tecnológico)</strong>. La estructura de ganadores —1er lugar individual, top 3, o top 3 individual + área ganadora— define cuántos premios se otorgan. La decisión final corresponde a Dirección General y se incorpora antes del lanzamiento del challenge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DECISIÓN DE ORDEN -->
+<section>
+  <div class="page">
+    <div class="section-head">
+      <div class="left">
+        <span class="mono label">05 · Decisión de orden</span>
+        <h2 class="serif"><strong>Capacitación primero</strong>, mapeo después.</h2>
+      </div>
+      <div class="right">Decisión tomada · Abril 2026</div>
+    </div>
+
+    <p style="font-size: 15.5px; color: var(--ink-2); line-height: 1.65; max-width: 820px; margin-bottom: 24px;">El programa arranca con capacitación técnica antes del ejercicio de Design Thinking. La razón es operativa: si los líderes mapean procesos sin conocer las capacidades reales de la IA, las oportunidades identificadas serán <strong>conservadoras y predecibles</strong> (resumir minutas, redactar correos). Al capacitar primero, los participantes llegan al mapeo con un <strong>horizonte ampliado</strong> y proponen soluciones de mayor impacto.</p>
+
+    <p style="font-size: 15.5px; color: var(--ink-2); line-height: 1.65; max-width: 820px;">El riesgo asumido: las primeras semanas de capacitación se imparten con casos transversales (no específicos al área), lo que requiere compromiso del personal antes de ver aplicación directa a su trabajo. Este riesgo se mitiga con los <strong>tres mecanismos del programa</strong>: checkpoints, ranking y premio.</p>
+  </div>
+</section>
+
+
+<!-- ===================================================== -->
+<!-- FASE 03 · EJECUCIÓN -->
+<!-- ===================================================== -->
+<div id="fase-3"></div>
+
+<section class="phase-divider">
+  <div class="page">
+    <div class="pdv-grid">
+      <div class="pdv-num">03</div>
+      <div>
+        <span class="mono">Fase 03</span>
+        <h2 class="serif">Ejecución y <strong>cronograma</strong>.</h2>
+        <p class="pdv-lead">24 semanas de programa estructuradas en cinco bloques operativos. Capacitación en bloques paralelos para cubrir 200 personas sin saturar agenda, mapeo por dirección, challenge de 12 semanas con tres checkpoints, y cierre con institucionalización del Comité Interno de IA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRONOGRAMA -->
+<section>
+  <div class="page">
+    <div class="section-head">
+      <div class="left">
+        <span class="mono label">06 · Cronograma</span>
+        <h2 class="serif">24 semanas, <strong>cinco bloques</strong>.</h2>
+      </div>
+      <div class="right">Mayo – Octubre 2026</div>
+    </div>
+
+    <div class="gantt-wrap">
+      <div class="gantt">
+        <div class="gantt-header">
+          <div class="gh-label">Bloque · Actividad</div>
+          <div class="gh-weeks">
+            <span class="gh-week">S1</span><span class="gh-week">S2</span><span class="gh-week">S3</span><span class="gh-week">S4</span>
+            <span class="gh-week">S5</span><span class="gh-week">S6</span><span class="gh-week">S7</span><span class="gh-week">S8</span>
+            <span class="gh-week">S9</span><span class="gh-week">S10</span><span class="gh-week">S11</span><span class="gh-week">S12</span>
+            <span class="gh-week">S13</span><span class="gh-week">S14</span><span class="gh-week">S15</span><span class="gh-week">S16</span>
+            <span class="gh-week">S17</span><span class="gh-week">S18</span><span class="gh-week">S19</span><span class="gh-week">S20</span>
+            <span class="gh-week">S21</span><span class="gh-week">S22</span><span class="gh-week">S23</span><span class="gh-week">S24</span>
+          </div>
+        </div>
+
+        <!-- Bloque 1: Lanzamiento -->
+        <div class="gantt-row">
+          <div class="gr-label"><span class="gr-tag">B1</span><strong>Lanzamiento</strong> e inscripción</div>
+          <div class="gr-bar-wrap">
+            <div class="gr-bar accent" style="grid-column: 1 / span 2;"></div>
+          </div>
+        </div>
+
+        <!-- Bloque 2: Capacitación Básico -->
+        <div class="gantt-row">
+          <div class="gr-label"><span class="gr-tag">B2</span><strong>Capacitación Básico</strong> · sesiones simultáneas</div>
+          <div class="gr-bar-wrap">
+            <div class="gr-bar" style="grid-column: 3 / span 5;"></div>
+          </div>
+        </div>
+
+        <!-- Bloque 3: Capacitación Intermedio -->
+        <div class="gantt-row">
+          <div class="gr-label"><span class="gr-tag">B3</span><strong>Capacitación Intermedio</strong> · sesiones simultáneas</div>
+          <div class="gr-bar-wrap">
+            <div class="gr-bar soft" style="grid-column: 5 / span 4;"></div>
+          </div>
+        </div>
+
+        <!-- Bloque 4: Design Thinking -->
+        <div class="gantt-row">
+          <div class="gr-label"><span class="gr-tag">B4</span><strong>Design Thinking</strong> por dirección</div>
+          <div class="gr-bar-wrap">
+            <div class="gr-bar" style="grid-column: 8 / span 3;"></div>
+          </div>
+        </div>
+
+        <!-- Bloque 5: Challenge con checkpoints -->
+        <div class="gantt-row">
+          <div class="gr-label"><span class="gr-tag">B5</span><strong>Challenge interno</strong> · 12 semanas</div>
+          <div class="gr-bar-wrap">
+            <div class="gr-bar accent" style="grid-column: 11 / span 12;"></div>
+            <div class="gr-checkpoint" style="left: calc((100% / 24) * 13.5);" title="Checkpoint 1"></div>
+            <div class="gr-checkpoint" style="left: calc((100% / 24) * 17.5);" title="Checkpoint 2"></div>
+            <div class="gr-checkpoint" style="left: calc((100% / 24) * 21.5);" title="Checkpoint 3"></div>
+          </div>
+        </div>
+
+        <!-- Bloque 6: Premiación + institucionalización -->
+        <div class="gantt-row">
+          <div class="gr-label"><span class="gr-tag">B6</span><strong>Premiación</strong> e institucionalización</div>
+          <div class="gr-bar-wrap">
+            <div class="gr-bar outline" style="grid-column: 23 / span 2;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gantt-legend">
+        <span class="lg-item"><span class="lg-swatch accent"></span> Hito principal</span>
+        <span class="lg-item"><span class="lg-swatch"></span> Capacitación / Mapeo</span>
+        <span class="lg-item"><span class="lg-swatch soft"></span> Capacitación nivel intermedio</span>
+        <span class="lg-item"><span class="lg-swatch outline"></span> Cierre</span>
+        <span class="lg-item"><span class="lg-swatch diamond"></span> Checkpoint mensual con corte</span>
+      </div>
+    </div>
+
+    <!-- DETALLE DE BLOQUES -->
+    <div class="block-detail">
+      <div class="block-row">
+        <div class="b-num">01</div>
+        <div class="b-name">Lanzamiento e inscripción</div>
+        <div class="b-time">Sem 1 – 2 · 2 sem</div>
+        <div class="b-desc">Comunicado oficial de Dirección General, presentación del programa al personal, apertura de inscripciones (opt-in) y formación de los grupos de capacitación según nivel autoreportado.</div>
+        <div class="b-out">Lista de inscritos<br>+ asignación de grupos</div>
+      </div>
+
+      <div class="block-row">
+        <div class="b-num">02</div>
+        <div class="b-name">Capacitación Básico</div>
+        <div class="b-time">Sem 3 – 7 · 5 sem</div>
+        <div class="b-desc">Sesiones simultáneas en grupos pequeños (capacidad de las salas internas) hasta cubrir a las ~140 personas inscritas. 5 sesiones de 2 hrs por grupo, una por semana. Contenido: prompt engineering, casos de uso comunes, criterios de calidad, manejo seguro de información sensible. Asistencia tomada como entregable.</div>
+        <div class="b-out">~140 personas<br>capacitadas en básico</div>
+      </div>
+
+      <div class="block-row">
+        <div class="b-num">03</div>
+        <div class="b-name">Capacitación Intermedio</div>
+        <div class="b-time">Sem 5 – 8 · 4 sem</div>
+        <div class="b-desc">Sesiones simultáneas en grupos pequeños hasta cubrir a las ~60 personas inscritas. 4 sesiones de 2 hrs por grupo. Contenido: flujos avanzados, contexto y memoria, evaluación de outputs, primeros pasos en automatización. Termina con compromiso de actuar como mentor informal en su dirección.</div>
+        <div class="b-out">~60 mentores<br>internos formados</div>
+      </div>
+
+      <div class="block-row">
+        <div class="b-num">04</div>
+        <div class="b-name">Design Thinking por dirección</div>
+        <div class="b-time">Sem 8 – 10 · 3 sem</div>
+        <div class="b-desc">Sesión de 2 hrs por cada una de las ~6 direcciones administrativas, 2 direcciones por semana. Mapeo de procesos en matriz Tiempo / Calidad / Costo. Cada participante sale con su proceso elegido para el challenge.</div>
+        <div class="b-out">3–5 procesos<br>candidatos por área</div>
+      </div>
+
+      <div class="block-row">
+        <div class="b-num">05</div>
+        <div class="b-name">Challenge interno</div>
+        <div class="b-time">Sem 11 – 22 · 12 sem</div>
+        <div class="b-desc">Cada participante ataca el proceso elegido con IA. Tres checkpoints mensuales (Sem 14, 18, 22) donde se entrega reporte de avance medible. Quien no entrega, sale del ranking. Tabla de resultados pública e individual + agregada por dirección.</div>
+        <div class="b-out">Casos validados<br>con ROI medido</div>
+      </div>
+
+      <div class="block-row">
+        <div class="b-num">06</div>
+        <div class="b-name">Premiación e institucionalización</div>
+        <div class="b-time">Sem 23 – 24 · 2 sem</div>
+        <div class="b-desc">Evento de cierre con presentación de proyectos ganadores. Entrega del premio definido con Dirección General. Documentación de los casos exitosos en el catálogo institucional. Conformación del Comité Interno de IA con los Intermedios y los ganadores del challenge.</div>
+        <div class="b-out">Catálogo + Comité<br>+ Lineamientos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="page footer-inner">
+    <span>Coordinación CRM · Programa Adopción IA 2026</span>
+    <span>Grupo Atisa · Tijuana, B.C.</span>
+  </div>
+</footer>
+
+<script>
+// Phase nav active state on scroll
+const phaseLinks = document.querySelectorAll('.phase-link');
+const phaseAnchors = ['fase-1', 'fase-2', 'fase-3'].map(id => document.getElementById(id));
+
+function updateActivePhase() {
+  const scrollY = window.scrollY + 200;
+  let active = 0;
+  phaseAnchors.forEach((anchor, i) => {
+    if (anchor && anchor.offsetTop <= scrollY) active = i;
+  });
+  phaseLinks.forEach((link, i) => {
+    link.classList.toggle('active', i === active);
+  });
+}
+
+window.addEventListener('scroll', updateActivePhase, { passive: true });
+updateActivePhase();
+</script>
+
+</body>
+</html>
