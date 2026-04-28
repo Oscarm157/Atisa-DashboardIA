@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, PresentationTopBar } from "./components/layout/Header";
 import { FilterBar } from "./components/layout/FilterBar";
 import { Overview } from "./pages/Overview";
 import { Compare } from "./pages/Compare";
+import { Matrix } from "./pages/Matrix";
 import { Champions } from "./pages/Champions";
 import { Hours } from "./pages/Hours";
 import { Import } from "./pages/Import";
@@ -28,7 +29,7 @@ export default function App() {
   }, [presentationMode, setPresentationMode]);
 
   return (
-    <HashRouter>
+    <BrowserRouter basename="/dashboard">
       <div className={cn("min-h-screen bg-atisa-gray", presentationMode && "presentation-mode")}>
         {!presentationMode && (
           <>
@@ -44,12 +45,12 @@ export default function App() {
           )}
         >
           <Routes>
-            <Route path="/dashboard" element={<Overview />} />
-            <Route path="/dashboard/comparar" element={<Compare />} />
-            <Route path="/dashboard/campeones" element={<Champions />} />
-            <Route path="/dashboard/horas" element={<Hours />} />
-            <Route path="/dashboard/importar" element={<Import />} />
-            <Route path="/" element={<RedirectToReport />} />
+            <Route path="/" element={<Overview />} />
+            <Route path="/comparar" element={<Compare />} />
+            <Route path="/matriz" element={<Matrix />} />
+            <Route path="/campeones" element={<Champions />} />
+            <Route path="/horas" element={<Hours />} />
+            <Route path="/importar" element={<Import />} />
           </Routes>
         </main>
         <footer
@@ -62,15 +63,8 @@ export default function App() {
           <span className="opacity-60">Dashboard interno — datos confidenciales</span>
         </footer>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
-}
-
-function RedirectToReport() {
-  useEffect(() => {
-    window.location.href = "/reporte_diagnostico_ia_atisa_2026.html";
-  }, []);
-  return null;
 }
 
 function isInputFocused(): boolean {

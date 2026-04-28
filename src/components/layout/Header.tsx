@@ -4,6 +4,7 @@ import { useFilters } from "../../lib/filters";
 import {
   LayoutDashboard,
   GitCompare,
+  Target,
   Trophy,
   Clock,
   Upload,
@@ -13,11 +14,12 @@ import {
 } from "lucide-react";
 
 const NAV = [
-  { to: "/dashboard", label: "Resumen", icon: LayoutDashboard },
-  { to: "/dashboard/comparar", label: "Comparar", icon: GitCompare },
-  { to: "/dashboard/campeones", label: "Campeones", icon: Trophy },
-  { to: "/dashboard/horas", label: "Horas", icon: Clock },
-  { to: "/dashboard/importar", label: "Importar", icon: Upload },
+  { to: "/", label: "Resumen", icon: LayoutDashboard },
+  { to: "/comparar", label: "Comparar", icon: GitCompare },
+  { to: "/matriz", label: "Matriz", icon: Target },
+  { to: "/campeones", label: "Campeones", icon: Trophy },
+  { to: "/horas", label: "Horas", icon: Clock },
+  { to: "/importar", label: "Importar", icon: Upload },
 ];
 
 export function Header() {
@@ -43,7 +45,7 @@ export function Header() {
             <NavLink
               key={to}
               to={to}
-              end={to === "/dashboard"}
+              end={to === "/"}
               className={({ isActive }) =>
                 cn(
                   "flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition-colors",
