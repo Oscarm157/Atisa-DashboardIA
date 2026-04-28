@@ -1,14 +1,11 @@
 import { useEffect } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Header, PresentationTopBar } from "./components/layout/Header";
 import { FilterBar } from "./components/layout/FilterBar";
 import { Overview } from "./pages/Overview";
-import { ByQuestion } from "./pages/ByQuestion";
 import { Compare } from "./pages/Compare";
-import { Matrix } from "./pages/Matrix";
 import { Champions } from "./pages/Champions";
 import { Hours } from "./pages/Hours";
-import { Individual } from "./pages/Individual";
 import { Import } from "./pages/Import";
 import { useFilters } from "./lib/filters";
 import { cn } from "./lib/utils";
@@ -47,14 +44,12 @@ export default function App() {
           )}
         >
           <Routes>
-            <Route path="/" element={<Overview />} />
-            <Route path="/preguntas" element={<ByQuestion />} />
-            <Route path="/comparar" element={<Compare />} />
-            <Route path="/matriz" element={<Matrix />} />
-            <Route path="/campeones" element={<Champions />} />
-            <Route path="/horas" element={<Hours />} />
-            <Route path="/individuales" element={<Individual />} />
-            <Route path="/importar" element={<Import />} />
+            <Route path="/dashboard" element={<Overview />} />
+            <Route path="/dashboard/comparar" element={<Compare />} />
+            <Route path="/dashboard/campeones" element={<Champions />} />
+            <Route path="/dashboard/horas" element={<Hours />} />
+            <Route path="/dashboard/importar" element={<Import />} />
+            <Route path="/" element={<Navigate to="/dashboard" replace />} />
           </Routes>
         </main>
         <footer

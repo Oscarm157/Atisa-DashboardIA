@@ -3,12 +3,9 @@ import { cn } from "../../lib/utils";
 import { useFilters } from "../../lib/filters";
 import {
   LayoutDashboard,
-  BarChart3,
   GitCompare,
-  Target,
   Trophy,
   Clock,
-  Users,
   Upload,
   Printer,
   Maximize,
@@ -16,14 +13,11 @@ import {
 } from "lucide-react";
 
 const NAV = [
-  { to: "/", label: "Resumen", icon: LayoutDashboard },
-  { to: "/preguntas", label: "Por Pregunta", icon: BarChart3 },
-  { to: "/comparar", label: "Comparar", icon: GitCompare },
-  { to: "/matriz", label: "Matriz", icon: Target },
-  { to: "/campeones", label: "Campeones", icon: Trophy },
-  { to: "/horas", label: "Horas", icon: Clock },
-  { to: "/individuales", label: "Individuales", icon: Users },
-  { to: "/importar", label: "Importar", icon: Upload },
+  { to: "/dashboard", label: "Resumen", icon: LayoutDashboard },
+  { to: "/dashboard/comparar", label: "Comparar", icon: GitCompare },
+  { to: "/dashboard/campeones", label: "Campeones", icon: Trophy },
+  { to: "/dashboard/horas", label: "Horas", icon: Clock },
+  { to: "/dashboard/importar", label: "Importar", icon: Upload },
 ];
 
 export function Header() {
@@ -49,7 +43,7 @@ export function Header() {
             <NavLink
               key={to}
               to={to}
-              end={to === "/"}
+              end={to === "/dashboard"}
               className={({ isActive }) =>
                 cn(
                   "flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition-colors",
