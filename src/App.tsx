@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Header, PresentationTopBar } from "./components/layout/Header";
 import { FilterBar } from "./components/layout/FilterBar";
 import { Overview } from "./pages/Overview";
@@ -49,7 +49,7 @@ export default function App() {
             <Route path="/dashboard/campeones" element={<Champions />} />
             <Route path="/dashboard/horas" element={<Hours />} />
             <Route path="/dashboard/importar" element={<Import />} />
-            <Route path="/" element={<Navigate to="/dashboard" replace />} />
+            <Route path="/" element={<RedirectToReport />} />
           </Routes>
         </main>
         <footer
@@ -64,6 +64,13 @@ export default function App() {
       </div>
     </HashRouter>
   );
+}
+
+function RedirectToReport() {
+  useEffect(() => {
+    window.location.href = "/reporte_diagnostico_ia_atisa_2026.html";
+  }, []);
+  return null;
 }
 
 function isInputFocused(): boolean {

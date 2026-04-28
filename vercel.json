@@ -4,6 +4,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
+    { "source": "/reporte_diagnostico_ia_atisa_2026.html", "destination": "/reporte_diagnostico_ia_atisa_2026.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
