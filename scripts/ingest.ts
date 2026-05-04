@@ -7,23 +7,23 @@ import {
   Q6_CATEGORIES,
   Q8_CATEGORIES,
   categorize,
-} from "../src/data/categorization";
-import { HOURS_BUCKETS } from "../src/data/questions";
+} from "../data/categorization";
+import { HOURS_BUCKETS } from "../data/questions";
 import type {
   SurveyResponse,
   RosterEntry,
   IngestMeta,
   Likert1to5,
   HoursBucket,
-} from "../src/lib/types";
+} from "../lib/types";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
 const XLSX_PATH = path.join(ROOT, "data", "encuesta.xlsx");
 const CSV_PATH = path.join(ROOT, "data", "roster.csv");
-const OUT_RESPONSES = path.join(ROOT, "src", "data", "responses.json");
-const OUT_META = path.join(ROOT, "src", "data", "meta.json");
+const OUT_RESPONSES = path.join(ROOT, "data", "responses.json");
+const OUT_META = path.join(ROOT, "data", "meta.json");
 
 // Overrides manuales: correos que no están en el roster CSV pero cuya dirección
 // se conoce por info directa de Oscar. Se aplican después de cargar el roster.
@@ -80,7 +80,7 @@ function parseCSV(text: string): string[][] {
   return rows.filter((r) => r.some((c) => c.trim().length > 0));
 }
 
-function loadRoster(): { map: Map<string, RosterEntry>; duplicates: string[] } {
+function loadRoster(): { map: Map<string, RosterEntry>; duplicates: string[]; skippedNoDireccion: string[] } {
   const text = fs.readFileSync(CSV_PATH, "utf-8");
   const rows = parseCSV(text);
   const header = rows[0].map((h) => h.toLowerCase());
