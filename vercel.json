@@ -8,6 +8,7 @@
     { "source": "/dashboard", "destination": "/index.html" }
   ],
   "routes": [
-    { "src": "^/$", "dest": "/reporte_diagnostico_ia_atisa_2026.html" }
+    { "src": "^/$", "dest": "/lobby.html" },
+    { "src": "^/reporte/?$", "dest": "/reporte_diagnostico_ia_atisa_2026.html" }
   ]
 }
