@@ -201,7 +201,7 @@ export default function CasosPage() {
                                 {tema.quote.texto}
                               </p>
                               <p className="font-mono text-[10.5px] text-ink-4 mt-2 uppercase tracking-widest break-words">
-                                — {tema.quote.autor}
+                                · {tema.quote.autor}
                               </p>
                             </div>
                           </div>

@@ -83,10 +83,15 @@ export default function LobbyPage() {
           <StaggerChildren className="grid md:grid-cols-3 gap-4">
             <StaggerItem>
               <Card href="https://atisa-ia.vercel.app/ai-governance" external className="group h-full">
-                <CardEyebrow>
-                  01 · Marco
-                  <ArrowUpRight className="w-3 h-3 text-ink-4" />
-                </CardEyebrow>
+                <div className="flex items-start justify-between mb-5">
+                  <div className="font-serif-display text-[56px] md:text-[64px] text-accent leading-none font-light tabular-nums">
+                    01
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-ink-4 mt-3" />
+                </div>
+                <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-2.5">
+                  Marco · Deck externo
+                </div>
                 <CardTitle>Atisa Governance</CardTitle>
                 <CardBody>
                   Marco de uso responsable de IA: principios, fases, ruta crítica y KPIs. Sienta la base.
@@ -96,10 +101,15 @@ export default function LobbyPage() {
             </StaggerItem>
             <StaggerItem>
               <Card href="/lanzamiento" className="group h-full">
-                <CardEyebrow>
-                  02 · Capacitación
-                  <Megaphone className="w-3 h-3 text-ink-4" />
-                </CardEyebrow>
+                <div className="flex items-start justify-between mb-5">
+                  <div className="font-serif-display text-[56px] md:text-[64px] text-accent leading-none font-light tabular-nums">
+                    02
+                  </div>
+                  <Megaphone className="w-4 h-4 text-ink-4 mt-3" />
+                </div>
+                <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-2.5">
+                  Capacitación · Convocatoria interna
+                </div>
                 <CardTitle>Programa de capacitación</CardTitle>
                 <CardBody>
                   200 colaboradores: niveles, calendario, reglas, pasos de inscripción.
@@ -109,10 +119,15 @@ export default function LobbyPage() {
             </StaggerItem>
             <StaggerItem>
               <Card href="https://atisa-ia.vercel.app/ai-challenge" external className="group h-full">
-                <CardEyebrow>
-                  03 · Challenge
-                  <ArrowUpRight className="w-3 h-3 text-ink-4" />
-                </CardEyebrow>
+                <div className="flex items-start justify-between mb-5">
+                  <div className="font-serif-display text-[56px] md:text-[64px] text-accent leading-none font-light tabular-nums">
+                    03
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-ink-4 mt-3" />
+                </div>
+                <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-2.5">
+                  Challenge · Deck externo
+                </div>
                 <CardTitle>Atisa Challenge</CardTitle>
                 <CardBody>
                   Mecánica del reto interno: oportunidad, herramientas, timeline, evaluación, premios.
