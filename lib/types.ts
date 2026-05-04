@@ -54,3 +54,23 @@ export type IngestMeta = {
   duplicatesInRoster: string[];
   directionCounts: Record<string, number>;
 };
+
+export type Quote = { texto: string; autor: string };
+export type TemaCurado = {
+  titulo: string;
+  descripcion: string;
+  menciones: number;
+  autores: string[];
+  quote: Quote;
+};
+export type CampoCurado = { resumen: string; temas: TemaCurado[] };
+export type DireccionCurada = {
+  respondientes: number;
+  sinDeclararQ8: string[];
+  sinDeclararQ5: string[];
+  sinDeclararQ6: string[];
+  q8: CampoCurado;
+  q5: CampoCurado;
+  q6: CampoCurado;
+};
+export type CasosCurados = Record<string, DireccionCurada>;
