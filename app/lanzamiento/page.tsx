@@ -93,7 +93,7 @@ export default function LanzamientoPage() {
       <Section
         title="Por qué ahora"
       >
-        <StaggerChildren className="grid md:grid-cols-3 gap-5 ">
+        <StaggerChildren className="grid md:grid-cols-3 gap-3">
           {[
             {
               big: "94%",
@@ -102,26 +102,30 @@ export default function LanzamientoPage() {
             },
             {
               big: "$5.2M",
-              unit: "MXN al año",
+              unit: "MXN/año",
               body: "En horas liberables a nivel plantilla.",
-              note: "Cada colaborador estima 4.5 horas semanales que podría reasignar a trabajo de mayor valor con las herramientas adecuadas.",
+              note: "Cada colaborador estima 4.5 horas semanales que podría reasignar a trabajo de mayor valor.",
             },
             {
               big: "3.33 vs 3.02",
               body: "Frecuencia de uso por encima de habilidad real.",
-              note: "Usamos la herramienta a un ritmo que rebasa nuestro dominio. Esto explica la queja recurrente sobre respuestas imprecisas.",
+              note: "Usamos la herramienta a un ritmo que rebasa nuestro dominio. De ahí la queja recurrente sobre respuestas imprecisas.",
             },
           ].map((c, i) => (
             <StaggerItem key={i}>
-              <div className="bg-bg border border-line p-7 md:p-8 h-full">
-                <div className="font-serif-display text-[44px] md:text-[52px] text-accent leading-none">
-                  {c.big}
+              <div className="bg-bg border border-line p-5 md:p-6 h-full">
+                <div className="flex items-baseline gap-2 mb-3">
+                  <div className="font-serif-display text-[36px] md:text-[40px] text-accent leading-none font-light">
+                    {c.big}
+                  </div>
+                  {c.unit && (
+                    <div className="font-mono text-[10.5px] uppercase tracking-widest text-ink-4">
+                      {c.unit}
+                    </div>
+                  )}
                 </div>
-                {c.unit && (
-                  <div className="font-mono text-[11px] uppercase tracking-widest text-ink-4 mt-2">{c.unit}</div>
-                )}
-                <p className="mt-4 text-[15px] font-medium text-ink leading-snug">{c.body}</p>
-                <p className="mt-2 text-[13px] text-ink-3 leading-[1.55]">{c.note}</p>
+                <p className="text-[14px] font-medium text-ink leading-snug">{c.body}</p>
+                <p className="mt-1.5 text-[12.5px] text-ink-3 leading-[1.55]">{c.note}</p>
               </div>
             </StaggerItem>
           ))}
@@ -132,47 +136,39 @@ export default function LanzamientoPage() {
       <Section
         title="Tu nivel"
       >
-        <StaggerChildren className="grid md:grid-cols-2 gap-5 ">
+        <StaggerChildren className="grid md:grid-cols-2 gap-3">
           <StaggerItem>
-            <div className="bg-bg border border-line border-l-4 border-l-accent p-7 md:p-8 h-full">
-              <div className="flex items-start justify-between mb-3">
-                <div>
-                  <div className="mono-eyebrow">Nivel 01</div>
-                  <div className="font-serif-display text-[28px] text-ink mt-1">Básico</div>
+            <div className="bg-bg border border-line border-l-4 border-l-accent p-5 md:p-6 h-full">
+              <div className="flex items-baseline justify-between gap-3 mb-3">
+                <div className="flex items-baseline gap-3 flex-wrap">
+                  <span className="font-serif-display text-[26px] text-ink leading-none">Básico</span>
+                  <span className="font-mono text-[10.5px] uppercase tracking-widest text-ink-4">Nivel 01 · 5 sesiones de 2h</span>
                 </div>
-                <div className="text-right">
-                  <div className="font-serif-display text-[38px] text-ink leading-none">~70%</div>
-                  <div className="text-[11px] text-ink-4 mt-1 font-mono uppercase tracking-widest">de la plantilla</div>
-                </div>
+                <div className="font-serif-display text-[28px] text-accent leading-none font-light tabular-nums">~70%</div>
               </div>
-              <p className="text-[15px] font-medium text-ink mt-4">5 sesiones de 2h, una por semana.</p>
-              <p className="text-[13.5px] text-ink-3 mt-2 leading-[1.6]">
-                Aprendes a usar Claude con método: cómo escribir un buen prompt, cómo evaluar la respuesta, qué información sí y qué información no se comparte. Sales con casos concretos de tu área.
+              <p className="text-[13.5px] text-ink-3 leading-[1.6]">
+                Aprendes a usar Claude con método: cómo escribir un buen prompt, cómo evaluar la respuesta, qué información sí y qué no se comparte. Sales con casos concretos de tu área.
               </p>
             </div>
           </StaggerItem>
 
           <StaggerItem>
-            <div className="bg-bg border border-line border-l-4 border-l-navy-deep p-7 md:p-8 h-full">
-              <div className="flex items-start justify-between mb-3">
-                <div>
-                  <div className="mono-eyebrow">Nivel 02</div>
-                  <div className="font-serif-display text-[28px] text-ink mt-1">Intermedio</div>
+            <div className="bg-bg border border-line border-l-4 border-l-navy-deep p-5 md:p-6 h-full">
+              <div className="flex items-baseline justify-between gap-3 mb-3">
+                <div className="flex items-baseline gap-3 flex-wrap">
+                  <span className="font-serif-display text-[26px] text-ink leading-none">Intermedio</span>
+                  <span className="font-mono text-[10.5px] uppercase tracking-widest text-ink-4">Nivel 02 · 4 sesiones de 2h</span>
                 </div>
-                <div className="text-right">
-                  <div className="font-serif-display text-[38px] text-ink leading-none">~30%</div>
-                  <div className="text-[11px] text-ink-4 mt-1 font-mono uppercase tracking-widest">de la plantilla</div>
-                </div>
+                <div className="font-serif-display text-[28px] text-navy-deep leading-none font-light tabular-nums">~30%</div>
               </div>
-              <p className="text-[15px] font-medium text-ink mt-4">4 sesiones de 2h, una por semana.</p>
-              <p className="text-[13.5px] text-ink-3 mt-2 leading-[1.6]">
+              <p className="text-[13.5px] text-ink-3 leading-[1.6]">
                 Profundizas en flujos avanzados: contexto, memoria, evaluación de outputs y automatización inicial. Te formas como mentor informal de tu dirección durante el challenge.
               </p>
             </div>
           </StaggerItem>
         </StaggerChildren>
 
-        <div className=" mt-5 flex items-start gap-3 bg-bg-soft border border-line p-4">
+        <div className="mt-3 flex items-start gap-3 bg-bg-soft border border-line p-4">
           <AlertCircle className="w-4 h-4 shrink-0 mt-0.5 text-ink-4" />
           <p className="text-[13.5px] text-ink-3 leading-[1.6]">
             Tu nivel se asignó según tu respuesta a la encuesta diagnóstica. Si no contestaste, hay diagnóstico rápido al momento de inscribirte.
