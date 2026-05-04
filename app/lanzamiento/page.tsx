@@ -68,10 +68,9 @@ export default function LanzamientoPage() {
 
       {/* POR QUÉ */}
       <Section
-        num="01"
         title="Por qué ahora"
       >
-        <StaggerChildren className="grid md:grid-cols-3 gap-5 ml-0 md:ml-[120px]">
+        <StaggerChildren className="grid md:grid-cols-3 gap-5 ">
           {[
             {
               big: "94%",
@@ -108,10 +107,9 @@ export default function LanzamientoPage() {
 
       {/* TU NIVEL */}
       <Section
-        num="02"
         title="Tu nivel"
       >
-        <StaggerChildren className="grid md:grid-cols-2 gap-5 ml-0 md:ml-[120px]">
+        <StaggerChildren className="grid md:grid-cols-2 gap-5 ">
           <StaggerItem>
             <div className="bg-bg border border-line border-l-4 border-l-accent p-7 md:p-8 h-full">
               <div className="flex items-start justify-between mb-3">
@@ -151,7 +149,7 @@ export default function LanzamientoPage() {
           </StaggerItem>
         </StaggerChildren>
 
-        <div className="ml-0 md:ml-[120px] mt-5 flex items-start gap-3 bg-bg-soft border border-line p-4">
+        <div className=" mt-5 flex items-start gap-3 bg-bg-soft border border-line p-4">
           <AlertCircle className="w-4 h-4 shrink-0 mt-0.5 text-ink-4" />
           <p className="text-[13.5px] text-ink-3 leading-[1.6]">
             Tu nivel se asignó según tu respuesta a la encuesta diagnóstica. Si no contestaste, hay diagnóstico rápido al momento de inscribirte.
@@ -161,11 +159,10 @@ export default function LanzamientoPage() {
 
       {/* TIMELINE */}
       <Section
-        num="03"
         title="24 semanas"
       >
         <FadeIn>
-          <div className="ml-0 md:ml-[120px] bg-bg border border-line p-7 md:p-8">
+          <div className=" bg-bg border border-line p-7 md:p-8">
             <div className="space-y-3">
               {BLOQUES.map((b) => (
                 <div key={b.id} className="grid grid-cols-[40px_180px_1fr_90px] gap-3 md:gap-4 items-center text-[13.5px]">
@@ -190,10 +187,9 @@ export default function LanzamientoPage() {
 
       {/* QUÉ OBTIENES */}
       <Section
-        num="04"
         title="Qué obtienes"
       >
-        <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 ml-0 md:ml-[120px]">
+        <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 ">
           {[
             {
               icon: Sparkles,
@@ -229,11 +225,10 @@ export default function LanzamientoPage() {
 
       {/* REGLAS */}
       <Section
-        num="05"
         title="Reglas"
       >
         <FadeIn>
-          <div className="ml-0 md:ml-[120px] bg-bg border border-line p-7 md:p-8 space-y-5">
+          <div className=" bg-bg border border-line p-7 md:p-8 space-y-5">
             {[
               {
                 title: "Asistencia mínima",
@@ -262,10 +257,9 @@ export default function LanzamientoPage() {
 
       {/* COMO TE INSCRIBES */}
       <Section
-        num="06"
         title="Inscripción"
       >
-        <StaggerChildren className="grid md:grid-cols-3 gap-5 ml-0 md:ml-[120px]">
+        <StaggerChildren className="grid md:grid-cols-3 gap-5 ">
           {[
             {
               step: "01",
