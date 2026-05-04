@@ -302,7 +302,7 @@ export default function LanzamientoPage() {
               <div className="max-w-[560px]">
                 <div className="mono-eyebrow !text-accent mb-3">Diagnóstico</div>
                 <h3 className="font-serif-display text-[28px] md:text-[34px] text-white leading-tight">
-                  El dashboard tiene los hallazgos por dirección, procesos prioritarios y campeones.
+                  El dashboard tiene los hallazgos por dirección, procesos prioritarios y líderes.
                 </h3>
               </div>
               <Link

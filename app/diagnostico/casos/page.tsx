@@ -255,7 +255,7 @@ export default function CasosPage() {
                             <span className="text-[11px] text-ink-4">{r.departamento}</span>
                             {r.esCampeon && (
                               <span className="inline-flex items-center gap-1 text-[10.5px] text-accent font-mono uppercase tracking-widest font-medium">
-                                <Trophy className="w-3 h-3" /> Campeón
+                                <Trophy className="w-3 h-3" /> Líder
                               </span>
                             )}
                             <span className="ml-auto inline-flex items-center gap-1 text-[10.5px] font-mono text-ink-4 uppercase tracking-widest">

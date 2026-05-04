@@ -7,7 +7,7 @@ import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ZAxis, Res
 type Quadrant = "champ" | "latent" | "skeptic" | "rezagado";
 
 const QUAD: Record<Quadrant, { label: string; hint: string; color: string }> = {
-  champ: { label: "Campeones", hint: "Habilidad ≥ 4 + apertura ≥ 4. Pueden liderar workshops y ser embajadores.", color: "#2F7D5C" },
+  champ: { label: "Líderes", hint: "Habilidad ≥ 4 + apertura ≥ 4. Pueden liderar workshops y ser embajadores.", color: "#2F7D5C" },
   latent: { label: "Aliados latentes", hint: "Baja habilidad, alta apertura. Foco prioritario de capacitación.", color: "#1B3A5C" },
   skeptic: { label: "Escépticos hábiles", hint: "Alta habilidad, baja apertura. Convencer con casos de uso concretos.", color: "#B47A1C" },
   rezagado: { label: "Rezagados", hint: "Baja habilidad y baja apertura. Estrategia de largo plazo.", color: "#8A8A8A" },

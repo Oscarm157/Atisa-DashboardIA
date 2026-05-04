@@ -10,7 +10,7 @@ const NAV = [
   { href: "/diagnostico/casos", label: "Casos", icon: FolderOpen },
   { href: "/diagnostico/comparar", label: "Comparar", icon: GitCompare },
   { href: "/diagnostico/matriz", label: "Matriz", icon: Target },
-  { href: "/diagnostico/campeones", label: "Campeones", icon: Trophy },
+  { href: "/diagnostico/campeones", label: "Líderes", icon: Trophy },
   { href: "/diagnostico/horas", label: "Horas", icon: Clock },
   { href: "/diagnostico/importar", label: "Importar", icon: Upload },
 ];

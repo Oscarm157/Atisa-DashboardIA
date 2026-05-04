@@ -41,7 +41,7 @@ export default function CompararPage() {
                   <Th align="right">Hab.</Th>
                   <Th align="right">Apertura</Th>
                   <Th align="right">Horas/sem</Th>
-                  <Th align="right">Campeones</Th>
+                  <Th align="right">Líderes</Th>
                 </tr>
               </thead>
               <tbody>

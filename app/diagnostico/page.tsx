@@ -36,7 +36,7 @@ export default function DiagnosticoOverviewPage() {
           <KPI label="Habilidad" value={k.habilidad} unit="/ 5" />
           <KPI label="Apertura" value={k.apertura} unit="/ 5" />
           <KPI label="Horas / sem" value={k.horasSemana} unit="h" />
-          <KPI label="Campeones" value={`${k.pctCampeones}%`} variant="accent" />
+          <KPI label="Líderes" value={`${k.pctCampeones}%`} variant="accent" />
         </div>
       </FadeIn>
 
@@ -97,7 +97,7 @@ export default function DiagnosticoOverviewPage() {
       <FadeIn>
         <div className="flex flex-wrap gap-2">
           <Tag variant="navy">Universo: {k.n}</Tag>
-          <Tag variant="accent">Campeones: {responses.filter((r) => r.esCampeon).length}</Tag>
+          <Tag variant="accent">Líderes: {responses.filter((r) => r.esCampeon).length}</Tag>
           <Tag variant="green">{Math.round(k.horasSemana)}h ahorrables/sem</Tag>
         </div>
       </FadeIn>

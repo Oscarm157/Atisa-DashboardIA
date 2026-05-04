@@ -24,7 +24,7 @@ export default function CampeonesPage() {
     <div className="space-y-10">
       <FadeIn>
         <div>
-          <div className="mono-eyebrow mb-3">Campeones</div>
+          <div className="mono-eyebrow mb-3">Líderes</div>
           <h1 className="font-serif-display text-[40px] md:text-[48px] text-ink leading-[1.05]">
             {champions.length} colaboradores.
           </h1>
@@ -42,7 +42,7 @@ export default function CampeonesPage() {
             value={byDir.size}
             unit={`/ ${new Set(responses.map((r) => r.direccion)).size}`}
           />
-          <KPI label="Áreas sin campeones" value={new Set(responses.map((r) => r.direccion)).size - byDir.size} variant="accent" />
+          <KPI label="Áreas sin líderes" value={new Set(responses.map((r) => r.direccion)).size - byDir.size} variant="accent" />
         </div>
       </FadeIn>
 

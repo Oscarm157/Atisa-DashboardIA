@@ -69,7 +69,7 @@ export default function LobbyPage() {
               </CardEyebrow>
               <CardTitle>Dashboard</CardTitle>
               <CardBody>
-                KPIs, matriz, campeones, horas ahorrables y casos por dirección.
+                KPIs, matriz, líderes, horas ahorrables y casos por dirección.
               </CardBody>
               <CardGo>Abrir dashboard</CardGo>
             </Card>
@@ -149,7 +149,7 @@ export default function LobbyPage() {
             {[
               { href: "/diagnostico/comparar", label: "Comparar direcciones" },
               { href: "/diagnostico/matriz", label: "Matriz apertura · habilidad" },
-              { href: "/diagnostico/campeones", label: "Campeones" },
+              { href: "/diagnostico/campeones", label: "Líderes" },
               { href: "/diagnostico/horas", label: "Horas ahorrables" },
               { href: "/diagnostico/importar", label: "Importar datos" },
             ].map((it, i, arr) => (
