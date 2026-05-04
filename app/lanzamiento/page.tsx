@@ -289,7 +289,7 @@ export default function LanzamientoPage() {
             {
               icon: Clock,
               title: "Capacitación dentro de tu jornada",
-              body: "Las sesiones son tiempo laboral, no personal. Tu jefe ya está enterado del calendario.",
+              body: "Las sesiones son tiempo laboral, no personal. Calendario coordinado con cada dirección.",
             },
             {
               icon: BookOpen,
