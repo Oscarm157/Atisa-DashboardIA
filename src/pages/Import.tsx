@@ -161,9 +161,9 @@ export function Import() {
         const fechaFin = String(row[headers[2]] || "");
         const key = `${email}|${fechaFin}`;
 
-        const ejemploExito = String(row[headers[9]] || "").trim();
-        const herramientasArea = String(row[headers[10]] || "").trim();
-        const procesoPrioritario = String(row[headers[12]] || "").trim();
+        const ejemploExito = String(row[headers[10]] || "").trim();
+        const herramientasArea = String(row[headers[11]] || "").trim();
+        const procesoPrioritario = String(row[headers[13]] || "").trim();
 
         const testStr = (ejemploExito + herramientasArea + procesoPrioritario).toLowerCase();
         if (testStr.includes("testttt")) {
@@ -180,13 +180,13 @@ export function Import() {
           continue;
         }
 
-        const frec = toLikert(row[headers[5]]);
-        const hab = toLikert(row[headers[7]]);
-        const li1 = toLikert(row[headers[14]]);
-        const li2 = toLikert(row[headers[15]]);
-        const li3 = toLikert(row[headers[16]]);
+        const frec = toLikert(row[headers[6]]);
+        const hab = toLikert(row[headers[8]]);
+        const li1 = toLikert(row[headers[15]]);
+        const li2 = toLikert(row[headers[16]]);
+        const li3 = toLikert(row[headers[17]]);
         const apertura = (li1 + li2 + li3) / 3;
-        const horasBucket = toHoursBucket(row[headers[13]]);
+        const horasBucket = toHoursBucket(row[headers[14]]);
 
         maxId += 1;
         const entry: SurveyResponse = {
@@ -200,12 +200,12 @@ export function Import() {
           fechaInicio: String(row[headers[1]] || ""),
           fechaFin,
           frecuencia: frec,
-          plataformas: splitMulti(row[headers[6]]),
+          plataformas: splitMulti(row[headers[7]]),
           habilidad: hab,
-          funcionesValor: splitMulti(row[headers[8]]),
+          funcionesValor: splitMulti(row[headers[9]]),
           ejemploExito,
           herramientasArea,
-          barreras: splitMulti(row[headers[11]]),
+          barreras: splitMulti(row[headers[12]]),
           procesoPrioritario,
           horasAhorrables: horasBucket,
           likert: { indispensable: li1, repetitivo: li2, modificarFlujos: li3 },

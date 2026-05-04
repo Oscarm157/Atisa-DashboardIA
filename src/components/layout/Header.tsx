@@ -8,6 +8,7 @@ import {
   Trophy,
   Clock,
   Lightbulb,
+  Rocket,
   Upload,
   Printer,
   Maximize,
@@ -16,6 +17,7 @@ import {
 
 const NAV = [
   { to: "/", label: "Resumen", icon: LayoutDashboard },
+  { to: "/lanzamiento", label: "Lanzamiento", icon: Rocket },
   { to: "/comparar", label: "Comparar", icon: GitCompare },
   { to: "/matriz", label: "Matriz", icon: Target },
   { to: "/campeones", label: "Campeones", icon: Trophy },
