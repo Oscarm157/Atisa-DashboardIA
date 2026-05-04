@@ -35,7 +35,7 @@ export default function LanzamientoPage() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-6 text-[17px] text-ink-3 max-w-[680px]">
-              24 semanas para que tu trabajo tenga IA detrás. De mayo a octubre, 200 plazas, una sola herramienta corporativa: Claude Enterprise.
+              Mayo a octubre 2026. 200 plazas. Claude Enterprise como herramienta única del programa.
             </p>
           </FadeIn>
 
@@ -69,8 +69,7 @@ export default function LanzamientoPage() {
       {/* POR QUÉ */}
       <Section
         num="01"
-        title="Por qué este programa, ahora"
-        subtitle="Tres hallazgos que justifican el programa, todos del diagnóstico que respondieron 119 colaboradores."
+        title="Por qué ahora"
       >
         <StaggerChildren className="grid md:grid-cols-3 gap-5 ml-0 md:ml-[120px]">
           {[
@@ -110,8 +109,7 @@ export default function LanzamientoPage() {
       {/* TU NIVEL */}
       <Section
         num="02"
-        title="Tu nivel de partida"
-        subtitle="El programa segmenta a la plantilla en dos niveles según la encuesta diagnóstica. La asignación se hace al inscribirte."
+        title="Tu nivel"
       >
         <StaggerChildren className="grid md:grid-cols-2 gap-5 ml-0 md:ml-[120px]">
           <StaggerItem>
@@ -164,8 +162,7 @@ export default function LanzamientoPage() {
       {/* TIMELINE */}
       <Section
         num="03"
-        title="Las 24 semanas"
-        subtitle="Cinco bloques operativos. El challenge ocupa la mitad del programa y tiene tres checkpoints mensuales."
+        title="24 semanas"
       >
         <FadeIn>
           <div className="ml-0 md:ml-[120px] bg-bg border border-line p-7 md:p-8">
@@ -185,7 +182,7 @@ export default function LanzamientoPage() {
               ))}
             </div>
             <p className="mt-6 text-[13px] text-ink-4 leading-[1.55]">
-              El challenge (B5) tiene tres checkpoints mensuales: semanas 14, 18 y 22. Quien no entrega reporte de avance en un checkpoint sale del ranking.
+              Checkpoints del challenge: semanas 14, 18 y 22. Quien no entrega, sale del ranking.
             </p>
           </div>
         </FadeIn>
@@ -195,7 +192,6 @@ export default function LanzamientoPage() {
       <Section
         num="04"
         title="Qué obtienes"
-        subtitle="Cuatro cosas concretas. Sin promesas vagas."
       >
         <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 ml-0 md:ml-[120px]">
           {[
@@ -234,8 +230,7 @@ export default function LanzamientoPage() {
       {/* REGLAS */}
       <Section
         num="05"
-        title="Reglas del programa"
-        subtitle="Tres reglas mínimas. Si no las cumples, sales del ranking del challenge."
+        title="Reglas"
       >
         <FadeIn>
           <div className="ml-0 md:ml-[120px] bg-bg border border-line p-7 md:p-8 space-y-5">
@@ -268,8 +263,7 @@ export default function LanzamientoPage() {
       {/* COMO TE INSCRIBES */}
       <Section
         num="06"
-        title="Cómo te inscribes"
-        subtitle="Tres pasos. Te llega todo por correo."
+        title="Inscripción"
       >
         <StaggerChildren className="grid md:grid-cols-3 gap-5 ml-0 md:ml-[120px]">
           {[
@@ -306,13 +300,10 @@ export default function LanzamientoPage() {
           <FadeIn>
             <div className="bg-ink text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="max-w-[560px]">
-                <div className="mono-eyebrow !text-accent mb-3">Quieres ver más</div>
+                <div className="mono-eyebrow !text-accent mb-3">Diagnóstico</div>
                 <h3 className="font-serif-display text-[28px] md:text-[34px] text-white leading-tight">
-                  El diagnóstico completo en el dashboard.
+                  El dashboard tiene los hallazgos por dirección, procesos prioritarios y campeones.
                 </h3>
-                <p className="text-white/70 text-[14.5px] mt-3 leading-[1.55]">
-                  Hallazgos por dirección, procesos prioritarios que la gente ya identificó y top de campeones detectados.
-                </p>
               </div>
               <Link
                 href="/diagnostico"
@@ -340,7 +331,7 @@ export default function LanzamientoPage() {
                 <p className="text-[15px] font-medium text-ink">Sesiones de Q&amp;A</p>
                 <p className="text-[13.5px] text-ink-3 mt-1">Calendario: [pendiente]</p>
                 <p className="text-[12.5px] text-ink-4 mt-3 leading-[1.5]">
-                  Sesiones abiertas para preguntar lo que quieras del programa antes de inscribirte. Sin compromiso.
+                  Espacios abiertos para resolver dudas del programa antes de la convocatoria formal.
                 </p>
               </div>
             </FadeIn>

@@ -52,7 +52,7 @@ export default function MatrizPage() {
           Apertura · Habilidad.
         </h1>
         <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-          Cada punto es un colaborador. El eje X mide su apertura promedio a la adopción (Q10), el Y su habilidad con IA (Q3). Cuatro cuadrantes definen estrategias distintas de acompañamiento.
+          X = apertura (Q10) · Y = habilidad (Q3) · cada punto un colaborador.
         </p>
       </div>
 

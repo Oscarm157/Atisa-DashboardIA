@@ -11,36 +11,63 @@ export default function LobbyPage() {
       <TopBar meta="Documento Interno · Mayo 2026" />
 
       {/* HERO */}
-      <section className="border-b border-line py-24 md:py-32">
+      <section className="border-b border-line py-16 md:py-24 bg-bg">
         <div className="page-container">
           <FadeIn>
-            <div className="mono-eyebrow mb-7">
+            <div className="mono-eyebrow mb-5">
               Programa de Adopción de IA · 2026
             </div>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="font-serif-display text-[44px] md:text-[68px] leading-[1.05] text-ink max-w-[920px]">
+            <h1 className="font-serif-display text-[40px] md:text-[64px] leading-[1.05] text-ink max-w-[920px]">
               Estrategia, diagnóstico y{" "}
               <strong className="text-navy-deep font-medium">plan de ejecución</strong>{" "}
               en un solo lugar.
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="mt-7 text-[17px] text-ink-3 leading-[1.55] max-w-[680px]">
-              Tres bloques de trabajo: el marco de gobernanza, los hallazgos de la encuesta a 119 colaboradores, y las 24 semanas que arrancan en mayo.
+            <p className="mt-5 text-[16px] text-ink-3 leading-[1.55] max-w-[680px]">
+              Marco de gobernanza, encuesta a 119 colaboradores y 24 semanas de programa, mayo a octubre 2026.
             </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* 01 ESTRATEGIA */}
-      <Section
-        num="01"
-        eyebrow=""
-        title="Estrategia"
-        subtitle="El marco de gobernanza y la mecánica del challenge interno."
-      >
-        <StaggerChildren className="grid md:grid-cols-2 gap-5 ml-0 md:ml-[120px]">
+      {/* 01 DIAGNOSTICO */}
+      <Section num="01" title="Diagnóstico" compact className="bg-bg-soft">
+        <StaggerChildren className="grid md:grid-cols-2 gap-4 ml-0 md:ml-[120px]">
+          <StaggerItem>
+            <Card href="/reporte" className="group h-full">
+              <CardEyebrow>
+                Documento ejecutivo
+                <FileText className="w-3 h-3 text-ink-4" />
+              </CardEyebrow>
+              <CardTitle>Reporte ejecutivo</CardTitle>
+              <CardBody>
+                Resultados de la encuesta, segmentación Básico e Intermedio y cronograma.
+              </CardBody>
+              <CardGo>Abrir reporte</CardGo>
+            </Card>
+          </StaggerItem>
+          <StaggerItem>
+            <Card href="/diagnostico" className="group h-full">
+              <CardEyebrow>
+                Tablero interactivo
+                <LayoutGrid className="w-3 h-3 text-ink-4" />
+              </CardEyebrow>
+              <CardTitle>Dashboard</CardTitle>
+              <CardBody>
+                KPIs, matriz, campeones, horas ahorrables y casos por dirección.
+              </CardBody>
+              <CardGo>Abrir dashboard</CardGo>
+            </Card>
+          </StaggerItem>
+        </StaggerChildren>
+      </Section>
+
+      {/* 02 ESTRATEGIA */}
+      <Section num="02" title="Estrategia" compact className="bg-bg">
+        <StaggerChildren className="grid md:grid-cols-2 gap-4 ml-0 md:ml-[120px]">
           <StaggerItem>
             <Card href="https://atisa-ia.vercel.app/ai-governance" external className="group h-full">
               <CardEyebrow>
@@ -49,7 +76,7 @@ export default function LobbyPage() {
               </CardEyebrow>
               <CardTitle>Atisa Governance</CardTitle>
               <CardBody>
-                Marco de uso responsable de IA: principios, fases de adopción, ruta crítica y KPIs institucionales.
+                Marco de uso responsable de IA: principios, fases, ruta crítica y KPIs.
               </CardBody>
               <CardGo>Abrir presentación</CardGo>
             </Card>
@@ -62,7 +89,7 @@ export default function LobbyPage() {
               </CardEyebrow>
               <CardTitle>Atisa Challenge</CardTitle>
               <CardBody>
-                Mecánica del programa interno: oportunidad, datos, herramientas, propuesta, timeline, evaluación, premios e inversión.
+                Mecánica del programa: oportunidad, herramientas, timeline, evaluación, premios.
               </CardBody>
               <CardGo>Abrir presentación</CardGo>
             </Card>
@@ -70,58 +97,18 @@ export default function LobbyPage() {
         </StaggerChildren>
       </Section>
 
-      {/* 02 DIAGNOSTICO */}
-      <Section
-        num="02"
-        title="Diagnóstico"
-        subtitle="119 colaboradores encuestados. Hallazgos por dirección, por nivel y por proceso."
-      >
-        <StaggerChildren className="grid md:grid-cols-2 gap-5 ml-0 md:ml-[120px]">
-          <StaggerItem>
-            <Card href="/reporte" className="group h-full">
-              <CardEyebrow>
-                Documento ejecutivo
-                <FileText className="w-3 h-3 text-ink-4" />
-              </CardEyebrow>
-              <CardTitle>Reporte ejecutivo</CardTitle>
-              <CardBody>
-                Resultados de la encuesta, segmentación Básico e Intermedio, mecanismos del programa y cronograma de 24 semanas.
-              </CardBody>
-              <CardGo>Abrir reporte</CardGo>
-            </Card>
-          </StaggerItem>
-          <StaggerItem>
-            <Card href="/diagnostico" className="group h-full">
-              <CardEyebrow>
-                Tablero interactivo
-                <LayoutGrid className="w-3 h-3 text-ink-4" />
-              </CardEyebrow>
-              <CardTitle>Dashboard de hallazgos</CardTitle>
-              <CardBody>
-                KPIs filtrables, matriz apertura por habilidad, campeones identificados, horas ahorrables y casos por dirección.
-              </CardBody>
-              <CardGo>Abrir dashboard</CardGo>
-            </Card>
-          </StaggerItem>
-        </StaggerChildren>
-      </Section>
-
       {/* 03 PROGRAMA */}
-      <Section
-        num="03"
-        title="Programa"
-        subtitle="Lo que sigue: 24 semanas de ejecución. Convocatoria al personal y material para preparar las sesiones."
-      >
-        <StaggerChildren className="grid md:grid-cols-2 gap-5 ml-0 md:ml-[120px]">
+      <Section num="03" title="Programa" compact className="bg-bg-soft">
+        <StaggerChildren className="grid md:grid-cols-2 gap-4 ml-0 md:ml-[120px]">
           <StaggerItem>
             <Card href="/lanzamiento" className="group h-full">
               <CardEyebrow>
                 Convocatoria
                 <Megaphone className="w-3 h-3 text-ink-4" />
               </CardEyebrow>
-              <CardTitle>Lanzamiento del programa</CardTitle>
+              <CardTitle>Lanzamiento</CardTitle>
               <CardBody>
-                Para los 200 colaboradores: niveles de partida, calendario, reglas de asistencia, pasos de inscripción.
+                200 colaboradores: niveles, calendario, reglas, pasos de inscripción.
               </CardBody>
               <CardGo>Ver lanzamiento</CardGo>
             </Card>
@@ -134,7 +121,7 @@ export default function LobbyPage() {
               </CardEyebrow>
               <CardTitle>Casos por dirección</CardTitle>
               <CardBody>
-                105 procesos prioritarios reales escritos por los respondientes. Material crudo para preparar cada sesión.
+                105 procesos prioritarios reales escritos por los respondientes.
               </CardBody>
               <CardGo>Ver casos</CardGo>
             </Card>
@@ -143,9 +130,9 @@ export default function LobbyPage() {
       </Section>
 
       {/* TRAY */}
-      <section className="border-b border-line py-14">
+      <section className="border-b border-line py-8 bg-bg">
         <div className="page-container">
-          <div className="mono-eyebrow mb-5">Otras vistas del dashboard</div>
+          <div className="mono-eyebrow mb-4">Otras vistas del dashboard</div>
           <div className="flex flex-wrap">
             {[
               { href: "/diagnostico/comparar", label: "Comparar direcciones" },
@@ -167,7 +154,7 @@ export default function LobbyPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-9 pb-14">
+      <footer className="py-7 pb-10 bg-bg-soft">
         <div className="page-container font-mono text-[11px] tracking-widest uppercase text-ink-4">
           Atisa Group · Documento Interno · Mayo 2026
         </div>

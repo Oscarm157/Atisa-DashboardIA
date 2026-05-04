@@ -19,10 +19,10 @@ export default function HorasPage() {
         <div>
           <div className="mono-eyebrow mb-3">Horas ahorrables</div>
           <h1 className="font-serif-display text-[40px] md:text-[48px] text-ink leading-[1.05]">
-            {Math.round(total)}h por semana en la encuesta.
+            {Math.round(total)}h por semana.
           </h1>
           <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-            Cantidad agregada de horas que los {responses.length} respondientes estiman podrían ahorrar con las herramientas de IA adecuadas. Extrapolado a la plantilla de 200 administrativos sería substancialmente mayor.
+            Suma autoreportada por los {responses.length} respondientes. Plantilla total 200, extrapolación pendiente.
           </p>
         </div>
       </FadeIn>
@@ -45,7 +45,7 @@ export default function HorasPage() {
         <div className="bg-bg border border-line p-7">
           <div className="mono-eyebrow mb-2">Distribución</div>
           <h2 className="font-serif-display text-[24px] text-ink mb-6 leading-tight">
-            Cuántas horas/semana declara cada respondiente.
+            Por bucket.
           </h2>
           <StaggerChildren className="space-y-4">
             {dist.map((d) => {
@@ -72,7 +72,7 @@ export default function HorasPage() {
         <div className="bg-bg border border-line p-7">
           <div className="mono-eyebrow mb-2">Por dirección</div>
           <h2 className="font-serif-display text-[24px] text-ink mb-6 leading-tight">
-            Las direcciones con más potencial de ahorro semanal.
+            Suma semanal.
           </h2>
           <StaggerChildren className="space-y-2.5">
             {dirData.map(([name, h]) => (

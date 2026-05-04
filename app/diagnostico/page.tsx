@@ -19,12 +19,12 @@ export default function DiagnosticoOverviewPage() {
     <div className="space-y-12">
       <FadeIn>
         <div>
-          <div className="mono-eyebrow mb-3">Resumen ejecutivo</div>
+          <div className="mono-eyebrow mb-3">Resumen</div>
           <h1 className="font-serif-display text-[40px] md:text-[52px] text-ink leading-[1.05]">
-            Diagnóstico de adopción de IA.
+            Diagnóstico.
           </h1>
           <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-            Basado en {k.n} colaboradores válidos. {Object.keys(meta.directionCounts || {}).length} direcciones representadas. Generado {new Date(meta.generatedAt).toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" })}.
+            {k.n} respondientes válidos · {Object.keys(meta.directionCounts || {}).length} direcciones · actualizado {new Date(meta.generatedAt).toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" })}
           </p>
         </div>
       </FadeIn>
@@ -43,9 +43,9 @@ export default function DiagnosticoOverviewPage() {
       <FadeIn>
         <div className="grid lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 bg-bg border border-line p-7">
-            <div className="mono-eyebrow mb-2">Distribución por dirección</div>
+            <div className="mono-eyebrow mb-2">Por dirección</div>
             <h2 className="font-serif-display text-[24px] text-ink mb-6 leading-tight">
-              {dirData.length} direcciones, ordenadas por número de respuestas.
+              {dirData.length} direcciones.
             </h2>
             <StaggerChildren className="space-y-2.5">
               {dirData.map(([name, n]) => (

@@ -66,11 +66,8 @@ const Slide01 = (
 const Slide02 = (
   <SlideShell tag="Intro · 7 min" num={2} total={TOTAL}>
     <h2 className="font-serif-display text-[36px] md:text-[44px] leading-[1.1] text-ink max-w-[800px]">
-      Tres reglas mínimas del programa.
+      Tres reglas.
     </h2>
-    <p className="text-ink-3 text-[15px] mt-4 max-w-[640px]">
-      Las del lobby de lanzamiento, recordadas. Si algo no queda claro, lo paramos antes de seguir.
-    </p>
     <div className="mt-10 space-y-0">
       {[
         ["01", "Asistencia", "4 de 5 sesiones para conservar tu plaza en el challenge. La asistencia se toma al inicio de cada sesión."],

@@ -48,12 +48,12 @@ export default function CasosPage() {
   return (
     <div className="space-y-8">
       <div>
-        <div className="mono-eyebrow mb-3">Material para workshops</div>
+        <div className="mono-eyebrow mb-3">Casos</div>
         <h1 className="font-serif-display text-[40px] md:text-[48px] text-ink leading-[1.05]">
-          Casos por dirección.
+          Por dirección.
         </h1>
         <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-          Material crudo del diagnóstico, agrupado por las {grouped.length} direcciones que respondieron. El facilitador filtra por dirección antes de cada workshop y usa estos textos como base para sus demos.
+          {grouped.length} direcciones · {responses.length} respondientes · texto crudo de Q5, Q6 y Q8.
         </p>
       </div>
 

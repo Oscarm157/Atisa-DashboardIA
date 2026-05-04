@@ -11,12 +11,12 @@ export default function ImportarPage() {
     <div className="space-y-10">
       <FadeIn>
         <div>
-          <div className="mono-eyebrow mb-3">Administración</div>
+          <div className="mono-eyebrow mb-3">Importar</div>
           <h1 className="font-serif-display text-[40px] md:text-[48px] text-ink leading-[1.05]">
-            Importar nuevos datos.
+            Datos del diagnóstico.
           </h1>
           <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-            La data principal del dashboard se regenera vía script <span className="font-mono text-[13px] bg-bg-soft px-1.5 py-0.5">npm run ingest</span> que lee <span className="font-mono text-[13px] bg-bg-soft px-1.5 py-0.5">data/encuesta.xlsx</span> y <span className="font-mono text-[13px] bg-bg-soft px-1.5 py-0.5">data/roster.csv</span> y escribe <span className="font-mono text-[13px] bg-bg-soft px-1.5 py-0.5">data/responses.json</span>. La importación desde el browser quedó en pausa durante esta migración.
+            Regeneración via <span className="font-mono text-[13px] bg-bg-soft px-1.5 py-0.5">npm run ingest</span>.
           </p>
         </div>
       </FadeIn>
@@ -26,15 +26,12 @@ export default function ImportarPage() {
           <div className="flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-amber shrink-0 mt-0.5" />
             <div>
-              <h3 className="font-medium text-ink">Importación desde browser deshabilitada en esta versión</h3>
-              <p className="text-[13.5px] text-ink-3 mt-2 leading-[1.6]">
-                Migramos a Next.js y aún no portamos la página de carga interactiva. El flujo recomendado mientras tanto es regenerar via terminal:
-              </p>
+              <h3 className="font-medium text-ink">Carga desde browser pendiente de migración</h3>
               <pre className="mt-3 bg-ink text-white text-[12.5px] font-mono p-3 leading-relaxed">
-                <code>{"# 1. Coloca el Excel actualizado en data/encuesta.xlsx\n# 2. Coloca el roster en data/roster.csv\n# 3. Ejecuta:\nnpm run ingest"}</code>
+                <code>{"# data/encuesta.xlsx\n# data/roster.csv\nnpm run ingest"}</code>
               </pre>
               <p className="text-[12.5px] text-ink-4 mt-3">
-                El script reescribe <span className="font-mono">data/responses.json</span> y <span className="font-mono">data/meta.json</span>. Después haces commit y push.
+                Reescribe <span className="font-mono">data/responses.json</span> y <span className="font-mono">data/meta.json</span>. Commit + push.
               </p>
             </div>
           </div>
@@ -46,9 +43,9 @@ export default function ImportarPage() {
           <div className="flex items-start gap-3">
             <Info className="w-5 h-5 text-navy shrink-0 mt-0.5" />
             <div>
-              <h3 className="font-medium text-ink">Estructura esperada del Excel</h3>
+              <h3 className="font-medium text-ink">Columnas esperadas</h3>
               <p className="text-[13.5px] text-ink-3 mt-2 leading-[1.55]">
-                Las columnas deben venir en este orden (formato MS Forms con &quot;Hora de última modificación&quot; en la posición 5):
+                Formato MS Forms, &quot;Hora de última modificación&quot; en posición 5.
               </p>
               <ol className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8 text-[12.5px] text-ink-2 font-mono">
                 {[

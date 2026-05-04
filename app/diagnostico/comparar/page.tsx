@@ -19,12 +19,12 @@ export default function CompararPage() {
     <div className="space-y-10">
       <FadeIn>
         <div>
-          <div className="mono-eyebrow mb-3">Comparativo</div>
+          <div className="mono-eyebrow mb-3">Comparar</div>
           <h1 className="font-serif-display text-[40px] md:text-[48px] text-ink leading-[1.05]">
-            Comparar direcciones.
+            Direcciones.
           </h1>
           <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-            Promedios de habilidad, frecuencia y apertura por cada dirección. Útil para priorizar workshops por afinidad y disponibilidad.
+            Promedios de habilidad, frecuencia y apertura.
           </p>
         </div>
       </FadeIn>

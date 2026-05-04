@@ -24,12 +24,12 @@ export default function CampeonesPage() {
     <div className="space-y-10">
       <FadeIn>
         <div>
-          <div className="mono-eyebrow mb-3">Campeones identificados</div>
+          <div className="mono-eyebrow mb-3">Campeones</div>
           <h1 className="font-serif-display text-[40px] md:text-[48px] text-ink leading-[1.05]">
-            {champions.length} colaboradores listos para liderar.
+            {champions.length} colaboradores.
           </h1>
           <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-            Personas con habilidad ≥ 4 y frecuencia de uso ≥ 4 según la encuesta. Son la base natural de mentores Intermedios para los workshops y el challenge.
+            Habilidad ≥ 4 y frecuencia ≥ 4. Base de mentores Intermedios.
           </p>
         </div>
       </FadeIn>
