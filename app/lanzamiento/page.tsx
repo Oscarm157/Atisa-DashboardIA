@@ -11,21 +11,29 @@ type Bloque = {
   start: number;
   end: number;
   semanas: string;
+  fechas: string;
   accent?: boolean;
   checkpoints?: number[];
 };
 
 const TOTAL_SEMANAS = 24;
+// Programa: lunes 11 may 2026 (S1) → domingo 25 oct 2026 (fin S24)
 const BLOQUES: Bloque[] = [
-  { id: "B1", label: "Lanzamiento", start: 1, end: 2, semanas: "S1 – S2" },
-  { id: "B2", label: "Capacitación Básico", start: 3, end: 7, semanas: "S3 – S7", accent: true },
-  { id: "B3", label: "Capacitación Intermedio", start: 5, end: 8, semanas: "S5 – S8" },
-  { id: "B4", label: "Mapeo por dirección", start: 8, end: 10, semanas: "S8 – S10" },
-  { id: "B5", label: "Challenge interno", start: 11, end: 22, semanas: "S11 – S22", accent: true, checkpoints: [14, 18, 22] },
-  { id: "B6", label: "Premiación", start: 23, end: 24, semanas: "S23 – S24" },
+  { id: "B1", label: "Lanzamiento", start: 1, end: 2, semanas: "S1 – S2", fechas: "11 – 24 may" },
+  { id: "B2", label: "Capacitación Básico", start: 3, end: 7, semanas: "S3 – S7", fechas: "25 may – 28 jun", accent: true },
+  { id: "B3", label: "Capacitación Intermedio", start: 5, end: 8, semanas: "S5 – S8", fechas: "8 jun – 5 jul" },
+  { id: "B4", label: "Mapeo por dirección", start: 8, end: 10, semanas: "S8 – S10", fechas: "29 jun – 19 jul" },
+  { id: "B5", label: "Challenge interno", start: 11, end: 22, semanas: "S11 – S22", fechas: "20 jul – 11 oct", accent: true, checkpoints: [14, 18, 22] },
+  { id: "B6", label: "Premiación", start: 23, end: 24, semanas: "S23 – S24", fechas: "12 – 25 oct" },
 ];
 
-const MARKERS = [1, 6, 12, 18, 24];
+const MARKERS = [
+  { semana: 1, label: "11 may" },
+  { semana: 6, label: "15 jun" },
+  { semana: 12, label: "27 jul" },
+  { semana: 18, label: "7 sep" },
+  { semana: 24, label: "19 oct" },
+];
 const pct = (week: number) => ((week - 1) / TOTAL_SEMANAS) * 100;
 const widthPct = (b: Bloque) => ((b.end - b.start + 1) / TOTAL_SEMANAS) * 100;
 
@@ -50,7 +58,7 @@ export default function LanzamientoPage() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-6 text-[17px] text-ink-3 max-w-[680px]">
-              Mayo a octubre 2026. 125 plazas. Claude Enterprise como herramienta única del programa.
+              Lunes 11 de mayo a domingo 25 de octubre 2026. 125 plazas. Claude Enterprise como herramienta única del programa.
             </p>
           </FadeIn>
 
@@ -66,7 +74,7 @@ export default function LanzamientoPage() {
                 label="Duración total"
                 value="24"
                 unit="semanas"
-                hint="Mayo a octubre 2026"
+                hint="11 may – 25 oct 2026"
                 variant="accent"
               />
               <KPI
@@ -179,26 +187,27 @@ export default function LanzamientoPage() {
         <FadeIn>
           <div className="bg-bg border border-line p-6 md:p-8">
             {/* Eje */}
-            <div className="grid grid-cols-[180px_minmax(0,1fr)] gap-4 md:gap-6 mb-4">
+            <div className="grid grid-cols-[180px_minmax(0,1fr)] gap-4 md:gap-6 mb-6">
               <div className="hidden md:block" />
-              <div className="relative h-6 border-b border-line">
-                {MARKERS.map((w) => (
+              <div className="relative h-9 border-b border-line">
+                {MARKERS.map((m) => (
                   <div
-                    key={w}
-                    className="absolute top-0 font-mono text-[10.5px] tracking-widest uppercase text-ink-4"
+                    key={m.semana}
+                    className="absolute top-0 font-mono text-[10.5px] tracking-widest uppercase text-ink-4 leading-none"
                     style={{
-                      left: `${pct(w)}%`,
-                      transform: w === 24 ? "translateX(-100%)" : w === 1 ? "none" : "translateX(-50%)",
+                      left: `${pct(m.semana)}%`,
+                      transform: m.semana === 24 ? "translateX(-100%)" : m.semana === 1 ? "none" : "translateX(-50%)",
                     }}
                   >
-                    S{w}
+                    <div>S{m.semana}</div>
+                    <div className="text-ink-3 mt-1 normal-case tracking-normal">{m.label}</div>
                   </div>
                 ))}
-                {MARKERS.map((w) => (
+                {MARKERS.map((m) => (
                   <div
-                    key={`tick-${w}`}
+                    key={`tick-${m.semana}`}
                     className="absolute bottom-0 w-px h-1.5 bg-line"
-                    style={{ left: `${pct(w)}%` }}
+                    style={{ left: `${pct(m.semana)}%` }}
                   />
                 ))}
               </div>
@@ -218,7 +227,10 @@ export default function LanzamientoPage() {
                       </span>
                       <span className="font-medium text-ink text-[13.5px] truncate">{b.label}</span>
                     </div>
-                    <div className="font-mono text-[10.5px] tracking-wide text-ink-4 mt-0.5">
+                    <div className="font-mono text-[10.5px] tracking-wide text-ink-3 mt-1">
+                      {b.fechas}
+                    </div>
+                    <div className="font-mono text-[10px] tracking-wide text-ink-4">
                       {b.semanas}
                     </div>
                   </div>
@@ -261,7 +273,7 @@ export default function LanzamientoPage() {
             </div>
 
             <p className="mt-5 text-[13px] text-ink-4 leading-[1.55]">
-              Quien no entrega en checkpoint, sale del ranking. Bloques que se traslapan son intencionales: la capacitación intermedia corre en paralelo a la básica.
+              Inicio lunes 11 de mayo, cierre domingo 25 de octubre. Checkpoints del Challenge: 10 ago, 7 sep y 5 oct. Quien no entrega en checkpoint, sale del ranking. La capacitación intermedia corre en paralelo a la básica de forma intencional.
             </p>
           </div>
         </FadeIn>

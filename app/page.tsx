@@ -37,8 +37,8 @@ export default function LobbyPage() {
                 <span className="text-white font-medium">24 semanas</span>
               </div>
               <div className="flex justify-between py-3 text-[13.5px]">
-                <span className="font-mono text-[11.5px] tracking-widest uppercase text-white/55">Periodo</span>
-                <span className="text-white font-medium">Mayo a octubre 2026</span>
+                <span className="font-mono text-[11.5px] tracking-widest uppercase text-white/55">Inicio</span>
+                <span className="text-white font-medium">Lunes 11 de mayo 2026</span>
               </div>
             </div>
           </FadeIn>
