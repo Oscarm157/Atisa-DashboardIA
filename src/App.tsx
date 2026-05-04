@@ -7,6 +7,7 @@ import { Compare } from "./pages/Compare";
 import { Matrix } from "./pages/Matrix";
 import { Champions } from "./pages/Champions";
 import { Hours } from "./pages/Hours";
+import { CasosPorDireccion } from "./pages/CasosPorDireccion";
 import { Import } from "./pages/Import";
 import { useFilters } from "./lib/filters";
 import { cn } from "./lib/utils";
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="/matriz" element={<Matrix />} />
             <Route path="/campeones" element={<Champions />} />
             <Route path="/horas" element={<Hours />} />
+            <Route path="/casos" element={<CasosPorDireccion />} />
             <Route path="/importar" element={<Import />} />
           </Routes>
         </main>

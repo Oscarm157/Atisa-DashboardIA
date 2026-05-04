@@ -7,6 +7,7 @@ import {
   Target,
   Trophy,
   Clock,
+  Lightbulb,
   Upload,
   Printer,
   Maximize,
@@ -19,6 +20,7 @@ const NAV = [
   { to: "/matriz", label: "Matriz", icon: Target },
   { to: "/campeones", label: "Campeones", icon: Trophy },
   { to: "/horas", label: "Horas", icon: Clock },
+  { to: "/casos", label: "Casos", icon: Lightbulb },
   { to: "/importar", label: "Importar", icon: Upload },
 ];
 
