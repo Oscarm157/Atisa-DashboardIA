@@ -89,49 +89,6 @@ export default function LanzamientoPage() {
         </div>
       </section>
 
-      {/* POR QUÉ */}
-      <Section
-        title="Por qué ahora"
-      >
-        <StaggerChildren className="grid md:grid-cols-3 gap-3">
-          {[
-            {
-              big: "94%",
-              body: "Del personal ya usa IA al menos una vez. Sin gobernanza ni método.",
-              note: "Hoy todo es con cuentas personales y sin protocolo de manejo de información.",
-            },
-            {
-              big: "$5.2M",
-              unit: "MXN/año",
-              body: "En horas liberables a nivel plantilla.",
-              note: "Cada colaborador estima 4.5 horas semanales que podría reasignar a trabajo de mayor valor.",
-            },
-            {
-              big: "3.33 vs 3.02",
-              body: "Frecuencia de uso por encima de habilidad real.",
-              note: "Usamos la herramienta a un ritmo que rebasa nuestro dominio. De ahí la queja recurrente sobre respuestas imprecisas.",
-            },
-          ].map((c, i) => (
-            <StaggerItem key={i}>
-              <div className="bg-bg border border-line p-5 md:p-6 h-full">
-                <div className="flex items-baseline gap-2 mb-3">
-                  <div className="font-serif-display text-[36px] md:text-[40px] text-accent leading-none font-light">
-                    {c.big}
-                  </div>
-                  {c.unit && (
-                    <div className="font-mono text-[10.5px] uppercase tracking-widest text-ink-4">
-                      {c.unit}
-                    </div>
-                  )}
-                </div>
-                <p className="text-[14px] font-medium text-ink leading-snug">{c.body}</p>
-                <p className="mt-1.5 text-[12.5px] text-ink-3 leading-[1.55]">{c.note}</p>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerChildren>
-      </Section>
-
       {/* TU NIVEL */}
       <Section
         title="Tu nivel"
