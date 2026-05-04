@@ -79,74 +79,76 @@ export default function LobbyPage() {
 
       {/* 02 ESTRATEGIA */}
       <Section num="02" title="Estrategia" compact className="bg-bg">
-        <StaggerChildren className="grid md:grid-cols-3 gap-4 ml-0 md:ml-[120px]">
-          <StaggerItem>
-            <Card href="https://atisa-ia.vercel.app/ai-governance" external className="group h-full">
-              <CardEyebrow>
-                Deck externo · 7 slides
-                <ArrowUpRight className="w-3 h-3 text-ink-4" />
-              </CardEyebrow>
-              <CardTitle>Atisa Governance</CardTitle>
-              <CardBody>
-                Marco de uso responsable de IA: principios, fases, ruta crítica y KPIs.
-              </CardBody>
-              <CardGo>Abrir presentación</CardGo>
-            </Card>
-          </StaggerItem>
-          <StaggerItem>
-            <Card href="https://atisa-ia.vercel.app/ai-challenge" external className="group h-full">
-              <CardEyebrow>
-                Deck externo · 11 slides
-                <ArrowUpRight className="w-3 h-3 text-ink-4" />
-              </CardEyebrow>
-              <CardTitle>Atisa Challenge</CardTitle>
-              <CardBody>
-                Mecánica del programa: oportunidad, herramientas, timeline, evaluación, premios.
-              </CardBody>
-              <CardGo>Abrir presentación</CardGo>
-            </Card>
-          </StaggerItem>
-          <StaggerItem>
-            <Card href="/lanzamiento" className="group h-full">
-              <CardEyebrow>
-                Convocatoria interna
-                <Megaphone className="w-3 h-3 text-ink-4" />
-              </CardEyebrow>
-              <CardTitle>Lanzamiento</CardTitle>
-              <CardBody>
-                200 colaboradores: niveles, calendario, reglas, pasos de inscripción.
-              </CardBody>
-              <CardGo>Ver lanzamiento</CardGo>
-            </Card>
-          </StaggerItem>
-        </StaggerChildren>
-      </Section>
-
-      {/* CASOS · bloque secundario */}
-      <section className="border-b border-line bg-bg-soft py-7">
-        <div className="page-container">
-          <Link
-            href="/diagnostico/casos"
-            className="group flex items-center justify-between gap-6 border border-line bg-bg p-5 md:p-6 hover:border-ink transition-colors"
-          >
-            <div className="flex items-start gap-4 min-w-0">
-              <FolderOpen className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-              <div className="min-w-0">
-                <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-1">
-                  Material para workshops
-                </div>
-                <div className="font-medium text-ink text-[15px] mb-0.5">
-                  Casos por dirección
-                </div>
-                <div className="text-[13px] text-ink-3">
-                  105 procesos prioritarios reales escritos por los colaboradores.
-                </div>
-              </div>
+        <div className="ml-0 md:ml-[120px] space-y-10">
+          <div>
+            <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-3">
+              Marco
             </div>
-            <ArrowUpRight className="w-4 h-4 text-ink-4 shrink-0 group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
-          </Link>
+            <StaggerChildren className="grid md:grid-cols-2 gap-4">
+              <StaggerItem>
+                <Card href="https://atisa-ia.vercel.app/ai-governance" external className="group h-full">
+                  <CardEyebrow>
+                    Deck externo · 7 slides
+                    <ArrowUpRight className="w-3 h-3 text-ink-4" />
+                  </CardEyebrow>
+                  <CardTitle>Atisa Governance</CardTitle>
+                  <CardBody>
+                    Marco de uso responsable de IA: principios, fases, ruta crítica y KPIs.
+                  </CardBody>
+                  <CardGo>Abrir presentación</CardGo>
+                </Card>
+              </StaggerItem>
+              <StaggerItem>
+                <Card href="https://atisa-ia.vercel.app/ai-challenge" external className="group h-full">
+                  <CardEyebrow>
+                    Deck externo · 11 slides
+                    <ArrowUpRight className="w-3 h-3 text-ink-4" />
+                  </CardEyebrow>
+                  <CardTitle>Atisa Challenge</CardTitle>
+                  <CardBody>
+                    Mecánica del programa: oportunidad, herramientas, timeline, evaluación, premios.
+                  </CardBody>
+                  <CardGo>Abrir presentación</CardGo>
+                </Card>
+              </StaggerItem>
+            </StaggerChildren>
+          </div>
+
+          <div>
+            <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium mb-3">
+              Programa de capacitación
+            </div>
+            <StaggerChildren className="grid md:grid-cols-2 gap-4">
+              <StaggerItem>
+                <Card href="/lanzamiento" className="group h-full">
+                  <CardEyebrow>
+                    Convocatoria interna
+                    <Megaphone className="w-3 h-3 text-ink-4" />
+                  </CardEyebrow>
+                  <CardTitle>Lanzamiento</CardTitle>
+                  <CardBody>
+                    200 colaboradores: niveles, calendario, reglas, pasos de inscripción.
+                  </CardBody>
+                  <CardGo>Ver lanzamiento</CardGo>
+                </Card>
+              </StaggerItem>
+              <StaggerItem>
+                <Card href="/diagnostico/casos" className="group h-full">
+                  <CardEyebrow>
+                    Material para workshops
+                    <FolderOpen className="w-3 h-3 text-ink-4" />
+                  </CardEyebrow>
+                  <CardTitle>Casos por dirección</CardTitle>
+                  <CardBody>
+                    105 procesos prioritarios reales escritos por los colaboradores.
+                  </CardBody>
+                  <CardGo>Ver casos</CardGo>
+                </Card>
+              </StaggerItem>
+            </StaggerChildren>
+          </div>
         </div>
-      </section>
+      </Section>
 
       {/* TRAY */}
       <section className="border-b border-line py-8 bg-bg">
