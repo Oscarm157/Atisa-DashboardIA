@@ -5,14 +5,29 @@ import { KPI } from "@/components/ui/KPI";
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/motion/FadeIn";
 import { CheckCircle2, AlertCircle, ArrowRight, Sparkles, Clock, BookOpen, Trophy } from "lucide-react";
 
-const BLOQUES = [
-  { id: "B1", label: "Lanzamiento", semanas: "S1 – S2", weight: 8 },
-  { id: "B2", label: "Capacitación Básico", semanas: "S3 – S7", weight: 21, accent: true },
-  { id: "B3", label: "Capacitación Intermedio", semanas: "S5 – S8", weight: 17 },
-  { id: "B4", label: "Mapeo por dirección", semanas: "S8 – S10", weight: 13 },
-  { id: "B5", label: "Challenge interno", semanas: "S11 – S22", weight: 50, accent: true },
-  { id: "B6", label: "Premiación", semanas: "S23 – S24", weight: 8 },
+type Bloque = {
+  id: string;
+  label: string;
+  start: number;
+  end: number;
+  semanas: string;
+  accent?: boolean;
+  checkpoints?: number[];
+};
+
+const TOTAL_SEMANAS = 24;
+const BLOQUES: Bloque[] = [
+  { id: "B1", label: "Lanzamiento", start: 1, end: 2, semanas: "S1 – S2" },
+  { id: "B2", label: "Capacitación Básico", start: 3, end: 7, semanas: "S3 – S7", accent: true },
+  { id: "B3", label: "Capacitación Intermedio", start: 5, end: 8, semanas: "S5 – S8" },
+  { id: "B4", label: "Mapeo por dirección", start: 8, end: 10, semanas: "S8 – S10" },
+  { id: "B5", label: "Challenge interno", start: 11, end: 22, semanas: "S11 – S22", accent: true, checkpoints: [14, 18, 22] },
+  { id: "B6", label: "Premiación", start: 23, end: 24, semanas: "S23 – S24" },
 ];
+
+const MARKERS = [1, 6, 12, 18, 24];
+const pct = (week: number) => ((week - 1) / TOTAL_SEMANAS) * 100;
+const widthPct = (b: Bloque) => ((b.end - b.start + 1) / TOTAL_SEMANAS) * 100;
 
 export default function LanzamientoPage() {
   return (
@@ -35,7 +50,7 @@ export default function LanzamientoPage() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="mt-6 text-[17px] text-ink-3 max-w-[680px]">
-              Mayo a octubre 2026. 200 plazas. Claude Enterprise como herramienta única del programa.
+              Mayo a octubre 2026. 125 plazas. Claude Enterprise como herramienta única del programa.
             </p>
           </FadeIn>
 
@@ -43,7 +58,7 @@ export default function LanzamientoPage() {
             <div className="grid md:grid-cols-3 gap-3 mt-10">
               <KPI
                 label="Plazas disponibles"
-                value="200"
+                value="125"
                 hint="Toda la plantilla administrativa"
                 variant="ink"
               />
@@ -162,24 +177,91 @@ export default function LanzamientoPage() {
         title="24 semanas"
       >
         <FadeIn>
-          <div className=" bg-bg border border-line p-7 md:p-8">
-            <div className="space-y-3">
-              {BLOQUES.map((b) => (
-                <div key={b.id} className="grid grid-cols-[40px_180px_1fr_90px] gap-3 md:gap-4 items-center text-[13.5px]">
-                  <div className="font-mono text-[11px] font-bold text-ink-4">{b.id}</div>
-                  <div className="font-medium text-ink">{b.label}</div>
-                  <div className="bg-line-soft h-2 relative overflow-hidden">
-                    <div
-                      className={`h-full ${b.accent ? "bg-accent" : "bg-navy-deep"}`}
-                      style={{ width: `${b.weight * 1.7}%` }}
-                    />
+          <div className="bg-bg border border-line p-6 md:p-8">
+            {/* Eje */}
+            <div className="grid grid-cols-[180px_minmax(0,1fr)] gap-4 md:gap-6 mb-4">
+              <div className="hidden md:block" />
+              <div className="relative h-6 border-b border-line">
+                {MARKERS.map((w) => (
+                  <div
+                    key={w}
+                    className="absolute top-0 font-mono text-[10.5px] tracking-widest uppercase text-ink-4"
+                    style={{
+                      left: `${pct(w)}%`,
+                      transform: w === 24 ? "translateX(-100%)" : w === 1 ? "none" : "translateX(-50%)",
+                    }}
+                  >
+                    S{w}
                   </div>
-                  <div className="font-mono text-[11px] text-ink-3 text-right">{b.semanas}</div>
+                ))}
+                {MARKERS.map((w) => (
+                  <div
+                    key={`tick-${w}`}
+                    className="absolute bottom-0 w-px h-1.5 bg-line"
+                    style={{ left: `${pct(w)}%` }}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Filas */}
+            <div className="space-y-2.5">
+              {BLOQUES.map((b) => (
+                <div
+                  key={b.id}
+                  className="grid grid-cols-[180px_minmax(0,1fr)] gap-4 md:gap-6 items-center"
+                >
+                  <div className="min-w-0">
+                    <div className="flex items-baseline gap-2">
+                      <span className="font-mono text-[11px] tracking-widest text-accent font-medium tabular-nums">
+                        {b.id}
+                      </span>
+                      <span className="font-medium text-ink text-[13.5px] truncate">{b.label}</span>
+                    </div>
+                    <div className="font-mono text-[10.5px] tracking-wide text-ink-4 mt-0.5">
+                      {b.semanas}
+                    </div>
+                  </div>
+                  <div className="relative h-7 bg-line-soft">
+                    <div
+                      className={`absolute top-0 bottom-0 ${b.accent ? "bg-accent" : "bg-navy-deep"}`}
+                      style={{ left: `${pct(b.start)}%`, width: `${widthPct(b)}%` }}
+                    />
+                    {b.checkpoints?.map((w) => (
+                      <div
+                        key={`cp-${w}`}
+                        className="absolute top-0 bottom-0 w-0.5 bg-white"
+                        style={{ left: `${pct(w)}%` }}
+                        title={`Checkpoint S${w}`}
+                      />
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
-            <p className="mt-6 text-[13px] text-ink-4 leading-[1.55]">
-              Checkpoints del challenge: semanas 14, 18 y 22. Quien no entrega, sale del ranking.
+
+            <div className="grid grid-cols-[180px_minmax(0,1fr)] gap-4 md:gap-6 mt-5">
+              <div className="hidden md:block" />
+              <div className="flex items-center gap-4 flex-wrap text-[11.5px] text-ink-3">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="w-3 h-3 bg-accent" />
+                  Acentos del programa
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="w-3 h-3 bg-navy-deep" />
+                  Bloques operativos
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="relative w-3 h-3 bg-accent">
+                    <span className="absolute top-0 bottom-0 left-1/2 w-0.5 -translate-x-1/2 bg-white" />
+                  </span>
+                  Checkpoints S14 · S18 · S22
+                </span>
+              </div>
+            </div>
+
+            <p className="mt-5 text-[13px] text-ink-4 leading-[1.55]">
+              Quien no entrega en checkpoint, sale del ranking. Bloques que se traslapan son intencionales: la capacitación intermedia corre en paralelo a la básica.
             </p>
           </div>
         </FadeIn>

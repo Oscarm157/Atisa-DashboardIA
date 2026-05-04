@@ -23,7 +23,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Atisa · Programa de Adopción de IA 2026",
   description:
-    "Estrategia, diagnóstico y plan de ejecución del programa de adopción de IA en Atisa Group. 24 semanas, 200 colaboradores, Claude Enterprise.",
+    "Estrategia, diagnóstico y plan de ejecución del programa de adopción de IA en Atisa Group. 24 semanas, 125 colaboradores, Claude Enterprise.",
 };
 
 export default function RootLayout({

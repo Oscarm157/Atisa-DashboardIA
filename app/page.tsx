@@ -112,7 +112,7 @@ export default function LobbyPage() {
                 </div>
                 <CardTitle>Programa de capacitación</CardTitle>
                 <CardBody>
-                  200 colaboradores: niveles, calendario, reglas, pasos de inscripción.
+                  125 colaboradores: niveles, calendario, reglas, pasos de inscripción.
                 </CardBody>
                 <CardGo>Ver lanzamiento</CardGo>
               </Card>
