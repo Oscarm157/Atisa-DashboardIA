@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 import type { DireccionCurada, CampoCurado } from "@/lib/types";
 
 type CaseField = "procesoPrioritario" | "ejemploExito" | "herramientasArea";
-type ViewMode = "ejecutiva" | "respondiente";
+type ViewMode = "ejecutiva" | "individual";
 
 const FIELD_LABELS: Record<CaseField, { label: string; short: string; icon: typeof Target; minLen: number; curadoKey: keyof Pick<DireccionCurada, "q8" | "q5" | "q6"> }> = {
   procesoPrioritario: { label: "Proceso prioritario (Q8)", short: "proceso", icon: Target, minLen: 20, curadoKey: "q8" },
@@ -63,7 +63,7 @@ export default function CasosPage() {
           Por dirección.
         </h1>
         <p className="text-[15px] text-ink-3 mt-3 max-w-[720px]">
-          {grouped.length} direcciones · {responses.length} respondientes · síntesis ejecutiva con autoría preservada.
+          {grouped.length} direcciones · {responses.length} colaboradores · síntesis ejecutiva con autoría preservada.
         </p>
       </div>
 
@@ -90,18 +90,18 @@ export default function CasosPage() {
             </button>
           );
         })}
-        <div className="ml-auto flex items-center border border-line">
-          {(["ejecutiva", "respondiente"] as ViewMode[]).map((v, i) => (
+        <div className="ml-auto flex items-center border border-ink">
+          {(["ejecutiva", "individual"] as ViewMode[]).map((v, i) => (
             <button
               key={v}
               onClick={() => setView(v)}
               className={cn(
                 "px-4 py-2 text-[12px] font-medium transition-colors",
                 view === v ? "bg-ink text-white" : "bg-bg text-ink-3 hover:text-ink",
-                i === 0 && "border-r border-line"
+                i === 0 && "border-r border-ink"
               )}
             >
-              {v === "ejecutiva" ? "Vista ejecutiva" : "Detalle por respondiente"}
+              {v === "ejecutiva" ? "Vista ejecutiva" : "Detalle individual"}
             </button>
           ))}
         </div>
@@ -122,82 +122,86 @@ export default function CasosPage() {
             : `${withCases.length} de ${total} con ${FIELD_LABELS[field].short} declarado`;
 
           return (
-            <div key={direccion} className="bg-bg border border-line">
+            <div key={direccion} className={cn("border", isOpen ? "border-ink" : "border-line bg-bg")}>
               <button
                 onClick={() => toggle(direccion)}
-                className="w-full flex items-center justify-between gap-4 p-5 text-left hover:bg-bg-soft transition-colors"
+                className={cn(
+                  "w-full flex items-center justify-between gap-4 p-5 text-left transition-colors",
+                  isOpen ? "bg-ink text-white" : "bg-bg hover:bg-bg-soft"
+                )}
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <ChevronDown
                     className={cn(
-                      "w-4 h-4 text-ink-4 shrink-0 transition-transform",
-                      !isOpen && "-rotate-90"
+                      "w-4 h-4 shrink-0 transition-transform",
+                      isOpen ? "text-accent" : "-rotate-90 text-ink-4",
                     )}
                   />
                   <div className="min-w-0">
-                    <div className="font-medium text-ink text-[14.5px]">{direccion}</div>
-                    <div className="font-mono text-[11px] text-ink-4 tracking-wide mt-0.5">
+                    <div className={cn("font-medium text-[14.5px]", isOpen ? "text-white" : "text-ink")}>
+                      {direccion}
+                    </div>
+                    <div className={cn("font-mono text-[11px] tracking-wide mt-0.5", isOpen ? "text-white/55" : "text-ink-4")}>
                       {headerLabel}
                       {view === "ejecutiva" && !hasCuracion && " · sin curación, n insuficiente"}
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  <ActiveIcon className="w-4 h-4 text-ink-4" />
-                  <span className="font-mono text-[12px] text-ink-3 tabular-nums">
+                  <ActiveIcon className={cn("w-4 h-4", isOpen ? "text-accent" : "text-ink-4")} />
+                  <span className={cn("font-mono text-[12px] tabular-nums", isOpen ? "text-white/70" : "text-ink-3")}>
                     n={total}
                   </span>
                 </div>
               </button>
 
               {isOpen && useEjecutiva && (
-                <div className="border-t border-line">
-                  <div className="p-5 md:p-6 bg-bg-soft border-b border-line">
-                    <div className="mono-eyebrow mb-2 text-ink-3">Resumen</div>
-                    <p className="text-[14.5px] text-ink leading-[1.6] max-w-[860px]">
+                <div>
+                  <div className="p-5 md:p-7 bg-bg-soft border-b border-line">
+                    <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium mb-3">
+                      Resumen
+                    </div>
+                    <p className="font-serif-display text-[18px] md:text-[20px] text-ink leading-[1.45] max-w-[860px] font-light">
                       {campo!.resumen}
                     </p>
                   </div>
 
-                  <div className="divide-y divide-line">
+                  <div className="divide-y divide-line bg-bg">
                     {campo!.temas.map((tema, idx) => (
-                      <div key={idx} className="p-5 md:p-6">
-                        <div className="grid md:grid-cols-[60px_minmax(0,1fr)] gap-4">
-                          <div className="font-mono text-[12px] text-accent tabular-nums tracking-widest pt-1">
+                      <div key={idx} className="p-5 md:p-7">
+                        <div className="grid md:grid-cols-[64px_minmax(0,1fr)] gap-4 md:gap-6">
+                          <div className="font-serif-display text-[28px] md:text-[32px] text-accent tabular-nums leading-none pt-1 font-light">
                             {String(idx + 1).padStart(2, "0")}
                           </div>
                           <div className="min-w-0">
-                            <div className="flex items-baseline gap-3 flex-wrap mb-2">
-                              <h3 className="font-medium text-ink text-[15px] leading-tight break-words">
+                            <div className="flex items-baseline gap-3 flex-wrap mb-2.5">
+                              <h3 className="font-medium text-ink text-[16px] leading-tight break-words">
                                 {tema.titulo}
                               </h3>
-                              <span className="font-mono text-[11px] text-ink-4 tracking-widest uppercase">
+                              <span className="font-mono text-[10.5px] text-ink-4 tracking-widest uppercase">
                                 {tema.menciones} {tema.menciones === 1 ? "mención" : "menciones"}
                               </span>
                             </div>
-                            <p className="text-[13.5px] text-ink-3 leading-[1.6] mb-3 break-words">
+                            <p className="text-[14px] text-ink-2 leading-[1.65] mb-4 break-words max-w-[720px]">
                               {tema.descripcion}
                             </p>
-                            <div className="flex flex-wrap gap-1.5 mb-4">
+                            <div className="flex flex-wrap gap-1 mb-4">
                               {tema.autores.map((a) => (
                                 <span
                                   key={a}
-                                  className="inline-flex items-center gap-1.5 bg-bg-soft border border-line px-2 py-1 text-[11.5px] text-ink-2 max-w-full"
+                                  className="text-[10.5px] text-ink-3 bg-bg-soft border border-line px-1.5 py-0.5 leading-tight"
                                 >
-                                  <span className="w-4 h-4 bg-ink text-white flex items-center justify-center text-[8px] font-bold shrink-0">
-                                    {initials(a)}
-                                  </span>
-                                  <span className="truncate">{a}</span>
+                                  {a}
                                 </span>
                               ))}
                             </div>
-                            <div className="border-l-2 border-accent pl-4 py-1 min-w-0">
-                              <QuoteIcon className="w-3.5 h-3.5 text-ink-4 mb-1.5" />
+                            <div className="border-l-2 border-accent pl-4 py-1 min-w-0 bg-bg-soft/40">
+                              <QuoteIcon className="w-3.5 h-3.5 text-accent mb-1.5" />
                               <p className="text-[13.5px] text-ink-2 italic leading-[1.6] whitespace-pre-wrap break-words [overflow-wrap:anywhere]">
                                 {tema.quote.texto}
                               </p>
-                              <p className="font-mono text-[11px] text-ink-4 mt-2 uppercase tracking-widest break-words">
-                                {tema.quote.autor}
+                              <p className="font-mono text-[10.5px] text-ink-4 mt-2 uppercase tracking-widest break-words">
+                                — {tema.quote.autor}
                               </p>
                             </div>
                           </div>
@@ -207,15 +211,15 @@ export default function CasosPage() {
                   </div>
 
                   {sinDeclarar.length > 0 && (
-                    <div className="p-5 md:p-6 bg-bg-soft border-t border-line">
-                      <div className="mono-eyebrow mb-2 text-ink-3">
+                    <div className="p-5 md:p-7 bg-bg-soft border-t border-line">
+                      <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-2.5">
                         Sin declarar · {sinDeclarar.length} de {total}
                       </div>
-                      <div className="flex flex-wrap gap-1.5">
+                      <div className="flex flex-wrap gap-1">
                         {sinDeclarar.map((a) => (
                           <span
                             key={a}
-                            className="text-[11.5px] text-ink-4 border border-line px-2 py-1"
+                            className="text-[10.5px] text-ink-4 border border-line bg-bg px-1.5 py-0.5 leading-tight"
                           >
                             {a}
                           </span>
@@ -227,15 +231,15 @@ export default function CasosPage() {
               )}
 
               {isOpen && !useEjecutiva && (
-                <div className="border-t border-line divide-y divide-line">
+                <div className="border-t border-line divide-y divide-line bg-bg">
                   {view === "ejecutiva" && !hasCuracion && (
                     <div className="px-5 py-4 bg-bg-soft text-[12.5px] text-ink-3">
-                      Esta dirección tiene {total} {total === 1 ? "respondiente" : "respondientes"}: muestra detalle individual.
+                      Esta dirección tiene {total} {total === 1 ? "colaborador" : "colaboradores"}: muestra detalle individual.
                     </div>
                   )}
                   {(view === "ejecutiva" && !hasCuracion ? rows : withCases).length === 0 && (
                     <div className="px-5 py-8 text-[13px] text-ink-4 text-center">
-                      Ningún respondiente de esta dirección dejó {FIELD_LABELS[field].short} con contenido suficiente.
+                      Ningún colaborador de esta dirección dejó {FIELD_LABELS[field].short} con contenido suficiente.
                     </div>
                   )}
                   {(view === "ejecutiva" && !hasCuracion ? rows : withCases).map((r) => (

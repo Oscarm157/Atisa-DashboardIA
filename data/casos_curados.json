@@ -14,21 +14,21 @@
       "temas": [
         {
           "titulo": "Reportes, KPIs y avances de obra",
-          "descripcion": "Reportes financieros, KPIs, cash flow, avances de obra, presentaciones, automatización de tablas comparativas.",
+          "descripcion": "Reportes financieros de obra, cash flow, KPIs y nóminas se construyen hoy de forma manual cada periodo. La automatización pedida apunta a tablas comparativas, dashboards de avance y reporteo cíclico que pueden migrar directo a Power BI. Es el bloque más numeroso y transversal: lo piden control de obra, dirección constructora y obra industrial.",
           "menciones": 6,
           "autores": ["Estefania Quiroz Herrera", "Daniel Merlin Ochoa", "Jaqueline Ibarra Alamillo", "Yuritzy Guadalupe Peña Moreno", "Jose Luis Trujillo Perez", "Obed Balderrama"],
           "quote": { "texto": "Reportes financieros / análisis de información de construcción", "autor": "Daniel Merlin Ochoa" }
         },
         {
           "titulo": "Control de materiales y requisición",
-          "descripcion": "Existencias, requisiciones, materiales recibidos vs consumidos, alertas por agotamiento.",
+          "descripcion": "El cuello de botella concreto: buscar insumo por insumo en Enkontrol para verificar cargado, requisitado y consumido. Piden una base viva con alertas por material próximo a agotarse, conexión a la requisición y trazabilidad de lo recibido vs lo gastado en obra. Aplica a obra industrial APTS y mantenimiento de cubierta.",
           "menciones": 3,
           "autores": ["Victor Jesus Herrera Fernandez", "Javier Alonso Espinosa Camarena", "Edgar David Garibay Cobos"],
           "quote": { "texto": "Manejar los materiales requisitados, podría generar una tabla o una base de datos automática donde me indique que materiales están cargados, que se requisito y dar aviso por material a próximo a agotarse. Esto ahorraría horas de trabajo buscando insumo por insumo en enkontrol por un material o materiales", "autor": "Javier Alonso Espinosa Camarena" }
         },
         {
           "titulo": "Documentación técnica y entregables",
-          "descripcion": "Minutas, estimaciones, redacción ejecutiva, certificaciones LEED, planos, revisión de entregables.",
+          "descripcion": "Minutas ejecutivas, control de estimaciones, redacción contractual con norma, revisión de entregas LEED y planos arquitectónicos/estructurales. Es trabajo repetitivo de la dirección constructora y de admon de proyecto industrial: alto volumen documental, alto costo de revisión humana. La automatización propuesta es asistente que estructure salida con contexto técnico de Atisa.",
           "menciones": 4,
           "autores": ["Pedro Muruato Ontiveros", "Nickole Alexandra Mendoza Perez", "Miguel Angel Valderrama Sanchez", "Esteban Luna Auza"],
           "quote": { "texto": "Automatización de reporte de avance, minutas y control de estimaciones, ya que son tareas recurrentes , manuales y consumen tiempo.", "autor": "Pedro Muruato Ontiveros" }
@@ -40,21 +40,21 @@
       "temas": [
         {
           "titulo": "Power BI, dashboards y fórmulas DAX",
-          "descripcion": "KPIs en Power BI, fórmulas DAX para reportes y tablas dinámicas.",
+          "descripcion": "El uso real más extendido del área. Generan fórmulas DAX para KPIs de obra y cash flow, programan dashboards con la IA como copiloto y migran reportes manuales a tablas dinámicas. Aparece tanto en perfiles administrativos (control obra) como en dirección constructora.",
           "menciones": 6,
           "autores": ["Estefania Quiroz Herrera", "Daniel Merlin Ochoa", "Nickole Alexandra Mendoza Perez", "Jaqueline Ibarra Alamillo", "Yuritzy Guadalupe Peña Moreno", "Obed Balderrama"],
           "quote": { "texto": "Utilice IA para generar un Dax complicado para hacer un reporte que me permitiera automatizar información", "autor": "Yuritzy Guadalupe Peña Moreno" }
         },
         {
           "titulo": "Redacción técnica y resumen de juntas",
-          "descripcion": "Redacción contractual, técnica, resumen ejecutivo de juntas, presentaciones de avance.",
+          "descripcion": "Casos en dirección constructora y admon de proyecto: dar a la IA contexto de redacción y nivel técnico (norma, literatura) para que genere reportes ejecutivos, valide redacciones contractuales y resuma juntas. Reduce el tiempo de minuta y mantiene tono institucional consistente.",
           "menciones": 3,
           "autores": ["Pedro Muruato Ontiveros", "Miguel Angel Valderrama Sanchez", "Jose Luis Trujillo Perez"],
           "quote": { "texto": "Dentro de las aplicaciones se creo un proyecto el cual se le dio el contexto de redacción y nivel técnico de construcción mediante norma y literatura, esto nos permite agilizar los reportes y poner la redacción mas técnica y puntual", "autor": "Miguel Angel Valderrama Sanchez" }
         },
         {
           "titulo": "Renderizado y visualización",
-          "descripcion": "Renderizado de proyectos para presentaciones y revisiones internas.",
+          "descripcion": "Generación rápida de imágenes y renders para pre proyectos y presentaciones. Lo usan en obra de campo cuando se necesita mostrar un concepto sin tirar pipeline visual completo. Una respuesta menciona RenderIA por nombre como herramienta operada.",
           "menciones": 2,
           "autores": ["Esteban Luna Auza", "Edgar David Garibay Cobos"],
           "quote": { "texto": "Renderizado de proyectos", "autor": "Edgar David Garibay Cobos" }
@@ -66,14 +66,14 @@
       "temas": [
         {
           "titulo": "Software del sector construcción con IA",
-          "descripcion": "Plataformas verticales: ALICE, Procore, Autodesk con IA integrada, RenderIA.",
+          "descripcion": "Las plataformas verticales conocidas son ALICE Technologies, Procore y Autodesk con IA integrada, y RenderIA para visualización. La lectura de un director: el stack actual ya trae IA, lo que falta es capacitación para usarla, no software nuevo.",
           "menciones": 3,
           "autores": ["Pedro Muruato Ontiveros", "Miguel Angel Valderrama Sanchez", "Edgar David Garibay Cobos"],
           "quote": { "texto": "no, las app que utilizamos ya traen IA por ejemplo microsoft, procore y autodesk", "autor": "Miguel Angel Valderrama Sanchez" }
         },
         {
           "titulo": "Gestión de proyectos",
-          "descripcion": "Planner, Monday como apoyo de gestión.",
+          "descripcion": "Planner y Monday como apoyo administrativo de obra. No tienen IA específica integrada todavía pero son la base donde se podría conectar copiloto.",
           "menciones": 2,
           "autores": ["Esteban Luna Auza", "Jose Luis Trujillo Perez"],
           "quote": { "texto": "planner, monday", "autor": "Jose Luis Trujillo Perez" }
@@ -92,21 +92,21 @@
       "temas": [
         {
           "titulo": "Redacción de políticas, contratos y comunicación",
-          "descripcion": "Contratos, políticas, redacción institucional, presentaciones, comunicados, revisión de cláusulas.",
+          "descripcion": "El uso institucional más claro: contratos, políticas, procedimientos, presentaciones y comunicados internos. La IA opera como redactor estructurado que estandariza tono y revisión de cláusulas en trámites recurrentes. Es el bloque que más rápido escala con un asistente con contexto Atisa.",
           "menciones": 5,
           "autores": ["Omar Velazquez Velazquez", "Salvador Gonzalez Rios", "Anahi Montes Maldonado", "Cesar Hernandez Garzon", "Sarahy Lizbeth Villanueva Ramirez"],
           "quote": { "texto": "Elaboración de contratos, políticas y resúmenes de bases de datos", "autor": "Omar Velazquez Velazquez" }
         },
         {
           "titulo": "Gestión documental y procesos",
-          "descripcion": "Control de vencimientos, mapeo y levantamiento de procesos, operaciones repetitivas, perfiles de puesto.",
+          "descripcion": "Control de vencimientos próximos, mapeo y levantamiento de procesos, análisis comparativo de proveedores con criterios estructurados, seguimiento de entregables del programa de transformación digital. La respuesta más completa viene de gobernanza: el caso es alto en estructura y bajo en creatividad, ideal para IA.",
           "menciones": 3,
           "autores": ["Emma Unzueta Alvarez", "Ernesto Octavio Sanchez Barrera", "Francisco Javier Damas Arreola"],
           "quote": { "texto": "Gestión de control de documentos (vencimientos/próximos a vencer) para actualizar\nseguimiento con usuarios\ncocreación de flujos, mapeos, levantamiento y entendimiento de procesos\ndetección y análisis de riesgos, determinación de acciones de mitigación/control\nAnálisis comparativo de propuestas de proveedores\nSeguimiento de entregables del programa de transformación digital", "autor": "Emma Unzueta Alvarez" }
         },
         {
           "titulo": "Riesgos y seguridad ocupacional",
-          "descripcion": "Evaluación de riesgos, análisis de causa raíz, control vehicular, normatividad de seguridad.",
+          "descripcion": "Evaluación de riesgos, investigación de accidentes con análisis de causa raíz y propuestas basadas en normatividad. Parte de la operación de seguridad ocupacional que hoy se redacta y compara contra norma manualmente.",
           "menciones": 2,
           "autores": ["Sergio Alfredo Urista Vazquez", "Melissa Garcia Gutierrez"],
           "quote": { "texto": "Evaluación de Riesgos e Investigación de Accidentes (Análisis de Causa Raíz)", "autor": "Sergio Alfredo Urista Vazquez" }
@@ -118,21 +118,21 @@
       "temas": [
         {
           "titulo": "Redacción y simplificación de comunicados",
-          "descripcion": "Correos, informes, políticas, guiones de video, FAQ, resúmenes.",
+          "descripcion": "Usan IA para estructurar lanzamientos de política, guiones de video, FAQ, correos institucionales y simplificación de redacciones. Es el uso ya validado por casi medio equipo. La capacitación puede subir el nivel de prompt y hacer que la salida ya cumpla con tono institucional sin retrabajo.",
           "menciones": 6,
           "autores": ["Omar Velazquez Velazquez", "Cesar Hernandez Garzon", "Anahi Montes Maldonado", "Sarahy Lizbeth Villanueva Ramirez", "Sergio Alfredo Urista Vazquez", "Francisco Javier Damas Arreola"],
           "quote": { "texto": "Lo he utilizado en estas opciones: Para la estructuración del lanzamiento de una nueva política, para guiones de videos, para consultas de FAQ,", "autor": "Sarahy Lizbeth Villanueva Ramirez" }
         },
         {
           "titulo": "Análisis comparativo y planeación",
-          "descripcion": "Análisis de proveedores, planeaciones, perfiles de puesto.",
+          "descripcion": "Caso destacado en gobernanza: análisis comparativo de riesgo entre tres proveedores del PAC de facturación con criterios de continuidad, experiencia técnica, soporte y costo. Hizo en horas lo que habría tomado días de investigación manual y se usó como base para recomendación a dirección.",
           "menciones": 3,
           "autores": ["Emma Unzueta Alvarez", "Ernesto Octavio Sanchez Barrera", "Salvador Gonzalez Rios"],
           "quote": { "texto": "Análisis de proveedores (proceso de gobernanza):\nUsé IA para generar un análisis comparativo de riesgo entre tres proveedores de servicios del PAC de facturación, estructurando criterios de continuidad, experiencia técnica, soporte y costo. El entregable habría requerido investigación manual extensa; con IA obtuve un marco estructurado en horas que sirvió de base para la recomendación formal a dirección.", "autor": "Emma Unzueta Alvarez" }
         },
         {
           "titulo": "Power BI y fórmulas DAX",
-          "descripcion": "Generación de fórmulas DAX para KPIs en Power BI, prototipos de imágenes, automatización de tareas rutinarias.",
+          "descripcion": "Caso aislado pero potente: fórmulas DAX para KPIs en Excel y Power BI, generación de imágenes para prototipos de mejora, estructura y redacción de cursos de capacitación interna. Lo opera un campeón identificado.",
           "menciones": 2,
           "autores": ["Pedro Elias Garcia Romero", "Melissa Garcia Gutierrez"],
           "quote": { "texto": "Utilice IA para generar formulas DAX para crear cálculos para plasmar graficas (KPIs) en Excel y Power BI. Generación de imágenes para prototipos de proyectos específicos de mejora. Creación de cursos (estructura y redacción) de programas de capacitación interna.", "autor": "Pedro Elias Garcia Romero" }
@@ -144,21 +144,21 @@
       "temas": [
         {
           "titulo": "HR-tech con IA",
-          "descripcion": "Lapzo con Copilot, Rankmi IA para procesos de RRHH.",
+          "descripcion": "Lapzo con Copilot y Rankmi IA aparecen como referencia para procesos de RRHH. Pueden conectar con la operación de capital humano sin reescribir flujos.",
           "menciones": 1,
           "autores": ["Sarahy Lizbeth Villanueva Ramirez"],
           "quote": { "texto": "Si, Lapzo con Copilot,  Rankmi IA", "autor": "Sarahy Lizbeth Villanueva Ramirez" }
         },
         {
           "titulo": "Process mining y automatización",
-          "descripcion": "SAP Signavio, Oracle Process Cloud Service, Oracle Integration Cloud.",
+          "descripcion": "SAP Signavio Process Manager y Oracle Process Cloud Service / Oracle Integration Cloud. Plataformas serias de modelado y automatización de procesos. Nombradas desde gobernanza, no se han adoptado todavía.",
           "menciones": 1,
           "autores": ["Emma Unzueta Alvarez"],
           "quote": { "texto": "SAP Signavio Process Manager\nOracle Process Cloud Service / Oracle Integration Cloud (OIC) — Process Automation", "autor": "Emma Unzueta Alvarez" }
         },
         {
           "titulo": "Plataformas de riesgos y seguridad",
-          "descripcion": "IBM Environmental Intelligence, Resolver, MetricStream, Smartvid.io, Buildots, OpenSpace, Palantir, Azure, SAS Risk.",
+          "descripcion": "Inventario amplio aportado por seguridad ocupacional: IBM Environmental Intelligence, Resolver, MetricStream, Smartvid.io, Buildots, OpenSpace, Palantir, Azure AI, SAS Risk. Ninguna está adoptada, son referencias del estado del arte para análisis de riesgos en construcción y operación.",
           "menciones": 1,
           "autores": ["Sergio Alfredo Urista Vazquez"],
           "quote": { "texto": "IBM Environmental Intelligence Suite de IBM, Google Flood Forecasting de Google, DesInventar Sendai de la Organización de las Naciones Unidas, GRCTools, Resolver, RiskWatch, MetricStream, Smartvid.io, Buildots, OpenSpace AI, Palantir Foundry de Palantir Technologies, Azure AI y Digital Twins de Microsoft, SAS Risk Management de SAS Institute, Arantec, ChatGPT de OpenAI, Gemini de Google, Claude de Anthropic.", "autor": "Sergio Alfredo Urista Vazquez" }
@@ -177,28 +177,28 @@
       "temas": [
         {
           "titulo": "Investigación normativa y consulta técnica",
-          "descripcion": "Normativas, especificación de materiales, criterios de ingeniería, síntesis de información técnica.",
+          "descripcion": "Consulta de normativas y especificaciones, criterios de ingeniería, síntesis de informes técnicos con fuentes citadas. El área quiere reducir el tiempo de búsqueda en publicaciones técnicas y armar resúmenes con puntos clave para tomar decisión sin depender de revisores externos.",
           "menciones": 3,
           "autores": ["Diego Alfredo Espinosa Zamora", "Ixon Ivan Villarruel Castañeda", "Ronald Poblete Landero"],
           "quote": { "texto": "Para la investigacion de normativas y especificacion de materiales, brindando fuentes y publicaciones del tema tecnico a consultar.", "autor": "Ixon Ivan Villarruel Castañeda" }
         },
         {
           "titulo": "Presentaciones, redacción y síntesis ejecutiva",
-          "descripcion": "Renderizaciones, presentaciones de proyecto, síntesis de ideas para correos, redacción ejecutiva.",
+          "descripcion": "Renderizaciones para múltiples proyectos, presentaciones de costo, síntesis de ideas para correos y redacción ejecutiva. Mucho tiempo se va en preparar el material para reuniones, no en el análisis. La IA ya está aportando claridad y tiempo en este flujo.",
           "menciones": 3,
           "autores": ["Daniel Romero Cadena", "Antonio Bautista Paredes", "Ronald Poblete Landero"],
           "quote": { "texto": "Sintesis de ideas para compartir por correo para que esta sea clara en general para los demas", "autor": "Antonio Bautista Paredes" }
         },
         {
           "titulo": "Cotizaciones, presupuestos y catálogos",
-          "descripcion": "Carga de presupuestos a Enkontrol, proceso de cotizaciones, catálogos de conceptos, agentes para licitación.",
+          "descripcion": "Carga de presupuestos base a Enkontrol, proceso de cotizaciones y seguimiento, traducción técnica de catálogos al inglés. La propuesta más madura: agentes especializados que generen layouts de naves, catálogos de conceptos y licitación de insumos o subcontratos como flujo continuo.",
           "menciones": 3,
           "autores": ["Limbano Marlon Perez Velazquez", "Luis Alfonso Martinez Ames", "Jorge Alberto Raggio Gonzalez"],
           "quote": { "texto": "Para implementar y crear agentes especializados que puedan realizar layouts de naves, catalogos de conceptos, licitación de compra de insumos y/o subcontratos", "autor": "Luis Alfonso Martinez Ames" }
         },
         {
           "titulo": "Procesos administrativos y bitácoras",
-          "descripcion": "Cadena de autorización, revisión de bitácoras, requisición a orden de compra.",
+          "descripcion": "Una crítica directa: los procesos automatizados se atascan en cadena de autorización lenta. La referencia es SAP donde requisición, orden de compra y autorización viajan automáticamente entre instancias. Revisión de bitácoras también pesa en el día a día.",
           "menciones": 2,
           "autores": ["Demetrio Montiel Garcia", "Diana Laura Bibiano Aguirre"],
           "quote": { "texto": "Los procesos administrativos son los que siguen frenando el desarrollo del departamento, de nada sirve si existe procesos automatizados si al final llegan a un punto donde todo se frena por indecisiones, yo trabaje con el SAP, al instante que realizaba una requisición o el personal a mi cargo, la REQUISICION, ORDEN DE COMPRA, llegaba en automático a todas las instancias de autorización, solo teníamos que estar dando seguimiento que la autorización de acuerdo a la cadena de mando se diera. desde el de paquetería hasta el director se enteraban", "autor": "Demetrio Montiel Garcia" }
@@ -210,28 +210,28 @@
       "temas": [
         {
           "titulo": "Redacción de correos y presentaciones",
-          "descripcion": "Mejora de correos, sintesis para presentaciones, recomendaciones automatizadas.",
+          "descripcion": "Mejora de correos para que sean claros para todas las partes, sintesis para presentaciones, recomendaciones automatizadas. Uso transversal: lo aplican desde dirección de costos hasta revisores.",
           "menciones": 3,
           "autores": ["Daniel Romero Cadena", "Demetrio Montiel Garcia", "Diana Laura Bibiano Aguirre"],
           "quote": { "texto": "Utilizo el chat gpt como herramienta para mejora de correos electrónicos de forma que sean mas claros para todas las partes involucradas", "autor": "Daniel Romero Cadena" }
         },
         {
           "titulo": "Consulta normativa y resúmenes técnicos",
-          "descripcion": "Filtrado de normativa, resúmenes de informes técnicos, GBCI/LEED, cálculos técnicos.",
+          "descripcion": "Caso sólido con GBCI/LEED: usar IA para consultar foros y experiencias de revisores y armar resumen de puntos clave sin contactar a un revisor certificado. También filtrado de normativa para casos prácticos de ingeniería y cálculos técnicos como factor de inclinación en taludes.",
           "menciones": 4,
           "autores": ["Diego Alfredo Espinosa Zamora", "Ixon Ivan Villarruel Castañeda", "Antonio Bautista Paredes", "Jorge Alberto Raggio Gonzalez"],
           "quote": { "texto": "Utilicé la IA para consultar foros y experiencias de revisores del Green Building Certification Inc. (GBCI) disponibles en internet sobre un tema específico, me ayudó a reunir y elaborar un resumen de puntos clave para encaminar mi problemática hacia una solución exitosa sin tener que contactar directamente a un revisor del GBCI y plantear la problemática.", "autor": "Diego Alfredo Espinosa Zamora" }
         },
         {
           "titulo": "Power BI y fórmulas Excel",
-          "descripcion": "Limpieza de archivos para Enkontrol, fórmulas Excel complejas.",
+          "descripcion": "Limpieza de archivos para cargar presupuestos a Enkontrol via Power BI, fórmulas Excel complejas. Está en construcción, no terminado. Es un puente directo entre la IA y la operación contable del área.",
           "menciones": 2,
           "autores": ["Limbano Marlon Perez Velazquez", "Felipe Antonio Gurrola Salcedo"],
           "quote": { "texto": "Con la ayuda de la IA pude usar Power BI para poder limpiar archivos para cargar presupuestos a Enkontrol; estoy en el proceso para ya dejarlo establecido, mientras estoy corrigiendo algunos errores.", "autor": "Limbano Marlon Perez Velazquez" }
         },
         {
           "titulo": "Traducción y renderizado",
-          "descripcion": "Traducción de catálogos al inglés con lenguaje técnico, renderizado para revisiones internas.",
+          "descripcion": "Traducción de catálogos al inglés con lenguaje técnico (no traducción genérica), y renders rápidos para revisiones internas y presentaciones inmediatas.",
           "menciones": 2,
           "autores": ["Luis Alfonso Martinez Ames", "Ronald Poblete Landero"],
           "quote": { "texto": "Traducir catalogos de conceptos de español a inglés con lenguaje técnico", "autor": "Luis Alfonso Martinez Ames" }
@@ -243,14 +243,14 @@
       "temas": [
         {
           "titulo": "Agentes y LLMs aplicados al área",
-          "descripcion": "Claude, agentes IA para análisis de planos arquitectónicos.",
+          "descripcion": "Claude y agentes IA ya identificados como herramienta para análisis de planos arquitectónicos. La señal: el área quiere ir más allá del prompt suelto y operar agentes con tarea fija.",
           "menciones": 2,
           "autores": ["Luis Alfonso Martinez Ames", "Ronald Poblete Landero"],
           "quote": { "texto": "IA Agents, utulización de Claude", "autor": "Luis Alfonso Martinez Ames" }
         },
         {
           "titulo": "IA en software de oficina existente",
-          "descripcion": "IA integrada en software de Desk del área, requiere capacitación general.",
+          "descripcion": "Comentario clave: la IA del software de Desk ya está disponible bajo las licencias actuales. La adopción no necesita compra adicional, necesita capacitación a nivel departamental para no limitar su utilidad a usuarios sueltos.",
           "menciones": 1,
           "autores": ["Demetrio Montiel Garcia"],
           "quote": { "texto": "La IA en el software de Desk, estado viendo tutoriales está muy completa la cual podemos usar y adaptar al departamento de ingeniería y costos, Tenemos acceso de acuerdo a las licencias que tenemos, solo requerimos una capacitación como Departamento, (si pretenden hacerlo solo para unos usuarios estarías limitando su utilidad y potencial de la IA", "autor": "Demetrio Montiel Garcia" }
@@ -269,21 +269,21 @@
       "temas": [
         {
           "titulo": "Validación y revisión de pólizas contables",
-          "descripcion": "Validación de pólizas de ingresos/egresos, revisión de pólizas, formato de auxiliares de Enkontrol.",
+          "descripcion": "Validación de pólizas de ingresos y egresos, revisión de pólizas contables y formato de auxiliares descargados de Enkontrol. Es flujo diario de contabilidad, alto volumen, alto error humano. Una respuesta plantea explícitamente IA dedicada a este paso.",
           "menciones": 3,
           "autores": ["Diana Lizeth Rodriguez Hidalgo", "Andrea Dionicio Torres", "Karla Gabriela Pacheco Garcia"],
           "quote": { "texto": "Validación de Pólizas ingresos / egresos.", "autor": "Diana Lizeth Rodriguez Hidalgo" }
         },
         {
           "titulo": "Reportes financieros y de auditoría",
-          "descripcion": "Flujo de efectivo, comentarios financieros, reportes operativos en Excel, automatización de reportes.",
+          "descripcion": "Flujos de efectivo y reportes operativos en Excel donde hay que asignar manualmente clasificaciones, tipo de cambio y dolarización. Comentarios financieros con sentido de negocio, automatización de reportes y análisis en ERP. Es el bloque con mayor potencial para Power BI con IA encima.",
           "menciones": 4,
           "autores": ["Yulissa Guizelle Sanchez Chavez", "Jose Alberto Contreras Rodriguez", "Karely Hernandez Altamirano", "Vanessa"],
           "quote": { "texto": "Elaboración de reportes de flujo de efectivo, movimiento de tierras, entre otros. En estos reportes se debe asignar manualmente diferentes clasificaciones, tipo de cambio, dolarizarlo, entre otras cosas.", "autor": "Yulissa Guizelle Sanchez Chavez" }
         },
         {
           "titulo": "Auditoría de maquinaria y control operativo",
-          "descripcion": "Cruces de horas vs GPS y geocercas, control de diésel, validación de sensores.",
+          "descripcion": "Cruces de horas reportadas vs GPS y geocercas (plataforma Zeek), control de diésel, validación de sensores. Es la conexión entre auditoría financiera y operación de maquinaria, hoy hecha a mano contra reportes en Excel.",
           "menciones": 3,
           "autores": ["Alejandro Ladron De Guevara Medina", "Denisse Galvez Ruiz", "Israel Walker Romero"],
           "quote": { "texto": "reportes operativos en Excel, especialmente aquellos relacionados con control de horas de maquinaria, seguimiento por GPS y control de diesel.", "autor": "Alejandro Ladron De Guevara Medina" }
@@ -295,21 +295,21 @@
       "temas": [
         {
           "titulo": "Fórmulas Excel y eficiencia operativa",
-          "descripcion": "Fórmulas complejas, mejora de archivos Excel, consulta de fórmulas.",
+          "descripcion": "Usan IA para fórmulas complejas y modelos de datos en Excel. La diferencia con Constructora: aquí la IA acelera el día a día contable, no migra a Power BI todavía.",
           "menciones": 3,
           "autores": ["Yulissa Guizelle Sanchez Chavez", "Alejandro Ladron De Guevara Medina", "Denisse Galvez Ruiz"],
           "quote": { "texto": "Me ha ayudado con formulas en excel o con formas de utilizarlo mas eficientemente.", "autor": "Yulissa Guizelle Sanchez Chavez" }
         },
         {
           "titulo": "Análisis de datos y resumen ejecutivo",
-          "descripcion": "Análisis de datos en ERP, minutas de proveedores, resúmenes de correos.",
+          "descripcion": "Análisis completo de información para extraer datos en ERP, minutas de proveedores con monto pagado, resumen de correos extensos. Aplican IA cuando hay que sintetizar volumen de información operativa para decisión.",
           "menciones": 3,
           "autores": ["Andrea Dionicio Torres", "Jose Alberto Contreras Rodriguez", "Israel Walker Romero"],
           "quote": { "texto": "Gemeni: del archivo crea una minuta con los 5 proveedores de acuerdo al monto pago en el mes.", "autor": "Andrea Dionicio Torres" }
         },
         {
           "titulo": "Redacción y comentarios financieros",
-          "descripcion": "Comentarios financieros estratégicos, presentaciones, consultas legales.",
+          "descripcion": "Comentarios financieros con sentido de negocio, presentaciones, consultas de artículos de Ley para validar procesos. Es el bridge entre data dura y narrativa para dirección.",
           "menciones": 3,
           "autores": ["Karla Gabriela Pacheco Garcia", "Karely Hernandez Altamirano", "Vanessa"],
           "quote": { "texto": "Utilice la IA para generar comentarios financieros mas estratégicos y con sentido de negocio", "autor": "Karely Hernandez Altamirano" }
@@ -321,14 +321,14 @@
       "temas": [
         {
           "titulo": "LLMs aplicados directamente",
-          "descripcion": "Claude como herramienta principal mencionada.",
+          "descripcion": "Claude aparece nombrado como la herramienta principal del área. No hay todavía una vertical financiera adoptada, el peso está en LLMs generales con prompts específicos.",
           "menciones": 2,
           "autores": ["Alejandro Ladron De Guevara Medina", "Vanessa"],
           "quote": { "texto": "Claude", "autor": "Vanessa" }
         },
         {
           "titulo": "Automatización de validación contable",
-          "descripcion": "Planteamiento de IA específica para validación de pólizas.",
+          "descripcion": "Planteamiento de IA dedicada a validación de pólizas. No es una herramienta existente, es la oportunidad concreta que el área ve para reducir el cuello de botella diario de contabilidad.",
           "menciones": 1,
           "autores": ["Diana Lizeth Rodriguez Hidalgo"],
           "quote": { "texto": "IA para automatizar procesos de validación en pólizas.", "autor": "Diana Lizeth Rodriguez Hidalgo" }
@@ -347,21 +347,21 @@
       "temas": [
         {
           "titulo": "Automatización de procesos operativos y CRM",
-          "descripcion": "Automatización del primer contacto con leads, seguimiento de brokers, generación de CR, validación de pólizas, autorización de facturas.",
+          "descripcion": "La visión más concreta del corporativo: automatizar primer contacto al lead, seguimiento, llenado de datos de brokers para que el broker pase a etapa de cierre. También generación de CR, validación de pólizas y autorización de facturas. Es la base del programa de adopción IA si se ejecuta bien.",
           "menciones": 3,
           "autores": ["Oscar Arredondo Mayoral", "Luis Armando Arias Mojica", "Edgar Alonso Salas"],
           "quote": { "texto": "Automatización de tareas repetitivas del CRM, automatización del primer contacto al lead, automatización de seguimientos, automatización de llenado de datos de brokers.\nDonde creo el futuro es que el broker ya no es quien da un seguimiento y analisis inicial al lead, es la IA quien lo hace y el broker pasa a una etapa posterior de cierre y documentación", "autor": "Oscar Arredondo Mayoral" }
         },
         {
           "titulo": "Dashboards, querys y análisis de información",
-          "descripcion": "Dashboards de SLA, querys para diseño de bases de datos, análisis cross-plataforma.",
+          "descripcion": "Querys para diseño de bases, dashboards de SLAs, integración cross-plataforma para juntar información que hoy vive en silos. Resúmenes de notas de asesores e insights de reportes. Es el motor de visibilidad operativa que arma TI para el resto de la empresa.",
           "menciones": 4,
           "autores": ["Braulio Damian Rivera Cisneros", "Victor Francisco Sanchez Rodriguez", "Gabriela Alejandra Luna Hernandez", "Alberto Fernandez Carmona"],
           "quote": { "texto": "Análisis de información de las diferentes herramientas tecnológicas usadas por la empresa, integración y cruce de información entre plataformas, Administración de proyectos (Seguimientos, documentación, avances), Presentaciones de reportes (KPIS),", "autor": "Alberto Fernandez Carmona" }
         },
         {
           "titulo": "Desarrollo, prototipado y documentación",
-          "descripcion": "Prototipos de UI, ingeniería de aplicaciones existentes, documentación de proyectos.",
+          "descripcion": "Prototipos de UI y reingeniería de aplicaciones existentes con IA en el ciclo de desarrollo. Documentación de proyectos como segundo bloque, donde la IA reduce el costo de mantener registros formales al día.",
           "menciones": 2,
           "autores": ["Leobardo Sandoval Moreno", "David Panecatl Carrillo"],
           "quote": { "texto": "En el área de desarrollo y automatización, la creacion de prototipos e interfaces de usuario ya que eso es lo que requiere más tiempo durante el analisis", "autor": "Leobardo Sandoval Moreno" }
@@ -373,21 +373,21 @@
       "temas": [
         {
           "titulo": "Dashboards y procesamiento de datos",
-          "descripcion": "Dashboards de hasta 1,000 registros de CRM, KPIs en Power BI, dashboards de SLA, extracción de datos específicos.",
+          "descripcion": "Dashboards que concentran 1,000 registros de CRM procesados, limpiados y transformados. Mejora de gestión en Alfresco, seguimiento de sprints, KPIs y SLAs. Es el caso de uso más maduro del programa.",
           "menciones": 4,
           "autores": ["Oscar Arredondo Mayoral", "Victor Francisco Sanchez Rodriguez", "Gabriela Alejandra Luna Hernandez", "Alberto Fernandez Carmona"],
           "quote": { "texto": "Principalmente para creación de dashboards para la revisión y procesamiento de registros de CRM, hemos podido concentrar en un dashboard data de hasta 1,000 registros, procesados, limpiados y transformados en data clara y precisa.\n\nTambién se utilizó para una mejor gestión en Alfresco, seguimiento de sprints, horas, tickets, etc.\n\nAutomatización de procesos con Openclaw", "autor": "Oscar Arredondo Mayoral" }
         },
         {
           "titulo": "Desarrollo de software con IA",
-          "descripcion": "Sprints de reingeniería, generación de código y diseño de páginas, integración Claude Code+MCP a bases de datos.",
+          "descripcion": "Sprints de reingeniería para migrar aplicación a nueva versión web, generación de código y diseño de páginas, integración Claude Code con MCP para conectar a bases de datos SQL y Sybase con mockups funcionales. Es desarrollo asistido en producción real.",
           "menciones": 3,
           "autores": ["Leobardo Sandoval Moreno", "Braulio Damian Rivera Cisneros", "Alberto Fernandez Carmona"],
           "quote": { "texto": "Integración de Claude Code con MCP para conectar a bases de datos (SQL, Sybabe), que se integran con mockups funcionales para propuestas de aplicaciones que permitan la automatización de procesos internos.", "autor": "Alberto Fernandez Carmona" }
         },
         {
           "titulo": "Validación contable e integración",
-          "descripcion": "Validación de facturas vs OC para contrarecibos automatizado, consultas en Sybase.",
+          "descripcion": "Validación de facturas vs orden de compra para generar contrarecibos automatizado y consultas en Sybase. Es el puente operativo entre TI y la operación contable.",
           "menciones": 1,
           "autores": ["Edgar Alonso Salas"],
           "quote": { "texto": "Consultas en bases de datos en sybase\nvalidaciones de facturas vs OC para generar contrarecibos automatizado", "autor": "Edgar Alonso Salas" }
@@ -399,14 +399,14 @@
       "temas": [
         {
           "titulo": "Herramientas de desarrollo con IA",
-          "descripcion": "Claude Code, Codex, Antigravity, Claude Design.",
+          "descripcion": "Stack de desarrollo asistido: Claude Code, Codex, Antigravity, Claude Design. Es el equipo con mejor inventario de herramientas vivas adoptadas, no solo conocidas.",
           "menciones": 3,
           "autores": ["Luis Armando Arias Mojica", "Braulio Damian Rivera Cisneros", "Alberto Fernandez Carmona"],
           "quote": { "texto": "Claude Code, Codex", "autor": "Luis Armando Arias Mojica" }
         },
         {
           "titulo": "Automatización empresarial",
-          "descripcion": "Openclaw, Zoho con agentes y MCP, MEGA HOPEX para arquitectura empresarial.",
+          "descripcion": "Openclaw para automatización, Zoho desplegando agentes y MCP, bots con IA para WhatsApp y seguimiento de clientes, MEGA HOPEX para arquitectura empresarial. El stack del lado business, conectable al CRM.",
           "menciones": 3,
           "autores": ["Oscar Arredondo Mayoral", "Edgar Alonso Salas", "David Panecatl Carrillo"],
           "quote": { "texto": "Zoho apenas ha comenzado a desplegar mas funciones con IA, agentes y MCP para automatización de tareas.\nY bots con IA para whatsapp y seguimiento de clientes.", "autor": "Oscar Arredondo Mayoral" }
@@ -425,21 +425,21 @@
       "temas": [
         {
           "titulo": "KPIs y control operativo",
-          "descripcion": "KPIs del área, comparación de horas efectivas vs GPS, validaciones con fotos.",
+          "descripcion": "KPIs del área de maquinaria, comparación de horas efectivas reportadas vs horas en GPS, validaciones recurrentes con fotos. Es control de gestión operativo, hoy con muchas horas en Excel y poca trazabilidad automática.",
           "menciones": 3,
           "autores": ["Jesus Alonso Floriano Luquin", "Korey Yarely Salgado Delgado", "Luis Enrique Alvarado Perez"],
           "quote": { "texto": "Revision de horas efectivas vs horas en gps, una tabla comparativa para hacer match", "autor": "Luis Enrique Alvarado Perez" }
         },
         {
           "titulo": "Captura y validación con fotos de campo",
-          "descripcion": "Horómetros enviados por WhatsApp, validaciones con fotos para cálculo de horas.",
+          "descripcion": "Operadores envían fotos de horómetros por WhatsApp, alguien tiene que capturarlas en archivo para calcular horas efectivas. Validación con fotos generaliza más allá: registro visual del estado de unidades. Es el flujo más manual y mecanizable de taller.",
           "menciones": 2,
           "autores": ["Marleen Salgado Delgado", "Priscila Tejeda Vidal"],
           "quote": { "texto": "Capturar en un archivo las fotos de los horómetros que envían por whatsapp los operadores, que sirve como apoyo para el cálculo de las horas efectivas", "autor": "Priscila Tejeda Vidal" }
         },
         {
           "titulo": "Diagnóstico técnico y refacciones",
-          "descripcion": "Clasificación de fallos, búsqueda de refacciones, manuales y diagramas.",
+          "descripcion": "Clasificación de fallos para plan de acción y causa raíz, búsqueda de refacciones en manuales de unidades, análisis de diagramas. La IA puede operar como copiloto técnico para taller, no solo como asistente administrativo.",
           "menciones": 3,
           "autores": ["Jose Manuel Medina Xolot", "Carlos Alfredo Perea Vega", "Omar Garcia Chavez"],
           "quote": { "texto": "Busqueda de refacciones y todo lo relacionado con estas, manuales y/o descripciones de los diferentes elementos que componen las diferentes unidades de maquinaria pesada.", "autor": "Omar Garcia Chavez" }
@@ -451,21 +451,21 @@
       "temas": [
         {
           "titulo": "Fórmulas Excel y modelos de datos",
-          "descripcion": "Tablas dinámicas, fórmulas complejas, modelos de datos para reducir tiempo de reportes.",
+          "descripcion": "Tablas dinámicas, fórmulas complejas, modelos de datos para reducir el tiempo de elaborar reportes. Lo aplican tanto admon como taller.",
           "menciones": 3,
           "autores": ["Jesus Alonso Floriano Luquin", "Priscila Tejeda Vidal", "Luis Enrique Alvarado Perez"],
           "quote": { "texto": "La he utilizado para ayudarme a crear fórmulas complejas y modelos de datos en excel que reduzcan el tiempo de elaboración de reportes", "autor": "Priscila Tejeda Vidal" }
         },
         {
           "titulo": "Diagnóstico técnico y formatos de inspección",
-          "descripcion": "Diagnóstico de fallas eléctricas, formato único de inspección, mapeo de operaciones.",
+          "descripcion": "Diagnóstico preciso de fallas eléctricas con causa raíz, formato único de inspección que abarca todos los componentes y sistemas de maquinaria pesada, mapeo de operaciones del área. Convierte conocimiento experto en formatos reusables.",
           "menciones": 3,
           "autores": ["Jose Manuel Medina Xolot", "Marleen Salgado Delgado", "Omar Garcia Chavez"],
           "quote": { "texto": "la Utilice para Generar un formato de Inspección Unico que abarcara todos los componentes básicos y sistemas que comprende toda la maquinaria pesada.", "autor": "Jose Manuel Medina Xolot" }
         },
         {
           "titulo": "Apoyo en entrevistas y comprensión",
-          "descripcion": "Entrevistas con operadores, comprensión de metodologías, generación de imágenes.",
+          "descripcion": "Entrevistas operativas con operadores, comprensión de metodologías y generación de imágenes para formatos. Uso ad hoc, todavía no incorporado a flujo formal.",
           "menciones": 3,
           "autores": ["Korey Yarely Salgado Delgado", "Carlos Alfredo Perea Vega", "Jose Adrian Acuña Ruiz"],
           "quote": { "texto": "Para entender una metodología", "autor": "Korey Yarely Salgado Delgado" }
@@ -477,14 +477,14 @@
       "temas": [
         {
           "titulo": "LLMs generales",
-          "descripcion": "ChatGPT, Claude para tareas operativas.",
+          "descripcion": "ChatGPT y Claude se usan como soporte general para tareas operativas. No hay vertical de maquinaria adoptada.",
           "menciones": 2,
           "autores": ["Marleen Salgado Delgado", "Carlos Alfredo Perea Vega"],
           "quote": { "texto": "CHAT GPT CLOUDE", "autor": "Marleen Salgado Delgado" }
         },
         {
           "titulo": "Análisis técnico de diagramas",
-          "descripcion": "IA para análisis de diagramas esquemáticos, neumáticos y eléctricos.",
+          "descripcion": "IA aplicada a análisis de diagramas esquemáticos, neumáticos y eléctricos. Es el uso más técnico identificado del área, conecta directamente con el flujo de diagnóstico de fallas.",
           "menciones": 1,
           "autores": ["Omar Garcia Chavez"],
           "quote": { "texto": "Para análisis de diagramas esquemático, neumáticos y eléctricos", "autor": "Omar Garcia Chavez" }
@@ -503,21 +503,21 @@
       "temas": [
         {
           "titulo": "Tablas comparativas y análisis de información",
-          "descripcion": "Comparativas de proveedores, análisis de información, conciliación de facturas.",
+          "descripcion": "Comparativas de proveedores y presupuestos, análisis de información para decisiones de compra, conciliación de facturas. Es la actividad central del área: comparar, sintetizar, recomendar.",
           "menciones": 3,
           "autores": ["Denis Yaneth Mendez Flores", "Karina Elianeth Favela Sanchez", "Francisco Javier Quintero Arce"],
           "quote": { "texto": "Tabla comparativas", "autor": "Francisco Javier Quintero Arce" }
         },
         {
           "titulo": "Automatización de órdenes de compra y reportes",
-          "descripcion": "Reportes de seguimiento de OC desde requerimiento hasta pago, KPIs, generación automatizada para BI.",
+          "descripcion": "Reportes de seguimiento de OC desde requerimiento hasta pago, KPIs migrados a BI, generación automatizada de reportes que hoy se actualizan manualmente. Es ciclo completo de compras conectado a finanzas.",
           "menciones": 2,
           "autores": ["Yerania Valenzuela Ruiz", "Jonathan Garcia Sandoval"],
           "quote": { "texto": "Ejecutar el inicio de Tablas comparativas, automatizar y actualizar constantemente los reportes de seguimiento de ordenes de compra dese el requerimiento hasta el pago.", "autor": "Yerania Valenzuela Ruiz" }
         },
         {
           "titulo": "Elaboración de contratos y subcontratos",
-          "descripcion": "Solicitudes de contrato con base de datos viva, evitar llenado completo de Webdox para subcontratistas recurrentes, REPSE de contratistas.",
+          "descripcion": "Solicitudes de contrato precargadas con base de datos viva de subcontratistas recurrentes para evitar el llenado completo del formulario Webdox cada vez. Revisión REPSE de contratistas activos. Es el flujo legal-operativo más volumétrico de la dirección.",
           "menciones": 3,
           "autores": ["Karla Elizabeth Ruiz Borja", "Luis Angel Carretero Luna", "Marirery Sarahi De la Cruz Alvarado"],
           "quote": { "texto": "Solicitudes de elaboración de contratos conforme a una base de datos que se actualice constantemente y evitar el llenado del formulario completo de Webdox para subcontratistas recurrentes", "autor": "Luis Angel Carretero Luna" }
@@ -529,21 +529,21 @@
       "temas": [
         {
           "titulo": "Análisis comparativo y síntesis de información",
-          "descripcion": "Comparativas de presupuestos, KPIs, presentaciones ejecutivas, business case de SCORE.",
+          "descripcion": "Comparativas entre presupuestos, KPIs, business case de SCORE CADS, presentaciones ejecutivas. La IA permite mantener varios casos en paralelo sin perder enfoque y estandarizar la salida para dirección.",
           "menciones": 4,
           "autores": ["Denis Yaneth Mendez Flores", "Yerania Valenzuela Ruiz", "Andres Lopez Saldaña", "Karla Elizabeth Ruiz Borja"],
           "quote": { "texto": "¨He utilizado IA para  para clasificar puntos relevantes y sintetizar/resumir información para presentaciones ejecutivas, lo cual me ayuda a ejecutar varias tareas al mismo tiempo y garantizar que desde un punto de vista exterior se coincida con las ideas que quiero trasmitir sin perder el enfoque y optimizo tiempo¨", "autor": "Yerania Valenzuela Ruiz" }
         },
         {
           "titulo": "Redacción técnica e informes",
-          "descripcion": "Informe técnico para justificar propuestas a directores, fórmulas en Excel para programaciones de pago.",
+          "descripcion": "Informe técnico para directores justificando subcontratista por arriba de presupuesto, fórmulas Excel para gráficos de programaciones de pago. Casos donde la IA da soporte a decisión específica.",
           "menciones": 2,
           "autores": ["Luis Angel Carretero Luna", "Marirery Sarahi De la Cruz Alvarado"],
           "quote": { "texto": "Utilice la IA para la redacción de un informe técnico para los directores para justificar la propuesta de un subcontratista que estaba por arriba del presupuesto", "autor": "Luis Angel Carretero Luna" }
         },
         {
           "titulo": "Investigación y forecasts",
-          "descripcion": "Forecast de consumo energético a 50 años, investigación de precios de mercado.",
+          "descripcion": "Forecast de consumo energético en los 50 años de vida útil de una nave, investigación de precios de mercado del acero. Es proyección y benchmark, donde la IA aporta horizonte que no se puede armar manualmente.",
           "menciones": 2,
           "autores": ["Jonathan Garcia Sandoval", "Francisco Javier Quintero Arce"],
           "quote": { "texto": "Utilicé la IA para que me apoyara con un forecast de consumo energético en los 50 años de vida útil de una nave.", "autor": "Jonathan Garcia Sandoval" }
@@ -555,7 +555,7 @@
       "temas": [
         {
           "titulo": "Productividad personal y presentaciones",
-          "descripcion": "To-do lists, Gamma para presentaciones, Copilot para automatización; pendiente capacitación.",
+          "descripcion": "To-do lists, Gamma para presentaciones, ChatGPT, exploración activa de Copilot. La nota relevante: pide capacitación antes de adoptar más, no quiere acumular herramientas sin entenderlas.",
           "menciones": 1,
           "autores": ["Yerania Valenzuela Ruiz"],
           "quote": { "texto": "Utilizo varias aplicaciones para planificar actividades ¨To do list¨ y ¨To do ist¨para presentaciones ¨Gamma¨ y¨Chatgpt¨ , \nHe investigado de Copilot para planificar y automatizar y aumentar la productividad tanto en mi vida profesional y personal, y estoy por iniciar a utilizarla pero me gustaría recibir más conocimiento de las app de IA para decidir mejor.", "autor": "Yerania Valenzuela Ruiz" }
@@ -574,14 +574,14 @@
       "temas": [
         {
           "titulo": "Producción audiovisual y edición",
-          "descripcion": "Eliminación de elementos no deseados, edición de videos para añadir EPP a personal, generación de imágenes y videos.",
+          "descripcion": "Edición de tutoriales de construcción para añadir EPP (cascos, botas, guantes) a personal sin volver a grabar, eliminación de elementos no deseados en imagenes, generación de imágenes y videos. Caso real ya operando con weavy.ai.",
           "menciones": 3,
           "autores": ["Jose Ivan Lerma Garcia", "Lizeth Acalli Ramirez Twiss", "Eduardo Horta Arenas"],
           "quote": { "texto": "Generación de imaganes y videos lo cual en tiempo es accesible de algo muy puntual que se pudiera ir a campo se puede resolver con la herramienta.", "autor": "Eduardo Horta Arenas" }
         },
         {
           "titulo": "Market research y análisis de campañas",
-          "descripcion": "Recopilación y síntesis de información de mercado (JLL, CBRE, Newmark, INEGI), análisis de campañas, generación de insights, estudios de vacancia.",
+          "descripcion": "Recopilación y síntesis de reportes de JLL, CBRE, Newmark, INEGI y SEDECO para análisis de vacancia, precios de renta y absorción industrial en Tijuana y Mexicali. Hoy son 1-2 días por ciclo, con automatización pasaría a horas. Análisis de campañas y construcción de buyer personas en el otro lado.",
           "menciones": 3,
           "autores": ["Oscar Arnoldo Martinez Ruiz", "Rafael Ramirez Vargas", "Victor Alexis Gonzalez Garcia"],
           "quote": { "texto": "El proceso prioritario sería la recopilación y síntesis de información de mercado. Actualmente implica revisar manualmente reportes de consultoras (JLL, CBRE, Newmark), noticias del sector, datos de portales inmobiliarios y fuentes gubernamentales (INEGI, SEDECO) para construir análisis de vacancia, precios de renta, absorción y pipeline de construcción en Tijuana y Mexicali.\nAutomatizar este flujo con IA permitiría: reducir el tiempo de investigación semanal, mantener los datos más actualizados y elevar la calidad de los entregables para dirección. Actualmente este proceso puede tomar 1–2 días por ciclo de reporte; con automatización podría reducirse a horas.", "autor": "Oscar Arnoldo Martinez Ruiz" }
@@ -593,14 +593,14 @@
       "temas": [
         {
           "titulo": "Edición visual con IA",
-          "descripcion": "Adición de EPP en videos de obra mediante weavy.ai, montajes fotográficos, generación de imágenes y videos.",
+          "descripcion": "Adición de EPP a tutoriales con weavy.ai, montajes fotográficos, mejora de textos, generación de imágenes y videos. Es el uso más concreto del área: ahorra retomar tomas en obra y cuida imagen institucional.",
           "menciones": 4,
           "autores": ["Jose Ivan Lerma Garcia", "Victor Alexis Gonzalez Garcia", "Lizeth Acalli Ramirez Twiss", "Eduardo Horta Arenas"],
           "quote": { "texto": "Para los tutoriales de construcción de naves industriales existe mucho video donde personas no tienen EPP, a tra ves de IA le estamos agregando esos detalles como cascos, botas y guantes.", "autor": "Jose Ivan Lerma Garcia" }
         },
         {
           "titulo": "Market research con LLMs",
-          "descripcion": "Estudios de mercado con Claude (síntesis de JLL/CBRE/Newmark), buyer personas con datos históricos, estrategia comercial.",
+          "descripcion": "Estudios de mercado de bienes raíces industriales en Baja California con Claude para sintetizar JLL, CBRE y Newmark. Construcción de buyer personas a partir de datos históricos sin información sensible. Lo que tomaba 2-3 días ahora se entrega en horas con mejor calidad visual.",
           "menciones": 2,
           "autores": ["Oscar Arnoldo Martinez Ruiz", "Rafael Ramirez Vargas"],
           "quote": { "texto": "Utilicé inteligencia artificial para construir un perfil de compradores a partir de datos históricos de clientes (sin incluir información sensible o confidencial) y de insights obtenidos en campañas de ventas anteriores.\n\nCon base en este análisis, se desarrolló una estrategia comercial enfocada específicamente en ese segmento de mercado.", "autor": "Rafael Ramirez Vargas" }
@@ -612,7 +612,7 @@
       "temas": [
         {
           "titulo": "Stack de herramientas marketing/research",
-          "descripcion": "Weavy, Surfer SEO, Zapier, n8n, ElevenLabs, Lovable, Base44, GumLoop, v0, Perplexity AI, NotebookLM, Pomelli, Numerous.",
+          "descripcion": "Inventario amplio: Weavy y v0 para visual, Surfer SEO, Zapier, n8n, ElevenLabs y Albert para automatización, Lovable, Base44, GumLoop, Pomelli, Numerous. En research: Perplexity AI, NotebookLM. Marketing es el área con mejor mapa de tooling vertical.",
           "menciones": 3,
           "autores": ["Lizeth Acalli Ramirez Twiss", "Oscar Arnoldo Martinez Ruiz", "Rafael Ramirez Vargas"],
           "quote": { "texto": "Si, Weavy, Surfer SEO, Zapier, Albert, Gamma, ElevenLabs, n8n, Lovable, Base44, GumLoop, v0, Pomelli, Numerous (adicional a los básicos Claude Code, ChatGPT, Google Studio, etc)", "autor": "Rafael Ramirez Vargas" }
@@ -631,21 +631,21 @@
       "temas": [
         {
           "titulo": "Captura de datos de campo y reportes diarios",
-          "descripcion": "Llenado de bases de datos desde formatos en papel, captura de avances diarios, sustitución de hojas físicas.",
+          "descripcion": "Avances diarios de obra que llegan en formatos impresos y hay que capturar manualmente para construir gráficas y análisis. Sustitución de hojas de papel por captura digital. Es el dolor central de movimiento de tierras administrativos.",
           "menciones": 3,
           "autores": ["Kevin Antonio Samaniego Rivera", "Minerva Karina Robles Gomez", "Santiago Alonso Canedo Delgado"],
           "quote": { "texto": "Llenado de base de datos y tablas con información recibida desde campo con los avances diarios, entre otras cosas que se llenan a mano en formatos impresos y hay que capturar esa información para realizar gráficas y análisis de los datos.", "autor": "Kevin Antonio Samaniego Rivera" }
         },
         {
           "titulo": "Codificación y cálculos técnicos",
-          "descripcion": "Codificación de tareas, cálculo de volúmenes a partir de planos, optimización de programas de obra.",
+          "descripcion": "Codificación de tareas con apoyo de programación, generación de volúmenes de trabajo a partir de planos, optimización de programas de obra. Conecta uso de IA con la capa técnica del área, no solo administrativa.",
           "menciones": 3,
           "autores": ["Rocio Angelica Zamora Pedrin", "Luis Miguel Jimenez Castillo", "Felix Leonardo Alcantar De la Cruz"],
           "quote": { "texto": "Generación de volúmenes de trabajo en función de planos, también codificar datos de uso de maquinaria pesada", "autor": "Luis Miguel Jimenez Castillo" }
         },
         {
           "titulo": "Seguimiento de compras y subcontratistas",
-          "descripcion": "Compras de materiales, pagos a subcontratistas.",
+          "descripcion": "Compras de materiales y pagos a subcontratistas como segundo bloque operativo del área.",
           "menciones": 1,
           "autores": ["Mitzi Brijith Cruz Contreras"],
           "quote": { "texto": "Seguimiento de compra de materiales y pago a subcontratistas", "autor": "Mitzi Brijith Cruz Contreras" }
@@ -657,21 +657,21 @@
       "temas": [
         {
           "titulo": "KPIs, fórmulas y reportes en Excel",
-          "descripcion": "KPIs, fórmulas, automatización de reportes de gastos.",
+          "descripcion": "KPIs, fórmulas y organización de información en Excel, automatización de reportes de gastos. Uso transversal con perfiles administrativos del área.",
           "menciones": 2,
           "autores": ["Minerva Karina Robles Gomez", "Mitzi Brijith Cruz Contreras"],
           "quote": { "texto": "Utilicé IA para kpis, fórmulas y organización de información en Excel.", "autor": "Minerva Karina Robles Gomez" }
         },
         {
           "titulo": "Codificación y programación con apoyo IA",
-          "descripcion": "Codificación de tareas, lenguajes de programación, redacción de párrafos.",
+          "descripcion": "La IA apoya a programar tareas con lenguaje de código y bases de datos para automatizar procesos rutinarios. Caso poco común fuera de TI: personal administrativo de obra usando IA como copiloto técnico.",
           "menciones": 2,
           "autores": ["Kevin Antonio Samaniego Rivera", "Rocio Angelica Zamora Pedrin"],
           "quote": { "texto": "La utilizo para codificar tareas con lenguaje de programación y base de datos, para ver si hay forma de automatizar procesos rutinarios, además de darle ideas que tengo y me da orientación para saber cómo expresarlas con la información que genero a diario.", "autor": "Kevin Antonio Samaniego Rivera" }
         },
         {
           "titulo": "Resúmenes y soporte de procesos",
-          "descripcion": "Resúmenes de libros, esquemas, refuerzo de procesos constructivos, ideas para presentaciones y FODA.",
+          "descripcion": "Resumen de libros y esquemas, refuerzo de proceso constructivo en terracerías, ideas de presentación y FODA. Uso menos especializado pero ya extendido.",
           "menciones": 3,
           "autores": ["Luis Miguel Jimenez Castillo", "Santiago Alonso Canedo Delgado", "Felix Leonardo Alcantar De la Cruz"],
           "quote": { "texto": "Utilizando para resumen de libros y realizar esquemas, también interpretando y organizando datos", "autor": "Luis Miguel Jimenez Castillo" }
@@ -683,7 +683,7 @@
       "temas": [
         {
           "titulo": "LLMs generales y análisis fotogramétrico",
-          "descripcion": "ChatGPT, IA para análisis de datos. Ningún respondiente conoce IA específica para fotogrametría.",
+          "descripcion": "ChatGPT y herramientas generales para análisis de datos. La nota relevante: nadie identifica IA específica para procesamiento fotogramétrico ni cálculo de volumen, que son procesos técnicos centrales del área. Es un gap claro en el mapa de herramientas.",
           "menciones": 2,
           "autores": ["Kevin Antonio Samaniego Rivera", "Felix Leonardo Alcantar De la Cruz"],
           "quote": { "texto": "No he escuchado de una IA que haga exactamente los procesos técnicos que realizo, que es el procesamiento fotogramétrico y cálculos de volumen, pero si para el análisis de datos.", "autor": "Kevin Antonio Samaniego Rivera" }
@@ -702,21 +702,21 @@
       "temas": [
         {
           "titulo": "Cobranza y conciliación de cartera",
-          "descripcion": "Conciliación pagos vs facturación, cruce de estados de cuenta vs cartera, alertas inteligentes, dashboard en tiempo real, automatización integral de cobranza.",
+          "descripcion": "La propuesta más completa del área: conciliación pagos vs facturación, cruce de estados de cuenta vs cartera con detección de diferencias en tiempo real, generación automática de complementos, alertas inteligentes de atraso, comunicación de cobranza personalizada y dashboard en tiempo real. Es el blueprint completo de transformación de cobranza.",
           "menciones": 2,
           "autores": ["Claudia Michelle Aguilar Mancilla", "Alma Lidia Cruz Gutierrez"],
           "quote": { "texto": "Conciliación automática de pagos vs facturación\nCruce de estados de cuenta vs cartera (detección de diferencias en tiempo real)\nGeneración automática de complementos de pago\nA partir de depósitos identificados\nAlertas inteligentes\nClientes con atraso\nRentas variables no reportadas conforme contrato\nInconsistencias contractuales vs facturación\nComunicación automatizada\nCorreos de cobranza personalizados con base en estatus real\nDashboard en tiempo real", "autor": "Claudia Michelle Aguilar Mancilla" }
         },
         {
           "titulo": "Captura de facturas, pagos y aplicación",
-          "descripcion": "Captura de facturas y pagos manual, generación y envío de XML/PDF a clientes, aplicación de pagos.",
+          "descripcion": "Captura manual de facturas y sus pagos, generación de facturas con envío de XML y PDF a clientes incluyendo adeudos, aplicación de pagos. Operación diaria del equipo de cobranza con alta carga manual.",
           "menciones": 3,
           "autores": ["Marcelina Rivera Blanco", "Araceli Hernandez Benetts", "Mayra Jacqueline Fraire Hernandez"],
           "quote": { "texto": "Generación de facturas, y si es posible el envío de los xml y pdf a los clientes incluyendo adeudos", "autor": "Araceli Hernandez Benetts" }
         },
         {
           "titulo": "Validación de prenómina",
-          "descripcion": "Validación automática de prenómina en TRESS, detección de inconsistencias antes de timbrado.",
+          "descripcion": "Validación automática de prenómina en TRESS para detectar inconsistencias antes del timbrado. Reduce error humano en proceso quincenal de alto riesgo.",
           "menciones": 1,
           "autores": ["Griselda Iriarte Martinez"],
           "quote": { "texto": "Automatización de la validación de prenómina en TRESS mediante IA, para detectar inconsistencias, reducir errores y optimizar tiempos de revisión antes del timbrado.", "autor": "Griselda Iriarte Martinez" }
@@ -728,14 +728,14 @@
       "temas": [
         {
           "titulo": "Redacción técnico-fiscal y comunicación",
-          "descripcion": "Escritos con CFF, LISR, LFPIORPI, correos institucionales, traducciones técnicas, ajuste de tono según cliente.",
+          "descripcion": "Redacción estructurada con CFF, LISR, LFPIORPI, generación de formatos base (anexos, narrativas, controles internos), correos institucionales con tono ajustado al cliente, traducción de términos técnicos. Estandariza salida en lenguaje claro y consistente.",
           "menciones": 3,
           "autores": ["Claudia Michelle Aguilar Mancilla", "Griselda Iriarte Martinez", "Alma Lidia Cruz Gutierrez"],
           "quote": { "texto": "Redacción estructurada de escritos (con lenguaje técnico-fiscal adecuado).\nEstandarización de respuestas conforme a normativa (CFF, LISR, LFPIORPI).\nGeneración de formatos base reutilizables (ANEXOS, narrativas, controles internos).\nSíntesis de información compleja en lenguaje claro y consistente.", "autor": "Claudia Michelle Aguilar Mancilla" }
         },
         {
           "titulo": "Fórmulas Excel y reportes",
-          "descripcion": "Fórmulas complejas, formatos de reporte, comunicados.",
+          "descripcion": "Fórmulas complejas, formatos de reporte que jalan información para todas las filas, comunicados con redacción mejorada. La IA reemplaza tiempo de búsqueda manual de fórmulas.",
           "menciones": 2,
           "autores": ["Marcelina Rivera Blanco", "Araceli Hernandez Benetts"],
           "quote": { "texto": "La utilice para formato de un reporte excel incluyendo como realizar una formula compleja que me permitiera jalar la información para las demás filas", "autor": "Araceli Hernandez Benetts" }
@@ -747,14 +747,14 @@
       "temas": [
         {
           "titulo": "Verticales para gestoría y normativa",
-          "descripcion": "Tesio, Copilot Gestoría, Zanus AI; Alfresco para REPSE-SIROC; Tress compatible con ChatGPT y Copilot.",
+          "descripcion": "Tesio, Copilot Gestoría y Zanus AI para procesos administrativos y fiscales. Alfresco para REPSE-SIROC y Tress compatible con ChatGPT y Copilot. Es el inventario de software vertical mejor mapeado fuera de TI.",
           "menciones": 2,
           "autores": ["Claudia Michelle Aguilar Mancilla", "Griselda Iriarte Martinez"],
           "quote": { "texto": "Tesio, Copilot Gestoría, Zanus AI", "autor": "Claudia Michelle Aguilar Mancilla" }
         },
         {
           "titulo": "Análisis de equipo de cobranza",
-          "descripcion": "Plataforma Rakmi para evaluación y análisis de áreas de mejora del equipo.",
+          "descripcion": "Plataforma Rakmi para evaluar equipo de cobranza e identificar áreas de mejora individual. Reporta haber sustituido un análisis manual extenso por insights estructurados de la herramienta.",
           "menciones": 1,
           "autores": ["Alma Lidia Cruz Gutierrez"],
           "quote": { "texto": "Tuve la oportunidad de utilizar la plataforma Rakmi, la cual realizó un análisis basado en la evaluación del equipo de cobranza. Los resultados fueron muy claros al identificar las áreas de mejora de cada uno de los integrantes. Sin duda, esta herramienta representó un gran apoyo, ya que me permitió ahorrar tiempo al evitar tener que analizar e investigar de manera individual cómo abordar a cada colaborador. Gracias a esta información, pude enfocar mis esfuerzos de forma más estratégica y efectiva en el desarrollo del equipo.", "autor": "Alma Lidia Cruz Gutierrez" }
@@ -773,21 +773,21 @@
       "temas": [
         {
           "titulo": "Análisis y resumen de contratos y expedientes",
-          "descripcion": "Resumen de escrituras, análisis de contratos y expedientes de litigio, verificación de redacción jurídica.",
+          "descripcion": "Resumen de escrituras, análisis de contratos comerciales y expedientes de litigio, verificación de redacción jurídica. La IA permite escanear volúmenes de documentos y devolver síntesis estructurada para el abogado.",
           "menciones": 2,
           "autores": ["Elizabeth Partida Martinez", "Jose Luis Saldana Salas"],
           "quote": { "texto": "Análisis y resumen de documentos", "autor": "Elizabeth Partida Martinez" }
         },
         {
           "titulo": "Reporteo de contratos y pagos",
-          "descripcion": "Reportes de contratos, pago a proveedores, comprobaciones de pago, estatus de inmuebles.",
+          "descripcion": "Reportes de contratos, pago a proveedores, comprobaciones de pago y estatus de inmuebles. Es el lado operativo del área legal comercial: control y trazabilidad continua.",
           "menciones": 2,
           "autores": ["Eva Susana Mendez Gudiño", "Paulina Camila Villareal Silva"],
           "quote": { "texto": "Reporteo de Contratos, pago a proveedores, comprobaciones de pago, estatus de inmuebles", "autor": "Eva Susana Mendez Gudiño" }
         },
         {
           "titulo": "Traducción",
-          "descripcion": "Traducción de documentos legales.",
+          "descripcion": "Traducción de documentos legales como apoyo recurrente del área.",
           "menciones": 1,
           "autores": ["Madelyn Yamilet Cristobal Benavides"],
           "quote": { "texto": "Traducción", "autor": "Madelyn Yamilet Cristobal Benavides" }
@@ -799,14 +799,14 @@
       "temas": [
         {
           "titulo": "Análisis de cláusulas y litigio",
-          "descripcion": "Revisión de contratos de arrendamiento, análisis de cláusulas críticas, estudios de expedientes.",
+          "descripcion": "Revisión de contratos de arrendamiento comercial con ChatGPT para agilizar análisis de cláusulas críticas, estudio de expedientes de litigio. La IA opera como segundo par de ojos en revisión jurídica de alto volumen.",
           "menciones": 3,
           "autores": ["Elizabeth Partida Martinez", "Madelyn Yamilet Cristobal Benavides", "Jose Luis Saldana Salas"],
           "quote": { "texto": "En la revisión de contratos de arrendamiento comercial, implementé el uso de herramientas de IA como ChatGPT para agilizar el análisis de cláusulas críticas.", "autor": "Madelyn Yamilet Cristobal Benavides" }
         },
         {
           "titulo": "Power BI y presentaciones",
-          "descripcion": "Fórmulas para Power BI, estructura de presentaciones en PowerPoint.",
+          "descripcion": "Fórmulas para Power BI, estructura adecuada de presentaciones en PowerPoint. Cruzan IA con productividad de oficina más que con flujo legal específico.",
           "menciones": 2,
           "autores": ["Eva Susana Mendez Gudiño", "Paulina Camila Villareal Silva"],
           "quote": { "texto": "Utilice IA para sacar fórmulas para power BI", "autor": "Paulina Camila Villareal Silva" }
@@ -818,7 +818,7 @@
       "temas": [
         {
           "titulo": "Plataformas legaltech",
-          "descripcion": "Webdox para análisis legal de documentos. IA con probabilidad de éxito en litigio.",
+          "descripcion": "Webdox para análisis legal de documentos. Mención de IA con probabilidad de éxito en litigio (sin nombre comercial). Stack legaltech identificado pero no implementado a fondo.",
           "menciones": 2,
           "autores": ["Eva Susana Mendez Gudiño", "Jose Luis Saldana Salas"],
           "quote": { "texto": "Si, IA para análisis de litigio donde te da la probabilidad de éxito", "autor": "Jose Luis Saldana Salas" }
@@ -837,14 +837,14 @@
       "temas": [
         {
           "titulo": "Procesamiento documental",
-          "descripcion": "Filtrado de información para tablas, separación de PDFs, llenado de bitácoras, seguimiento de pendientes.",
+          "descripcion": "Filtrado de información de trámites de personal a Excel sin captura uno por uno, separación y nombrado automático de PDFs, llenado de bitácoras, seguimiento de pendientes. Operación diaria de asistencia a dirección con alta carga manual.",
           "menciones": 3,
           "autores": ["Alondra Karina Beltran Barragan", "Jose Eduardo Herrera Samaniego", "Miguel Angel Gonzalez Colin"],
           "quote": { "texto": "A filtrar informacion, en los procesos de tramites de documentos del personal para pasarla a excel sin que sea de una por una", "autor": "Alondra Karina Beltran Barragan" }
         },
         {
           "titulo": "Redacción y reporting",
-          "descripcion": "Guiones, KPIs, reportes de entradas/salidas.",
+          "descripcion": "Guiones para video, KPIs y reportes de entradas/salidas con tabla de horas extras. Es la capa de comunicación directa hacia dirección.",
           "menciones": 2,
           "autores": ["Luis Carlos Arellano Sanchez", "Miguel Angel Gonzalez Colin"],
           "quote": { "texto": "Redacción de guiones\nElaboración de KPIs", "autor": "Luis Carlos Arellano Sanchez" }
@@ -856,14 +856,14 @@
       "temas": [
         {
           "titulo": "Procesamiento de archivos y reportes",
-          "descripcion": "Separación de pólizas en PDF nombradas por modelo y año, generación de reportes con tabla de horas extras.",
+          "descripcion": "Caso real: separar 30 pólizas de seguros que estaban en un solo PDF y nombrar cada una con modelo y año del vehículo. Generación de reportes con tabla de horas extras. Va más allá del prompt suelto: es flujo procesado.",
           "menciones": 2,
           "autores": ["Alondra Karina Beltran Barragan", "Miguel Angel Gonzalez Colin"],
           "quote": { "texto": "La utilice para separar 30 polizas de seguros que estaba en un solo pdf, para tenerlas por individual y las nombro con el modelo y año de cada vehiculo", "autor": "Alondra Karina Beltran Barragan" }
         },
         {
           "titulo": "Producción audiovisual con detección automática",
-          "descripcion": "Detección de errores de EPP en tutoriales con timestamp, error y screenshot; redacción de guiones.",
+          "descripcion": "Detección de errores de EPP en tutoriales con generación de Excel que incluye timestamp, error y screenshot. Conecta con el caso de Marketing pero del lado de control de calidad. Redacción de guiones para video constructivo.",
           "menciones": 2,
           "autores": ["Luis Carlos Arellano Sanchez", "Jose Eduardo Herrera Samaniego"],
           "quote": { "texto": "Lo usé para la detección de errores de EPP en los tutoriales de contrucción y generaba exceles con el timestamp, el error y un screenshot del error.", "autor": "Jose Eduardo Herrera Samaniego" }
@@ -875,7 +875,7 @@
       "temas": [
         {
           "titulo": "Verticales de construcción industrial",
-          "descripcion": "OutlineAI para generación de layouts de naves industriales.",
+          "descripcion": "OutlineAI para generación de layouts de naves industriales. Conexión directa con la operación inmobiliaria de Atisa.",
           "menciones": 1,
           "autores": ["Jose Eduardo Herrera Samaniego"],
           "quote": { "texto": "OutlineAI, sirve para la generación de layouts de naves industriales", "autor": "Jose Eduardo Herrera Samaniego" }
@@ -894,14 +894,14 @@
       "temas": [
         {
           "titulo": "Procesos repetitivos y KPIs",
-          "descripcion": "Estandarización de procesos manuales repetitivos, KPIs en Excel.",
+          "descripcion": "La lectura del director: primero estandarizar los procesos repetitivos de cada área, después meter IA encima. KPIs en Excel actualizados automáticamente como caso concreto. Es decisión de gobernanza, no solo de herramienta.",
           "menciones": 2,
           "autores": ["Mauricio Alfonso Gallardo Guerrero", "Kevin Madrid Avila"],
           "quote": { "texto": "todo trabajo manual repetitivo, lo ideal primeramente es estandarizar todos los procesos que se hacen en cada area de trabajo, verificar las cuestiones de operacion donde el proceso es repetitivo ahi es donde la IA puede entrar a mejorar los tiempos", "autor": "Mauricio Alfonso Gallardo Guerrero" }
         },
         {
           "titulo": "Reporteo de procesos de gestión",
-          "descripcion": "Reporteo de etapas de gestión, reuniones de reporteo.",
+          "descripcion": "Reporteo por etapa de procesos de gestión y reuniones de reporteo del área de trámites. Es la capa de control que requiere consolidación.",
           "menciones": 1,
           "autores": ["Luis Arturo Gonzalez Leon"],
           "quote": { "texto": "Gestión. \n1.-El reporteo de cada etapa de los procesos de gestión.\n2.-Reuniones de reporteo", "autor": "Luis Arturo Gonzalez Leon" }
@@ -913,14 +913,14 @@
       "temas": [
         {
           "titulo": "Minutas y dashboards de Excel",
-          "descripcion": "Resumen de minutas, tableros de presentación, fórmulas Excel optimizadas.",
+          "descripcion": "Minutas resumidas con IA, tableros de presentación de datos en Excel donde la alimentación pasa de horas a minutos, fórmulas optimizadas para reducir tiempo de desarrollo y errores. Casos concretos validados a nivel dirección.",
           "menciones": 3,
           "autores": ["Mauricio Alfonso Gallardo Guerrero", "Arisbeth Centeno Tellez", "Kevin Madrid Avila"],
           "quote": { "texto": "las minutas son resumidas mediante IA, también se utilizo para elaborar los tableros de presentación de datos en Excel para que la alimentación de las mismas se reduzcan a minutos en vez de horas de retrabajo", "autor": "Mauricio Alfonso Gallardo Guerrero" }
         },
         {
           "titulo": "Comunicación profesional",
-          "descripcion": "Mayor claridad y profesionalismo en comunicación de procesos.",
+          "descripcion": "Mayor claridad y profesionalismo en comunicación de procesos de gestión. La IA homogeniza tono y reduce ruido.",
           "menciones": 1,
           "autores": ["Luis Arturo Gonzalez Leon"],
           "quote": { "texto": "La útilizo para dar mayor claridad y profesionalismo en la comunicación, respecto de los procesos de gestión", "autor": "Luis Arturo Gonzalez Leon" }
@@ -932,14 +932,14 @@
       "temas": [
         {
           "titulo": "Software del sector con IA",
-          "descripcion": "Revit 2027 con IA como asistente; aún en maduración según usuarios de Autodesk.",
+          "descripcion": "Revit 2027 con IA como asistente, aún en maduración según encuesta de usuarios de Autodesk. La nota relevante del director: sirve para revisión, pero al final hay que dar revisada técnica humana.",
           "menciones": 1,
           "autores": ["Mauricio Alfonso Gallardo Guerrero"],
           "quote": { "texto": "Actualmente hay muchas empresas dedicadas a eso, por ejemplo Revit 2027 ya viene integrado con IA como asistente mas no ha funcionado correctamente del todo segun una encuesta de usuarios de autodesk, hay una carrera global para generar la IA mas adaptada a esta area, actualmente te puede funcionar para revision, pero al final debes de darle una revisada tecnica tu o un profesional certificado", "autor": "Mauricio Alfonso Gallardo Guerrero" }
         },
         {
           "titulo": "Dashboards Excel automatizados",
-          "descripcion": "IA para generar gráficos y dashboards en Excel, estandarización de reportes.",
+          "descripcion": "IA para gráficos y dashboards en Excel de forma automática, estandarización de reportes y reducción de tiempos de análisis. Es el siguiente paso natural sobre el caso de Mauricio.",
           "menciones": 1,
           "autores": ["Kevin Madrid Avila"],
           "quote": { "texto": "IA para generar graficos y dashboards en Excel de forma automática, estandarizando reportes y reduciendo tiempos de análisis.", "autor": "Kevin Madrid Avila" }
@@ -958,14 +958,14 @@
       "temas": [
         {
           "titulo": "Cotizaciones, proveedores y reportes",
-          "descripcion": "Búsqueda de proveedores adecuados, simulación de cotizaciones y cálculos, reportes y automatización de tareas.",
+          "descripcion": "Búsqueda del proveedor adecuado para proyecto nuevo, simulación de cotizaciones con cálculos y código, reportes y automatización de tareas. Es el flujo central del área para validar feasibility de un proyecto antes de comprometerse.",
           "menciones": 3,
           "autores": ["Pedro Vargas Cid", "Horacio Lopez Juarez", "David Isai Delgado Moreno"],
           "quote": { "texto": "simulacion de cotizaciones, calculos y codigo", "autor": "David Isai Delgado Moreno" }
         },
         {
           "titulo": "Manuales y procedimientos de calidad",
-          "descripcion": "Revisión de procedimientos y manuales de calidad.",
+          "descripcion": "Revisión de procedimientos y manuales de calidad como segundo bloque, conectado al producto.",
           "menciones": 1,
           "autores": ["Irma Elena Santiago Carlin"],
           "quote": { "texto": "Revision de procedimientos y manuales de calidad", "autor": "Irma Elena Santiago Carlin" }
@@ -977,14 +977,14 @@
       "temas": [
         {
           "titulo": "Resúmenes de minutas e información",
-          "descripcion": "Minutas de juntas, resumen de slides extensos, información de producto.",
+          "descripcion": "Minutas de juntas con notas importantes capturadas, resumen de presentaciones de 120 slides, información de producto en desarrollo. Permite mantener al área al día sin tiempo de lectura completo.",
           "menciones": 3,
           "autores": ["Pedro Vargas Cid", "Horacio Lopez Juarez", "Irma Elena Santiago Carlin"],
           "quote": { "texto": "para minuta de juntas es muy valioso ya que aporta todas las notas importantes", "autor": "Horacio Lopez Juarez" }
         },
         {
           "titulo": "Agentes especializados",
-          "descripcion": "Agente Copilot entrenado para cotizar materiales con búsqueda en páginas confiables y formato definido.",
+          "descripcion": "Caso destacado: agente Copilot entrenado para cotizar materiales con criterios definidos, búsqueda en páginas confiables y formato de salida controlado. Es el ejemplo más maduro de pasar de prompt suelto a agente con tarea fija en el área.",
           "menciones": 1,
           "autores": ["David Isai Delgado Moreno"],
           "quote": { "texto": "Cree un agente en Copilot, entrenado para que me ayude a generar cotizaciones de materiales, ajuste sus parametros de busqueda de costos en paginas confiables y describi como requeria que me entregara la infirmacion", "autor": "David Isai Delgado Moreno" }
@@ -996,7 +996,7 @@
       "temas": [
         {
           "titulo": "Agentes para tareas específicas",
-          "descripcion": "Agentes Copilot para tareas concretas.",
+          "descripcion": "Agentes Copilot creados para tareas concretas. La señal: no buscan herramientas nuevas, quieren operacionalizar las que ya tienen como agentes vivos.",
           "menciones": 1,
           "autores": ["David Isai Delgado Moreno"],
           "quote": { "texto": "Solo agentes que se pueden crear para tareas especificas", "autor": "David Isai Delgado Moreno" }
