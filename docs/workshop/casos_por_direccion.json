@@ -1,0 +1,1067 @@
+{
+  "TECNOLOGIA IT": {
+    "n": 9,
+    "casos": [
+      {
+        "nombre": "Oscar Arredondo Mayoral",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Resumen y síntesis de contenido;Análisis Financiero y de Datos;Creatividad y Estrategia;Codificación;Soporte en toma de decisiones;Generación/lluvia de ideas;Automatización de tareas rutinarias;Generación y edición de contenido visual;Comunicación y Redacción;",
+        "herramientas": "Principalmente para creación de dashboards para la revisión y procesamiento de registros de CRM, hemos podido concentrar en un dashboard data de hasta 1,000 registros, procesados, limpiados y transformados en data clara y precisa.\n\nTambién se utilizó para una mejor gestión en Alfresco, seguimiento de sprints, horas, tickets, etc.\n\nAutomatización de procesos con Openclaw",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Zoho apenas ha comenzado a desplegar mas funciones con IA, agentes y MCP para automatización de tareas.\nY bots con IA para whatsapp y seguimiento de clientes."
+        ]
+      },
+      {
+        "nombre": "Leobardo Sandoval Moreno",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Análisis Financiero y de Datos;Automatización de tareas rutinarias;Codificación;",
+        "herramientas": "Utilicé IA para ejecutar un proceso de analisis a un proyecto existente, con el proposito de proponer un plan de trabajo dividido en sprints, incluso iniciar la reingenieria para migrar la aplicacion a una nueva version web.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "si, especificamente para el área de desarrollo y automatizacion hay una gran variedad de aplicaciones que apoyan durante el proceso de construccion de código"
+        ]
+      },
+      {
+        "nombre": "Luis Armando Arias Mojica",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Codificación;Resumen y síntesis de contenido;Soporte en toma de decisiones;Generación/lluvia de ideas;Automatización de tareas rutinarias;Organización y planificación;Creatividad y Estrategia;",
+        "herramientas": "Generar propuestas de Aplicaciones y Automatizar procesos de Negocio",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Claude Code, Codex"
+        ]
+      },
+      {
+        "nombre": "Edgar Alonso Salas",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Automatización de tareas rutinarias;Soporte en toma de decisiones;Resumen y síntesis de contenido;Análisis Financiero y de Datos;",
+        "herramientas": "Consultas en bases de datos en sybase\nvalidaciones de facturas vs OC para generar contrarecibos automatizado",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Openclaw"
+        ]
+      },
+      {
+        "nombre": "Braulio Damian Rivera Cisneros",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Codificación;Organización y planificación;Análisis Financiero y de Datos;",
+        "herramientas": "En ideas de diseño de páginas web y generación de código",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Antigravity"
+        ]
+      },
+      {
+        "nombre": "Victor Francisco Sanchez Rodriguez",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Resumen y síntesis de contenido;Traducción;Comunicación y Redacción;Organización y planificación;Generación y edición de contenido visual;",
+        "herramientas": "Con claude creamos un dashboard para llevar nuestros SLA´s y mostrar graficas que genera automáticamente.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Gabriela Alejandra Luna Hernandez",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Creatividad y Estrategia;Soporte en toma de decisiones;Análisis Financiero y de Datos;Organización y planificación;",
+        "herramientas": "La utilice para obtener datos específicos de reportes",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Generación de dashboards"
+        ]
+      },
+      {
+        "nombre": "David Panecatl Carrillo",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;El costo de Claude es alto;",
+        "ejemplo": "Resumen y síntesis de contenido;Generación y edición de contenido visual;Generación/lluvia de ideas;Comunicación y Redacción;Soporte en toma de decisiones;Organización y planificación;",
+        "herramientas": "use Gemini para extraer todos los elementos de la documentación de proyectos de Sistemas y obtuve propuesta y formato preliminar, también con la ayuda de Claude, la generación de un documento para el Area de Calidad, obteniendo un documento con mas estructura y con contenido grafico muy efectivo para comprender el tema tratado en el texto.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "MEGA HOPEX para análisis de la Arquitectura Empresarial."
+        ]
+      }
+    ]
+  },
+  "MARKETING": {
+    "n": 8,
+    "casos": [
+      {
+        "nombre": "Jose Ivan Lerma Garcia",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Automatización de tareas rutinarias;Generación/lluvia de ideas;Resumen y síntesis de contenido;Organización y planificación;Soporte en toma de decisiones;Creatividad y Estrategia;",
+        "herramientas": "Para los tutoriales de construcción de naves industriales existe mucho video donde personas no tienen EPP, a tra ves de IA le estamos agregando esos detalles como cascos, botas y guantes.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Solamente para desarrollo visual, generacion y edicion de videos e imagenes, audio y musica."
+        ]
+      },
+      {
+        "nombre": "Victor Alexis Gonzalez Garcia",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Generación/lluvia de ideas;Organización y planificación;Comunicación y Redacción;Generación y edición de contenido visual;Automatización de tareas rutinarias;Creatividad y Estrategia;",
+        "herramientas": "Utilizo la IA para hacer montajes en fotografías, mejoras de textos e identificar Insights",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Sí"
+        ]
+      },
+      {
+        "nombre": "Lizeth Acalli Ramirez Twiss",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Automatización de tareas rutinarias;Generación/lluvia de ideas;Resumen y síntesis de contenido;Organización y planificación;",
+        "herramientas": "Utilice la IA para que me explicara como utilizar ciertas herramientas de un software de 3D",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Si, weavy, genera videos e imagenes por medio de prompts"
+        ]
+      },
+      {
+        "nombre": "Oscar Arnoldo Martinez Ruiz",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;En ocasiones la mejor opcion es la version pagada;",
+        "ejemplo": "Generación/lluvia de ideas;Creatividad y Estrategia;Automatización de tareas rutinarias;Resumen y síntesis de contenido;Análisis Financiero y de Datos;Traducción;Comunicación y Redacción;Organización y planificación;Soporte en toma de decisiones;Codificación;",
+        "herramientas": "Utilizo Claude (IA de Anthropic) como asistente de investigación para mi rol de Market Research en ATISA. Un caso concreto: al preparar estudios de mercado de bienes raíces industriales en Baja California, usé IA para estructurar el análisis, sintetizar información de reportes de firmas como JLL, CBRE y Newmark, y generar borradores de presentaciones. Lo que antes me tomaba 2–3 días de organización y redacción, ahora lo resuelvo en horas. Esto me ha permitido entregar estudios más completos y con mejor presentación visual, sin aumentar costos.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Sí. Algunas herramientas relevantes para market research en real estate:\n\nPerplexity AI — búsqueda y síntesis de información de mercado en tiempo real\nNotebookLM (Google) — para analizar y consultar reportes de firmas como JLL, CBRE o Newmark\nChatGPT / Claude — redacción de análisis, estructuración de estudios y procesamiento de datos\n\nAunque no existe aún una herramienta de IA 100% especializada en real estate industrial en México, estas permiten cubrir gran parte del flujo de trabajo de investigación de mercado."
+        ]
+      },
+      {
+        "nombre": "Eduardo Horta Arenas",
+        "proceso": "Emplementar la cultura de la herramienta y poder definir a base de prueba y error en que procesos puede ser utilizada y optimizar tiempos;",
+        "ejemplo": "Generación y edición de contenido visual;Resumen y síntesis de contenido;Creatividad y Estrategia;Generación/lluvia de ideas;Comunicación y Redacción;Traducción;",
+        "herramientas": "Actualmente se esta utilizando weavy.ai, la cual para los tutoriales de construcción en video ayudado en poder poner EPP como cascos y botas a personal, por lo cual ayuda en tema de tiempo de volver a grabar de nuevo con la IA se optimiza y se cuida la imagen",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Areli Gutierrez Hermosillo",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Automatización de tareas rutinarias;Organización y planificación;",
+        "herramientas": "Para hacer reportes",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Rafael Ramirez Vargas",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Creatividad y Estrategia;Generación/lluvia de ideas;Comunicación y Redacción;Soporte en toma de decisiones;Resumen y síntesis de contenido;Codificación;Traducción;Automatización de tareas rutinarias;Generación y edición de contenido visual;Organización y planificación;Análisis Financiero y de Datos;",
+        "herramientas": "Utilicé inteligencia artificial para construir un perfil de compradores a partir de datos históricos de clientes (sin incluir información sensible o confidencial) y de insights obtenidos en campañas de ventas anteriores.\n\nCon base en este análisis, se desarrolló una estrategia comercial enfocada específicamente en ese segmento de mercado.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Si, Weavy, Surfer SEO, Zapier, Albert, Gamma, ElevenLabs, n8n, Lovable, Base44, GumLoop, v0, Pomelli, Numerous (adicional a los básicos Claude Code, ChatGPT, Google Studio, etc)"
+        ]
+      },
+      {
+        "nombre": "Jesus Miguel Chavez Benitez",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Creatividad y Estrategia;Comunicación y Redacción;Generación/lluvia de ideas;",
+        "herramientas": "al momento de buscar información en un archivo",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no creo"
+        ]
+      }
+    ]
+  },
+  "DIRECCION DE DESARROLLO DE NUEVOS NEGOCIOS": {
+    "n": 4,
+    "casos": [
+      {
+        "nombre": "Pedro Vargas Cid",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Traducción;Resumen y síntesis de contenido;Comunicación y Redacción;Organización y planificación;Generación/lluvia de ideas;Creatividad y Estrategia;",
+        "herramientas": "Me ayudo a realizar un resumen que eran 120 slides",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Horacio Lopez Juarez",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Generación y edición de contenido visual;Creatividad y Estrategia;Soporte en toma de decisiones;Resumen y síntesis de contenido;",
+        "herramientas": "para minuta de juntas es muy valioso ya que aporta todas las notas importantes",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "aun no"
+        ]
+      },
+      {
+        "nombre": "David Isai Delgado Moreno",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;la fiabilidad de la informacion en algunos casos ;",
+        "ejemplo": "Automatización de tareas rutinarias;Generación/lluvia de ideas;Análisis Financiero y de Datos;Traducción;Resumen y síntesis de contenido;Comunicación y Redacción;Codificación;",
+        "herramientas": "Cree un agente en Copilot, entrenado para que me ayude a generar cotizaciones de materiales, ajuste sus parametros de busqueda de costos en paginas confiables y describi como requeria que me entregara la infirmacion",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Solo agentes que se pueden crear para tareas especificas"
+        ]
+      },
+      {
+        "nombre": "Irma Elena Santiago Carlin",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Resumen y síntesis de contenido;Generación/lluvia de ideas;Organización y planificación;",
+        "herramientas": "Utilize IA para resumen de minutas e informacion del producto que se esta realizando",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      }
+    ]
+  },
+  "INMOBILIARIA": {
+    "n": 4,
+    "casos": [
+      {
+        "nombre": "Mauricio Alfonso Gallardo Guerrero",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Generación/lluvia de ideas;Generación y edición de contenido visual;Análisis Financiero y de Datos;Automatización de tareas rutinarias;Organización y planificación;Comunicación y Redacción;Resumen y síntesis de contenido;Creatividad y Estrategia;",
+        "herramientas": "las minutas son resumidas mediante IA, también se utilizo para elaborar los tableros de presentación de datos en Excel para que la alimentación de las mismas se reduzcan a minutos en vez de horas de retrabajo",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Actualmente hay muchas empresas dedicadas a eso, por ejemplo Revit 2027 ya viene integrado con IA como asistente mas no ha funcionado correctamente del todo segun una encuesta de usuarios de autodesk, hay una carrera global para generar la IA mas adaptada a esta area, actualmente te puede funcionar para revision, pero al final debes de darle una revisada tecnica tu o un profesional certificado"
+        ]
+      },
+      {
+        "nombre": "Arisbeth Centeno Tellez",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Resumen y síntesis de contenido;Generación/lluvia de ideas;Organización y planificación;",
+        "herramientas": "Generación de formulas para automatizar mis archivos",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "."
+        ]
+      },
+      {
+        "nombre": "Kevin Madrid Avila",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Generación y edición de contenido visual;Comunicación y Redacción;Soporte en toma de decisiones;Organización y planificación;Resumen y síntesis de contenido;Generación/lluvia de ideas;Análisis Financiero y de Datos;Traducción;Creatividad y Estrategia;",
+        "herramientas": "Utilicé IA para generar y optimizar formulas complejas en Excel, reduciendo el tiempo de desarrollo y minimizando errores en cálculos.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "IA para generar graficos y dashboards en Excel de forma automática, estandarizando reportes y reduciendo tiempos de análisis."
+        ]
+      },
+      {
+        "nombre": "Luis Arturo Gonzalez Leon",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Comunicación y Redacción;",
+        "herramientas": "La útilizo para dar mayor claridad y profesionalismo en la comunicación, respecto de los procesos de gestión",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "NO"
+        ]
+      }
+    ]
+  },
+  "DIRECCION DE COSTOS Y PROYECTOS": {
+    "n": 11,
+    "casos": [
+      {
+        "nombre": "Daniel Romero Cadena",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Generación y edición de contenido visual;Revision de calculos matematicos para propuestas de proyectos ;Comunicación y Redacción;",
+        "herramientas": "Utilizo el chat gpt como herramienta para mejora de correos electrónicos de forma que sean mas claros para todas las partes involucradas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Demetrio Montiel Garcia",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Traducción;Resumen y síntesis de contenido;Generación/lluvia de ideas;Generación y edición de contenido visual;Organización y planificación;Creatividad y Estrategia;",
+        "herramientas": "al desarrollar presentaciones de reportes con redacción, fotos y presentaciones, también hace sugerencias y recomendaciones.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "La IA en el software de Desk, estado viendo tutoriales está muy completa la cual podemos usar y adaptar al departamento de ingeniería y costos, Tenemos acceso de acuerdo a las licencias que tenemos, solo requerimos una capacitación como Departamento, (si pretenden hacerlo solo para unos usuarios estarías limitando su utilidad y potencial de la IA"
+        ]
+      },
+      {
+        "nombre": "Diana Laura Bibiano Aguirre",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Comunicación y Redacción;",
+        "herramientas": "He utilizado IA para mejorar la Redacción de un correo.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No conozco ninguna herramienta específica para los procesos técnicos de mi área."
+        ]
+      },
+      {
+        "nombre": "Limbano Marlon Perez Velazquez",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Organización y planificación;Automatización de tareas rutinarias;Codificación;",
+        "herramientas": "Con la ayuda de la IA pude usar Power BI para poder limpiar archivos para cargar presupuestos a Enkontrol; estoy en el proceso para ya dejarlo establecido, mientras estoy corrigiendo algunos errores.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Diego Alfredo Espinosa Zamora",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Automatización de tareas rutinarias;Comunicación y Redacción;Traducción;Resumen y síntesis de contenido;",
+        "herramientas": "Utilicé la IA para consultar foros y experiencias de revisores del Green Building Certification Inc. (GBCI) disponibles en internet sobre un tema específico, me ayudó a reunir y elaborar un resumen de puntos clave para encaminar mi problemática hacia una solución exitosa sin tener que contactar directamente a un revisor del GBCI y plantear la problemática.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No, aún no conozco ninguna herramienta."
+        ]
+      },
+      {
+        "nombre": "Felipe Antonio Gurrola Salcedo",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Automatización de tareas rutinarias;",
+        "herramientas": "la uso para formulas de excel complejas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Luis Alfonso Martinez Ames",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Resumen y síntesis de contenido;Comunicación y Redacción;Traducción;",
+        "herramientas": "Traducir catalogos de conceptos de español a inglés con lenguaje técnico",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "IA Agents, utulización de Claude"
+        ]
+      },
+      {
+        "nombre": "Ronald Poblete Landero",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Generación/lluvia de ideas;Comunicación y Redacción;Organización y planificación;Traducción;Automatización de tareas rutinarias;Resumen y síntesis de contenido;Soporte en toma de decisiones;Generación y edición de contenido visual;Creatividad y Estrategia;Codificación;Análisis Financiero y de Datos;",
+        "herramientas": "Generación de renders para revisiones internas y presentaciones inmediatas.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "IA para análisis de planos arquitectonicos, información, etc."
+        ]
+      }
+    ]
+  },
+  "MOVIMIENTO DE TIERRA": {
+    "n": 7,
+    "casos": [
+      {
+        "nombre": "Kevin Antonio Samaniego Rivera",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Comunicación y Redacción;Codificación;Análisis Financiero y de Datos;Creatividad y Estrategia;Generación/lluvia de ideas;Automatización de tareas rutinarias;",
+        "herramientas": "La utilizo para codificar tareas con lenguaje de programación y base de datos, para ver si hay forma de automatizar procesos rutinarios, además de darle ideas que tengo y me da orientación para saber cómo expresarlas con la información que genero a diario.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No he escuchado de una IA que haga exactamente los procesos técnicos que realizo, que es el procesamiento fotogramétrico y cálculos de volumen, pero si para el análisis de datos."
+        ]
+      },
+      {
+        "nombre": "Rocio Angelica Zamora Pedrin",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Resumen y síntesis de contenido;Comunicación y Redacción;Codificación;",
+        "herramientas": "PARA REDACCION DE PARRAFOS, CODIGOS DE PROGRAMACION",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "NO"
+        ]
+      },
+      {
+        "nombre": "Luis Miguel Jimenez Castillo",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Generación/lluvia de ideas;Automatización de tareas rutinarias;Generación y edición de contenido visual;Organización y planificación;Codificación;",
+        "herramientas": "Utilizando para resumen de libros y realizar esquemas, también interpretando y organizando datos",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Minerva Karina Robles Gomez",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Generación/lluvia de ideas;Resumen y síntesis de contenido;Creatividad y Estrategia;Organización y planificación;Análisis Financiero y de Datos;Automatización de tareas rutinarias;Traducción;Generación y edición de contenido visual;Soporte en toma de decisiones;Comunicación y Redacción;",
+        "herramientas": "Utilicé IA para kpis, fórmulas y organización de información en Excel.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Mitzi Brijith Cruz Contreras",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Generación y edición de contenido visual;Comunicación y Redacción;Organización y planificación;",
+        "herramientas": "La usé para automatizar mis reportes de gastos en excel.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Santiago Alonso Canedo Delgado",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Automatización de tareas rutinarias;Organización y planificación;",
+        "herramientas": "La use para reforzar el proceso constructivo de una actividad en terracerías",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Felix Leonardo Alcantar De la Cruz",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Creatividad y Estrategia;",
+        "herramientas": "LA UTILICE PARA IDEAS DE UNA PRESENTACION ASI COMO PARA IDEAS DEL FODA",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "ChatGPT"
+        ]
+      }
+    ]
+  },
+  "MAQUINARIA": {
+    "n": 9,
+    "casos": [
+      {
+        "nombre": "Jose Manuel Medina Xolot",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Creatividad y Estrategia;Automatización de tareas rutinarias;Generación y edición de contenido visual;Generación/lluvia de ideas;",
+        "herramientas": "la Utilice para Generar un formato de Inspección Unico que abarcara todos los componentes básicos y sistemas que comprende toda la maquinaria pesada.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No conozco ninguna que hable específicamente o se enfoque en procesos del area."
+        ]
+      },
+      {
+        "nombre": "Jesus Alonso Floriano Luquin",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Automatización de tareas rutinarias;Análisis Financiero y de Datos;Comunicación y Redacción;Generación/lluvia de ideas;Creatividad y Estrategia;Resumen y síntesis de contenido;Organización y planificación;Soporte en toma de decisiones;",
+        "herramientas": "Para solucionar y lógica de fórmulas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Aún no"
+        ]
+      },
+      {
+        "nombre": "Marleen Salgado Delgado",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Automatización de tareas rutinarias;Organización y planificación;Generación y edición de contenido visual;",
+        "herramientas": "UTILICE LA INTELIGENCIA PARA EL MAPEO DE OPERACIONES",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "CHAT GPT CLOUDE"
+        ]
+      },
+      {
+        "nombre": "Korey Yarely Salgado Delgado",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Organización y planificación;Creatividad y Estrategia;",
+        "herramientas": "Para entender una metodología",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Priscila Tejeda Vidal",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Generación/lluvia de ideas;Análisis Financiero y de Datos;Comunicación y Redacción;",
+        "herramientas": "La he utilizado para ayudarme a crear fórmulas complejas y modelos de datos en excel que reduzcan el tiempo de elaboración de reportes",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Carlos Alfredo Perea Vega",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Generación/lluvia de ideas;Creatividad y Estrategia;Comunicación y Redacción;Generación y edición de contenido visual;Análisis Financiero y de Datos;Resumen y síntesis de contenido;Codificación;Automatización de tareas rutinarias;Organización y planificación;Traducción;Soporte en toma de decisiones;",
+        "herramientas": "En entrevistas de trabajo en las habilidades operativos con los operadores",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Chay gpt con el uso adecuado de la maquinaria"
+        ]
+      },
+      {
+        "nombre": "Omar Garcia Chavez",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Resumen y síntesis de contenido;Generación y edición de contenido visual;Soporte en toma de decisiones;Automatización de tareas rutinarias;Análisis Financiero y de Datos;Organización y planificación;",
+        "herramientas": "La use para establecer un diagnóstico preciso y claro, asi como los elementos que se involucraron en la causa raiz una falla eléctrica de motor.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Para análisis de diagramas esquemático, neumáticos y eléctricos"
+        ]
+      },
+      {
+        "nombre": "Jose Adrian Acuña Ruiz",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Soporte en toma de decisiones;Generación y edición de contenido visual;",
+        "herramientas": "Utilicé IA para la generación de una imagen en un formato de llantas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Desconozco"
+        ]
+      }
+    ]
+  },
+  "CAPITAL HUMANO": {
+    "n": 12,
+    "casos": [
+      {
+        "nombre": "Emma Unzueta Alvarez",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Organización y planificación;Codificación;Generación y edición de contenido visual;Comunicación y Redacción;Soporte en toma de decisiones;Análisis Financiero y de Datos;Creatividad y Estrategia;Traducción;Automatización de tareas rutinarias;Generación/lluvia de ideas;Resumen y síntesis de contenido;\"Modelado y documentación de arquitectura empresarial, generación de matrices RACI, BPMN y procedimientos normativos; análisis de cumplimiento regulatorio (REPSE, fiscal, laboral)\";",
+        "herramientas": "Análisis de proveedores (proceso de gobernanza):\nUsé IA para generar un análisis comparativo de riesgo entre tres proveedores de servicios del PAC de facturación, estructurando criterios de continuidad, experiencia técnica, soporte y costo. El entregable habría requerido investigación manual extensa; con IA obtuve un marco estructurado en horas que sirvió de base para la recomendación formal a dirección.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "SAP Signavio Process Manager\nOracle Process Cloud Service / Oracle Integration Cloud (OIC) — Process Automation"
+        ]
+      },
+      {
+        "nombre": "Ernesto Octavio Sanchez Barrera",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Generación y edición de contenido visual;Traducción;Resumen y síntesis de contenido;Comunicación y Redacción;Automatización de tareas rutinarias;",
+        "herramientas": "Perfiles de puesto e informacion de obtencion de datos.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Omar Velazquez Velazquez",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Generación y edición de contenido visual;Generación/lluvia de ideas;Análisis Financiero y de Datos;Comunicación y Redacción;",
+        "herramientas": "Utilice la IA para realizar políticas y procedimientos de mi área",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "He escuchado muchas acerca de reclutamiento de personal"
+        ]
+      },
+      {
+        "nombre": "Salvador Gonzalez Rios",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Automatización de tareas rutinarias;Resumen y síntesis de contenido;Generación/lluvia de ideas;Organización y planificación;Creatividad y Estrategia;",
+        "herramientas": "En la búsqueda de planiaciones de proyectos y análisis en resultados",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No he escuchado ninguna"
+        ]
+      },
+      {
+        "nombre": "Cesar Hernandez Garzon",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Creatividad y Estrategia;Codificación;Generación y edición de contenido visual;Generación/lluvia de ideas;",
+        "herramientas": "utilizo la IA para generar imagenes  como para corregir correos",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Anahi Montes Maldonado",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Comunicación y Redacción;Generación y edición de contenido visual;Generación/lluvia de ideas;",
+        "herramientas": "Lo utilicé para simplificar redacciones y mejorar transmisión de ideas.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Sarahy Lizbeth Villanueva Ramirez",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Creatividad y Estrategia;Comunicación y Redacción;Generación/lluvia de ideas;Automatización de tareas rutinarias;Generación y edición de contenido visual;Resumen y síntesis de contenido;",
+        "herramientas": "Lo he utilizado en estas opciones: Para la estructuración del lanzamiento de una nueva política, para guiones de videos, para consultas de FAQ,",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Si, Lapzo con Copilot,  Rankmi IA"
+        ]
+      },
+      {
+        "nombre": "Pedro Elias Garcia Romero",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Creatividad y Estrategia;Análisis Financiero y de Datos;Comunicación y Redacción;Automatización de tareas rutinarias;Generación y edición de contenido visual;",
+        "herramientas": "Utilice IA para generar formulas DAX para crear cálculos para plasmar graficas (KPIs) en Excel y Power BI. Generación de imágenes para prototipos de proyectos específicos de mejora. Creación de cursos (estructura y redacción) de programas de capacitación interna.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Claude"
+        ]
+      }
+    ]
+  },
+  "CONSTRUCTORA": {
+    "n": 16,
+    "casos": [
+      {
+        "nombre": "Estefania Quiroz Herrera",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Automatización de tareas rutinarias;Creatividad y Estrategia;",
+        "herramientas": "utilice IA para programar en Power BI",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Daniel Merlin Ochoa",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Resumen y síntesis de contenido;Generación y edición de contenido visual;Automatización de tareas rutinarias;Organización y planificación;Análisis Financiero y de Datos;",
+        "herramientas": "Instrucciones para generar reportaría (power BI)",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "cloud, grok"
+        ]
+      },
+      {
+        "nombre": "Victor Manuel Rios Tovar",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Soporte en toma de decisiones;",
+        "herramientas": "búsqueda rapita en normativas mexicanas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Victor Jesus Herrera Fernandez",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Resumen y síntesis de contenido;Creatividad y Estrategia;",
+        "herramientas": "No la he utilizado en el trabajo.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no."
+        ]
+      },
+      {
+        "nombre": "Pedro Muruato Ontiveros",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Automatización de tareas rutinarias;Organización y planificación;Resumen y síntesis de contenido;Generación y edición de contenido visual;Traducción;",
+        "herramientas": "-Utilice IA para validar redacciones contractuales y técnicas, reduciendo riesgos de interpretación y omisiones.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "ALICE Technologies"
+        ]
+      },
+      {
+        "nombre": "Javier Alonso Espinosa Camarena",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Creatividad y Estrategia;Análisis Financiero y de Datos;Traducción;Automatización de tareas rutinarias;Generación y edición de contenido visual;",
+        "herramientas": "Utilice la IA fuera del area la boral, para organizar mi dia con las actividades que dejaba sin hacer.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Ninguno"
+        ]
+      },
+      {
+        "nombre": "Nickole Alexandra Mendoza Perez",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Resumen y síntesis de contenido;Comunicación y Redacción;Organización y planificación;",
+        "herramientas": "La usé para programar mis KPIS en PowerBI, la usé también para generar reportes de avances y documentos entregables.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Aún no"
+        ]
+      },
+      {
+        "nombre": "Miguel Angel Valderrama Sanchez",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Traducción;Análisis Financiero y de Datos;Organización y planificación;Generación/lluvia de ideas;Comunicación y Redacción;Resumen y síntesis de contenido;",
+        "herramientas": "Dentro de las aplicaciones se creo un proyecto el cual se le dio el contexto de redacción y nivel técnico de construcción mediante norma y literatura, esto nos permite agilizar los reportes y poner la redacción mas técnica y puntual",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no, las app que utilizamos ya traen IA por ejemplo microsoft, procore y autodesk"
+        ]
+      }
+    ]
+  },
+  "CADENA DE SUMINISTROS": {
+    "n": 9,
+    "casos": [
+      {
+        "nombre": "Denis Yaneth Mendez Flores",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Traducción;Resumen y síntesis de contenido;Análisis Financiero y de Datos;",
+        "herramientas": "Para realizar el análisis de las comparativas entre varios presupuesto",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no hasta el momento"
+        ]
+      },
+      {
+        "nombre": "Yerania Valenzuela Ruiz",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Resumen y síntesis de contenido;Organización y planificación;Generación/lluvia de ideas;Creatividad y Estrategia;Comunicación y Redacción;Generación y edición de contenido visual;Automatización de tareas rutinarias;",
+        "herramientas": "¨He utilizado IA para  para clasificar puntos relevantes y sintetizar/resumir información para presentaciones ejecutivas, lo cual me ayuda a ejecutar varias tareas al mismo tiempo y garantizar que desde un punto de vista exterior se coincida con las ideas que quiero trasmitir sin perder el enfoque y optimizo tiempo¨",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Utilizo varias aplicaciones para planificar actividades ¨To do list¨ y ¨To do ist¨para presentaciones ¨Gamma¨ y¨Chatgpt¨ , \nHe investigado de Copilot para planificar y automatizar y aumentar la productividad tanto en mi vida profesional y personal, y estoy por iniciar a utilizarla pero me gustaría recibir más conocimiento de las app de IA para decidir mejor."
+        ]
+      },
+      {
+        "nombre": "Andres Lopez Saldaña",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Automatización de tareas rutinarias;Resumen y síntesis de contenido;Creatividad y Estrategia;Organización y planificación;",
+        "herramientas": "REALIZAR TABLAS COMPARATIVAS Y ANALISIS DE DATOS PARA KPIS",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "-"
+        ]
+      },
+      {
+        "nombre": "Karla Elizabeth Ruiz Borja",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Resumen y síntesis de contenido;",
+        "herramientas": "realizar bussines case de SCORE CADS",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "NO"
+        ]
+      },
+      {
+        "nombre": "Luis Angel Carretero Luna",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Comunicación y Redacción;Resumen y síntesis de contenido;Organización y planificación;",
+        "herramientas": "Utilice la IA para la redacción de un informe técnico para los directores para justificar la propuesta de un subcontratista que estaba por arriba del presupuesto",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No tengo conocimiento de algo específico"
+        ]
+      },
+      {
+        "nombre": "Jonathan Garcia Sandoval",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Generación/lluvia de ideas;Organización y planificación;",
+        "herramientas": "Utilicé la IA para que me apoyara con un forecast de consumo energético en los 50 años de vida útil de una nave.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No."
+        ]
+      },
+      {
+        "nombre": "Karina Elianeth Favela Sanchez",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Traducción;Comunicación y Redacción;Generación/lluvia de ideas;",
+        "herramientas": "LÍNEA DEL TIEMPO",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "NO"
+        ]
+      },
+      {
+        "nombre": "Marirery Sarahi De la Cruz Alvarado",
+        "proceso": "Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Comunicación y Redacción;Organización y planificación;Generación/lluvia de ideas;Resumen y síntesis de contenido;Creatividad y Estrategia;Automatización de tareas rutinarias;",
+        "herramientas": "Utilice una IA para generar una formula en excel para poder obtener unas graficas especificas de las programaciones de pagos de cadena de suminsitros",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no, no conozco"
+        ]
+      }
+    ]
+  },
+  "ASISTENCIA DIRECCION": {
+    "n": 4,
+    "casos": [
+      {
+        "nombre": "Luis Carlos Arellano Sanchez",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Codificación;Resumen y síntesis de contenido;Automatización de tareas rutinarias;Creatividad y Estrategia;Comunicación y Redacción;",
+        "herramientas": "La usé para redactar guiones para videos constructivos.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Alondra Karina Beltran Barragan",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Traducción;Generación/lluvia de ideas;Soporte en toma de decisiones;Automatización de tareas rutinarias;",
+        "herramientas": "La utilice para separar 30 polizas de seguros que estaba en un solo pdf, para tenerlas por individual y las nombro con el modelo y año de cada vehiculo",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Desconozco"
+        ]
+      },
+      {
+        "nombre": "Jose Eduardo Herrera Samaniego",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Automatización de tareas rutinarias;Análisis Financiero y de Datos;Comunicación y Redacción;Generación y edición de contenido visual;Traducción;Resumen y síntesis de contenido;Soporte en toma de decisiones;",
+        "herramientas": "Lo usé para la detección de errores de EPP en los tutoriales de contrucción y generaba exceles con el timestamp, el error y un screenshot del error.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "OutlineAI, sirve para la generación de layouts de naves industriales"
+        ]
+      },
+      {
+        "nombre": "Miguel Angel Gonzalez Colin",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Organización y planificación;",
+        "herramientas": "Utilice colude para generar un reporte de entradas y salidas , con tabla de horas extras",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      }
+    ]
+  },
+  "FINANZAS": {
+    "n": 11,
+    "casos": [
+      {
+        "nombre": "Diana Lizeth Rodriguez Hidalgo",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Resumen y síntesis de contenido;Automatización de tareas rutinarias;Creatividad y Estrategia;Generación/lluvia de ideas;Organización y planificación;Comunicación y Redacción;Análisis Financiero y de Datos;",
+        "herramientas": "ninguno hasta el momento.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "IA para automatizar procesos de validación en pólizas."
+        ]
+      },
+      {
+        "nombre": "Andrea Dionicio Torres",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Traducción;Organización y planificación;Análisis Financiero y de Datos;Automatización de tareas rutinarias;Resumen y síntesis de contenido;Creatividad y Estrategia;",
+        "herramientas": "Gemeni: del archivo crea una minuta con los 5 proveedores de acuerdo al monto pago en el mes.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Yulissa Guizelle Sanchez Chavez",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Análisis Financiero y de Datos;Automatización de tareas rutinarias;",
+        "herramientas": "Me ha ayudado con formulas en excel o con formas de utilizarlo mas eficientemente.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Jose Alberto Contreras Rodriguez",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Análisis Financiero y de Datos;Generación/lluvia de ideas;",
+        "herramientas": "Explicación y soporte para crear fórmula para análisis completo de datos.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Alejandro Ladron De Guevara Medina",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Generación/lluvia de ideas;Comunicación y Redacción;Creatividad y Estrategia;Resumen y síntesis de contenido;Análisis Financiero y de Datos;",
+        "herramientas": "para mejorar archivos de Excel y hacer más eficientes algunos procesos.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "claude"
+        ]
+      },
+      {
+        "nombre": "Karla Gabriela Pacheco Garcia",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Soporte en toma de decisiones;Resumen y síntesis de contenido;Creatividad y Estrategia;Comunicación y Redacción;Organización y planificación;Generación/lluvia de ideas;",
+        "herramientas": "Solo he usado la IA como consulta de algunos artículos de la Ley o consulta de si es correcto algún proceso.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Denisse Galvez Ruiz",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;",
+        "ejemplo": "Análisis Financiero y de Datos;Comunicación y Redacción;Automatización de tareas rutinarias;Generación/lluvia de ideas;",
+        "herramientas": "para consultar algunas formulas de excel",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no lo he aplicado directamente a mis actividades diarias"
+        ]
+      },
+      {
+        "nombre": "Israel Walker Romero",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Resumen y síntesis de contenido;Codificación;Creatividad y Estrategia;",
+        "herramientas": "Utilice IA (gemini) para resumir un correo electrónico el cual contenia mucha informacion",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      }
+    ]
+  },
+  "ADMINISTRACION": {
+    "n": 6,
+    "casos": [
+      {
+        "nombre": "Marcelina Rivera Blanco",
+        "proceso": "Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Resumen y síntesis de contenido;Comunicación y Redacción;",
+        "herramientas": "Generalmente la utilizo para mejorar redacciones de comunicados.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Claudia Michelle Aguilar Mancilla",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Automatización de tareas rutinarias;Organización y planificación;Creatividad y Estrategia;Comunicación y Redacción;Generación/lluvia de ideas;Resumen y síntesis de contenido;Traducción;",
+        "herramientas": "Redacción estructurada de escritos (con lenguaje técnico-fiscal adecuado).\nEstandarización de respuestas conforme a normativa (CFF, LISR, LFPIORPI).\nGeneración de formatos base reutilizables (ANEXOS, narrativas, controles internos).\nSíntesis de información compleja en lenguaje claro y consistente.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Tesio, Copilot Gestoría, Zanus AI"
+        ]
+      },
+      {
+        "nombre": "Araceli Hernandez Benetts",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Traducción;Resumen y síntesis de contenido;Comunicación y Redacción;",
+        "herramientas": "La utilice para formato de un reporte excel incluyendo como realizar una formula compleja que me permitiera jalar la información para las demás filas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      },
+      {
+        "nombre": "Griselda Iriarte Martinez",
+        "proceso": "Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Automatización de tareas rutinarias;Organización y planificación;Resumen y síntesis de contenido;Traducción;Generación y edición de contenido visual;Generación/lluvia de ideas;Creatividad y Estrategia;Comunicación y Redacción;",
+        "herramientas": "Es de suma importancia en la redaccion de correos institucionales o de comunicacion interna, así como para sintetizacion de informacion",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Para el area de REPSE-SIROC seria la plataforma Alfresco y para Nominas Tress que son compatibles con CHATGPT y Copilot"
+        ]
+      },
+      {
+        "nombre": "Mayra Jacqueline Fraire Hernandez",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Comunicación y Redacción;Análisis Financiero y de Datos;",
+        "herramientas": "en análisis de información",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "me ha ayudado a entender contratos legales"
+        ]
+      },
+      {
+        "nombre": "Alma Lidia Cruz Gutierrez",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Comunicación y Redacción;Traducción;Soporte en toma de decisiones;",
+        "herramientas": "Utilizo herramientas de inteligencia artificial para mejorar la redacción de escritos, adaptándolos según cada caso que presentan nuestros clientes. Asimismo, me apoyo en estas herramientas para realizar traducciones, especialmente cuando se trata de términos técnicos, y para identificar áreas de oportunidad que me permitan fortalecer y cerrar negociaciones de pago de manera efectiva.\nTambién las utilizo para la redacción de correos, tanto dirigidos a clientes como a colaboradores, ajustando el tono y contenido de acuerdo con la complejidad de cada situación.\nEn mi rol como Coordinador de Cobranza, y al estar en constante contacto con nuestros clientes, ya sea de manera presencial o telefónica, considero fundamental generar una conexión con ellos, brindándoles confianza y la certeza de que su caso está siendo atendido. Todo esto, alineado con el objetivo de cumplir con mis metas de recuperación de cartera.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Tuve la oportunidad de utilizar la plataforma Rakmi, la cual realizó un análisis basado en la evaluación del equipo de cobranza. Los resultados fueron muy claros al identificar las áreas de mejora de cada uno de los integrantes. Sin duda, esta herramienta representó un gran apoyo, ya que me permitió ahorrar tiempo al evitar tener que analizar e investigar de manera individual cómo abordar a cada colaborador. Gracias a esta información, pude enfocar mis esfuerzos de forma más estratégica y efectiva en el desarrollo del equipo."
+        ]
+      }
+    ]
+  },
+  "SIN ASIGNAR": {
+    "n": 2,
+    "casos": [
+      {
+        "nombre": "Marco Antonio Rodriguez Name",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Traducción;Generación y edición de contenido visual;Generación/lluvia de ideas;Comunicación y Redacción;Análisis Financiero y de Datos;Resumen y síntesis de contenido;Organización y planificación;Creatividad y Estrategia;Soporte en toma de decisiones;Automatización de tareas rutinarias;búsqueda de leyes y contratos;",
+        "herramientas": "elaboración de presentaciones, creacion de hojas de excel apoyo en jalar información de sistema, creacion de bases de datos, etc. noticias fiscales, consulta de tipos de cambio y mucho mas",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "open Clow, chat gpt, bots. power automate"
+        ]
+      },
+      {
+        "nombre": "Brenda Edith Hernandez Sanchez",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;",
+        "ejemplo": "Creatividad y Estrategia;Soporte en toma de decisiones;Análisis Financiero y de Datos;Automatización de tareas rutinarias;Generación/lluvia de ideas;",
+        "herramientas": "utilice la IA para tareas de la universidad de costos y presupuestos",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "no"
+        ]
+      }
+    ]
+  },
+  "LEGAL": {
+    "n": 5,
+    "casos": [
+      {
+        "nombre": "Eva Susana Mendez Gudiño",
+        "proceso": "Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Generación/lluvia de ideas;Resumen y síntesis de contenido;Comunicación y Redacción;Automatización de tareas rutinarias;Traducción;",
+        "herramientas": "Utilicé la IA para el desarrollo natural de una presentación en power point, en donde me permitió estructurar adecuadamente.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Webdox, el análisis legal de los documentos."
+        ]
+      },
+      {
+        "nombre": "Paulina Camila Villareal Silva",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Generación/lluvia de ideas;Comunicación y Redacción;Organización y planificación;Resumen y síntesis de contenido;Creatividad y Estrategia;",
+        "herramientas": "Utilice IA para sacar fórmulas para power BI",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Elizabeth Partida Martinez",
+        "proceso": "Acceso Tecnológico: Limitaciones en el equipo de cómputo o bloqueos de red para acceder a ciertas IAs.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Generación/lluvia de ideas;Traducción;Generación y edición de contenido visual;Resumen y síntesis de contenido;Comunicación y Redacción;",
+        "herramientas": "Resumen de escrituras, análisis de datos y verificación d redacción jurídica.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Madelyn Yamilet Cristobal Benavides",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;",
+        "ejemplo": "Comunicación y Redacción;Generación/lluvia de ideas;Organización y planificación;Resumen y síntesis de contenido;Creatividad y Estrategia;Traducción;",
+        "herramientas": "En la revisión de contratos de arrendamiento comercial, implementé el uso de herramientas de IA como ChatGPT para agilizar el análisis de cláusulas críticas.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "No"
+        ]
+      },
+      {
+        "nombre": "Jose Luis Saldana Salas",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Brecha de Conocimiento: Desconozco qué herramientas específicas existen para mi perfil/puesto.;Naturaleza del Puesto: Considero que mis funciones requieren un juicio humano/presencial que la IA no puede replicar.;",
+        "ejemplo": "Resumen y síntesis de contenido;Comunicación y Redacción;Generación y edición de contenido visual;Traducción;Organización y planificación;",
+        "herramientas": "Al momento que te que estudiar expedientes de litigio o que tengo que analizar contratos",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Si, IA para análisis de litigio donde te da la probabilidad de éxito"
+        ]
+      }
+    ]
+  },
+  "COMERCIAL": {
+    "n": 1,
+    "casos": [
+      {
+        "nombre": "Miguel Garza Treviño",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;",
+        "ejemplo": "Generación/lluvia de ideas;Soporte en toma de decisiones;Análisis Financiero y de Datos;Comunicación y Redacción;Traducción;Resumen y síntesis de contenido;Automatización de tareas rutinarias;",
+        "herramientas": "He usado la IA para redactar correos en inglés, crear fórmulas y macros en Excel, realizar estudios de mercado y analizar datos: tareas que antes me tomaban horas ahora las resuelvo en minutos y con mejor calidad en el entregable.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "ClickUp para gestión de proyectos, no la hemos utilizado."
+        ]
+      }
+    ]
+  },
+  "SEGURIDAD": {
+    "n": 1,
+    "casos": [
+      {
+        "nombre": "Aldo Donaciano Leal Esparza",
+        "proceso": "Seguridad de Información: Incertidumbre sobre el manejo de datos sensibles de Atisa en plataformas externas.;Calidad del Resultado: He obtenido respuestas imprecisas o que requieren demasiada corrección manual.;Carga Operativa: El ritmo de trabajo actual no me permite dedicar tiempo a aprender nuevas tecnologías.;",
+        "ejemplo": "Automatización de tareas rutinarias;Comunicación y Redacción;Resumen y síntesis de contenido;",
+        "herramientas": "Utilizo la IA como soporte en procesos y procedimientos, para estructurar la información de reportes diarios y en la redacción de forma mas clara y ordenada.",
+        "horas": "Menos de 2 horas",
+        "barreras": [
+          "Si, en herramientas aplicadas en sistemas de videovigilancias (CCTV) con analítica de video, que puede llegar a detectar comportamientos sospechosos, generar alertas automáticas."
+        ]
+      }
+    ]
+  }
+}
