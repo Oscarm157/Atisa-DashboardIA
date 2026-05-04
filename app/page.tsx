@@ -11,24 +11,36 @@ export default function LobbyPage() {
       <TopBar meta="Documento Interno · Mayo 2026" />
 
       {/* HERO */}
-      <section className="border-b border-line py-16 md:py-24 bg-bg">
+      <section className="relative bg-ink text-white py-20 md:py-24 border-b border-white/10">
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-accent" />
         <div className="page-container">
           <FadeIn>
-            <div className="mono-eyebrow mb-5">
-              Programa de Adopción de IA · 2026
+            <div className="font-mono text-[11.5px] tracking-widest uppercase text-accent font-medium mb-7">
+              Atisa · Programa de Adopción de IA
             </div>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="font-serif-display text-[40px] md:text-[64px] leading-[1.05] text-ink max-w-[920px]">
-              Estrategia, diagnóstico y{" "}
-              <strong className="text-navy-deep font-medium">plan de ejecución</strong>{" "}
-              en un solo lugar.
+            <h1 className="font-serif-display font-light text-[44px] md:text-[68px] leading-[1.05] tracking-[-0.025em] text-white max-w-[760px]">
+              Diagnóstico.<br />
+              Estrategia.<br />
+              <strong className="text-accent font-medium">Programa.</strong>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="mt-5 text-[16px] text-ink-3 leading-[1.55] max-w-[680px]">
-              Marco de gobernanza, encuesta a 119 colaboradores y 24 semanas de programa, mayo a octubre 2026.
-            </p>
+            <div className="mt-10 border-l-2 border-accent pl-6 max-w-[460px]">
+              <div className="flex justify-between py-3 border-b border-white/10 text-[13.5px]">
+                <span className="font-mono text-[11.5px] tracking-widest uppercase text-white/55">Colaboradores</span>
+                <span className="text-white font-medium">119</span>
+              </div>
+              <div className="flex justify-between py-3 border-b border-white/10 text-[13.5px]">
+                <span className="font-mono text-[11.5px] tracking-widest uppercase text-white/55">Duración</span>
+                <span className="text-white font-medium">24 semanas</span>
+              </div>
+              <div className="flex justify-between py-3 text-[13.5px]">
+                <span className="font-mono text-[11.5px] tracking-widest uppercase text-white/55">Periodo</span>
+                <span className="text-white font-medium">Mayo a octubre 2026</span>
+              </div>
+            </div>
           </FadeIn>
         </div>
       </section>
