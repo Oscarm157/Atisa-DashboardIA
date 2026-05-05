@@ -174,7 +174,7 @@ const Slide01 = (
         Claude en <strong className="text-accent font-medium">Atisa</strong>.
       </motion.h1>
       <motion.p variants={item} className="text-white/75 text-[18px] md:text-[20px] mt-8 max-w-[680px] leading-[1.5]">
-        Una sesión corta para que sepas qué es Claude, cómo hablarle y qué puedes hacer con él el mismo día.
+        Una sesión corta para que sepas qué es Claude, cómo se redacta un prompt y qué puedes hacer con él el mismo día.
       </motion.p>
       <motion.div variants={item} className="mt-auto pt-16 flex justify-between items-end font-mono text-[12px] tracking-widest uppercase text-white/60">
         <span>Atisa Group · Mayo 2026</span>
@@ -189,15 +189,15 @@ const Slide02 = (
   <SlideShell tag="Qué hay aquí · 2 min" num={2}>
     <motion.h2 variants={item} className="font-serif-display text-[40px] md:text-[60px] leading-[1.06] text-ink max-w-[900px] font-light">
       30 minutos. <strong className="font-medium">5 partes.</strong>
-      <br />Lo que sales sabiendo.
+      <br />Lo que verás en la sesión.
     </motion.h2>
     <motion.p variants={item} className="text-[16px] md:text-[17px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
-      Cero tecnicismos sin razón. Cada parte termina con algo concreto que puedes aplicar el mismo día.
+      Cero tecnicismos sin razón. Cada parte cierra con algo concreto que puedes aplicar el mismo día.
     </motion.p>
     <div className="mt-12 grid md:grid-cols-5 gap-0 max-w-[1100px] border-t border-line">
       {[
         ["5 min", "Qué es Claude", "Qué hace, qué no hace, quién está detrás."],
-        ["10 min", "Cómo se le habla", "El modelo de prompt y los 4 bloques que vamos a usar."],
+        ["10 min", "El prompt", "El modelo de redacción y los 4 bloques que vamos a usar."],
         ["5 min", "Qué hay dentro", "3 modelos, Proyectos, Artifacts, Memoria."],
         ["5 min", "Cómo se trabaja", "Iterar, qué información va y qué no."],
         ["5 min", "Tu primera tarea", "Caso real conectado a tu trabajo."],
@@ -368,7 +368,7 @@ const Slide05 = (
         {
           icon: FolderKanban,
           title: "Conecta con tus herramientas",
-          body: "MCP y conectores le permiten hablar con tus archivos, sistemas y plataformas. Empieza con chat, escala a flujo de trabajo.",
+          body: "MCP y conectores lo enlazan con tus archivos, sistemas y plataformas. Empieza con chat, escala a flujo de trabajo.",
         },
       ].map(({ icon: Icon, title, body }) => (
         <motion.div
@@ -417,7 +417,7 @@ const Slide06 = (
 
 // 07 La regla de oro
 const Slide07 = (
-  <SlideShell tag="Parte 2 · Cómo se le habla" num={7} variant="dark">
+  <SlideShell tag="Parte 2 · El prompt" num={7} variant="dark">
     <motion.div variants={item} className="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">
       La regla de oro
     </motion.div>
@@ -426,7 +426,7 @@ const Slide07 = (
       <br />Claude también.
     </motion.h2>
     <motion.p variants={item} className="text-[18px] md:text-[20px] text-white/75 mt-10 max-w-[760px] leading-[1.55]">
-      Claude no está dentro de tu cabeza. No sabe a quién le hablas, qué proyecto traes, qué reportaste ayer. Lo que no escribes, no existe para él.
+      Claude no está dentro de tu cabeza. No sabe a quién le escribes, qué proyecto traes, qué reportaste ayer. Lo que no escribes, no existe para él.
     </motion.p>
     <motion.p variants={item} className="text-[15px] text-white/55 mt-6 max-w-[760px] leading-[1.6]">
       Casi todo lo que vas a aprender en las próximas sesiones es cómo darle ese contexto sin escribir un libro.
@@ -436,7 +436,7 @@ const Slide07 = (
 
 // 08 Vago vs claro
 const Slide08 = (
-  <SlideShell tag="Parte 2 · Cómo se le habla" num={8}>
+  <SlideShell tag="Parte 2 · El prompt" num={8}>
     <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Vago contra <strong className="font-medium">claro</strong>.
     </motion.h2>
@@ -470,129 +470,136 @@ const Slide08 = (
   </SlideShell>
 );
 
-// 09 Los 4 bloques del buen prompt — desglose vertical
+// 09 Los 4 bloques — un prompt completo, anatomía marcada
 const Slide09 = (
-  <SlideShell tag="Parte 2 · Cómo se le habla" num={9}>
+  <SlideShell tag="Parte 2 · El prompt" num={9}>
     <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.08] text-ink font-light max-w-[900px]">
       Los 4 bloques de un <strong className="font-medium">buen prompt</strong>.
     </motion.h2>
     <motion.p variants={item} className="text-[15.5px] text-ink-3 mt-5 max-w-[860px] leading-[1.6]">
-      Un prompt largo y bien armado vale más que cinco iteraciones cortas. Cada bloque le quita ambigüedad a Claude y trabajo a ti.
+      Un prompt largo y bien armado vale más que cinco iteraciones cortas. Mira cómo se ven los 4 bloques en un prompt real. En negritas, lo que define cada bloque.
     </motion.p>
 
-    <div className="mt-10 max-w-[1180px] border-t border-line">
+    <motion.div variants={item} className="mt-8 grid md:grid-cols-4 gap-0 max-w-[1180px] border-t border-line">
       {[
-        {
-          title: "Rol",
-          sub: "Quién quieres que sea",
-          why: "Define la voz, el criterio profesional y el nivel de detalle. Sin rol Claude responde como un asistente genérico. Con rol responde como tu equipo.",
-          example: "Eres ingeniero residente con 10 años en obra industrial pesada en México. Has manejado clientes como Pemex, CFE y constructoras grandes. Conoces los formatos de reporte que esperan, los plazos que sí se respetan y cuándo conviene dar contexto extra al cliente. No te disculpas de más ni endulzas problemas técnicos.",
-        },
-        {
-          title: "Contexto",
-          sub: "Qué situación rodea la tarea",
-          why: "Sin esto, Claude inventa el escenario. Con esto, escribe sobre el tuyo. Aquí va todo lo que necesita saber para no asumir mal: actores, historia, restricciones, lo que ya se intentó.",
-          example: "Pemex pidió actualización semanal del puente Ruta 12, sección 4 a 7. Llevamos 3 días de retraso por lluvia atípica que paró la cimentación. El cliente ya está nervioso por dos retrasos previos en el mismo trimestre. La supervisora del proyecto es la Ing. Méndez, formal pero técnica. El correo lo va a ver también su jefe, así que importa que se lea profesional.",
-        },
-        {
-          title: "Tarea",
-          sub: "Qué quieres que haga, en imperativo",
-          why: "Verbo claro al inicio. Especifica exactamente qué incluir y qué dejar fuera. Una sola tarea por prompt funciona mejor que cinco apiladas; si hay varias, pide que las haga en orden.",
-          example: "Redacta el correo de avance semanal para la Ing. Méndez. Incluye: estado real de la sección 4 a 7, causa del retraso, plan para recuperar 1.5 días la próxima semana, y qué decisión necesitamos del cliente para el próximo lunes. No incluyas comparativos contra el plan original ni proyecciones a 3 meses.",
-        },
-        {
-          title: "Formato",
-          sub: "Cómo quieres el resultado",
-          view: "Largo, tono, estructura, viñetas, vocativo, despedida. Lo que no especificas, Claude lo decide por ti. La diferencia entre un correo que mandas tal cual y uno que tienes que reescribir vive aquí.",
-          example: "Máximo 9 líneas. Tono cordial pero firme, sin disculpas excesivas ni 'agradezco su comprensión'. Sin viñetas. Saludo formal con vocativo a la Ing. Méndez. Despedida estándar firmando como Residente de Obra. Que se pueda leer en 30 segundos.",
-        },
-      ].map((b, i) => (
-        <motion.div
-          key={b.title}
-          variants={item}
-          className="grid grid-cols-1 md:grid-cols-[72px_200px_1fr_1.1fr] gap-6 py-7 border-b border-line items-start"
+        ["Rol", "Quién quieres que sea"],
+        ["Contexto", "Qué situación rodea la tarea"],
+        ["Tarea", "Qué quieres que haga"],
+        ["Formato", "Cómo quieres el resultado"],
+      ].map(([title, sub], i) => (
+        <div
+          key={title}
+          className={cn(
+            "py-5 px-5",
+            i > 0 && "md:border-l border-line",
+            i === 0 && "md:pl-0"
+          )}
         >
-          <div className="font-serif-display text-[44px] md:text-[56px] text-accent font-light leading-none tabular-nums">
-            {String(i + 1).padStart(2, "0")}
+          <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium mb-2">
+            {String(i + 1).padStart(2, "0")} · {title}
           </div>
-          <div>
-            <div className="font-medium text-[20px] text-ink leading-tight">{b.title}</div>
-            <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mt-1.5">
-              {b.sub}
-            </div>
-          </div>
-          <div className="text-[13.5px] text-ink-3 leading-[1.65]">{b.why ?? b.view}</div>
-          <div className="border-l-2 border-line pl-4 text-[13px] text-ink-2 leading-[1.6] font-serif-display italic font-light">
-            &ldquo;{b.example}&rdquo;
-          </div>
-        </motion.div>
+          <div className="text-[13px] text-ink-3 leading-[1.55]">{sub}</div>
+        </div>
       ))}
-    </div>
+    </motion.div>
 
-    <motion.div variants={item} className="mt-10 max-w-[1180px] bg-ink text-white p-7 shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
-      <div className="flex items-center justify-between mb-4">
+    <motion.div variants={item} className="mt-8 max-w-[1180px] bg-ink text-white p-8 md:p-9 shadow-[0_8px_30px_rgba(0,0,0,0.14)]">
+      <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/15">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium">
-          Los 4 ensamblados · prompt completo
+          Anatomía de un prompt
         </div>
         <div className="font-mono text-[9.5px] tracking-widest uppercase text-white/40">
-          Esto es lo que se pega en Claude
+          Caso real · obra Atisa
         </div>
       </div>
-      <p className="text-[13.5px] text-white/85 leading-[1.75] font-mono">
-        <span className="text-accent">[Rol]</span> Eres ingeniero residente con 10 años en obra industrial pesada en México. Manejas clientes como Pemex y CFE, conoces los formatos de reporte que esperan y no endulzas problemas técnicos.
-        <br /><br />
-        <span className="text-accent">[Contexto]</span> Pemex pidió actualización semanal del puente Ruta 12, sección 4 a 7. Llevamos 3 días de retraso por lluvia atípica que paró la cimentación. El cliente ya tuvo dos retrasos previos este trimestre, está nervioso. La supervisora es la Ing. Méndez, formal pero técnica. El correo lo va a ver también su jefe.
-        <br /><br />
-        <span className="text-accent">[Tarea]</span> Redacta el correo de avance semanal para la Ing. Méndez. Incluye estado real de la sección 4 a 7, causa del retraso, plan para recuperar 1.5 días, y qué decisión necesitamos del cliente para el próximo lunes. No incluyas comparativos con el plan original ni proyecciones a 3 meses.
-        <br /><br />
-        <span className="text-accent">[Formato]</span> Máximo 9 líneas, tono cordial pero firme, sin disculpas excesivas. Sin viñetas. Saludo formal con vocativo, despedida estándar firmando como Residente de Obra. Que se lea en 30 segundos.
-      </p>
+
+      <div className="space-y-7 text-[13.5px] leading-[1.75] font-mono text-white/75">
+        <div>
+          <div className="font-mono text-[10px] tracking-widest uppercase text-accent mb-2">
+            [ 01 · Rol ]
+          </div>
+          <p>
+            <strong className="text-white font-medium">Eres ingeniero residente con 10 años en obra industrial pesada en México</strong>. Has manejado clientes como Pemex, CFE y constructoras grandes. Conoces los formatos de reporte que esperan, los plazos que sí se respetan y cuándo conviene dar contexto extra al cliente. No te disculpas de más ni endulzas problemas técnicos.
+          </p>
+        </div>
+
+        <div>
+          <div className="font-mono text-[10px] tracking-widest uppercase text-accent mb-2">
+            [ 02 · Contexto ]
+          </div>
+          <p>
+            Pemex pidió actualización semanal del puente Ruta 12, sección 4 a 7. <strong className="text-white font-medium">Llevamos 3 días de retraso por lluvia atípica que paró la cimentación</strong>. El cliente ya está nervioso por dos retrasos previos en el mismo trimestre. La supervisora es la Ing. Méndez, formal pero técnica. El correo lo va a ver también su jefe, así que importa que se lea profesional.
+          </p>
+        </div>
+
+        <div>
+          <div className="font-mono text-[10px] tracking-widest uppercase text-accent mb-2">
+            [ 03 · Tarea ]
+          </div>
+          <p>
+            <strong className="text-white font-medium">Redacta el correo de avance semanal para la Ing. Méndez</strong>. Incluye: estado real de la sección 4 a 7, causa del retraso, plan para recuperar 1.5 días la próxima semana, y qué decisión necesitamos del cliente para el próximo lunes. No incluyas comparativos contra el plan original ni proyecciones a 3 meses.
+          </p>
+        </div>
+
+        <div>
+          <div className="font-mono text-[10px] tracking-widest uppercase text-accent mb-2">
+            [ 04 · Formato ]
+          </div>
+          <p>
+            <strong className="text-white font-medium">Máximo 9 líneas. Tono cordial pero firme, sin disculpas excesivas. Sin viñetas</strong>. Saludo formal con vocativo a la Ing. Méndez. Despedida estándar firmando como Residente de Obra. Que se pueda leer en 30 segundos.
+          </p>
+        </div>
+      </div>
     </motion.div>
+
+    <motion.p variants={item} className="mt-6 text-[13px] text-ink-3 max-w-[860px] leading-[1.6]">
+      Esto es lo que se pega en Claude, completo, en un solo mensaje. Las negritas no se mandan, son sólo para que aquí veas qué frase ataca cada bloque.
+    </motion.p>
   </SlideShell>
 );
 
-// 10 El poder del contexto
+// 10 El poder del contexto — analogía workplace
 const Slide10 = (
-  <SlideShell tag="Parte 2 · Cómo se le habla" num={10}>
-    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
+  <SlideShell tag="Parte 2 · El prompt" num={10}>
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.08] text-ink font-light max-w-[900px]">
       El <strong className="font-medium">contexto</strong> cambia todo.
     </motion.h2>
-    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
-      Es la diferencia entre decirle a un niño &ldquo;no cruces la calle&rdquo; y explicarle por qué.
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
+      Es la diferencia entre encargarle algo a un colaborador nuevo y encargárselo a alguien que ya conoce el caso.
     </motion.p>
-    <div className="mt-10 grid md:grid-cols-2 gap-0 max-w-[1000px]">
+    <div className="mt-10 grid md:grid-cols-2 gap-0 max-w-[1100px]">
       <motion.div variants={item} className="border border-line p-7 bg-bg-soft">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-4">
           Sin contexto
         </div>
-        <p className="text-[16px] text-ink-2 leading-[1.6]">
-          &ldquo;No cruces la calle.&rdquo;
+        <p className="text-[16px] text-ink-2 leading-[1.55] font-serif-display italic font-light">
+          &ldquo;Hazme el reporte semanal.&rdquo;
         </p>
-        <div className="mt-5 pt-5 border-t border-line text-[13px] text-ink-3 leading-[1.6]">
-          El niño puede obedecer una vez. La siguiente, si nadie está mirando, cruza igual.
+        <div className="mt-5 pt-5 border-t border-line text-[13px] text-ink-3 leading-[1.65]">
+          Te entrega un reporte genérico. Adivinó el formato, el tono, qué resaltar. Tú lo rehaces. La próxima semana, lo mismo.
         </div>
       </motion.div>
       <motion.div variants={item} className="border border-line border-l-0 p-7 bg-bg shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-4 font-medium">
           Con contexto
         </div>
-        <p className="text-[16px] text-ink leading-[1.6]">
-          &ldquo;No cruces porque vienen carros y es peligroso.&rdquo;
+        <p className="text-[14.5px] text-ink leading-[1.6] font-serif-display italic font-light">
+          &ldquo;Hazme el reporte semanal. Va al Director de Operaciones, lo lee en 5 minutos antes de la junta del lunes. Lo que le interesa: avance contra plan, riesgos nuevos y decisiones que necesita tomar él. Una página, sin viñetas, lenguaje técnico está bien. No incluyas detalle operativo del día a día.&rdquo;
         </p>
-        <div className="mt-5 pt-5 border-t border-line text-[13px] text-ink-2 leading-[1.6]">
-          Ahora entiende la regla. Puede aplicarla a calles que no había visto antes.
+        <div className="mt-5 pt-5 border-t border-line text-[13px] text-ink-2 leading-[1.65]">
+          Ahora puede hacerlo sin que lo revises. Y la próxima semana, tampoco te necesita: aprendió a quién va dirigido, qué importa y qué dejar fuera.
         </div>
       </motion.div>
     </div>
-    <motion.p variants={item} className="text-[15px] text-ink-3 mt-10 max-w-[760px] leading-[1.6]">
-      Con Claude pasa igual. Si le explicas el porqué, generaliza bien. Si solo le das la orden, te obedece esta vez y falla la siguiente.
+    <motion.p variants={item} className="text-[15px] text-ink-3 mt-10 max-w-[920px] leading-[1.6]">
+      Con Claude pasa igual. Si le explicas a quién va, qué importa y qué dejar fuera, te entrega trabajo que no tienes que reescribir. Si solo le das la orden, obedece esta vez y falla la siguiente cuando la situación cambia.
     </motion.p>
   </SlideShell>
 );
 
 // 11 Mostrar es mejor que explicar
 const Slide11 = (
-  <SlideShell tag="Parte 2 · Cómo se le habla" num={11}>
+  <SlideShell tag="Parte 2 · El prompt" num={11}>
     <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Mostrar gana a <strong className="font-medium">explicar</strong>.
     </motion.h2>
