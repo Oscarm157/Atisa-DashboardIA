@@ -1,4 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { motion } from "motion/react";
 import {
   BookOpen,
   Shield,
@@ -19,14 +22,68 @@ import { cn } from "@/lib/cn";
 
 const TOTAL = 17;
 
-function BigNumeral({ n }: { n: number }) {
+const SPRING = { type: "spring" as const, stiffness: 300, damping: 26 };
+const HOVER = { y: -3, transition: { type: "spring" as const, stiffness: 400, damping: 17 } };
+
+const stagger = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.07, delayChildren: 0.12 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 14 },
+  show: { opacity: 1, y: 0, transition: SPRING },
+};
+
+function BigNumeral({ n, dark = false }: { n: number; dark?: boolean }) {
+  return (
+    <motion.div
+      aria-hidden
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.05 }}
+      className={cn(
+        "pointer-events-none absolute -top-4 -right-2 md:-top-8 md:-right-4 font-serif-display font-light leading-[0.85] select-none tabular-nums",
+        "text-[180px] md:text-[280px]",
+        dark ? "text-accent/[0.10]" : "text-accent/[0.08]"
+      )}
+    >
+      {String(n).padStart(2, "0")}
+    </motion.div>
+  );
+}
+
+function VerticalRule({ num, dark = false }: { num: number; dark?: boolean }) {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute top-6 right-6 md:top-10 md:right-10 font-serif-display font-light text-[140px] md:text-[220px] leading-none text-accent/[0.08] select-none tabular-nums"
+      className={cn(
+        "hidden md:flex pointer-events-none absolute right-3 top-0 bottom-0 flex-col items-center justify-between py-10 select-none",
+        dark ? "text-white/25" : "text-ink-4/60"
+      )}
     >
-      {String(n).padStart(2, "0")}
+      <div className="font-mono text-[8.5px] tracking-[0.25em] uppercase rotate-180 [writing-mode:vertical-rl]">
+        Atisa · IA
+      </div>
+      <div className="w-px flex-1 my-4 bg-current opacity-30" />
+      <div className="font-mono text-[9px] tracking-[0.18em] uppercase">
+        {String(num).padStart(2, "0")}/{TOTAL}
+      </div>
     </div>
+  );
+}
+
+function PaperGrain({ dark = false }: { dark?: boolean }) {
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-0 opacity-[0.035] mix-blend-multiply"
+      style={{
+        backgroundImage: dark
+          ? "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")"
+          : "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+      }}
+    />
   );
 }
 
@@ -51,16 +108,31 @@ function SlideShell({
       className={cn(
         "page-container relative overflow-hidden",
         isDark ? "bg-ink text-white" : "bg-bg text-ink",
-        "py-14 md:py-16 min-h-[60vh] flex flex-col"
+        "py-14 md:py-16 min-h-[68vh] flex flex-col"
       )}
     >
-      {bigNumeral && num && variant !== "cover" && <BigNumeral n={num} />}
+      {isDark && <div className="absolute top-0 left-0 right-0 h-[3px] bg-accent" />}
+      <PaperGrain dark={isDark} />
+      {bigNumeral && num && variant !== "cover" && <BigNumeral n={num} dark={isDark} />}
+      {num && <VerticalRule num={num} dark={isDark} />}
       {tag && (
-        <div className="font-mono text-[11px] uppercase tracking-widest font-medium mb-6 text-accent relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="font-mono text-[11px] uppercase tracking-widest font-medium mb-6 text-accent relative z-10"
+        >
           {tag}
-        </div>
+        </motion.div>
       )}
-      <div className="flex-1 flex flex-col relative z-10">{children}</div>
+      <motion.div
+        variants={stagger}
+        initial="hidden"
+        animate="show"
+        className="flex-1 flex flex-col relative z-10"
+      >
+        {children}
+      </motion.div>
       {num && total && (
         <div
           className={cn(
@@ -78,117 +150,210 @@ function SlideShell({
 // 01 Portada
 const Slide01 = (
   <section className="relative bg-ink text-white min-h-[80vh] flex flex-col overflow-hidden">
-    {/* Optional cover image — graceful fallback to solid ink if missing */}
     <div
       className="absolute inset-0 bg-cover bg-center opacity-40"
       style={{ backgroundImage: "url('/onboarding-cover.jpg')" }}
       aria-hidden
     />
     <div className="absolute inset-0 bg-ink/60" aria-hidden />
+    <PaperGrain dark />
     <div className="absolute top-0 left-0 right-0 h-[3px] bg-accent" />
+    <BigNumeral n={1} dark />
+    <VerticalRule num={1} dark />
 
-    <div className="page-container relative z-10 py-16 md:py-20 flex-1 flex flex-col">
-      <div className="font-mono text-[11.5px] tracking-widest uppercase text-accent font-medium mb-7">
+    <motion.div
+      variants={stagger}
+      initial="hidden"
+      animate="show"
+      className="page-container relative z-10 py-16 md:py-20 flex-1 flex flex-col"
+    >
+      <motion.div variants={item} className="font-mono text-[11.5px] tracking-widest uppercase text-accent font-medium mb-7">
         Onboarding del equipo · 30 min
-      </div>
-      <h1 className="font-serif-display font-light text-[48px] md:text-[80px] leading-[1.04] tracking-[-0.025em] text-white max-w-[900px]">
+      </motion.div>
+      <motion.h1 variants={item} className="font-serif-display font-light text-[48px] md:text-[88px] leading-[1.02] tracking-[-0.025em] text-white max-w-[920px]">
         Claude en <strong className="text-accent font-medium">Atisa</strong>.
-      </h1>
-      <p className="text-white/75 text-[18px] md:text-[20px] mt-8 max-w-[680px] leading-[1.5]">
+      </motion.h1>
+      <motion.p variants={item} className="text-white/75 text-[18px] md:text-[20px] mt-8 max-w-[680px] leading-[1.5]">
         Una sesión corta para que sepas qué es Claude, cómo hablarle y qué puedes hacer con él el mismo día.
-      </p>
-      <div className="mt-auto pt-16 flex justify-between items-end font-mono text-[12px] tracking-widest uppercase text-white/60">
+      </motion.p>
+      <motion.div variants={item} className="mt-auto pt-16 flex justify-between items-end font-mono text-[12px] tracking-widest uppercase text-white/60">
         <span>Atisa Group · Mayo 2026</span>
         <span>Programa de Adopción de IA</span>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   </section>
 );
 
-// 02 Qué hay aquí
+// 02 Qué hay aquí — agenda concreta
 const Slide02 = (
   <SlideShell tag="Qué hay aquí · 2 min" num={2}>
-    <h2 className="font-serif-display text-[40px] md:text-[56px] leading-[1.08] text-ink max-w-[900px] font-light">
-      30 minutos. <strong className="font-medium">Sin tecnicismos.</strong>
-      <br />Sales a usarlo el mismo día.
-    </h2>
-    <div className="mt-12 grid md:grid-cols-3 gap-0 max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[40px] md:text-[60px] leading-[1.06] text-ink max-w-[900px] font-light">
+      30 minutos. <strong className="font-medium">5 partes.</strong>
+      <br />Lo que sales sabiendo.
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] md:text-[17px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+      Cero tecnicismos sin razón. Cada parte termina con algo concreto que puedes aplicar el mismo día.
+    </motion.p>
+    <div className="mt-12 grid md:grid-cols-5 gap-0 max-w-[1100px] border-t border-line">
       {[
-        ["Qué es", "Qué hace, qué no hace, quién está detrás."],
-        ["Cómo se le habla", "El modelo de prompt que vamos a usar."],
-        ["Qué hacer hoy", "Una tarea real conectada a tu trabajo."],
-      ].map(([title, body], i) => (
-        <div
+        ["5 min", "Qué es Claude", "Qué hace, qué no hace, quién está detrás."],
+        ["10 min", "Cómo se le habla", "El modelo de prompt y los 4 bloques que vamos a usar."],
+        ["5 min", "Qué hay dentro", "3 modelos, Proyectos, Artifacts, Memoria."],
+        ["5 min", "Cómo se trabaja", "Iterar, qué información va y qué no."],
+        ["5 min", "Tu primera tarea", "Caso real conectado a tu trabajo."],
+      ].map(([time, title, body], i) => (
+        <motion.div
           key={title}
+          variants={item}
           className={cn(
-            "py-5 px-5",
+            "py-6 px-5",
             i > 0 && "md:border-l border-line",
-            i === 0 && "pl-0"
+            i === 0 && "md:pl-0"
           )}
         >
-          <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-2">
-            {String(i + 1).padStart(2, "0")}
+          <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium mb-3">
+            {String(i + 1).padStart(2, "0")} · {time}
           </div>
-          <div className="font-medium text-ink text-[16px] mb-1.5">{title}</div>
-          <div className="text-[13.5px] text-ink-3 leading-[1.55]">{body}</div>
-        </div>
+          <div className="font-medium text-ink text-[15.5px] mb-2 leading-[1.3]">{title}</div>
+          <div className="text-[13px] text-ink-3 leading-[1.55]">{body}</div>
+        </motion.div>
       ))}
     </div>
   </SlideShell>
 );
 
-// 03 Claude en una frase
+// 03 Claude en una frase — actualizado, sin "millones de libros"
 const Slide03 = (
   <SlideShell tag="Parte 1 · Qué es Claude" num={3}>
-    <div className="font-mono text-[11px] tracking-widest uppercase text-ink-4 mb-3">
+    <motion.div variants={item} className="font-mono text-[11px] tracking-widest uppercase text-ink-4 mb-3">
       Claude en una frase
+    </motion.div>
+    <motion.h2 variants={item} className="font-serif-display text-[40px] md:text-[60px] leading-[1.08] text-ink max-w-[1000px] font-light">
+      Razona, escribe y trabaja{" "}
+      <strong className="font-medium text-accent">contigo</strong>.
+    </motion.h2>
+    <motion.p variants={item} className="text-[18px] md:text-[20px] text-ink-2 mt-10 max-w-[820px] leading-[1.55]">
+      No es buscador. No te devuelve enlaces. Lee tu material, razona sobre tu caso y entrega un borrador, un análisis, código o un correo. Listo para revisar.
+    </motion.p>
+    <div className="mt-12 grid md:grid-cols-3 gap-0 max-w-[960px] border-t border-line">
+      {[
+        ["Conversa", "Sostiene la conversación. No es un solo turno de pregunta y respuesta."],
+        ["Procesa contexto largo", "Hasta el equivalente a un libro completo en una sola entrada."],
+        ["Reconoce cuándo no sabe", "Más que el promedio del mercado. No siempre, pero más."],
+      ].map(([title, body], i) => (
+        <motion.div
+          key={title}
+          variants={item}
+          className={cn(
+            "py-6 px-5",
+            i > 0 && "md:border-l border-line",
+            i === 0 && "md:pl-0"
+          )}
+        >
+          <div className="font-mono text-[10px] tracking-widest uppercase text-accent font-medium mb-3">
+            {String(i + 1).padStart(2, "0")}
+          </div>
+          <div className="font-medium text-ink text-[15.5px] mb-2">{title}</div>
+          <div className="text-[13px] text-ink-3 leading-[1.6]">{body}</div>
+        </motion.div>
+      ))}
     </div>
-    <h2 className="font-serif-display text-[36px] md:text-[52px] leading-[1.12] text-ink max-w-[1000px] font-light">
-      Imagina un colega que leyó{" "}
-      <strong className="font-medium text-navy-deep">millones de libros, artículos y páginas web</strong>
-      , y al que le puedes preguntar lo que sea.
-    </h2>
-    <p className="text-[18px] md:text-[20px] text-ink-2 mt-10 max-w-[820px] leading-[1.55]">
-      Eso es Claude. Un modelo de lenguaje al que le escribes en español o inglés y te responde con texto, código, análisis o ideas. No es buscador. No es Google con esteroides. Es un colega con mucha lectura.
-    </p>
   </SlideShell>
 );
 
-// 04 Quién está detrás
+// 04 Quién está detrás — con contexto vs OpenAI / Google
 const Slide04 = (
   <SlideShell tag="Parte 1 · Qué es Claude" num={4}>
-    <h2 className="font-serif-display text-[40px] md:text-[56px] leading-[1.08] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[40px] md:text-[60px] leading-[1.08] text-ink font-light max-w-[900px]">
       Detrás está <strong className="font-medium">Anthropic</strong>.
-    </h2>
-    <p className="text-[18px] md:text-[20px] text-ink-2 mt-8 max-w-[820px] leading-[1.55]">
-      Empresa fundada en 2021 por exinvestigadores de OpenAI. Su prioridad declarada es la seguridad de la IA.
-    </p>
-    <div className="mt-12 border-l-2 border-accent pl-6 max-w-[760px]">
-      <p className="font-serif-display text-[22px] md:text-[26px] italic text-ink leading-[1.4] font-light">
+    </motion.h2>
+    <motion.p variants={item} className="text-[18px] md:text-[19px] text-ink-2 mt-8 max-w-[820px] leading-[1.55]">
+      La carrera la mueven tres laboratorios. Cada uno con un énfasis distinto. Anthropic es el que va al frente cuando la prioridad es seguridad y razonamiento sostenido.
+    </motion.p>
+
+    <div className="mt-10 grid md:grid-cols-3 gap-0 max-w-[1000px] border-t border-line">
+      {[
+        {
+          name: "OpenAI",
+          model: "ChatGPT",
+          tag: "Pionero comercial",
+          body: "Abrió el mercado en 2022. Producto de gran masa, fuerte en multimodal e imagen.",
+          highlight: false,
+        },
+        {
+          name: "Anthropic",
+          model: "Claude",
+          tag: "Lidera la carrera",
+          body: "Fundada en 2021 por exinvestigadores de OpenAI. Prioridad declarada: seguridad de IA. Hoy referencia en razonamiento, código y contextos largos.",
+          highlight: true,
+        },
+        {
+          name: "Google",
+          model: "Gemini",
+          tag: "Integración total",
+          body: "Apuesta a integrarse con Workspace, Search y Android. Fuerte en buscar, débil en mantener foco.",
+          highlight: false,
+        },
+      ].map(({ name, model, tag, body, highlight }, i) => (
+        <motion.div
+          key={name}
+          variants={item}
+          className={cn(
+            "py-6 px-5 relative",
+            i > 0 && "md:border-l border-line",
+            i === 0 && "md:pl-0",
+            highlight && "bg-accent/[0.04]"
+          )}
+        >
+          {highlight && <div className="absolute top-0 left-0 right-0 md:left-0 h-[2px] bg-accent" />}
+          <div className={cn("font-mono text-[10px] tracking-widest uppercase mb-3 font-medium", highlight ? "text-accent" : "text-ink-4")}>
+            {tag}
+          </div>
+          <div className="font-medium text-ink text-[16.5px]">{name}</div>
+          <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mt-0.5 mb-3">
+            {model}
+          </div>
+          <p className="text-[13px] text-ink-3 leading-[1.6]">{body}</p>
+        </motion.div>
+      ))}
+    </div>
+
+    <motion.div variants={item} className="mt-10 border-l-2 border-accent pl-6 max-w-[760px]">
+      <p className="font-serif-display text-[20px] md:text-[24px] italic text-ink leading-[1.4] font-light">
         &ldquo;Un auto muy rápido que también tiene los mejores frenos del mercado.&rdquo;
       </p>
-      <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mt-4">
-        Enrique Rocha · Claude de Cero a Cien
+      <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mt-3">
+        Enrique Rocha · Sobre Anthropic
       </div>
-    </div>
-    <p className="text-[15px] text-ink-3 mt-10 max-w-[760px] leading-[1.6]">
-      No es trivial: cuando manejas información de clientes, contratos y operaciones, importa quién construyó la herramienta y con qué prioridades.
-    </p>
+    </motion.div>
   </SlideShell>
 );
 
-// 05 Por qué Atisa eligió Claude
+// 05 Por qué Atisa eligió Claude — 6 razones
 const Slide05 = (
   <SlideShell tag="Parte 1 · Qué es Claude" num={5}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.08] text-ink font-light max-w-[900px]">
       Por qué Atisa eligió <strong className="font-medium">Claude</strong>.
-    </h2>
-    <div className="mt-12 grid md:grid-cols-3 gap-5">
+    </motion.h2>
+    <motion.p variants={item} className="text-[15.5px] text-ink-3 mt-5 max-w-[760px] leading-[1.6]">
+      Seis razones concretas. No son marketing, son lo que cambia cuando lo usas en trabajo real.
+    </motion.p>
+    <div className="mt-10 grid md:grid-cols-3 gap-3">
       {[
         {
           icon: BookOpen,
           title: "Lee textos largos",
-          body: "Su ventana de contexto admite el equivalente a un libro de 750 mil palabras. Le pegas un contrato completo, un manual operativo, una semana de correos, y los procesa de un solo bocado.",
+          body: "Su ventana de contexto admite el equivalente a un libro de 750 mil palabras. Le pegas un contrato, un manual operativo o una semana de correos, y los procesa de un solo bocado.",
+        },
+        {
+          icon: Brain,
+          title: "Razona mejor",
+          body: "Tiene modo de pensamiento extendido para problemas largos. Mantiene el hilo cuando los demás se pierden. En benchmarks de razonamiento y código, hoy es la referencia.",
+        },
+        {
+          icon: MessageCircleQuestion,
+          title: "Suena más humano",
+          body: "Tono claro, matiza cuando hace falta y reconoce cuándo no sabe. No siempre, pero más que el promedio. Eso te ahorra verificar cosas que ya estaban mal de origen.",
         },
         {
           icon: Shield,
@@ -196,19 +361,26 @@ const Slide05 = (
           body: "Anthropic puso la seguridad antes que la velocidad. Para una empresa que maneja datos de clientes, esa diferencia se nota.",
         },
         {
-          icon: MessageCircleQuestion,
-          title: "Dice no sé",
-          body: "Cuando no está seguro de algo, lo dice. No siempre, pero más que otros modelos. Eso te ahorra verificar cosas que ya estaban mal de origen.",
+          icon: Code2,
+          title: "Artifacts y proyectos",
+          body: "Genera mini-aplicaciones dentro del chat y agrupa conversaciones con contexto compartido. No es solo respuesta, es entrega.",
+        },
+        {
+          icon: FolderKanban,
+          title: "Conecta con tus herramientas",
+          body: "MCP y conectores le permiten hablar con tus archivos, sistemas y plataformas. Empieza con chat, escala a flujo de trabajo.",
         },
       ].map(({ icon: Icon, title, body }) => (
-        <div
+        <motion.div
           key={title}
-          className="border border-line bg-bg-soft p-6 hover:border-ink hover:bg-bg transition-colors"
+          variants={item}
+          whileHover={HOVER}
+          className="border border-line bg-bg-soft p-5 transition-colors hover:border-ink shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
         >
-          <Icon className="w-5 h-5 text-accent mb-5" strokeWidth={1.5} />
-          <h3 className="font-medium text-[17px] text-ink mb-2">{title}</h3>
-          <p className="text-[13.5px] text-ink-3 leading-[1.6]">{body}</p>
-        </div>
+          <Icon className="w-5 h-5 text-accent mb-4" strokeWidth={1.5} />
+          <h3 className="font-medium text-[16px] text-ink mb-1.5">{title}</h3>
+          <p className="text-[13px] text-ink-3 leading-[1.55]">{body}</p>
+        </motion.div>
       ))}
     </div>
   </SlideShell>
@@ -217,27 +389,27 @@ const Slide05 = (
 // 06 Lo que Claude no es
 const Slide06 = (
   <SlideShell tag="Parte 1 · Qué es Claude" num={6}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Lo que <strong className="font-medium">no</strong> es Claude.
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
-      Es importante saberlo desde el principio. Si esperas algo que no puede dar, te vas a frustrar y la herramienta termina archivada.
-    </p>
-    <div className="mt-10 space-y-0 max-w-[900px]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+      Importa saberlo desde el principio. Si esperas algo que no puede dar, te frustras y la herramienta termina archivada.
+    </motion.p>
+    <div className="mt-10 max-w-[900px]">
       {[
-        ["No piensa", "Genera texto palabra por palabra calculando cuál sigue. No tiene intenciones ni opiniones."],
+        ["No te conoce", "Solo sabe lo que escribes en la conversación. Si no le das contexto sobre ti, tu proyecto o tu cliente, no lo tiene."],
         ["No siente", "No tiene consciencia ni emociones. Que escriba con tono cálido no significa que esté de buenas."],
         ["No recuerda solo", "Cada conversación arranca en blanco salvo que actives memoria o uses Proyectos."],
         ["Alucina", "A veces se inventa datos con seguridad. Hechos, cifras y citas hay que verificarlos siempre."],
         ["Tiene fecha de corte", "Su entrenamiento terminó en una fecha. No conoce noticias posteriores a menos que se las pegues."],
       ].map(([title, body]) => (
-        <div key={title} className="grid grid-cols-[24px_1fr] gap-5 py-4 border-b border-line">
+        <motion.div key={title} variants={item} className="grid grid-cols-[24px_1fr] gap-5 py-4 border-b border-line">
           <X className="w-4 h-4 text-accent mt-1" strokeWidth={2} />
           <div>
             <h3 className="text-[16px] font-medium text-ink">{title}</h3>
             <p className="text-[14px] text-ink-3 mt-0.5 leading-[1.55]">{body}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   </SlideShell>
@@ -246,100 +418,150 @@ const Slide06 = (
 // 07 La regla de oro
 const Slide07 = (
   <SlideShell tag="Parte 2 · Cómo se le habla" num={7} variant="dark">
-    <div className="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">
+    <motion.div variants={item} className="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">
       La regla de oro
-    </div>
-    <h2 className="font-serif-display text-[36px] md:text-[56px] leading-[1.1] text-white font-light max-w-[1000px]">
+    </motion.div>
+    <motion.h2 variants={item} className="font-serif-display text-[40px] md:text-[60px] leading-[1.08] text-white font-light max-w-[1100px]">
       Si un compañero <strong className="text-accent font-medium">que no conoce la tarea</strong> se confundiría con tu mensaje,
       <br />Claude también.
-    </h2>
-    <p className="text-[18px] md:text-[20px] text-white/75 mt-10 max-w-[760px] leading-[1.55]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[18px] md:text-[20px] text-white/75 mt-10 max-w-[760px] leading-[1.55]">
       Claude no está dentro de tu cabeza. No sabe a quién le hablas, qué proyecto traes, qué reportaste ayer. Lo que no escribes, no existe para él.
-    </p>
-    <p className="text-[15px] text-white/55 mt-6 max-w-[760px] leading-[1.6]">
+    </motion.p>
+    <motion.p variants={item} className="text-[15px] text-white/55 mt-6 max-w-[760px] leading-[1.6]">
       Casi todo lo que vas a aprender en las próximas sesiones es cómo darle ese contexto sin escribir un libro.
-    </p>
+    </motion.p>
   </SlideShell>
 );
 
 // 08 Vago vs claro
 const Slide08 = (
   <SlideShell tag="Parte 2 · Cómo se le habla" num={8}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Vago contra <strong className="font-medium">claro</strong>.
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
       Igual que en un restaurante. Si pides algo rico, te traen lo que el cocinero crea. Si pides algo específico, te traen lo que pediste.
-    </p>
+    </motion.p>
     <div className="mt-12 grid md:grid-cols-2 gap-0 max-w-[1000px]">
-      <div className="border border-line p-7 bg-bg-soft">
+      <motion.div variants={item} className="border border-line p-7 bg-bg-soft">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-3">
           Vago
         </div>
-        <p className="font-serif-display text-[20px] md:text-[24px] text-ink-3 leading-[1.4] italic font-light">
+        <p className="font-serif-display text-[20px] md:text-[26px] text-ink-3 leading-[1.4] italic font-light">
           &ldquo;Tráeme algo rico.&rdquo;
         </p>
         <div className="mt-6 pt-5 border-t border-line text-[13px] text-ink-3 leading-[1.6]">
           Aplicado a Claude: <span className="text-ink-2">&ldquo;Hazme un correo para el cliente.&rdquo;</span>
         </div>
-      </div>
-      <div className="border border-line border-l-0 p-7 bg-bg">
+      </motion.div>
+      <motion.div variants={item} className="border border-line border-l-0 p-7 bg-bg shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-3 font-medium">
           Claro
         </div>
-        <p className="font-serif-display text-[20px] md:text-[24px] text-ink leading-[1.4] font-light">
+        <p className="font-serif-display text-[20px] md:text-[26px] text-ink leading-[1.4] font-light">
           &ldquo;Hamburguesa con queso, sin cebolla, con papas.&rdquo;
         </p>
         <div className="mt-6 pt-5 border-t border-line text-[13px] text-ink-2 leading-[1.6]">
           Aplicado a Claude: <span className="text-ink">&ldquo;Redacta un correo de 5 líneas para el cliente Pemex avisando retraso de 3 días en la obra del puente, tono cordial pero firme, sin disculpas excesivas.&rdquo;</span>
         </div>
-      </div>
+      </motion.div>
     </div>
   </SlideShell>
 );
 
-// 09 Los 4 bloques del buen prompt
+// 09 Los 4 bloques del buen prompt — desglose vertical
 const Slide09 = (
   <SlideShell tag="Parte 2 · Cómo se le habla" num={9}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.08] text-ink font-light max-w-[900px]">
       Los 4 bloques de un <strong className="font-medium">buen prompt</strong>.
-    </h2>
-    <div className="mt-10 grid md:grid-cols-4 gap-3">
+    </motion.h2>
+    <motion.p variants={item} className="text-[15.5px] text-ink-3 mt-5 max-w-[860px] leading-[1.6]">
+      Un prompt largo y bien armado vale más que cinco iteraciones cortas. Cada bloque le quita ambigüedad a Claude y trabajo a ti.
+    </motion.p>
+
+    <div className="mt-10 max-w-[1180px] border-t border-line">
       {[
-        ["Rol", "Quién quieres que sea", "Eres ingeniero residente con 10 años en obra."],
-        ["Contexto", "Qué situación rodea la tarea", "Pemex pidió actualización del puente Ruta 12."],
-        ["Tarea", "Qué quieres que haga", "Redacta el correo de avance semanal."],
-        ["Formato", "Cómo quieres el resultado", "5 líneas, viñetas no, tono cordial firme."],
-      ].map(([title, sub, example], i) => (
-        <div key={title} className="border border-line p-5 bg-bg-soft">
-          <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-3 font-medium">
+        {
+          title: "Rol",
+          sub: "Quién quieres que sea",
+          why: "Define la voz, el criterio profesional y el nivel de detalle. Sin rol Claude responde como un asistente genérico. Con rol responde como tu equipo.",
+          example: "Eres ingeniero residente con 10 años en obra industrial pesada en México. Has manejado clientes como Pemex, CFE y constructoras grandes. Conoces los formatos de reporte que esperan, los plazos que sí se respetan y cuándo conviene dar contexto extra al cliente. No te disculpas de más ni endulzas problemas técnicos.",
+        },
+        {
+          title: "Contexto",
+          sub: "Qué situación rodea la tarea",
+          why: "Sin esto, Claude inventa el escenario. Con esto, escribe sobre el tuyo. Aquí va todo lo que necesita saber para no asumir mal: actores, historia, restricciones, lo que ya se intentó.",
+          example: "Pemex pidió actualización semanal del puente Ruta 12, sección 4 a 7. Llevamos 3 días de retraso por lluvia atípica que paró la cimentación. El cliente ya está nervioso por dos retrasos previos en el mismo trimestre. La supervisora del proyecto es la Ing. Méndez, formal pero técnica. El correo lo va a ver también su jefe, así que importa que se lea profesional.",
+        },
+        {
+          title: "Tarea",
+          sub: "Qué quieres que haga, en imperativo",
+          why: "Verbo claro al inicio. Especifica exactamente qué incluir y qué dejar fuera. Una sola tarea por prompt funciona mejor que cinco apiladas; si hay varias, pide que las haga en orden.",
+          example: "Redacta el correo de avance semanal para la Ing. Méndez. Incluye: estado real de la sección 4 a 7, causa del retraso, plan para recuperar 1.5 días la próxima semana, y qué decisión necesitamos del cliente para el próximo lunes. No incluyas comparativos contra el plan original ni proyecciones a 3 meses.",
+        },
+        {
+          title: "Formato",
+          sub: "Cómo quieres el resultado",
+          view: "Largo, tono, estructura, viñetas, vocativo, despedida. Lo que no especificas, Claude lo decide por ti. La diferencia entre un correo que mandas tal cual y uno que tienes que reescribir vive aquí.",
+          example: "Máximo 9 líneas. Tono cordial pero firme, sin disculpas excesivas ni 'agradezco su comprensión'. Sin viñetas. Saludo formal con vocativo a la Ing. Méndez. Despedida estándar firmando como Residente de Obra. Que se pueda leer en 30 segundos.",
+        },
+      ].map((b, i) => (
+        <motion.div
+          key={b.title}
+          variants={item}
+          className="grid grid-cols-1 md:grid-cols-[72px_200px_1fr_1.1fr] gap-6 py-7 border-b border-line items-start"
+        >
+          <div className="font-serif-display text-[44px] md:text-[56px] text-accent font-light leading-none tabular-nums">
             {String(i + 1).padStart(2, "0")}
           </div>
-          <div className="font-medium text-[17px] text-ink mb-1">{title}</div>
-          <div className="text-[12.5px] text-ink-3 mb-4">{sub}</div>
-          <div className="text-[12.5px] text-ink-2 italic leading-[1.55] pt-3 border-t border-line">
-            {example}
+          <div>
+            <div className="font-medium text-[20px] text-ink leading-tight">{b.title}</div>
+            <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mt-1.5">
+              {b.sub}
+            </div>
           </div>
-        </div>
+          <div className="text-[13.5px] text-ink-3 leading-[1.65]">{b.why ?? b.view}</div>
+          <div className="border-l-2 border-line pl-4 text-[13px] text-ink-2 leading-[1.6] font-serif-display italic font-light">
+            &ldquo;{b.example}&rdquo;
+          </div>
+        </motion.div>
       ))}
     </div>
-    <div className="mt-8 text-[14px] text-ink-3 max-w-[760px] leading-[1.6]">
-      No siempre necesitas los cuatro. Pero cuando algo sale mal, casi siempre falta uno.
-    </div>
+
+    <motion.div variants={item} className="mt-10 max-w-[1180px] bg-ink text-white p-7 shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
+      <div className="flex items-center justify-between mb-4">
+        <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium">
+          Los 4 ensamblados · prompt completo
+        </div>
+        <div className="font-mono text-[9.5px] tracking-widest uppercase text-white/40">
+          Esto es lo que se pega en Claude
+        </div>
+      </div>
+      <p className="text-[13.5px] text-white/85 leading-[1.75] font-mono">
+        <span className="text-accent">[Rol]</span> Eres ingeniero residente con 10 años en obra industrial pesada en México. Manejas clientes como Pemex y CFE, conoces los formatos de reporte que esperan y no endulzas problemas técnicos.
+        <br /><br />
+        <span className="text-accent">[Contexto]</span> Pemex pidió actualización semanal del puente Ruta 12, sección 4 a 7. Llevamos 3 días de retraso por lluvia atípica que paró la cimentación. El cliente ya tuvo dos retrasos previos este trimestre, está nervioso. La supervisora es la Ing. Méndez, formal pero técnica. El correo lo va a ver también su jefe.
+        <br /><br />
+        <span className="text-accent">[Tarea]</span> Redacta el correo de avance semanal para la Ing. Méndez. Incluye estado real de la sección 4 a 7, causa del retraso, plan para recuperar 1.5 días, y qué decisión necesitamos del cliente para el próximo lunes. No incluyas comparativos con el plan original ni proyecciones a 3 meses.
+        <br /><br />
+        <span className="text-accent">[Formato]</span> Máximo 9 líneas, tono cordial pero firme, sin disculpas excesivas. Sin viñetas. Saludo formal con vocativo, despedida estándar firmando como Residente de Obra. Que se lea en 30 segundos.
+      </p>
+    </motion.div>
   </SlideShell>
 );
 
 // 10 El poder del contexto
 const Slide10 = (
   <SlideShell tag="Parte 2 · Cómo se le habla" num={10}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       El <strong className="font-medium">contexto</strong> cambia todo.
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
       Es la diferencia entre decirle a un niño &ldquo;no cruces la calle&rdquo; y explicarle por qué.
-    </p>
+    </motion.p>
     <div className="mt-10 grid md:grid-cols-2 gap-0 max-w-[1000px]">
-      <div className="border border-line p-7 bg-bg-soft">
+      <motion.div variants={item} className="border border-line p-7 bg-bg-soft">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-4">
           Sin contexto
         </div>
@@ -349,8 +571,8 @@ const Slide10 = (
         <div className="mt-5 pt-5 border-t border-line text-[13px] text-ink-3 leading-[1.6]">
           El niño puede obedecer una vez. La siguiente, si nadie está mirando, cruza igual.
         </div>
-      </div>
-      <div className="border border-line border-l-0 p-7 bg-bg">
+      </motion.div>
+      <motion.div variants={item} className="border border-line border-l-0 p-7 bg-bg shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-4 font-medium">
           Con contexto
         </div>
@@ -360,28 +582,28 @@ const Slide10 = (
         <div className="mt-5 pt-5 border-t border-line text-[13px] text-ink-2 leading-[1.6]">
           Ahora entiende la regla. Puede aplicarla a calles que no había visto antes.
         </div>
-      </div>
+      </motion.div>
     </div>
-    <p className="text-[15px] text-ink-3 mt-10 max-w-[760px] leading-[1.6]">
+    <motion.p variants={item} className="text-[15px] text-ink-3 mt-10 max-w-[760px] leading-[1.6]">
       Con Claude pasa igual. Si le explicas el porqué, generaliza bien. Si solo le das la orden, te obedece esta vez y falla la siguiente.
-    </p>
+    </motion.p>
   </SlideShell>
 );
 
 // 11 Mostrar es mejor que explicar
 const Slide11 = (
   <SlideShell tag="Parte 2 · Cómo se le habla" num={11}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Mostrar gana a <strong className="font-medium">explicar</strong>.
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
       Si quieres que pinten tu casa de un color exacto, puedes describirlo con palabras o puedes mandar una foto. La foto es más rápida y no falla.
-    </p>
-    <div className="mt-10 max-w-[900px]">
+    </motion.p>
+    <motion.div variants={item} className="mt-10 max-w-[900px]">
       <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-4 font-medium">
         Cómo se ve en un prompt
       </div>
-      <div className="border border-line bg-bg-soft p-6 font-mono text-[12.5px] text-ink-2 leading-[1.7]">
+      <div className="border border-line bg-bg-soft p-6 font-mono text-[12.5px] text-ink-2 leading-[1.7] shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
         <div>Clasifica las quejas como crítica, sugerencia o consulta.</div>
         <div className="mt-3 text-ink-3">Ejemplos:</div>
         <div className="mt-1 pl-3">&ldquo;El sistema lleva 2 horas caído&rdquo; → <span className="text-accent">crítica</span></div>
@@ -389,22 +611,22 @@ const Slide11 = (
         <div className="pl-3">&ldquo;¿Cómo cambio mi contraseña?&rdquo; → <span className="text-accent">consulta</span></div>
         <div className="mt-3">Clasifica esta: &ldquo;La búsqueda no encuentra mis archivos.&rdquo;</div>
       </div>
-    </div>
-    <p className="text-[14px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
+    </motion.div>
+    <motion.p variants={item} className="text-[14px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
       Dos o tres ejemplos suelen bastar. A esto se le llama few-shot y es la forma más confiable de enseñarle un patrón nuevo.
-    </p>
+    </motion.p>
   </SlideShell>
 );
 
 // 12 Los 3 modelos
 const Slide12 = (
   <SlideShell tag="Parte 3 · Qué hay dentro" num={12}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Tres modelos. <strong className="font-medium">Tres vehículos.</strong>
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
       Claude no es un solo modelo, son varios. Cada uno con un balance distinto entre rapidez, costo y profundidad.
-    </p>
+    </motion.p>
     <div className="mt-10 grid md:grid-cols-3 gap-3">
       {[
         {
@@ -432,13 +654,15 @@ const Slide12 = (
           highlight: false,
         },
       ].map(({ icon: Icon, name, tag, desc, when, highlight }) => (
-        <div
+        <motion.div
           key={name}
+          variants={item}
+          whileHover={HOVER}
           className={cn(
             "border p-6 transition-colors",
             highlight
-              ? "border-accent border-l-[3px] bg-bg"
-              : "border-line bg-bg-soft"
+              ? "border-accent border-l-[3px] bg-bg shadow-[0_4px_18px_rgba(215,38,28,0.08)]"
+              : "border-line bg-bg-soft shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
           )}
         >
           <div className="flex items-center justify-between mb-5">
@@ -460,24 +684,24 @@ const Slide12 = (
             </span>
             {when}
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
-    <p className="text-[14px] text-ink-3 mt-8 max-w-[760px] leading-[1.6]">
+    <motion.p variants={item} className="text-[14px] text-ink-3 mt-8 max-w-[760px] leading-[1.6]">
       Recomendación: empieza siempre con Sonnet. Solo subes a Opus si la tarea no se resuelve. Casi nunca necesitas Opus.
-    </p>
+    </motion.p>
   </SlideShell>
 );
 
 // 13 Más allá del chat
 const Slide13 = (
   <SlideShell tag="Parte 3 · Qué hay dentro" num={13}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Más allá del <strong className="font-medium">chat</strong>.
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
       Claude.ai es más que la caja de texto. Hay cuatro cosas que cambian cómo trabajas.
-    </p>
+    </motion.p>
     <div className="mt-10 grid md:grid-cols-2 gap-3 max-w-[900px]">
       {[
         {
@@ -488,7 +712,7 @@ const Slide13 = (
         {
           icon: FolderKanban,
           title: "Proyectos",
-          body: "Conversaciones agrupadas con contexto compartido. Como un empleado al que ya le explicaste las reglas del puesto.",
+          body: "Conversaciones agrupadas con contexto compartido. Como un colaborador al que ya le explicaste las reglas del puesto.",
         },
         {
           icon: Brain,
@@ -501,14 +725,16 @@ const Slide13 = (
           body: "PDFs, hojas, imágenes, audio. Le pegas el documento y lo procesa entero.",
         },
       ].map(({ icon: Icon, title, body }) => (
-        <div
+        <motion.div
           key={title}
-          className="border border-line bg-bg-soft p-6 hover:border-ink hover:bg-bg transition-colors"
+          variants={item}
+          whileHover={HOVER}
+          className="border border-line bg-bg-soft p-6 transition-colors hover:border-ink shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
         >
           <Icon className="w-5 h-5 text-accent mb-4" strokeWidth={1.5} />
           <h3 className="font-medium text-[16.5px] text-ink mb-1.5">{title}</h3>
           <p className="text-[13.5px] text-ink-3 leading-[1.6]">{body}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
   </SlideShell>
@@ -517,12 +743,12 @@ const Slide13 = (
 // 14 Iterar es conversación
 const Slide14 = (
   <SlideShell tag="Parte 4 · Cómo se trabaja" num={14}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Iterar. <strong className="font-medium">No es examen.</strong>
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
       Si la primera respuesta no te sirve, no escribas el prompt de cero. Sigue la conversación. Claude no se ofende.
-    </p>
+    </motion.p>
     <div className="mt-10 max-w-[760px] space-y-3">
       {[
         "Hazlo más corto.",
@@ -531,31 +757,32 @@ const Slide14 = (
         "Quita la última parte.",
         "Vuélvelo a hacer pero con viñetas.",
       ].map((q) => (
-        <div
+        <motion.div
           key={q}
-          className="border-l-2 border-accent pl-5 py-2 font-serif-display text-[19px] md:text-[22px] text-ink italic font-light"
+          variants={item}
+          className="border-l-2 border-accent pl-5 py-2 font-serif-display text-[19px] md:text-[24px] text-ink italic font-light"
         >
           &ldquo;{q}&rdquo;
-        </div>
+        </motion.div>
       ))}
     </div>
-    <p className="text-[14px] text-ink-3 mt-10 max-w-[820px] leading-[1.6]">
-      Tres iteraciones en 30 segundos suelen llegar más lejos que un prompt perfecto en 5 minutos.
-    </p>
+    <motion.p variants={item} className="text-[14px] text-ink-3 mt-10 max-w-[820px] leading-[1.6]">
+      Iterar sirve para ajustes finos. Si te toca iterar cinco veces el mismo asunto, casi siempre el problema estaba arriba: faltó rol, contexto, tarea o formato en el prompt inicial.
+    </motion.p>
   </SlideShell>
 );
 
 // 15 Qué sí va y qué no va
 const Slide15 = (
   <SlideShell tag="Parte 4 · Cómo se trabaja" num={15}>
-    <h2 className="font-serif-display text-[36px] md:text-[48px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
       Qué sí <strong className="font-medium">va</strong>. Qué no.
-    </h2>
-    <p className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
       La política definitiva la confirma TI antes del arranque. Mientras tanto, la regla práctica:
-    </p>
+    </motion.p>
     <div className="mt-10 grid md:grid-cols-2 gap-0 max-w-[1000px]">
-      <div className="border border-line p-7 bg-bg-soft">
+      <motion.div variants={item} className="border border-line p-7 bg-bg-soft">
         <div className="flex items-center gap-2 mb-5">
           <Check className="w-4 h-4 text-accent" strokeWidth={2.5} />
           <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium">
@@ -569,8 +796,8 @@ const Slide15 = (
           <li>· Texto, código y análisis general</li>
           <li>· Datos anonimizados</li>
         </ul>
-      </div>
-      <div className="border border-line border-l-0 p-7 bg-bg">
+      </motion.div>
+      <motion.div variants={item} className="border border-line border-l-0 p-7 bg-bg shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
         <div className="flex items-center gap-2 mb-5">
           <X className="w-4 h-4 text-accent" strokeWidth={2.5} />
           <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent font-medium">
@@ -584,63 +811,69 @@ const Slide15 = (
           <li>· Información financiera no pública</li>
           <li>· Lo que no pondrías en un correo externo</li>
         </ul>
-      </div>
+      </motion.div>
     </div>
-    <p className="text-[13.5px] text-ink-3 mt-8 max-w-[760px] leading-[1.6]">
+    <motion.p variants={item} className="text-[13.5px] text-ink-3 mt-8 max-w-[760px] leading-[1.6]">
       Pendiente con TI: confirmación final de la lista, ruta de reporte si dudas, y si Claude Enterprise queda configurado con cero retención.
-    </p>
+    </motion.p>
   </SlideShell>
 );
 
 // 16 Tu primera tarea esta semana
 const Slide16 = (
   <SlideShell tag="Parte 5 · Tu siguiente paso" num={16}>
-    <div className="font-mono text-[11px] tracking-widest uppercase text-ink-4 mb-3">
+    <motion.div variants={item} className="font-mono text-[11px] tracking-widest uppercase text-ink-4 mb-3">
       Esta semana
-    </div>
-    <h2 className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
+    </motion.div>
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[60px] leading-[1.1] text-ink font-light max-w-[900px]">
       Una tarea real. <strong className="font-medium">Tuya.</strong>
-    </h2>
-    <p className="text-[17px] md:text-[18px] text-ink-2 mt-8 max-w-[820px] leading-[1.55]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[17px] md:text-[18px] text-ink-2 mt-8 max-w-[820px] leading-[1.55]">
       Toma uno de los 105 procesos prioritarios que tu dirección levantó en el diagnóstico. El que más horas te quita por semana.
-    </p>
+    </motion.p>
     <div className="mt-10 grid md:grid-cols-3 gap-3 max-w-[960px]">
       {[
         ["01", "Elige", "Un proceso repetitivo que te coma 2+ horas a la semana."],
         ["02", "Prueba", "Aplica los 4 bloques: rol, contexto, tarea, formato."],
         ["03", "Comparte", "Sube el caso a la carpeta del programa antes de la siguiente sesión."],
       ].map(([n, title, body]) => (
-        <div key={n} className="border border-line p-6 bg-bg-soft">
+        <motion.div
+          key={n}
+          variants={item}
+          whileHover={HOVER}
+          className="border border-line p-6 bg-bg-soft shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-colors hover:border-ink"
+        >
           <div className="font-mono text-[11px] tracking-widest text-accent font-bold mb-3">{n}</div>
           <div className="font-medium text-[16.5px] text-ink mb-2">{title}</div>
           <div className="text-[13.5px] text-ink-3 leading-[1.6]">{body}</div>
-        </div>
+        </motion.div>
       ))}
     </div>
-    <p className="text-[14px] text-ink-3 mt-8 max-w-[820px] leading-[1.6]">
+    <motion.p variants={item} className="text-[14px] text-ink-3 mt-8 max-w-[820px] leading-[1.6]">
       No tiene que quedar perfecto. Tiene que estar hecho. La sesión 1 del programa básico la usamos para revisar tu intento y ajustarlo.
-    </p>
+    </motion.p>
   </SlideShell>
 );
 
 // 17 Cierre
 const Slide17 = (
   <SlideShell tag="Cierre" num={17} variant="dark">
-    <h2 className="font-serif-display text-[40px] md:text-[60px] leading-[1.08] text-white font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[40px] md:text-[68px] leading-[1.06] text-white font-light max-w-[1000px]">
       Eso es todo. <strong className="text-accent font-medium">Suficiente para empezar.</strong>
-    </h2>
-    <p className="text-[18px] md:text-[20px] text-white/75 mt-8 max-w-[760px] leading-[1.55]">
+    </motion.h2>
+    <motion.p variants={item} className="text-[18px] md:text-[20px] text-white/75 mt-8 max-w-[760px] leading-[1.55]">
       Las 5 sesiones del básico profundizan cada uno de estos temas con casos reales tuyos. Esto fue el mapa.
-    </p>
+    </motion.p>
 
-    <div className="mt-12 max-w-[760px]">
+    <motion.div variants={item} className="mt-12 max-w-[760px]">
       <div className="font-mono text-[10.5px] tracking-widest uppercase text-white/50 mb-4">
         Para profundizar
       </div>
-      <a
+      <motion.a
         href="/claude-de-cero-a-cien.pdf"
         target="_blank"
         rel="noopener noreferrer"
+        whileHover={HOVER}
         className="group flex items-center justify-between gap-6 border border-white/20 bg-white/5 p-5 hover:border-accent hover:bg-white/10 transition-colors"
       >
         <div className="flex items-start gap-4 min-w-0">
@@ -655,13 +888,13 @@ const Slide17 = (
           </div>
         </div>
         <ExternalLink className="w-4 h-4 text-white/50 shrink-0 group-hover:text-accent transition-colors" />
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
 
-    <div className="mt-auto pt-16 flex justify-between items-end font-mono text-[11px] tracking-widest uppercase text-white/50">
+    <motion.div variants={item} className="mt-auto pt-16 flex justify-between items-end font-mono text-[11px] tracking-widest uppercase text-white/50">
       <span>Crédito: Enrique Rocha · @soyenriquerocha · Abril 2026</span>
       <span>Atisa Group · Mayo 2026</span>
-    </div>
+    </motion.div>
   </SlideShell>
 );
 
