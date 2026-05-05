@@ -434,36 +434,36 @@ const Slide07 = (
   </SlideShell>
 );
 
-// 08 Vago vs claro
+// 08 Vago vs claro — escena de oficina
 const Slide08 = (
   <SlideShell tag="Parte 2 · El prompt" num={8}>
-    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.08] text-ink font-light max-w-[900px]">
       Vago contra <strong className="font-medium">claro</strong>.
     </motion.h2>
-    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[760px] leading-[1.6]">
-      Igual que en un restaurante. Si pides algo rico, te traen lo que el cocinero crea. Si pides algo específico, te traen lo que pediste.
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
+      Igual que cuando le pides un favor a un compañero. Si la petición está vaga, regresa a preguntarte tres veces o te entrega algo que no sirve. Si está específica, lo hace y sigue con su día.
     </motion.p>
-    <div className="mt-12 grid md:grid-cols-2 gap-0 max-w-[1000px]">
+    <div className="mt-12 grid md:grid-cols-2 gap-0 max-w-[1100px]">
       <motion.div variants={item} className="border border-line p-7 bg-bg-soft">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-ink-4 mb-3">
           Vago
         </div>
-        <p className="font-serif-display text-[20px] md:text-[26px] text-ink-3 leading-[1.4] italic font-light">
-          &ldquo;Tráeme algo rico.&rdquo;
+        <p className="font-serif-display text-[20px] md:text-[24px] text-ink-3 leading-[1.4] italic font-light">
+          &ldquo;Échame la mano con la presentación.&rdquo;
         </p>
-        <div className="mt-6 pt-5 border-t border-line text-[13px] text-ink-3 leading-[1.6]">
-          Aplicado a Claude: <span className="text-ink-2">&ldquo;Hazme un correo para el cliente.&rdquo;</span>
+        <div className="mt-6 pt-5 border-t border-line text-[13px] text-ink-3 leading-[1.65]">
+          ¿Qué presentación, para quién, hasta cuándo, qué parte? El compañero adivina. Te entrega algo que tienes que rehacer, o regresa a preguntarte. Aplicado a Claude: <span className="text-ink-2">&ldquo;Hazme un correo para el cliente.&rdquo;</span>
         </div>
       </motion.div>
       <motion.div variants={item} className="border border-line border-l-0 p-7 bg-bg shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
         <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-3 font-medium">
           Claro
         </div>
-        <p className="font-serif-display text-[20px] md:text-[26px] text-ink leading-[1.4] font-light">
-          &ldquo;Hamburguesa con queso, sin cebolla, con papas.&rdquo;
+        <p className="font-serif-display text-[19px] md:text-[22px] text-ink leading-[1.4] font-light">
+          &ldquo;Métele las 3 gráficas de ingresos Q2 al deck del lunes, mismo formato del trimestre pasado, antes de comer.&rdquo;
         </p>
-        <div className="mt-6 pt-5 border-t border-line text-[13px] text-ink-2 leading-[1.6]">
-          Aplicado a Claude: <span className="text-ink">&ldquo;Redacta un correo de 5 líneas para el cliente Pemex avisando retraso de 3 días en la obra del puente, tono cordial pero firme, sin disculpas excesivas.&rdquo;</span>
+        <div className="mt-6 pt-5 border-t border-line text-[13px] text-ink-2 leading-[1.65]">
+          Sabe qué, sobre qué, con qué referencia y para cuándo. Lo hace y sigue. Aplicado a Claude: <span className="text-ink">&ldquo;Redacta un correo de 5 líneas a la Ing. Méndez de Pemex avisando retraso de 3 días en el puente Ruta 12, tono cordial pero firme, sin disculpas excesivas.&rdquo;</span>
         </div>
       </motion.div>
     </div>
@@ -597,14 +597,14 @@ const Slide10 = (
   </SlideShell>
 );
 
-// 11 Mostrar es mejor que explicar
+// 11 Mostrar es mejor que explicar — escena de oficina
 const Slide11 = (
   <SlideShell tag="Parte 2 · El prompt" num={11}>
-    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.1] text-ink font-light max-w-[900px]">
+    <motion.h2 variants={item} className="font-serif-display text-[36px] md:text-[52px] leading-[1.08] text-ink font-light max-w-[900px]">
       Mostrar gana a <strong className="font-medium">explicar</strong>.
     </motion.h2>
-    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[820px] leading-[1.6]">
-      Si quieres que pinten tu casa de un color exacto, puedes describirlo con palabras o puedes mandar una foto. La foto es más rápida y no falla.
+    <motion.p variants={item} className="text-[16px] text-ink-3 mt-6 max-w-[860px] leading-[1.6]">
+      Cuando le explicas a un colaborador nuevo el formato del reporte mensual, puedes describirlo con palabras o puedes mandarle el del mes pasado y decirle &ldquo;sigue este&rdquo;. El ejemplo es más rápido y no falla.
     </motion.p>
     <motion.div variants={item} className="mt-10 max-w-[900px]">
       <div className="font-mono text-[10.5px] tracking-widest uppercase text-accent mb-4 font-medium">
